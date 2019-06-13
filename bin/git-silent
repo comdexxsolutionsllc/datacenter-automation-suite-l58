@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+git_silent() {
+    stdout=$(tempfile)
+    stderr=$(tempfile)
+
+    if ! git "$@" </dev/null >$stdout 2>$stderr; then
+        cat $stderr >&2
+        rm -f $stdout $stderr
+        exit 1
+    fi
+
+    rm -f $stdout $stderr
+}
+
+export -f git_silent

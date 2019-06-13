@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Abuse",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Accounting",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Billing",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Careers",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Collections",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Complaints",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Development",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Executive",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Hardware",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Human Resources",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Infrastructure",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Investor Relations",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Legal",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Maintenance",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Management",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Marketing",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Monitoring",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Networking",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Network Carriers",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Operations",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Partner Support",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Peering Coordination",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Provisioning",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Public Relations",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Quality Control",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Reclaim",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Sales",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Security",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Support, Level 1",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Support, Level 2",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "SysAdmin",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Vendor",
+    "description": "",
+    "visible": true
+  },
+  {
+    "name": "Webmaster",
+    "description": "",
+    "visible": true
+  }
+]

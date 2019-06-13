@@ -1,0 +1,3 @@
+[submodule "vendor_internal/laravel-scout-mysql-driver"]
+	path = vendor_internal/laravel-scout-mysql-driver
+	url = git@github.com:comdexxsolutionsllc/laravel-scout-mysql-driver.git

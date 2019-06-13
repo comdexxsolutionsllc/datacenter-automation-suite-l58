@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Open",
+    "description": "Your ticket has been submitted and is awaiting response from the team.  This is the default status of a new ticket when it gets generated.",
+    "hexcode": "#4CFF33",
+    "visible": true
+  },
+  {
+    "name": "In Progress",
+    "description": "After a ticket is reviewed by the team, it moves to this status.",
+    "hexcode": "#000F8E",
+    "visible": true
+  },
+  {
+    "name": "Pending Customer Response",
+    "description": "If the team needs more information from the customer to resolve the issue, the ticket will be moved to this status.",
+    "hexcode": "#FFF300",
+    "visible": true
+  },
+  {
+    "name": "Pending (General)",
+    "description": "",
+    "hexcode": "#A42568",
+    "visible": true
+  },
+  {
+    "name": "Pending (Maintenance)",
+    "description": "If the ticket is waiting for a maintenance window and is not being actively worked, the ticket will be moved to this status.",
+    "hexcode": "#8C0000",
+    "visible": true
+  },
+  {
+    "name": "Transferred",
+    "description": "If a ticket moves to another member of the team, it will have this status.",
+    "hexcode": "#00FBFF",
+    "visible": true
+  },
+  {
+    "name": "Feedback Received",
+    "description": "When a ticket has been placed in the team's queue, it will have this status.",
+    "hexcode": "#FF89E6",
+    "visible": true
+  },
+  {
+    "name": "Closed",
+    "description": "When a ticket has been resolved and you have successfully acknowledged the issue's resolution, you may move a ticket to this status.  Even after it’s closed, you can always respond to the ticket again to reopen it.",
+    "hexcode": "#FF0000",
+    "visible": true
+  },
+  {
+    "name": "Hidden",
+    "description": "INTERNAL - Staff has hidden this ticket.  See notes for more information.",
+    "hexcode": "#000000",
+    "visible": true
+  },
+  {
+    "name": "Pending (Management)",
+    "description": "If the ticket is waiting for a team manager's response, the ticket will be moved to this status.",
+    "hexcode": "#7F008E",
+    "visible": true
+  },
+  {
+    "name": "On Hold",
+    "description": "If the ticket is moved to this status,  it is currently waiting on feedback from the team et cetera.  See notes for details.",
+    "hexcode": "#FF5500",
+    "visible": true
+  }
+]

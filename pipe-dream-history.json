@@ -1,0 +1,16 @@
+{
+  "app\/Http\/Controllers\/DeviceAPIController.php": null,
+  "app\/Http\/Controllers\/DeviceController.php": null,
+  "app\/Http\/Controllers\/PingResultAPIController.php": null,
+  "app\/Http\/Controllers\/PingResultController.php": null,
+  "app\/Device.php": null,
+  "app\/PingResult.php": null,
+  "database\/factories\/DeviceFactory.php": null,
+  "database\/factories\/PingResultFactory.php": null,
+  "database\/migrations\/2019_06_8_165500_create_devices_table.php": null,
+  "database\/migrations\/2019_06_8_165501_create_ping_results_table.php": null,
+  "database\/seeds\/DeviceSeeder.php": null,
+  "database\/seeds\/PingResultSeeder.php": null,
+  "database\/migrations\/2014_10_12_000000_create_users_table.php": null,
+  "database\/migrations\/2014_10_12_100000_create_password_resets_table.php": "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nclass CreatePasswordResetsTable extends Migration\n{\n\n    \/**\n     * Run the migrations.\n     *\n     * @return void\n     *\/\n    public function up()\n    {\n        Schema::create('password_resets', function (Blueprint $table) {\n            $table->string('email')->index();\n            $table->string('token');\n            $table->timestamp('created_at')->nullable();\n        });\n    }\n\n    \/**\n     * Reverse the migrations.\n     *\n     * @return void\n     *\/\n    public function down()\n    {\n        Schema::dropIfExists('password_resets');\n    }\n}\n"
+}

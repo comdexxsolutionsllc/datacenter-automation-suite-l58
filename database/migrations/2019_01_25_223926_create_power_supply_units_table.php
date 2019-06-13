@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreatePowerSupplyUnitsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     */
+    public function up()
+    {
+        Schema::create('power_supply_units', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('vendor');
+            $table->boolean('active')->default(false);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     */
+    public function down()
+    {
+        Schema::dropIfExists('power_supply_units');
+    }
+}

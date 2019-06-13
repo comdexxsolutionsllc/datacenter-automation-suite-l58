@@ -1,0 +1,109 @@
+
+ {
+    "components": [
+        {
+            "component": "Commands",
+            "number_of_classes": 4,
+            "methods": 7,
+            "methods_per_class": 1.75,
+            "lines": 223,
+            "loc": 58,
+            "loc_per_method": 8.29
+        },
+        {
+            "component": "Controllers",
+            "number_of_classes": 54,
+            "methods": 362,
+            "methods_per_class": 6.7,
+            "lines": 7140,
+            "loc": 1330,
+            "loc_per_method": 3.67
+        },
+        {
+            "component": "Middlewares",
+            "number_of_classes": 16,
+            "methods": 13,
+            "methods_per_class": 0.81,
+            "lines": 404,
+            "loc": 73,
+            "loc_per_method": 5.62
+        },
+        {
+            "component": "Migrations",
+            "number_of_classes": 79,
+            "methods": 159,
+            "methods_per_class": 2.01,
+            "lines": 3340,
+            "loc": 1132,
+            "loc_per_method": 7.12
+        },
+        {
+            "component": "Models",
+            "number_of_classes": 68,
+            "methods": 298,
+            "methods_per_class": 4.38,
+            "lines": 6929,
+            "loc": 591,
+            "loc_per_method": 1.98
+        },
+        {
+            "component": "Requests",
+            "number_of_classes": 2,
+            "methods": 7,
+            "methods_per_class": 3.5,
+            "lines": 132,
+            "loc": 17,
+            "loc_per_method": 2.43
+        },
+        {
+            "component": "Seeders",
+            "number_of_classes": 14,
+            "methods": 18,
+            "methods_per_class": 1.29,
+            "lines": 352,
+            "loc": 77,
+            "loc_per_method": 4.28
+        },
+        {
+            "component": "Service Providers",
+            "number_of_classes": 11,
+            "methods": 27,
+            "methods_per_class": 2.45,
+            "lines": 610,
+            "loc": 115,
+            "loc_per_method": 4.26
+        },
+        {
+            "component": "DuskTests",
+            "number_of_classes": 2,
+            "methods": 3,
+            "methods_per_class": 1.5,
+            "lines": 62,
+            "loc": 14,
+            "loc_per_method": 4.67
+        },
+        {
+            "component": "PHPUnit Tests",
+            "number_of_classes": 51,
+            "methods": 64,
+            "methods_per_class": 1.25,
+            "lines": 1559,
+            "loc": 318,
+            "loc_per_method": 4.97
+        }
+    ],
+    "total": {
+        "number_of_classes": 455,
+        "methods": 1373,
+        "methods_per_class": 2.58,
+        "lines": 29783,
+        "loc": 4638,
+        "loc_per_method": 4.5
+    },
+    "meta": {
+        "code_loc": 3393,
+        "test_loc": 332,
+        "code_to_test_ratio": "1:0.1",
+        "number_of_routes": 431
+    }
+}
