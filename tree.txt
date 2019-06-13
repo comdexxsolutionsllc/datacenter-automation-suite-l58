@@ -614,6 +614,7 @@
 ├── [235K]  ./graph.png
 ├── [ 207]  ./horizon-supervisor.conf
 ├── [2.8K]  ./laravel-stats.json
+├── [ 11K]  ./LICENSE
 ├── [ 769]  ./ngrok-tunnels.json
 ├── [5.4K]  ./package.json
 ├── [2.5K]  ./phpcs-ruleset.xml
@@ -654,7 +655,7 @@
 │   │   └── [6.1K]  ./public/js/manifest.js
 │   ├── [ 45K]  ./public/loading.gif
 │   ├── [2.2K]  ./public/mix-manifest.json
-│   ├── [ 149]  ./public/phpcs.xml
+│   ├── [ 150]  ./public/phpcs.xml
 │   ├── [4.0K]  ./public/phpcs.xsl
 │   ├── [ 99K]  ./public/phpmd.html
 │   ├── [4.0K]  ./public/svg
@@ -1306,4 +1307,4 @@
 ├── [2.1K]  ./webpack.mix.js
 └── [4.0K]  ./working
 
-159 directories, 1147 files
+159 directories, 1148 files
