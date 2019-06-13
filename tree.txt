@@ -32,12 +32,13 @@
 │   │   ├── [ 922]  ./app/General/EmailParser.php
 │   │   ├── [ 821]  ./app/General/EmployeeId.php
 │   │   ├── [ 820]  ./app/General/HardwareId.php
-│   │   ├── [ 254]  ./app/General/IdentificationFormat.php
+│   │   ├── [ 255]  ./app/General/IdentificationFormat.php
+│   │   ├── [ 253]  ./app/General/IdentificationTypeFormat.php
 │   │   ├── [ 351]  ./app/General/MenuBuilder.php
 │   │   ├── [2.1K]  ./app/General/Pluralize.php
 │   │   ├── [5.8K]  ./app/General/ProcessMenu.php
 │   │   ├── [ 822]  ./app/General/TicketId.php
-│   │   └── [ 592]  ./app/General/TransactionId.php
+│   │   └── [ 642]  ./app/General/TransactionId.php
 │   ├── [4.0K]  ./app/GraphQL
 │   │   ├── [4.0K]  ./app/GraphQL/Mutation
 │   │   │   └── [1.5K]  ./app/GraphQL/Mutation/UpdateUserPasswordMutation.php
@@ -364,7 +365,7 @@
 │   ├── [ 264]  ./bin/git-silent
 │   ├── [  48]  ./bin/start-dusk-dashboard.sh
 │   └── [ 184]  ./bin/update-submodule.sh
-├── [4.9K]  ./composer.json
+├── [5.0K]  ./composer.json
 ├── [4.0K]  ./config
 │   ├── [4.9K]  ./config/adminlte.php
 │   ├── [ 322]  ./config/airports.php
@@ -429,70 +430,140 @@
 ├── [1.6K]  ./dangerfile.ts
 ├── [4.0K]  ./database
 │   ├── [4.0K]  ./database/factories
-│   │   ├── [ 370]  ./database/factories/AboutUsFactory.php
-│   │   ├── [2.1K]  ./database/factories/AssetFactory.php
-│   │   ├── [ 382]  ./database/factories/AssetRegionFactory.php
-│   │   ├── [ 436]  ./database/factories/AvailabilityZoneFactory.php
-│   │   ├── [ 901]  ./database/factories/BillingInfoFactory.php
-│   │   ├── [1.1K]  ./database/factories/ChassisFactory.php
-│   │   ├── [ 889]  ./database/factories/ChatFactory.php
-│   │   ├── [ 534]  ./database/factories/CommentFactory.php
-│   │   ├── [ 593]  ./database/factories/CompanyFactory.php
-│   │   ├── [ 728]  ./database/factories/ControlPanelFactory.php
-│   │   ├── [ 773]  ./database/factories/CouponFactory.php
-│   │   ├── [ 532]  ./database/factories/CpuFactory.php
-│   │   ├── [ 630]  ./database/factories/DatacenterFactory.php
-│   │   ├── [ 373]  ./database/factories/DepartmentFactory.php
-│   │   ├── [ 733]  ./database/factories/DeviceFactory.php
+│   │   ├── [ 355]  ./database/factories/AboutUsFactory.php
+│   │   ├── [1.5K]  ./database/factories/AssetFactory.php
+│   │   ├── [ 355]  ./database/factories/AssetRegionFactory.php
+│   │   ├── [ 284]  ./database/factories/AvailabilityZoneFactory.php
+│   │   ├── [ 742]  ./database/factories/BillingInfoFactory.php
+│   │   ├── [ 233]  ./database/factories/CartFactory.php
+│   │   ├── [ 951]  ./database/factories/ChassisFactory.php
+│   │   ├── [ 517]  ./database/factories/ChatFactory.php
+│   │   ├── [ 341]  ./database/factories/CommentFactory.php
+│   │   ├── [ 534]  ./database/factories/CompanyFactory.php
+│   │   ├── [ 702]  ./database/factories/ControlPanelFactory.php
+│   │   ├── [ 532]  ./database/factories/CouponFactory.php
+│   │   ├── [ 506]  ./database/factories/CpuFactory.php
+│   │   ├── [ 411]  ./database/factories/CryptokeyFactory.php
+│   │   ├── [ 936]  ./database/factories/CustomerFactory.php
+│   │   ├── [ 375]  ./database/factories/DatacenterFactory.php
+│   │   ├── [ 413]  ./database/factories/DepartmentFactory.php
+│   │   ├── [ 312]  ./database/factories/DeviceFactory.php
 │   │   ├── [ 547]  ./database/factories/DiskFactory.php
-│   │   ├── [1022]  ./database/factories/DomainFactory.php
-│   │   ├── [ 504]  ./database/factories/FirewallZoneFactory.php
-│   │   ├── [2.0K]  ./database/factories/InboundEmailFactory.php
-│   │   ├── [1.5K]  ./database/factories/InvoiceFactory.php
-│   │   ├── [ 519]  ./database/factories/InvoiceItemFactory.php
-│   │   ├── [1.3K]  ./database/factories/IpAddressFactory.php
+│   │   ├── [ 479]  ./database/factories/DomainFactory.php
+│   │   ├── [ 366]  ./database/factories/DomainmetadataFactory.php
+│   │   ├── [ 743]  ./database/factories/EmployeeFactory.php
+│   │   ├── [ 429]  ./database/factories/FirewallZoneFactory.php
+│   │   ├── [ 966]  ./database/factories/InboundEmailFactory.php
+│   │   ├── [ 688]  ./database/factories/InvoiceFactory.php
+│   │   ├── [ 413]  ./database/factories/InvoiceItemFactory.php
+│   │   ├── [1.0K]  ./database/factories/IpAddressFactory.php
 │   │   ├── [ 511]  ./database/factories/MemoryFactory.php
-│   │   ├── [1.4K]  ./database/factories/MotherboardFactory.php
-│   │   ├── [1.2K]  ./database/factories/MotherboardTypeFactory.php
-│   │   ├── [ 513]  ./database/factories/NameserverCommentFactory.php
-│   │   ├── [ 440]  ./database/factories/NameserverCryptokeyFactory.php
-│   │   ├── [ 520]  ./database/factories/NameserverDomainFactory.php
-│   │   ├── [ 375]  ./database/factories/NameserverDomainmetadataFactory.php
-│   │   ├── [ 746]  ./database/factories/NameserverRecordFactory.php
-│   │   ├── [ 330]  ./database/factories/NameserverSupermasterFactory.php
-│   │   ├── [ 376]  ./database/factories/NameserverTsigkeyFactory.php
-│   │   ├── [ 430]  ./database/factories/NetworkConfigurationFactory.php
-│   │   ├── [1.1K]  ./database/factories/NetworkDeviceFactory.php
-│   │   ├── [ 333]  ./database/factories/NetworkDeviceTypeFactory.php
-│   │   ├── [ 212]  ./database/factories/NetworkInterfaceCardFactory.php
-│   │   ├── [ 668]  ./database/factories/NoteFactory.php
-│   │   ├── [ 506]  ./database/factories/NotificationFactory.php
-│   │   ├── [ 613]  ./database/factories/OperatingSystemFactory.php
-│   │   ├── [ 271]  ./database/factories/PermissionFactory.php
-│   │   ├── [1.1K]  ./database/factories/PingResultFactory.php
+│   │   ├── [ 447]  ./database/factories/MenuPageFactory.php
+│   │   ├── [1.5K]  ./database/factories/MotherboardFactory.php
+│   │   ├── [ 959]  ./database/factories/MotherboardTypeFactory.php
+│   │   ├── [ 328]  ./database/factories/NetworkConfigurationFactory.php
+│   │   ├── [ 725]  ./database/factories/NetworkDeviceFactory.php
+│   │   ├── [ 442]  ./database/factories/NetworkDeviceTypeFactory.php
+│   │   ├── [ 566]  ./database/factories/NetworkInterfaceCardFactory.php
+│   │   ├── [ 329]  ./database/factories/NoteFactory.php
+│   │   ├── [ 485]  ./database/factories/NotificationFactory.php
+│   │   ├── [ 410]  ./database/factories/OperatingSystemFactory.php
+│   │   ├── [ 278]  ./database/factories/PermissionFactory.php
+│   │   ├── [ 639]  ./database/factories/PingResultFactory.php
 │   │   ├── [ 278]  ./database/factories/PowerSupplyUnitFactory.php
-│   │   ├── [ 613]  ./database/factories/PricingFactory.php
-│   │   ├── [ 507]  ./database/factories/ProductFactory.php
-│   │   ├── [ 321]  ./database/factories/QueueFactory.php
-│   │   ├── [ 916]  ./database/factories/RaidCardFactory.php
+│   │   ├── [ 313]  ./database/factories/PricingFactory.php
+│   │   ├── [ 439]  ./database/factories/ProductFactory.php
+│   │   ├── [ 369]  ./database/factories/QueueFactory.php
+│   │   ├── [ 929]  ./database/factories/RaidCardFactory.php
+│   │   ├── [ 673]  ./database/factories/RecordFactory.php
 │   │   ├── [ 296]  ./database/factories/RegistrarFactory.php
-│   │   ├── [ 568]  ./database/factories/ResellerFactory.php
-│   │   ├── [ 310]  ./database/factories/ResourceGroupFactory.php
-│   │   ├── [ 560]  ./database/factories/ResourceNameFactory.php
-│   │   ├── [ 265]  ./database/factories/RoleFactory.php
-│   │   ├── [ 418]  ./database/factories/SalesRepFactory.php
-│   │   ├── [ 529]  ./database/factories/SecurityGroupFactory.php
-│   │   ├── [ 732]  ./database/factories/ServiceFactory.php
-│   │   ├── [ 654]  ./database/factories/ServiceLimitFactory.php
-│   │   ├── [ 329]  ./database/factories/ServiceNamespaceFactory.php
-│   │   ├── [ 369]  ./database/factories/StatusFactory.php
-│   │   ├── [ 465]  ./database/factories/SubnetAddressFactory.php
-│   │   ├── [1.6K]  ./database/factories/SwitchportInformationFactory.php
-│   │   ├── [ 426]  ./database/factories/TagCloudFactory.php
-│   │   ├── [ 383]  ./database/factories/TagTypeFactory.php
-│   │   ├── [ 821]  ./database/factories/TechnicianFactory.php
-│   │   ├── [1.2K]  ./database/factories/TicketFactory.php
-│   │   └── [2.5K]  ./database/factories/UserFactory.php
+│   │   ├── [ 389]  ./database/factories/ResellerFactory.php
+│   │   ├── [ 328]  ./database/factories/ResourceGroupFactory.php
+│   │   ├── [ 474]  ./database/factories/ResourceNameFactory.php
+│   │   ├── [ 272]  ./database/factories/RoleFactory.php
+│   │   ├── [ 415]  ./database/factories/SalesRepFactory.php
+│   │   ├── [ 499]  ./database/factories/SecurityGroupFactory.php
+│   │   ├── [ 475]  ./database/factories/ServiceFactory.php
+│   │   ├── [ 668]  ./database/factories/ServiceLimitFactory.php
+│   │   ├── [ 296]  ./database/factories/ServiceNamespaceFactory.php
+│   │   ├── [ 409]  ./database/factories/StatusFactory.php
+│   │   ├── [ 448]  ./database/factories/SubnetAddressFactory.php
+│   │   ├── [ 570]  ./database/factories/SubscriptionFactory.php
+│   │   ├── [ 320]  ./database/factories/SupermasterFactory.php
+│   │   ├── [ 798]  ./database/factories/SwitchportInformationFactory.php
+│   │   ├── [ 371]  ./database/factories/TagCloudFactory.php
+│   │   ├── [ 277]  ./database/factories/TagTypeFactory.php
+│   │   ├── [ 439]  ./database/factories/TechnicianFactory.php
+│   │   ├── [ 824]  ./database/factories/TicketFactory.php
+│   │   ├── [ 321]  ./database/factories/TldExtensionFactory.php
+│   │   ├── [ 313]  ./database/factories/TsigkeyFactory.php
+│   │   ├── [ 934]  ./database/factories/VendorFactory.php
+│   │   └── [ 938]  ./database/factories/WhitegloveFactory.php
+│   ├── [4.0K]  ./database/factories.old
+│   │   ├── [ 370]  ./database/factories.old/AboutUsFactory.php
+│   │   ├── [2.1K]  ./database/factories.old/AssetFactory.php
+│   │   ├── [ 382]  ./database/factories.old/AssetRegionFactory.php
+│   │   ├── [ 436]  ./database/factories.old/AvailabilityZoneFactory.php
+│   │   ├── [ 901]  ./database/factories.old/BillingInfoFactory.php
+│   │   ├── [1.1K]  ./database/factories.old/ChassisFactory.php
+│   │   ├── [ 889]  ./database/factories.old/ChatFactory.php
+│   │   ├── [ 534]  ./database/factories.old/CommentFactory.php
+│   │   ├── [ 593]  ./database/factories.old/CompanyFactory.php
+│   │   ├── [ 728]  ./database/factories.old/ControlPanelFactory.php
+│   │   ├── [ 773]  ./database/factories.old/CouponFactory.php
+│   │   ├── [ 532]  ./database/factories.old/CpuFactory.php
+│   │   ├── [ 630]  ./database/factories.old/DatacenterFactory.php
+│   │   ├── [ 373]  ./database/factories.old/DepartmentFactory.php
+│   │   ├── [ 733]  ./database/factories.old/DeviceFactory.php
+│   │   ├── [ 547]  ./database/factories.old/DiskFactory.php
+│   │   ├── [1022]  ./database/factories.old/DomainFactory.php
+│   │   ├── [ 504]  ./database/factories.old/FirewallZoneFactory.php
+│   │   ├── [2.0K]  ./database/factories.old/InboundEmailFactory.php
+│   │   ├── [1.5K]  ./database/factories.old/InvoiceFactory.php
+│   │   ├── [ 519]  ./database/factories.old/InvoiceItemFactory.php
+│   │   ├── [1.3K]  ./database/factories.old/IpAddressFactory.php
+│   │   ├── [ 511]  ./database/factories.old/MemoryFactory.php
+│   │   ├── [1.4K]  ./database/factories.old/MotherboardFactory.php
+│   │   ├── [1.2K]  ./database/factories.old/MotherboardTypeFactory.php
+│   │   ├── [ 513]  ./database/factories.old/NameserverCommentFactory.php
+│   │   ├── [ 440]  ./database/factories.old/NameserverCryptokeyFactory.php
+│   │   ├── [ 520]  ./database/factories.old/NameserverDomainFactory.php
+│   │   ├── [ 375]  ./database/factories.old/NameserverDomainmetadataFactory.php
+│   │   ├── [ 746]  ./database/factories.old/NameserverRecordFactory.php
+│   │   ├── [ 330]  ./database/factories.old/NameserverSupermasterFactory.php
+│   │   ├── [ 376]  ./database/factories.old/NameserverTsigkeyFactory.php
+│   │   ├── [ 430]  ./database/factories.old/NetworkConfigurationFactory.php
+│   │   ├── [1.1K]  ./database/factories.old/NetworkDeviceFactory.php
+│   │   ├── [ 333]  ./database/factories.old/NetworkDeviceTypeFactory.php
+│   │   ├── [ 212]  ./database/factories.old/NetworkInterfaceCardFactory.php
+│   │   ├── [ 668]  ./database/factories.old/NoteFactory.php
+│   │   ├── [ 506]  ./database/factories.old/NotificationFactory.php
+│   │   ├── [ 613]  ./database/factories.old/OperatingSystemFactory.php
+│   │   ├── [ 271]  ./database/factories.old/PermissionFactory.php
+│   │   ├── [1.1K]  ./database/factories.old/PingResultFactory.php
+│   │   ├── [ 278]  ./database/factories.old/PowerSupplyUnitFactory.php
+│   │   ├── [ 613]  ./database/factories.old/PricingFactory.php
+│   │   ├── [ 507]  ./database/factories.old/ProductFactory.php
+│   │   ├── [ 321]  ./database/factories.old/QueueFactory.php
+│   │   ├── [ 916]  ./database/factories.old/RaidCardFactory.php
+│   │   ├── [ 296]  ./database/factories.old/RegistrarFactory.php
+│   │   ├── [ 568]  ./database/factories.old/ResellerFactory.php
+│   │   ├── [ 310]  ./database/factories.old/ResourceGroupFactory.php
+│   │   ├── [ 560]  ./database/factories.old/ResourceNameFactory.php
+│   │   ├── [ 265]  ./database/factories.old/RoleFactory.php
+│   │   ├── [ 418]  ./database/factories.old/SalesRepFactory.php
+│   │   ├── [ 529]  ./database/factories.old/SecurityGroupFactory.php
+│   │   ├── [ 732]  ./database/factories.old/ServiceFactory.php
+│   │   ├── [ 654]  ./database/factories.old/ServiceLimitFactory.php
+│   │   ├── [ 329]  ./database/factories.old/ServiceNamespaceFactory.php
+│   │   ├── [ 369]  ./database/factories.old/StatusFactory.php
+│   │   ├── [ 465]  ./database/factories.old/SubnetAddressFactory.php
+│   │   ├── [1.6K]  ./database/factories.old/SwitchportInformationFactory.php
+│   │   ├── [ 426]  ./database/factories.old/TagCloudFactory.php
+│   │   ├── [ 383]  ./database/factories.old/TagTypeFactory.php
+│   │   ├── [ 821]  ./database/factories.old/TechnicianFactory.php
+│   │   ├── [1.2K]  ./database/factories.old/TicketFactory.php
+│   │   └── [2.5K]  ./database/factories.old/UserFactory.php
 │   ├── [ 12K]  ./database/migrations
 │   │   ├── [1.7K]  ./database/migrations/2014_10_12_000000_create_customers_table.php
 │   │   ├── [ 999]  ./database/migrations/2014_10_12_000000_create_employees_table.php
@@ -1307,4 +1378,4 @@
 ├── [2.1K]  ./webpack.mix.js
 └── [4.0K]  ./working
 
-159 directories, 1148 files
+160 directories, 1218 files

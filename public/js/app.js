@@ -67098,7 +67098,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tiptap_commands__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tiptap-commands */ "./node_modules/tiptap-commands/dist/commands.esm.js");
 
     /*!
-    * tiptap v1.22.2
+    * tiptap v1.22.3
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -68858,7 +68858,7 @@ function () {
     }); // sometimes we have to update the position
     // because of a loaded images for example
 
-    if (this.options.resizeObserver && ResizeObserver) {
+    if (this.options.resizeObserver && window.ResizeObserver) {
       this.resizeObserver = new ResizeObserver(function () {
         if (_this.isActive) {
           _this.update(_this.editorView);

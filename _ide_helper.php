@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.23 on 2019-06-13 18:37:59.
+ * Generated for Laravel 5.8.24 on 2019-06-23 23:58:34.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -14271,6 +14271,16 @@ namespace Illuminate\Support\Facades {
                         /** @var \Illuminate\Routing\Router $instance */
                         return $instance->macroCall($method, $parameters);
         }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function webhooks($url, $name = 'default')
+        {
+                        return \Illuminate\Routing\Router::webhooks($url, $name);
+        }
          
     }
 
@@ -24145,11 +24155,12 @@ if (! function_exists('retry')) {
      * @param  int  $times
      * @param  callable  $callback
      * @param  int  $sleep
+     * @param  callable  $when
      * @return mixed
      *
      * @throws \Exception
      */
-    function retry($times, callable $callback, $sleep = 0)
+    function retry($times, callable $callback, $sleep = 0, $when = null)
     {
         $attempts = 0;
         $times--;
@@ -24160,7 +24171,7 @@ if (! function_exists('retry')) {
         try {
             return $callback($attempts);
         } catch (Exception $e) {
-            if (! $times) {
+            if (! $times || ($when && ! $when($e))) {
                 throw $e;
             }
 
