@@ -3,31 +3,33 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\FirewallZone
  *
- * @property int $id
- * @property string $network_asset_number
- * @property int $datacenter_id
- * @property int $network_device_id
- * @property string|null $available
+ * @property int                             $id
+ * @property string                          $network_asset_number
+ * @property int                             $datacenter_id
+ * @property int                             $network_device_id
+ * @property string|null                     $available
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereAvailable($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereDatacenterId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereNetworkAssetNumber($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereNetworkDeviceId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\FirewallZone whereUpdatedAt($value)
+ * @method static Builder|FirewallZone newModelQuery()
+ * @method static Builder|FirewallZone newQuery()
+ * @method static Builder|FirewallZone query()
+ * @method static Builder|FirewallZone whereAvailable($value)
+ * @method static Builder|FirewallZone whereCreatedAt($value)
+ * @method static Builder|FirewallZone whereDatacenterId($value)
+ * @method static Builder|FirewallZone whereId($value)
+ * @method static Builder|FirewallZone whereNetworkAssetNumber($value)
+ * @method static Builder|FirewallZone whereNetworkDeviceId($value)
+ * @method static Builder|FirewallZone whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class FirewallZone extends BaseModel
 {
+
     /**
      * @var array
      */

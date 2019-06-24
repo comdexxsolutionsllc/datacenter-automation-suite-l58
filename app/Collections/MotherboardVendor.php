@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class MotherboardVendor extends Collection
 {
+
     /**
      * @var array
      */

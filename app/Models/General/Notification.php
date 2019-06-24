@@ -4,33 +4,35 @@ namespace App\Models\General;
 
 use App\Models\BaseModel;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\General\Notification
  *
- * @property string $id
- * @property string $type
- * @property string $notifiable_type
- * @property int $notifiable_id
- * @property string $data
+ * @property string         $id
+ * @property string         $type
+ * @property string         $notifiable_type
+ * @property int            $notifiable_id
+ * @property string         $data
  * @property bool|\DateTime $read_at
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereData($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereNotifiableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereNotifiableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereReadAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereUpdatedAt($value)
+ * @method static Builder|Notification newModelQuery()
+ * @method static Builder|Notification newQuery()
+ * @method static Builder|Notification query()
+ * @method static Builder|Notification whereCreatedAt($value)
+ * @method static Builder|Notification whereData($value)
+ * @method static Builder|Notification whereId($value)
+ * @method static Builder|Notification whereNotifiableId($value)
+ * @method static Builder|Notification whereNotifiableType($value)
+ * @method static Builder|Notification whereReadAt($value)
+ * @method static Builder|Notification whereType($value)
+ * @method static Builder|Notification whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Notification extends BaseModel
 {
+
     /**
      * @var bool
      */
@@ -57,7 +59,7 @@ class Notification extends BaseModel
      */
     public function setReadAtAttribute($value)
     {
-        $this->attributes['read_at'] = !empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+        $this->attributes['read_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
     }
 
     /**

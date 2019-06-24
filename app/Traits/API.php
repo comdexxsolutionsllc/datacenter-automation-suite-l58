@@ -6,6 +6,7 @@ use ReflectionClass;
 
 trait API
 {
+
     /**
      * @param       $resourceName
      * @param mixed ...$args
@@ -21,7 +22,7 @@ trait API
 
         $className = $this->getResourceClassname($resourceName, $version);
 
-        if (!class_exists($className)) {
+        if (! class_exists($className)) {
             $className = $this->getResourceClassname($resourceName, config('app.api_latest'));
         }
 

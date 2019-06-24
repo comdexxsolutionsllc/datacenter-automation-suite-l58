@@ -6,6 +6,7 @@ use Closure;
 
 class Vendor
 {
+
     /**
      * Handle an incoming request.
      *

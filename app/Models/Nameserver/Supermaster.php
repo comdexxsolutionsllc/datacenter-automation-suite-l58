@@ -4,29 +4,31 @@ namespace App\Models\Nameserver;
 
 use App\Models\BaseModel;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Nameserver\Supermaster
  *
- * @property int $id
+ * @property int    $id
  * @property string $ip
  * @property string $nameserver
  * @property string $account
- * @property array $created_at
- * @property array $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereAccount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereIp($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereNameserver($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereUpdatedAt($value)
+ * @property array  $created_at
+ * @property array  $updated_at
+ * @method static Builder|Supermaster newModelQuery()
+ * @method static Builder|Supermaster newQuery()
+ * @method static Builder|Supermaster query()
+ * @method static Builder|Supermaster whereAccount($value)
+ * @method static Builder|Supermaster whereCreatedAt($value)
+ * @method static Builder|Supermaster whereId($value)
+ * @method static Builder|Supermaster whereIp($value)
+ * @method static Builder|Supermaster whereNameserver($value)
+ * @method static Builder|Supermaster whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Supermaster extends BaseModel
 {
+
     /**
      * The database table used by the model.
      *

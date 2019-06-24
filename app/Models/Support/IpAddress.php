@@ -3,53 +3,55 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\IpAddress
  *
- * @property int $id
- * @property int|null $asset_owner
- * @property int $network_interface_card_id
- * @property int|null $firewall_zone_id
- * @property int $port_number
- * @property string|null $accountable_type
- * @property int|null $accountable_id
- * @property string $ip_address
- * @property string $ip_address_type
- * @property string $ip_address_visibility
- * @property string $gateway_address
- * @property int $subnet_address_id
- * @property string|null $other_ip_addresses
- * @property int $active
- * @property string|null $notes
- * @property string $allocation_date
+ * @property int                             $id
+ * @property int|null                        $asset_owner
+ * @property int                             $network_interface_card_id
+ * @property int|null                        $firewall_zone_id
+ * @property int                             $port_number
+ * @property string|null                     $accountable_type
+ * @property int|null                        $accountable_id
+ * @property string                          $ip_address
+ * @property string                          $ip_address_type
+ * @property string                          $ip_address_visibility
+ * @property string                          $gateway_address
+ * @property int                             $subnet_address_id
+ * @property string|null                     $other_ip_addresses
+ * @property int                             $active
+ * @property string|null                     $notes
+ * @property string                          $allocation_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereAccountableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereAccountableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereAllocationDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereAssetOwner($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereFirewallZoneId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereGatewayAddress($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereIpAddress($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereIpAddressType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereIpAddressVisibility($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereNetworkInterfaceCardId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereNotes($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereOtherIpAddresses($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress wherePortNumber($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereSubnetAddressId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\IpAddress whereUpdatedAt($value)
+ * @method static Builder|IpAddress newModelQuery()
+ * @method static Builder|IpAddress newQuery()
+ * @method static Builder|IpAddress query()
+ * @method static Builder|IpAddress whereAccountableId($value)
+ * @method static Builder|IpAddress whereAccountableType($value)
+ * @method static Builder|IpAddress whereActive($value)
+ * @method static Builder|IpAddress whereAllocationDate($value)
+ * @method static Builder|IpAddress whereAssetOwner($value)
+ * @method static Builder|IpAddress whereCreatedAt($value)
+ * @method static Builder|IpAddress whereFirewallZoneId($value)
+ * @method static Builder|IpAddress whereGatewayAddress($value)
+ * @method static Builder|IpAddress whereId($value)
+ * @method static Builder|IpAddress whereIpAddress($value)
+ * @method static Builder|IpAddress whereIpAddressType($value)
+ * @method static Builder|IpAddress whereIpAddressVisibility($value)
+ * @method static Builder|IpAddress whereNetworkInterfaceCardId($value)
+ * @method static Builder|IpAddress whereNotes($value)
+ * @method static Builder|IpAddress whereOtherIpAddresses($value)
+ * @method static Builder|IpAddress wherePortNumber($value)
+ * @method static Builder|IpAddress whereSubnetAddressId($value)
+ * @method static Builder|IpAddress whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class IpAddress extends BaseModel
 {
+
     /**
      * @var array
      */

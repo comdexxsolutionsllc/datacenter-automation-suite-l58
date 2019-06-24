@@ -13,6 +13,7 @@ use Laravel\Scout\Searchable;
  */
 abstract class BaseModel extends Model //implements IRecordable
 {
+
     //use Eventually, Recordable,
     use Searchable;
 

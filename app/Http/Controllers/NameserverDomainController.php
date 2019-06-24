@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class NameserverDomainController extends Controller
 {
+
     /**
      * Display a listing of the nameserver domains.
      *

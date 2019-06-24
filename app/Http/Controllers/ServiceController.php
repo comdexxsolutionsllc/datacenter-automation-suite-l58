@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
+
     /**
      * Display a listing of the services.
      *
@@ -98,7 +99,7 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-        $service  = Service::findOrFail($id);
+        $service = Service::findOrFail($id);
         $accounts = Account::pluck('id', 'id')->all();
 
         return view('services.edit', compact('service', 'accounts'));

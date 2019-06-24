@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 
 class RoleHasPermissionsTableSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *

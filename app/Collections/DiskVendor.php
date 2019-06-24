@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class DiskVendor extends Collection
 {
+
     /**
      * @var array
      */

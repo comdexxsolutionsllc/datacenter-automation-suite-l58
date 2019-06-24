@@ -7,6 +7,7 @@ use Closure;
 // @todo
 class Internal
 {
+
     /**
      * Handle an incoming request.
      *

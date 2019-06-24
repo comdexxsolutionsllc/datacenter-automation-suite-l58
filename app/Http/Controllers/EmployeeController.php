@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
+
     /**
      * Display a listing of the employees.
      *
@@ -102,7 +103,7 @@ class EmployeeController extends Controller
      */
     public function edit($id)
     {
-        $employee  = Employee::findOrFail($id);
+        $employee = Employee::findOrFail($id);
         $employees = Employee::pluck('name', 'id')->all();
 
         return view('employees.edit', compact('employee', 'employees'));

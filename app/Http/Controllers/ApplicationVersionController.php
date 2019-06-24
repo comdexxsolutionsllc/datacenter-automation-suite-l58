@@ -8,6 +8,7 @@ use PHLAK\SemVer\Version;
 
 class ApplicationVersionController extends Controller
 {
+
     /**
      *  Handle the incoming request.
      *

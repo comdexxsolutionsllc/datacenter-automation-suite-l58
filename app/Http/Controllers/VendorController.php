@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class VendorController extends Controller
 {
+
     /**
      * Display a listing of the vendors.
      *
@@ -30,7 +31,7 @@ class VendorController extends Controller
     public function create()
     {
         $accounts = Account::pluck('id', 'id')->all();
-        $stripes  = Stripe::pluck('id', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('vendors.create', compact('accounts', 'stripes'));
     }
@@ -108,9 +109,9 @@ class VendorController extends Controller
      */
     public function edit($id)
     {
-        $vendor   = Vendor::findOrFail($id);
+        $vendor = Vendor::findOrFail($id);
         $accounts = Account::pluck('id', 'id')->all();
-        $stripes  = Stripe::pluck('id', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('vendors.edit', compact('vendor', 'accounts', 'stripes'));
     }

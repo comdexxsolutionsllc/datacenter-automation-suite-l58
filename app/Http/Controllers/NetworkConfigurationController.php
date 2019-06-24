@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class NetworkConfigurationController extends Controller
 {
+
     /**
      * Display a listing of the network configurations.
      *
@@ -96,7 +97,7 @@ class NetworkConfigurationController extends Controller
     public function edit($id)
     {
         $netConfig = NetworkConfiguration::findOrFail($id);
-        $portInfo  = SwitchportInformation::pluck('id', 'id')->all();
+        $portInfo = SwitchportInformation::pluck('id', 'id')->all();
 
         return view('network_configurations.edit', compact('netConfig', 'portInfo'));
     }

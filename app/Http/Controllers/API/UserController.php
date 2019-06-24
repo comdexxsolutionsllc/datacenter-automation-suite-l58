@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
     /**
      * @param \Illuminate\Http\Request $request
      *

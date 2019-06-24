@@ -8,6 +8,7 @@ use Illuminate\View\View;
 
 class AboutUsController extends Controller
 {
+
     /**
      * AboutUsController constructor.
      */

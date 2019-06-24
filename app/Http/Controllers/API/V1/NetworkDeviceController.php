@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class NetworkDeviceController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *

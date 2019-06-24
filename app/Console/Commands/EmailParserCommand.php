@@ -15,6 +15,7 @@ use Illuminate\Console\Command;
  */
 class EmailParserCommand extends Command
 {
+
     /**
      * The name and signature of the console command.
      *
@@ -36,10 +37,10 @@ class EmailParserCommand extends Command
      */
     public function handle()
     {
-        $fd       = fopen('php://stdin', 'r');
+        $fd = fopen('php://stdin', 'r');
         $rawEmail = '';
 
-        while (!feof($fd)) {
+        while (! feof($fd)) {
             $rawEmail .= fread($fd, 1024);
         }
 

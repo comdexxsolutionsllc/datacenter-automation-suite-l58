@@ -15,6 +15,7 @@ use Illuminate\View\View;
  */
 class NotificationController extends Controller
 {
+
     /**
      * Display a listing of the notifications.
      *

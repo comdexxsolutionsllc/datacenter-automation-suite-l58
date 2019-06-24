@@ -8,6 +8,7 @@ namespace App\Http\Controllers;
 
 class AssetController extends Controller
 {
+
     ///**
     // * Display a listing of the assets.
     // *

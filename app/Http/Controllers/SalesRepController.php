@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class SalesRepController extends Controller
 {
+
     /**
      * Display a listing of the sales reps.
      *
@@ -97,7 +98,7 @@ class SalesRepController extends Controller
      */
     public function edit($id)
     {
-        $salesRep  = SalesRep::findOrFail($id);
+        $salesRep = SalesRep::findOrFail($id);
         $employees = Employee::pluck('name', 'id')->all();
         $companies = Company::pluck('name', 'id')->all();
 

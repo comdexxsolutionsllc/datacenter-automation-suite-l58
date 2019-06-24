@@ -18,6 +18,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 abstract class BaseRole extends Authenticatable implements MustVerifyEmail
 {
+
     use ActiveStatus, Billable, HasApiTokens, HasImageUploads, HasRoles, Notifiable, Searchable, SoftDeletes;
 
     /**
@@ -74,7 +75,7 @@ abstract class BaseRole extends Authenticatable implements MustVerifyEmail
      */
     public function setEmailVerifiedAtAttribute($value)
     {
-        $this->attributes['email_verified_at'] = !empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+        $this->attributes['email_verified_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
     }
 
     /**
@@ -84,7 +85,7 @@ abstract class BaseRole extends Authenticatable implements MustVerifyEmail
      */
     public function setTrialEndsAtAttribute($value)
     {
-        $this->attributes['trial_ends_at'] = !empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+        $this->attributes['trial_ends_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
     }
 
     /**

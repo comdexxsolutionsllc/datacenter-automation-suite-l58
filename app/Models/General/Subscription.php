@@ -5,38 +5,40 @@ namespace App\Models\General;
 use App\Models\BaseModel;
 use App\Models\Roles\Customer;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\General\Subscription
  *
- * @property int $id
- * @property int $user_id
- * @property string $name
- * @property string $stripe_id
- * @property string $stripe_plan
- * @property int $quantity
- * @property bool|\DateTime $trial_ends_at
- * @property bool|\DateTime $ends_at
- * @property bool|\DateTime $created_at
- * @property bool|\DateTime $updated_at
+ * @property int                             $id
+ * @property int                             $user_id
+ * @property string                          $name
+ * @property string                          $stripe_id
+ * @property string                          $stripe_plan
+ * @property int                             $quantity
+ * @property bool|\DateTime                  $trial_ends_at
+ * @property bool|\DateTime                  $ends_at
+ * @property bool|\DateTime                  $created_at
+ * @property bool|\DateTime                  $updated_at
  * @property-read \App\Models\Roles\Customer $user
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereEndsAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereQuantity($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereStripeId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereStripePlan($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereTrialEndsAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereUserId($value)
+ * @method static Builder|Subscription newModelQuery()
+ * @method static Builder|Subscription newQuery()
+ * @method static Builder|Subscription query()
+ * @method static Builder|Subscription whereCreatedAt($value)
+ * @method static Builder|Subscription whereEndsAt($value)
+ * @method static Builder|Subscription whereId($value)
+ * @method static Builder|Subscription whereName($value)
+ * @method static Builder|Subscription whereQuantity($value)
+ * @method static Builder|Subscription whereStripeId($value)
+ * @method static Builder|Subscription whereStripePlan($value)
+ * @method static Builder|Subscription whereTrialEndsAt($value)
+ * @method static Builder|Subscription whereUpdatedAt($value)
+ * @method static Builder|Subscription whereUserId($value)
  * @mixin \Eloquent
  */
 class Subscription extends BaseModel
 {
+
     /**
      * Attributes that should be mass-assignable.
      *
@@ -68,7 +70,7 @@ class Subscription extends BaseModel
      */
     public function setTrialEndsAtAttribute($value)
     {
-        $this->attributes['trial_ends_at'] = !empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+        $this->attributes['trial_ends_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
     }
 
     /**
@@ -79,7 +81,7 @@ class Subscription extends BaseModel
      */
     public function setEndsAtAttribute($value)
     {
-        $this->attributes['ends_at'] = !empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+        $this->attributes['ends_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
     }
 
     /**

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class SwitchportInformationController extends Controller
 {
+
     /**
      * Display a listing of the switchport information.
      *
@@ -101,7 +102,7 @@ class SwitchportInformationController extends Controller
      */
     public function edit($id)
     {
-        $portInfo       = SwitchportInformation::findOrFail($id);
+        $portInfo = SwitchportInformation::findOrFail($id);
         $networkDevices = NetworkDevice::pluck('asset_number', 'id')->all();
 
         return view('switchport_informations.edit', compact('portInfo', 'networkDevices'));

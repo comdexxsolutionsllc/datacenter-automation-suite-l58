@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class NameserverCryptokeyController extends Controller
 {
+
     /**
      * Display a listing of the nameserver cryptokeys.
      *
@@ -100,7 +101,7 @@ class NameserverCryptokeyController extends Controller
     public function edit($id)
     {
         $nameserverCryptokey = NameserverCryptokey::findOrFail($id);
-        $domains             = Domain::pluck('id', 'id')->all();
+        $domains = Domain::pluck('id', 'id')->all();
 
         return view('nameserver_cryptokeys.edit', compact('nameserverCryptokey', 'domains'));
     }

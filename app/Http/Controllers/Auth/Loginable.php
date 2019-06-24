@@ -6,6 +6,7 @@ use App\Models\Roles\RoleCollection;
 
 trait Loginable
 {
+
     public static function bootLoginable()
     {
         self::setGuestMiddleware();

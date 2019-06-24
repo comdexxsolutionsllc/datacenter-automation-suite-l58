@@ -3,33 +3,35 @@
 namespace App\Models\General;
 
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 use Spatie\Permission\Models\Permission as BasePermission;
 
 /**
  * App\Models\General\Permission
  *
- * @property int $id
- * @property string $name
- * @property string $guard_name
- * @property bool|\DateTime $created_at
- * @property bool|\DateTime $updated_at
+ * @property int                                                                                  $id
+ * @property string                                                                               $name
+ * @property string                                                                               $guard_name
+ * @property bool|\DateTime                                                                       $created_at
+ * @property bool|\DateTime                                                                       $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[] $permissions
- * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Role[] $roles
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Roles\Customer[] $users
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\Spatie\Permission\Models\Permission permission($permissions)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission query()
- * @method static \Illuminate\Database\Eloquent\Builder|\Spatie\Permission\Models\Permission role($roles, $guard = null)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission whereGuardName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Permission whereUpdatedAt($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Role[]       $roles
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Roles\Customer[]           $users
+ * @method static Builder|Permission newModelQuery()
+ * @method static Builder|Permission newQuery()
+ * @method static Builder|BasePermission permission($permissions)
+ * @method static Builder|Permission query()
+ * @method static Builder|BasePermission role($roles, $guard = null)
+ * @method static Builder|Permission whereCreatedAt($value)
+ * @method static Builder|Permission whereGuardName($value)
+ * @method static Builder|Permission whereId($value)
+ * @method static Builder|Permission whereName($value)
+ * @method static Builder|Permission whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Permission extends BasePermission
 {
+
     /**
      * Attributes that should be mass-assignable.
      *

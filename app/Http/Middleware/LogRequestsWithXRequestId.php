@@ -7,6 +7,7 @@ use Log;
 
 class LogRequestsWithXRequestId
 {
+
     /**
      * Handle an incoming request.
      *
@@ -17,11 +18,11 @@ class LogRequestsWithXRequestId
      */
     public function handle($request, Closure $next)
     {
-        $xReqId    = $request->headers->get('x-request-id');
+        $xReqId = $request->headers->get('x-request-id');
         $ipAddress = $request->ip();
 
         foreach ($request->all() as $type => $payload) {
-            if (!is_array($payload)) {
+            if (! is_array($payload)) {
                 Log::channel('x-request-id')->debug("[{$xReqId}] [{$ipAddress}]: {$type} => {$payload}");
             }
         }

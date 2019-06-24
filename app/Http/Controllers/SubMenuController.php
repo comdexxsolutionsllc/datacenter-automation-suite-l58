@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class SubMenuController extends Controller
 {
+
     /**
      * Display a listing of the sub menus.
      *
@@ -29,7 +30,7 @@ class SubMenuController extends Controller
      */
     public function create()
     {
-        $menus    = Menu::pluck('text', 'id')->all();
+        $menus = Menu::pluck('text', 'id')->all();
         $submenus = Submenu::pluck('id', 'id')->all();
 
         return view('sub_menus.create', compact('menus', 'submenus'));
@@ -104,8 +105,8 @@ class SubMenuController extends Controller
      */
     public function edit($id)
     {
-        $subMenu  = SubMenu::findOrFail($id);
-        $menus    = Menu::pluck('text', 'id')->all();
+        $subMenu = SubMenu::findOrFail($id);
+        $menus = Menu::pluck('text', 'id')->all();
         $submenus = Submenu::pluck('id', 'id')->all();
 
         return view('sub_menus.edit', compact('subMenu', 'menus', 'submenus'));

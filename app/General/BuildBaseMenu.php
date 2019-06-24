@@ -7,6 +7,7 @@ use Illuminate\Support\Collection;
 
 class BuildBaseMenu extends ProcessMenu implements MenuBuilder
 {
+
     /**
      * @var string
      */
@@ -29,10 +30,10 @@ class BuildBaseMenu extends ProcessMenu implements MenuBuilder
      */
     public static function buildMenu(): Collection
     {
-        $routes      = static::filterRoutes(static::getAllUris());
+        $routes = static::filterRoutes(static::getAllUris());
         $routeTitles = static::unchunkRoutes($routes);
 
-        static::$menu     = static::prepareMenu($routeTitles, $routes);
+        static::$menu = static::prepareMenu($routeTitles, $routes);
         $menuWithoutIcons = static::rArrayMergeDistinct(self::buildTextForMenu(), self::buildUrlsForMenu());
 
         $icons = array_pad([], sizeof($routes), ['icon' => static::$baseIconSet]);

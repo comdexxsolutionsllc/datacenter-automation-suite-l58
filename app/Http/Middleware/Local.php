@@ -7,6 +7,7 @@ use Opis\Closure\SecurityException;
 
 class Local
 {
+
     /**
      * Handle an incoming request.
      *
@@ -17,7 +18,7 @@ class Local
      */
     public function handle($request, Closure $next)
     {
-        if (!in_array(app()->environment(), ['development', 'local'])) {
+        if (! in_array(app()->environment(), ['development', 'local'])) {
             return response()->view('errors.security-exception')->withException(new SecurityException(null));
         }
 

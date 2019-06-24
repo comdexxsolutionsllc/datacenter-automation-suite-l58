@@ -11,6 +11,7 @@ use Illuminate\Console\Command;
  */
 class MakePHPDevelopmentReports extends Command
 {
+
     /**
      * The name and signature of the console command.
      *

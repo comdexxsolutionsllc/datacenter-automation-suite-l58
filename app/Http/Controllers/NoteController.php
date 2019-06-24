@@ -15,6 +15,7 @@ use Illuminate\View\View;
  */
 class NoteController extends Controller
 {
+
     /**
      * Display a listing of the notes.
      *

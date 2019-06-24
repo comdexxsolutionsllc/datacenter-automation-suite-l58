@@ -13,6 +13,7 @@ use GraphQL\Type\Definition\Type;
  */
 class User extends GraphQLType
 {
+
     /**
      * @var array
      */

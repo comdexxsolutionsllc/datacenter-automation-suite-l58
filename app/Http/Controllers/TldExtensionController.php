@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class TldExtensionController extends Controller
 {
+
     /**
      * Display a listing of the tld extensions.
      *

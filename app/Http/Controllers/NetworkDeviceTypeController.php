@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class NetworkDeviceTypeController extends Controller
 {
+
     /**
      * Display a listing of the network device types.
      *

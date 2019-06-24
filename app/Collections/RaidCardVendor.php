@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class RaidCardVendor extends Collection
 {
+
     /**
      * @var array
      */

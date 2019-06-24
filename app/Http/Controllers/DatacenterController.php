@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class DatacenterController extends Controller
 {
+
     /**
      * Display a listing of the datacenters.
      *

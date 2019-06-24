@@ -14,6 +14,7 @@ use Illuminate\Support\Str;
  */
 class DCASHelper
 {
+
     /**
      * Get currently used guard name with path.
      *
@@ -59,11 +60,11 @@ class DCASHelper
      */
     public static function makeSerialNumber(): string
     {
-        $alpha   = range('A', 'Z');
+        $alpha = range('A', 'Z');
         $numbers = range(0, 9);
 
         $secondValues = array_rand($alpha, 2);
-        $thirdValues  = array_rand($numbers, 4);
+        $thirdValues = array_rand($numbers, 4);
 
         $serialNumber = $numbers[array_rand($numbers)] . $alpha[$secondValues[0]] . $alpha[$secondValues[1]] . $numbers[$thirdValues[0]] . $numbers[$thirdValues[1]] . $numbers[$thirdValues[2]] . $numbers[$thirdValues[3]] . $alpha[array_rand($alpha)] . $numbers[array_rand($numbers)] . $alpha[array_rand($alpha)];
 
@@ -77,7 +78,7 @@ class DCASHelper
      */
     public static function randomPassword(): string
     {
-        return substr(Hash::make(str_random(15)), -26, -1);
+        return substr(Hash::make(str_random(15)), - 26, - 1);
     }
 
     /**
@@ -133,7 +134,7 @@ class DCASHelper
      */
     public static function getModelsWithoutPath(): array
     {
-        $files    = self::getModels();
+        $files = self::getModels();
         $fileList = [];
 
         foreach ($files as $file) {
@@ -152,14 +153,14 @@ class DCASHelper
      */
     public static function getModels(): array
     {
-        $files    = File::allFiles(app_path('Models'));
+        $files = File::allFiles(app_path('Models'));
         $fileList = [];
 
         // optimize this mess.
         foreach ($files as $file) {
             foreach (explode(app_path(), $file) as $f) {
                 foreach (explode('.php', $f) as $modelList) {
-                    if ($modelList != '' && !Str::contains($modelList, 'BaseModel') && !Str::contains($modelList, 'BaseRole') && !Str::contains($modelList, 'RoleCollection')) {
+                    if ($modelList != '' && ! Str::contains($modelList, 'BaseModel') && ! Str::contains($modelList, 'BaseRole') && ! Str::contains($modelList, 'RoleCollection')) {
                         array_push($fileList, '\App' . str_replace('/', '\\', $modelList));
                     }
                 }

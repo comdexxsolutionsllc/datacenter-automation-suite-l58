@@ -7,6 +7,7 @@ use Flugg\Responder\Transformers\Transformer;
 
 class TechnicianTransformer extends Transformer
 {
+
     /**
      * List of available relations.
      *

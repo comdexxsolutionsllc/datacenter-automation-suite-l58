@@ -9,12 +9,15 @@ namespace App\General;
  */
 class TransactionId implements IdentificationFormat
 {
+
     /**
      * Generate a transaction identification number.
      *
+     * @param int $length
+     *
      * @return string
      */
-    public static function generate(): string
+    public static function generate(int $length = 5): string
     {
         $chars = array_merge(range(0, 9), range('a', 'f'));
 
@@ -22,7 +25,7 @@ class TransactionId implements IdentificationFormat
 
         $length = 64;
 
-        for ($count = 0; $count < $length; $count++) {
+        for ($count = 0; $count < $length; $count ++) {
             $transactionId .= strtoupper($chars[rand(0, count($chars) - 1)]);
         }
 

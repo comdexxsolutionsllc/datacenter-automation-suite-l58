@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
  */
 class Queue extends Collection
 {
+
     use Typeable;
 
     const AUTO_PROVISIONING_SYSTEM = 'Auto-provisioning System';

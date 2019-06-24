@@ -17,6 +17,7 @@ use Stripe\Stripe;
  */
 class SubscriptionController extends Controller
 {
+
     /**
      * Display a listing of the subscriptions.
      *
@@ -36,7 +37,7 @@ class SubscriptionController extends Controller
      */
     public function create(): View
     {
-        $users   = User::pluck('name', 'id')->all();
+        $users = User::pluck('name', 'id')->all();
         $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('subscriptions.create', compact('users', 'stripes'));
@@ -110,8 +111,8 @@ class SubscriptionController extends Controller
     public function edit($id): View
     {
         $subscription = Subscription::findOrFail($id);
-        $users        = User::pluck('name', 'id')->all();
-        $stripes      = Stripe::pluck('id', 'id')->all();
+        $users = User::pluck('name', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('subscriptions.edit', compact('subscription', 'users', 'stripes'));
     }

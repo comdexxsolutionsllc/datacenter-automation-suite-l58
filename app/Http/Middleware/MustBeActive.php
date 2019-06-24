@@ -12,6 +12,7 @@ use Closure;
  */
 class MustBeActive
 {
+
     /**
      * Handle an incoming request.
      *

@@ -7,6 +7,7 @@ use Laracsv\Export;
 
 class CSVExporter extends Controller
 {
+
     /**
      * @var \Laracsv\Export
      */

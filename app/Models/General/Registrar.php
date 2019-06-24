@@ -3,31 +3,33 @@
 namespace App\Models\General;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Models\General\Registrar
  *
- * @property int $id
- * @property string $name
- * @property string $url
- * @property string $type
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int                                                                        $id
+ * @property string                                                                     $name
+ * @property string                                                                     $url
+ * @property string                                                                     $type
+ * @property \Illuminate\Support\Carbon|null                                            $created_at
+ * @property \Illuminate\Support\Carbon|null                                            $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Domain[] $domains
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar whereUrl($value)
+ * @method static Builder|Registrar newModelQuery()
+ * @method static Builder|Registrar newQuery()
+ * @method static Builder|Registrar query()
+ * @method static Builder|Registrar whereCreatedAt($value)
+ * @method static Builder|Registrar whereId($value)
+ * @method static Builder|Registrar whereName($value)
+ * @method static Builder|Registrar whereType($value)
+ * @method static Builder|Registrar whereUpdatedAt($value)
+ * @method static Builder|Registrar whereUrl($value)
  * @mixin \Eloquent
  */
 class Registrar extends BaseModel
 {
+
     /**
      * @var array
      */

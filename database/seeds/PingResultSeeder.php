@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 
 class PingResultSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *

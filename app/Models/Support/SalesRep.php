@@ -6,36 +6,38 @@ use App\Models\BaseModel;
 use App\Models\General\Company;
 use App\Models\General\Reseller;
 use App\Models\Roles\Employee;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Models\Support\SalesRep
  *
- * @property int $id
- * @property int $employee_id
- * @property int $company_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int                                                                         $id
+ * @property int                                                                         $employee_id
+ * @property int                                                                         $company_id
+ * @property \Illuminate\Support\Carbon|null                                             $created_at
+ * @property \Illuminate\Support\Carbon|null                                             $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Company[] $company
- * @property-read \App\Models\Roles\Employee $employee
- * @property-read \App\Models\General\Reseller $reseller
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereCompanyId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereEmployeeId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereUpdatedAt($value)
+ * @property-read \App\Models\Roles\Employee                                             $employee
+ * @property-read \App\Models\General\Reseller                                           $reseller
+ * @method static Builder|SalesRep newModelQuery()
+ * @method static Builder|SalesRep newQuery()
+ * @method static Builder|SalesRep query()
+ * @method static Builder|SalesRep whereCompanyId($value)
+ * @method static Builder|SalesRep whereCreatedAt($value)
+ * @method static Builder|SalesRep whereEmployeeId($value)
+ * @method static Builder|SalesRep whereId($value)
+ * @method static Builder|SalesRep whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class SalesRep extends BaseModel
 {
+
     /**
      * @var array
      */
-    protected $fillable = ['employee_id', 'company_id', ];
+    protected $fillable = ['employee_id', 'company_id',];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany

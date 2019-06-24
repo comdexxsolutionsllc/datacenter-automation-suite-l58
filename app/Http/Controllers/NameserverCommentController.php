@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class NameserverCommentController extends Controller
 {
+
     /**
      * Display a listing of the nameserver comments.
      *
@@ -100,7 +101,7 @@ class NameserverCommentController extends Controller
     public function edit($id)
     {
         $nameserverComment = NameserverComment::findOrFail($id);
-        $domains           = Domain::pluck('id', 'id')->all();
+        $domains = Domain::pluck('id', 'id')->all();
 
         return view('nameserver_comments.edit', compact('nameserverComment', 'domains'));
     }

@@ -16,6 +16,7 @@ use Stripe\Stripe;
  */
 class UserController extends Controller
 {
+
     /**
      * Display a listing of the users.
      *
@@ -104,7 +105,7 @@ class UserController extends Controller
      */
     public function edit($id): View
     {
-        $user    = User::findOrFail($id);
+        $user = User::findOrFail($id);
         $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('users.edit', compact('user', 'stripes'));

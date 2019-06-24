@@ -17,6 +17,7 @@ use Illuminate\View\View;
  */
 class TicketController extends Controller
 {
+
     /**
      * Display a listing of the tickets.
      *
@@ -36,8 +37,8 @@ class TicketController extends Controller
      */
     public function create(): View
     {
-        $tickets     = Ticket::pluck('id', 'id')->all();
-        $statuses    = Status::pluck('name', 'id')->all();
+        $tickets = Ticket::pluck('id', 'id')->all();
+        $statuses = Status::pluck('name', 'id')->all();
         $departments = Department::pluck('name', 'id')->all();
 
         return view('tickets.create', compact('tickets', 'statuses', 'departments'));
@@ -111,9 +112,9 @@ class TicketController extends Controller
      */
     public function edit($id): View
     {
-        $ticket      = Ticket::findOrFail($id);
-        $tickets     = Ticket::pluck('id', 'id')->all();
-        $statuses    = Status::pluck('name', 'id')->all();
+        $ticket = Ticket::findOrFail($id);
+        $tickets = Ticket::pluck('id', 'id')->all();
+        $statuses = Status::pluck('name', 'id')->all();
         $departments = Department::pluck('name', 'id')->all();
 
         return view('tickets.edit', compact('ticket', 'tickets', 'statuses', 'departments'));

@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class TechnicianController extends Controller
 {
+
     /**
      * Display a listing of the technicians.
      *
@@ -30,7 +31,7 @@ class TechnicianController extends Controller
     public function create()
     {
         $departments = Department::pluck('name', 'id')->all();
-        $users       = User::pluck('name', 'id')->all();
+        $users = User::pluck('name', 'id')->all();
 
         return view('technicians.create', compact('departments', 'users'));
     }
@@ -97,9 +98,9 @@ class TechnicianController extends Controller
      */
     public function edit($id)
     {
-        $technician  = Technician::findOrFail($id);
+        $technician = Technician::findOrFail($id);
         $departments = Department::pluck('name', 'id')->all();
-        $users       = User::pluck('name', 'id')->all();
+        $users = User::pluck('name', 'id')->all();
 
         return view('technicians.edit', compact('technician', 'departments', 'users'));
     }

@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class PowerSupplyUnit extends Collection
 {
+
     /**
      * @var array
      */

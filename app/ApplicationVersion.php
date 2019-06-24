@@ -9,6 +9,7 @@ namespace App;
  */
 class ApplicationVersion
 {
+
     public const API = '0.0.0-alpha.1';
 
     public const BASE = '0.0.0-alpha.1';

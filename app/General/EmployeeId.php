@@ -11,6 +11,7 @@ use OutOfBoundsException;
  */
 class EmployeeId implements IdentificationFormat
 {
+
     protected const LOWER_BOUNDS = 4;
 
     /**
@@ -30,7 +31,7 @@ class EmployeeId implements IdentificationFormat
 
         $employeeId = 'EMP';
 
-        for ($count = 0; $count < $length; $count++) {
+        for ($count = 0; $count < $length; $count ++) {
             $employeeId .= strtoupper($chars[rand(0, count($chars) - 1)]);
         }
 

@@ -11,6 +11,7 @@ use Illuminate\Console\Command;
  */
 class ClearProjectFiles extends Command
 {
+
     /**
      * The name and signature of the console command.
      *

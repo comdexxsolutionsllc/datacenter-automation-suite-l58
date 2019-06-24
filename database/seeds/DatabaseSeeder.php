@@ -5,6 +5,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 
 class DatabaseSeeder extends Seeder
 {
+
     /**
      * @var \Symfony\Component\Console\Output\ConsoleOutput
      */

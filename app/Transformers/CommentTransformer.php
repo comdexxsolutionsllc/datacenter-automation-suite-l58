@@ -7,6 +7,7 @@ use Flugg\Responder\Transformers\Transformer;
 
 class CommentTransformer extends Transformer
 {
+
     /**
      * List of available relations.
      *

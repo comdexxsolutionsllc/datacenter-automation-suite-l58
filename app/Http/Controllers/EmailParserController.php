@@ -8,6 +8,7 @@ use PhpMimeMailParser\Parser;
 
 class EmailParserController extends Controller
 {
+
     /**
      * Handle the incoming request.
      *
@@ -29,7 +30,7 @@ class EmailParserController extends Controller
 
         $messageId = str_replace('>', '', str_replace('<', '', $parser->getHeader('Message-Id')));
 
-        if (!File::exists($fileName = storage_path('attachments' . DIRECTORY_SEPARATOR . $messageId))) {
+        if (! File::exists($fileName = storage_path('attachments' . DIRECTORY_SEPARATOR . $messageId))) {
             $savedAttachments = $parser->saveAttachments($fileName, true, Parser::ATTACHMENT_RANDOM_FILENAME);
         }
 

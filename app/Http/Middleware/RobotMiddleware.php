@@ -7,6 +7,7 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 
 class RobotMiddleware extends RobotsMiddleware
 {
+
     /**
      * @param \Illuminate\Http\Request $request
      *

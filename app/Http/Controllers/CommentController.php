@@ -15,6 +15,7 @@ use Illuminate\View\View;
  */
 class CommentController extends Controller
 {
+
     /**
      * Display a listing of the comments.
      *

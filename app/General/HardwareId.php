@@ -11,6 +11,7 @@ use OutOfBoundsException;
  */
 class HardwareId implements IdentificationFormat
 {
+
     protected const LOWER_BOUNDS = 4;
 
     /**
@@ -30,7 +31,7 @@ class HardwareId implements IdentificationFormat
 
         $hardwareId = 'HW';
 
-        for ($count = 0; $count < $length; $count++) {
+        for ($count = 0; $count < $length; $count ++) {
             $hardwareId .= strtoupper($chars[rand(0, count($chars) - 1)]);
         }
 

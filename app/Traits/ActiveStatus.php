@@ -11,12 +11,13 @@ use Carbon\Carbon;
  */
 trait ActiveStatus
 {
+
     /**
      * @return bool
      */
     public function isIdle(): bool
     {
-        return !$this->isActive();
+        return ! $this->isActive();
     }
 
     /**

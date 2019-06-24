@@ -3,35 +3,37 @@
 namespace App\Models\General;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\General\Product
  *
- * @property int $id
- * @property string $qty On-hand qty
- * @property string $name
- * @property string|null $description
- * @property bool $taxable
- * @property bool $lineItem
- * @property string $price
+ * @property int                             $id
+ * @property string                          $qty On-hand qty
+ * @property string                          $name
+ * @property string|null                     $description
+ * @property bool                            $taxable
+ * @property bool                            $lineItem
+ * @property string                          $price
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereLineItem($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product wherePrice($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereQty($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereTaxable($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product whereUpdatedAt($value)
+ * @method static Builder|Product newModelQuery()
+ * @method static Builder|Product newQuery()
+ * @method static Builder|Product query()
+ * @method static Builder|Product whereCreatedAt($value)
+ * @method static Builder|Product whereDescription($value)
+ * @method static Builder|Product whereId($value)
+ * @method static Builder|Product whereLineItem($value)
+ * @method static Builder|Product whereName($value)
+ * @method static Builder|Product wherePrice($value)
+ * @method static Builder|Product whereQty($value)
+ * @method static Builder|Product whereTaxable($value)
+ * @method static Builder|Product whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Product extends BaseModel
 {
+
     /**
      * @var array
      */

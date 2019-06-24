@@ -12,6 +12,7 @@ use ReflectionClass;
  */
 trait Typeable
 {
+
     /**
      * @return \Illuminate\Support\Collection
      *

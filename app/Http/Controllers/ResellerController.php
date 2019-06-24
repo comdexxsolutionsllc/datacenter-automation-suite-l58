@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 
 class ResellerController extends Controller
 {
+
     /**
      * Display a listing of the resellers.
      *
@@ -30,7 +31,7 @@ class ResellerController extends Controller
      */
     public function create()
     {
-        $accounts  = Account::pluck('id', 'id')->all();
+        $accounts = Account::pluck('id', 'id')->all();
         $companies = Company::pluck('name', 'id')->all();
         $salesreps = Salesrep::pluck('id', 'id')->all();
 
@@ -101,8 +102,8 @@ class ResellerController extends Controller
      */
     public function edit($id)
     {
-        $reseller  = Reseller::findOrFail($id);
-        $accounts  = Account::pluck('id', 'id')->all();
+        $reseller = Reseller::findOrFail($id);
+        $accounts = Account::pluck('id', 'id')->all();
         $companies = Company::pluck('name', 'id')->all();
         $salesreps = Salesrep::pluck('id', 'id')->all();
 

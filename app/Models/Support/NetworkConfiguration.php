@@ -3,29 +3,31 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Models\Support\NetworkConfiguration
  *
- * @property int $id
- * @property int $switchport_information_id
- * @property string $configuration
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int                                                                                       $id
+ * @property int                                                                                       $switchport_information_id
+ * @property string                                                                                    $configuration
+ * @property \Illuminate\Support\Carbon|null                                                           $created_at
+ * @property \Illuminate\Support\Carbon|null                                                           $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\SwitchportInformation[] $switchportInformation
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration whereConfiguration($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration whereSwitchportInformationId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration whereUpdatedAt($value)
+ * @method static Builder|NetworkConfiguration newModelQuery()
+ * @method static Builder|NetworkConfiguration newQuery()
+ * @method static Builder|NetworkConfiguration query()
+ * @method static Builder|NetworkConfiguration whereConfiguration($value)
+ * @method static Builder|NetworkConfiguration whereCreatedAt($value)
+ * @method static Builder|NetworkConfiguration whereId($value)
+ * @method static Builder|NetworkConfiguration whereSwitchportInformationId($value)
+ * @method static Builder|NetworkConfiguration whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class NetworkConfiguration extends BaseModel
 {
+
     /**
      * @var array
      */

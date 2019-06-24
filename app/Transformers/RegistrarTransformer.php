@@ -7,6 +7,7 @@ use Flugg\Responder\Transformers\Transformer;
 
 class RegistrarTransformer extends Transformer
 {
+
     /**
      * List of available relations.
      *

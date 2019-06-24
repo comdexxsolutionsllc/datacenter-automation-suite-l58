@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class ControlPanelVendor extends Collection
 {
+
     /**
      * @var array
      */

@@ -14,6 +14,7 @@ use Illuminate\Support\ServiceProvider;
  */
 class TransformerServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap services.
      *

@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 interface MenuBuilder
 {
+
     /**
      * Output menu.
      *

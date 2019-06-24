@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class CpuVendor extends Collection
 {
+
     /**
      * @var array
      */

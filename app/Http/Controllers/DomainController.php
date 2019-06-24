@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class DomainController extends Controller
 {
+
     /**
      * Display a listing of the domains.
      *
@@ -29,7 +30,7 @@ class DomainController extends Controller
      */
     public function create()
     {
-        $accounts   = Account::pluck('id', 'id')->all();
+        $accounts = Account::pluck('id', 'id')->all();
         $registrars = Registrar::pluck('name', 'id')->all();
 
         return view('domains.create', compact('accounts', 'registrars'));
@@ -77,7 +78,7 @@ class DomainController extends Controller
 
         $data = $request->validate($rules);
 
-        $data['active']  = $request->has('active');
+        $data['active'] = $request->has('active');
         $data['monitor'] = $request->has('monitor');
 
         return $data;
@@ -106,8 +107,8 @@ class DomainController extends Controller
      */
     public function edit($id)
     {
-        $domain     = Domain::findOrFail($id);
-        $accounts   = Account::pluck('id', 'id')->all();
+        $domain = Domain::findOrFail($id);
+        $accounts = Account::pluck('id', 'id')->all();
         $registrars = Registrar::pluck('name', 'id')->all();
 
         return view('domains.edit', compact('domain', 'accounts', 'registrars'));

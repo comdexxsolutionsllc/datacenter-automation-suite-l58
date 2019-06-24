@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class RegistrarController extends Controller
 {
+
     /**
      * Display a listing of the registrars.
      *

@@ -7,6 +7,7 @@ use Illuminate\Support\Collection;
 
 class ProcessMenu
 {
+
     /**
      * @var \Illuminate\Support\Collection
      */
@@ -42,7 +43,7 @@ class ProcessMenu
          * Strip core site, API, debugging, & testing routes from output.
          */
         foreach ($routes as $route) {
-            if (!preg_match('/^(?:\/?)(?:api|broadcasting|_debugbar|_dusk|graphql|horizon|login|logout|metrics|oauth|opcache-api|password|register|telescope)(?:\/?)/', $route)) {
+            if (! preg_match('/^(?:\/?)(?:api|broadcasting|_debugbar|_dusk|graphql|horizon|login|logout|metrics|oauth|opcache-api|password|register|telescope)(?:\/?)/', $route)) {
                 array_push($filtered, $route);
             }
         }
@@ -81,7 +82,7 @@ class ProcessMenu
          * Strip dashboard roots, metrics, create, & edit routes from output.
          */
         foreach ($filtered as $filter) {
-            if (!preg_match('/^(dashboard\/internal\/metrics)/', $filter) && !preg_match('/\/?{\w+}\/?/', $filter) && !preg_match('/\/{1}create/', $filter) && !preg_match('/dashboard\/internal/', $filter) && !preg_match('/dashboard\/vendor/', $filter) && !preg_match('/dashboard\/whitegloves/', $filter)) {
+            if (! preg_match('/^(dashboard\/internal\/metrics)/', $filter) && ! preg_match('/\/?{\w+}\/?/', $filter) && ! preg_match('/\/{1}create/', $filter) && ! preg_match('/dashboard\/internal/', $filter) && ! preg_match('/dashboard\/vendor/', $filter) && ! preg_match('/dashboard\/whitegloves/', $filter)) {
                 array_push($output, $filter);
             }
         }

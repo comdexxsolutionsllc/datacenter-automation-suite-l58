@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Request;
 
 class DeviceAPIController extends Controller
 {
+
     /**
      * @return \App\Models\Support\Device[]|\Illuminate\Database\Eloquent\Collection
      */
@@ -27,7 +28,7 @@ class DeviceAPIController extends Controller
         return array_merge((new DeviceTransformer)->transform($device = Device::find($id)), [
             'pingResults' => $device->pingResults->map(function ($pingResult) {
                 return (new PingResultsTransformer)->transform($pingResult);
-            })
+            }),
         ]);
     }
 

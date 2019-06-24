@@ -7,6 +7,7 @@ use Laravel\Horizon\HorizonApplicationServiceProvider;
 
 class HorizonServiceProvider extends HorizonApplicationServiceProvider
 {
+
     /**
      * Bootstrap any application services.
      *
@@ -29,8 +30,7 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
     protected function gate()
     {
         Gate::define('viewHorizon', function ($user) {
-            return in_array($user->email, [
-            ]);
+            return in_array($user->email, []);
         });
     }
 

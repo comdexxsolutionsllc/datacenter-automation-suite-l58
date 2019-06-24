@@ -10,6 +10,7 @@ use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class MenuServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap services.
      *
@@ -52,7 +53,7 @@ class MenuServiceProvider extends ServiceProvider
                     ]);
                 }
 
-                if (!$page['isTitle']) {
+                if (! $page['isTitle']) {
                     $item = [
                         'id'     => 10 . $page['id'],
                         'text'   => $page['text'],

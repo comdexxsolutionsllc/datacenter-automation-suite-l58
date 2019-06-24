@@ -3,33 +3,35 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\ResourceName
  *
- * @property int $id
- * @property string $partition
- * @property int $service_namespace_id
- * @property int $service_region_id
- * @property string $accountable_type
- * @property int $accountable_id
+ * @property int                             $id
+ * @property string                          $partition
+ * @property int                             $service_namespace_id
+ * @property int                             $service_region_id
+ * @property string                          $accountable_type
+ * @property int                             $accountable_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereAccountableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereAccountableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName wherePartition($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereServiceNamespaceId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereServiceRegionId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceName whereUpdatedAt($value)
+ * @method static Builder|ResourceName newModelQuery()
+ * @method static Builder|ResourceName newQuery()
+ * @method static Builder|ResourceName query()
+ * @method static Builder|ResourceName whereAccountableId($value)
+ * @method static Builder|ResourceName whereAccountableType($value)
+ * @method static Builder|ResourceName whereCreatedAt($value)
+ * @method static Builder|ResourceName whereId($value)
+ * @method static Builder|ResourceName wherePartition($value)
+ * @method static Builder|ResourceName whereServiceNamespaceId($value)
+ * @method static Builder|ResourceName whereServiceRegionId($value)
+ * @method static Builder|ResourceName whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class ResourceName extends BaseModel
 {
+
     /**
      * @var array
      */

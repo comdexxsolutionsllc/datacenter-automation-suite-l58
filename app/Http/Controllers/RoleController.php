@@ -15,6 +15,7 @@ use Illuminate\View\View;
  */
 class RoleController extends Controller
 {
+
     /**
      * Display a listing of the roles.
      *

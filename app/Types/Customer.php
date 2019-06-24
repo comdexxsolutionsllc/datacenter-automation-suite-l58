@@ -11,6 +11,7 @@ use Zlikavac32\Enum\Enum;
  */
 abstract class Customer extends Enum
 {
+
     /**
      * @var string
      */
@@ -36,23 +37,41 @@ abstract class Customer extends Enum
     protected static function enumerate(): array
     {
         return [
-            'NO_ACCESS_DISABLED' => new class('NOAD') extends Customer {
+            'NO_ACCESS_DISABLED' => new class('NOAD') extends Customer
+            {
+
             },
-            'DEMO_GUEST'         => new class('DEMG') extends Customer {
+            'DEMO_GUEST'         => new class('DEMG') extends Customer
+            {
+
             },
-            'EMAIL_USER'         => new class('EMAU') extends Customer {
+            'EMAIL_USER'         => new class('EMAU') extends Customer
+            {
+
             },
-            'PHONE_USER'         => new class('PHOU') extends Customer {
+            'PHONE_USER'         => new class('PHOU') extends Customer
+            {
+
             },
-            'BILLING_USER'       => new class('BILU') extends Customer {
+            'BILLING_USER'       => new class('BILU') extends Customer
+            {
+
             },
-            'PORTAL_USER'        => new class('PORU') extends Customer {
+            'PORTAL_USER'        => new class('PORU') extends Customer
+            {
+
             },
-            'API_READ_USER'      => new class('APRU') extends Customer {
+            'API_READ_USER'      => new class('APRU') extends Customer
+            {
+
             },
-            'API_USER'           => new class('APIU') extends Customer {
+            'API_USER'           => new class('APIU') extends Customer
+            {
+
             },
-            'ALL_ACCESS_USER'    => new class('ALAU') extends Customer {
+            'ALL_ACCESS_USER'    => new class('ALAU') extends Customer
+            {
+
             },
         ];
     }

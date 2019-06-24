@@ -9,8 +9,9 @@ use OutOfBoundsException;
  *
  * @package App\General
  */
-class AccountId implements IdentificationFormat
+class AccountId implements IdentificationTypeFormat
 {
+
     protected const LOWER_BOUNDS = 4;
 
     /**
@@ -39,7 +40,7 @@ class AccountId implements IdentificationFormat
      *
      * @return string
      */
-    public static function generate($type = '', int $length = 5): string
+    public static function generate(string $type = '', int $length = 5): string
     {
         if ($length <= self::LOWER_BOUNDS) {
             return new OutOfBoundsException('Account ID length must be greater than ' . self::LOWER_BOUNDS . '.');
@@ -49,7 +50,7 @@ class AccountId implements IdentificationFormat
 
         $accountId = in_array($type, static::$accountTypes) ? $type : static::$accountTypeDefault;
 
-        for ($count = 0; $count < $length; $count++) {
+        for ($count = 0; $count < $length; $count ++) {
             $accountId .= strtoupper($chars[rand(0, count($chars) - 1)]);
         }
 

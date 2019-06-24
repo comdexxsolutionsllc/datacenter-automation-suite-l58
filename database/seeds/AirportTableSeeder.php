@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 
 class AirportTableSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *

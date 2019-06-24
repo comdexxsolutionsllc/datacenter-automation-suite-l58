@@ -14,6 +14,7 @@ use GraphQL\Type\Definition\Type;
  */
 class UpdateUserPasswordMutation extends Mutation
 {
+
     /**
      * @var array
      */
@@ -58,7 +59,7 @@ class UpdateUserPasswordMutation extends Mutation
     {
         $user = User::find($args['id']);
 
-        if (!$user) {
+        if (! $user) {
             return null;
         }
 

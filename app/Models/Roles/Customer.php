@@ -3,66 +3,68 @@
 namespace App\Models\Roles;
 
 use App\Models\Support\Ticket;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * App\Models\Roles\Customer
  *
- * @property int $id
- * @property string $account_id
- * @property string $name
- * @property string $username
- * @property string $email
- * @property bool|\DateTime $email_verified_at
- * @property string $password
- * @property string|null $stripe_id
- * @property string|null $card_brand
- * @property string|null $card_last_four
- * @property bool|\DateTime $trial_ends_at
- * @property string|null $cover
- * @property string|null $avatar
- * @property string|null $remember_token
- * @property bool|\DateTime $deleted_at
- * @property bool|\DateTime $created_at
- * @property bool|\DateTime $updated_at
- * @property string|null $last_active
- * @property string|null $cart_session_id
- * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Client[] $clients
- * @property-read string $cart_instance
+ * @property int                                                                                                            $id
+ * @property string                                                                                                         $account_id
+ * @property string                                                                                                         $name
+ * @property string                                                                                                         $username
+ * @property string                                                                                                         $email
+ * @property bool|\DateTime                                                                                                 $email_verified_at
+ * @property string                                                                                                         $password
+ * @property string|null                                                                                                    $stripe_id
+ * @property string|null                                                                                                    $card_brand
+ * @property string|null                                                                                                    $card_last_four
+ * @property bool|\DateTime                                                                                                 $trial_ends_at
+ * @property string|null                                                                                                    $cover
+ * @property string|null                                                                                                    $avatar
+ * @property string|null                                                                                                    $remember_token
+ * @property bool|\DateTime                                                                                                 $deleted_at
+ * @property bool|\DateTime                                                                                                 $created_at
+ * @property bool|\DateTime                                                                                                 $updated_at
+ * @property string|null                                                                                                    $last_active
+ * @property string|null                                                                                                    $cart_session_id
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Client[]                                       $clients
+ * @property-read string                                                                                                    $cart_instance
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
- * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[] $permissions
- * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Role[] $roles
- * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Cashier\Subscription[] $subscriptions
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
- * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Token[] $tokens
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\BaseRole permission($permissions)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\BaseRole role($roles, $guard = null)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereAccountId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereAvatar($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereCardBrand($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereCardLastFour($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereCartSessionId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereCover($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereEmail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereEmailVerifiedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereLastActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer wherePassword($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereRememberToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereStripeId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereTrialEndsAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereUsername($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[]                           $permissions
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Role[]                                 $roles
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Cashier\Subscription[]                                  $subscriptions
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[]                                     $tickets
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Token[]                                        $tokens
+ * @method static Builder|Customer newModelQuery()
+ * @method static Builder|Customer newQuery()
+ * @method static Builder|BaseRole permission($permissions)
+ * @method static Builder|Customer query()
+ * @method static Builder|BaseRole role($roles, $guard = null)
+ * @method static Builder|Customer whereAccountId($value)
+ * @method static Builder|Customer whereAvatar($value)
+ * @method static Builder|Customer whereCardBrand($value)
+ * @method static Builder|Customer whereCardLastFour($value)
+ * @method static Builder|Customer whereCartSessionId($value)
+ * @method static Builder|Customer whereCover($value)
+ * @method static Builder|Customer whereCreatedAt($value)
+ * @method static Builder|Customer whereDeletedAt($value)
+ * @method static Builder|Customer whereEmail($value)
+ * @method static Builder|Customer whereEmailVerifiedAt($value)
+ * @method static Builder|Customer whereId($value)
+ * @method static Builder|Customer whereLastActive($value)
+ * @method static Builder|Customer whereName($value)
+ * @method static Builder|Customer wherePassword($value)
+ * @method static Builder|Customer whereRememberToken($value)
+ * @method static Builder|Customer whereStripeId($value)
+ * @method static Builder|Customer whereTrialEndsAt($value)
+ * @method static Builder|Customer whereUpdatedAt($value)
+ * @method static Builder|Customer whereUsername($value)
  * @mixin \Eloquent
  */
 class Customer extends BaseRole
 {
+
     /**
      * Displayable Fields for export.
      *

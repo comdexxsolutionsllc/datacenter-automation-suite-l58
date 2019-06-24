@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
  */
 class Department extends Collection
 {
+
     use Typeable;
 
     const ACCOUNTING = 'Accounting';

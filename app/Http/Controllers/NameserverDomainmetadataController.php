@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class NameserverDomainmetadataController extends Controller
 {
+
     /**
      * Display a listing of the nameserver domainmetadatas.
      *
@@ -97,7 +98,7 @@ class NameserverDomainmetadataController extends Controller
     public function edit($id)
     {
         $domainMetadata = Domainmetadata::findOrFail($id);
-        $domains        = Domain::pluck('id', 'id')->all();
+        $domains = Domain::pluck('id', 'id')->all();
 
         return view('nameserver_domainmetadatas.edit', compact('domainMetadata', 'domains'));
     }

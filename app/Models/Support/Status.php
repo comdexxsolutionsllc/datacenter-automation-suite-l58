@@ -4,35 +4,37 @@ namespace App\Models\Support;
 
 use App\Models\BaseModel;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Models\Support\Status
  *
- * @property int $id
- * @property string $name
- * @property string|null $description
- * @property string $hexcode
- * @property int $visible
- * @property bool|\DateTime $deleted_at
- * @property bool|\DateTime $created_at
- * @property bool|\DateTime $updated_at
+ * @property int                                                                        $id
+ * @property string                                                                     $name
+ * @property string|null                                                                $description
+ * @property string                                                                     $hexcode
+ * @property int                                                                        $visible
+ * @property bool|\DateTime                                                             $deleted_at
+ * @property bool|\DateTime                                                             $created_at
+ * @property bool|\DateTime                                                             $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereHexcode($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status whereVisible($value)
+ * @method static Builder|Status newModelQuery()
+ * @method static Builder|Status newQuery()
+ * @method static Builder|Status query()
+ * @method static Builder|Status whereCreatedAt($value)
+ * @method static Builder|Status whereDeletedAt($value)
+ * @method static Builder|Status whereDescription($value)
+ * @method static Builder|Status whereHexcode($value)
+ * @method static Builder|Status whereId($value)
+ * @method static Builder|Status whereName($value)
+ * @method static Builder|Status whereUpdatedAt($value)
+ * @method static Builder|Status whereVisible($value)
  * @mixin \Eloquent
  */
 class Status extends BaseModel
 {
+
     /**
      * Attributes that should be mass-assignable.
      *

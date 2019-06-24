@@ -12,6 +12,7 @@ use Log;
  */
 class MyMailbox
 {
+
     /**
      * @param \BeyondCode\Mailbox\InboundEmail $email
      */

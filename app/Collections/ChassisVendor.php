@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class ChassisVendor extends Collection
 {
+
     /**
      * @var array
      */

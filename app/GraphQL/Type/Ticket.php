@@ -12,6 +12,7 @@ use GraphQL\Type\Definition\Type;
  */
 class Ticket extends GraphQLType
 {
+
     /**
      * @var array
      */

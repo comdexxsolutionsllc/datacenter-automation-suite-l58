@@ -4,32 +4,34 @@ namespace App\Models\Nameserver;
 
 use App\Models\BaseModel;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Nameserver\Cryptokey
  *
- * @property int $id
- * @property int $domain_id
- * @property int $flags
- * @property int|null $active
- * @property string|null $content
- * @property array $created_at
- * @property array $updated_at
+ * @property int                                $id
+ * @property int                                $domain_id
+ * @property int                                $flags
+ * @property int|null                           $active
+ * @property string|null                        $content
+ * @property array                              $created_at
+ * @property array                              $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereContent($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereDomainId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereFlags($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereUpdatedAt($value)
+ * @method static Builder|Cryptokey newModelQuery()
+ * @method static Builder|Cryptokey newQuery()
+ * @method static Builder|Cryptokey query()
+ * @method static Builder|Cryptokey whereActive($value)
+ * @method static Builder|Cryptokey whereContent($value)
+ * @method static Builder|Cryptokey whereCreatedAt($value)
+ * @method static Builder|Cryptokey whereDomainId($value)
+ * @method static Builder|Cryptokey whereFlags($value)
+ * @method static Builder|Cryptokey whereId($value)
+ * @method static Builder|Cryptokey whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Cryptokey extends BaseModel
 {
+
     /**
      * The database table used by the model.
      *

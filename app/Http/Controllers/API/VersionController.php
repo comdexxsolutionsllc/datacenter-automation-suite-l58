@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 
 class VersionController extends Controller
 {
+
     /**
      * @return array
      */

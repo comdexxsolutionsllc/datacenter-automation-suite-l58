@@ -7,6 +7,7 @@ use Closure;
 // @todo
 class Customer
 {
+
     /**
      * Handle an incoming request.
      *

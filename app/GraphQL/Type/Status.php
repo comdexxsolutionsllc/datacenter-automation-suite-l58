@@ -11,6 +11,7 @@ use Folklore\GraphQL\Support\Type as GraphQLType;
  */
 class Status extends GraphQLType
 {
+
     /**
      * @var array
      */

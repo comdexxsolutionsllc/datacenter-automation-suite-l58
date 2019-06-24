@@ -4,29 +4,31 @@ namespace App\Models\Support;
 
 use App\Models\BaseModel;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\Comment
  *
- * @property int $id
- * @property string $body
- * @property string $commentable_type
- * @property int $commentable_id
+ * @property int            $id
+ * @property string         $body
+ * @property string         $commentable_type
+ * @property int            $commentable_id
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereBody($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereCommentableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereCommentableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereUpdatedAt($value)
+ * @method static Builder|Comment newModelQuery()
+ * @method static Builder|Comment newQuery()
+ * @method static Builder|Comment query()
+ * @method static Builder|Comment whereBody($value)
+ * @method static Builder|Comment whereCommentableId($value)
+ * @method static Builder|Comment whereCommentableType($value)
+ * @method static Builder|Comment whereCreatedAt($value)
+ * @method static Builder|Comment whereId($value)
+ * @method static Builder|Comment whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Comment extends BaseModel
 {
+
     /**
      * Attributes that should be mass-assignable.
      *

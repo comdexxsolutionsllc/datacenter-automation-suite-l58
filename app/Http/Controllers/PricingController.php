@@ -7,6 +7,7 @@ use Illuminate\View\View;
 
 class PricingController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *

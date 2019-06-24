@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Request;
 
 class PingResultAPIController extends Controller
 {
+
     /**
      * @return \App\Models\Support\PingResult[]|\Illuminate\Database\Eloquent\Collection
      */

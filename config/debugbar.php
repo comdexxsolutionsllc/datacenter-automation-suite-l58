@@ -139,9 +139,9 @@ return [
             'backtrace'   => true,   // Use a backtrace to find the origin of the query in your files.
             'timeline'    => false,  // Add the queries to the timeline
             'explain'     => [                 // Show EXPLAIN output on queries
-                'enabled' => false,
-                'types'   => ['SELECT'],
-                // ['SELECT', 'INSERT', 'UPDATE', 'DELETE']; for MySQL 5.6.3+
+                                               'enabled' => false,
+                                               'types'   => ['SELECT'],
+                                               // ['SELECT', 'INSERT', 'UPDATE', 'DELETE']; for MySQL 5.6.3+
             ],
             'hints'       => true,    // Show hints for common mistakes
         ],

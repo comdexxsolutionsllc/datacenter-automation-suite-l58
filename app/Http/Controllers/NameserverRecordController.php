@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class NameserverRecordController extends Controller
 {
+
     /**
      * Display a listing of the nameserver records.
      *
@@ -104,7 +105,7 @@ class NameserverRecordController extends Controller
     public function edit($id)
     {
         $nameserverRecord = NameserverRecord::findOrFail($id);
-        $domains          = Domain::pluck('id', 'id')->all();
+        $domains = Domain::pluck('id', 'id')->all();
 
         return view('nameserver_records.edit', compact('nameserverRecord', 'domains'));
     }

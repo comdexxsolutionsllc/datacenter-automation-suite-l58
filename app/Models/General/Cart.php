@@ -3,25 +3,27 @@
 namespace App\Models\General;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\General\Cart
  *
- * @property int $id
- * @property string $cart_data
+ * @property int                             $id
+ * @property string                          $cart_data
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart whereCartData($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Cart whereUpdatedAt($value)
+ * @method static Builder|Cart newModelQuery()
+ * @method static Builder|Cart newQuery()
+ * @method static Builder|Cart query()
+ * @method static Builder|Cart whereCartData($value)
+ * @method static Builder|Cart whereCreatedAt($value)
+ * @method static Builder|Cart whereId($value)
+ * @method static Builder|Cart whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Cart extends BaseModel
 {
+
     /**
      * The attributes that are mass assignable.
      *

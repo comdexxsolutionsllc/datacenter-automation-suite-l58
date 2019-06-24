@@ -6,6 +6,7 @@ use Closure;
 
 class APIversion
 {
+
     /**
      * Handle an incoming request.
      *

@@ -3,47 +3,49 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\RaidCard
  *
- * @property int $id
- * @property string $vendor
- * @property string $model
- * @property string $launch_date
- * @property string|null $expected_discontinuance
- * @property int $data_transfer_rate
- * @property mixed $supported_devices
- * @property mixed $supported_raid_levels
- * @property int $jbod_mode
- * @property int $number_of_internal_ports
- * @property int $number_of_supported_devices
- * @property int $embedded_memory
- * @property mixed $supported_oses
+ * @property int                             $id
+ * @property string                          $vendor
+ * @property string                          $model
+ * @property string                          $launch_date
+ * @property string|null                     $expected_discontinuance
+ * @property int                             $data_transfer_rate
+ * @property mixed                           $supported_devices
+ * @property mixed                           $supported_raid_levels
+ * @property int                             $jbod_mode
+ * @property int                             $number_of_internal_ports
+ * @property int                             $number_of_supported_devices
+ * @property int                             $embedded_memory
+ * @property mixed                           $supported_oses
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereDataTransferRate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereEmbeddedMemory($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereExpectedDiscontinuance($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereJbodMode($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereLaunchDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereModel($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereNumberOfInternalPorts($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereNumberOfSupportedDevices($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereSupportedDevices($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereSupportedOses($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereSupportedRaidLevels($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\RaidCard whereVendor($value)
+ * @method static Builder|RaidCard newModelQuery()
+ * @method static Builder|RaidCard newQuery()
+ * @method static Builder|RaidCard query()
+ * @method static Builder|RaidCard whereCreatedAt($value)
+ * @method static Builder|RaidCard whereDataTransferRate($value)
+ * @method static Builder|RaidCard whereEmbeddedMemory($value)
+ * @method static Builder|RaidCard whereExpectedDiscontinuance($value)
+ * @method static Builder|RaidCard whereId($value)
+ * @method static Builder|RaidCard whereJbodMode($value)
+ * @method static Builder|RaidCard whereLaunchDate($value)
+ * @method static Builder|RaidCard whereModel($value)
+ * @method static Builder|RaidCard whereNumberOfInternalPorts($value)
+ * @method static Builder|RaidCard whereNumberOfSupportedDevices($value)
+ * @method static Builder|RaidCard whereSupportedDevices($value)
+ * @method static Builder|RaidCard whereSupportedOses($value)
+ * @method static Builder|RaidCard whereSupportedRaidLevels($value)
+ * @method static Builder|RaidCard whereUpdatedAt($value)
+ * @method static Builder|RaidCard whereVendor($value)
  * @mixin \Eloquent
  */
 class RaidCard extends BaseModel
 {
+
     /**
      * @var array
      */

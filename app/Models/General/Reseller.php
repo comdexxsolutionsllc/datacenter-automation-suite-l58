@@ -4,34 +4,36 @@ namespace App\Models\General;
 
 use App\Models\BaseModel;
 use App\Models\Support\SalesRep;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * App\Models\General\Reseller
  *
- * @property int $id
- * @property string $account_id
- * @property int $company_id
- * @property string|null $expiry_date
- * @property int $salesrep_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \App\Models\General\Company $company
+ * @property int                               $id
+ * @property string                            $account_id
+ * @property int                               $company_id
+ * @property string|null                       $expiry_date
+ * @property int                               $salesrep_id
+ * @property \Illuminate\Support\Carbon|null   $created_at
+ * @property \Illuminate\Support\Carbon|null   $updated_at
+ * @property-read \App\Models\General\Company  $company
  * @property-read \App\Models\Support\SalesRep $salesRep
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereAccountId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereCompanyId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereExpiryDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereSalesrepId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereUpdatedAt($value)
+ * @method static Builder|Reseller newModelQuery()
+ * @method static Builder|Reseller newQuery()
+ * @method static Builder|Reseller query()
+ * @method static Builder|Reseller whereAccountId($value)
+ * @method static Builder|Reseller whereCompanyId($value)
+ * @method static Builder|Reseller whereCreatedAt($value)
+ * @method static Builder|Reseller whereExpiryDate($value)
+ * @method static Builder|Reseller whereId($value)
+ * @method static Builder|Reseller whereSalesrepId($value)
+ * @method static Builder|Reseller whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Reseller extends BaseModel
 {
+
     /**
      * @var array
      */

@@ -12,6 +12,7 @@ use Laravel\Horizon\Horizon;
  */
 class AppServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap any application services.
      *

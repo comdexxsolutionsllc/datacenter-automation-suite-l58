@@ -7,6 +7,7 @@ use Flugg\Responder\Transformers\Transformer;
 
 class NetworkDeviceTransformer extends Transformer
 {
+
     /**
      * List of available relations.
      *

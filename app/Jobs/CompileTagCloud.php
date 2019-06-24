@@ -12,6 +12,7 @@ use Illuminate\Queue\SerializesModels;
 
 class CompileTagCloud implements ShouldQueue
 {
+
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /**

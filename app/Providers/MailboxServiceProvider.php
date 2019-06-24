@@ -8,6 +8,7 @@ use Illuminate\Support\ServiceProvider;
 
 class MailboxServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap services.
      *

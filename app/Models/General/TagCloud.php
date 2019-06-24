@@ -3,31 +3,33 @@
 namespace App\Models\General;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\General\TagCloud
  *
- * @property int $id
- * @property int|null $tag_type
- * @property string $keyword
- * @property int|null $frequency
- * @property int $visible
+ * @property int                             $id
+ * @property int|null                        $tag_type
+ * @property string                          $keyword
+ * @property int|null                        $frequency
+ * @property int                             $visible
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereFrequency($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereKeyword($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereTagType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud whereVisible($value)
+ * @method static Builder|TagCloud newModelQuery()
+ * @method static Builder|TagCloud newQuery()
+ * @method static Builder|TagCloud query()
+ * @method static Builder|TagCloud whereCreatedAt($value)
+ * @method static Builder|TagCloud whereFrequency($value)
+ * @method static Builder|TagCloud whereId($value)
+ * @method static Builder|TagCloud whereKeyword($value)
+ * @method static Builder|TagCloud whereTagType($value)
+ * @method static Builder|TagCloud whereUpdatedAt($value)
+ * @method static Builder|TagCloud whereVisible($value)
  * @mixin \Eloquent
  */
 class TagCloud extends BaseModel
 {
+
     /**
      * The table associated with the model.
      *

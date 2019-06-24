@@ -7,6 +7,7 @@ use Closure;
 
 class RedirectIfAuthenticated
 {
+
     /**
      * Handle an incoming request.
      *

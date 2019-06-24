@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class QueueController extends Controller
 {
+
     /**
      * Display a listing of the queues.
      *

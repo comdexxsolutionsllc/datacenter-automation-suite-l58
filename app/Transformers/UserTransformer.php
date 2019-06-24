@@ -12,6 +12,7 @@ use Flugg\Responder\Transformers\Transformer;
  */
 class UserTransformer extends Transformer
 {
+
     /**
      * List of available relations.
      *

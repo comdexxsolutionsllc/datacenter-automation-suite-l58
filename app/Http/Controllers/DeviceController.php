@@ -9,5 +9,6 @@ use Illuminate\Routing\Controller as BaseController;
 
 class DeviceController extends BaseController
 {
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

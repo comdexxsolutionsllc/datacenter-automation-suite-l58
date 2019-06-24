@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class NicVendor extends Collection
 {
+
     /**
      * @var array
      */

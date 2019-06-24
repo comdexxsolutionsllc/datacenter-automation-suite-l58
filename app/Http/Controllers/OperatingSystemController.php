@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class OperatingSystemController extends Controller
 {
+
     /**
      * Display a listing of the operating systems.
      *

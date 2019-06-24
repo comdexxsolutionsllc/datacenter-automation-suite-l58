@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
  */
 class EmailParser
 {
+
     /**
      * Keys to keep from email response.
      *

@@ -4,36 +4,38 @@ namespace App\Models\Nameserver;
 
 use App\Models\BaseModel;
 use DateTime;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Nameserver\Comment
  *
- * @property int $id
- * @property int $domain_id
- * @property string $name
- * @property string $type
- * @property int $modified_at
- * @property string $account
- * @property string $comment
- * @property array $created_at
- * @property array $updated_at
+ * @property int                                $id
+ * @property int                                $domain_id
+ * @property string                             $name
+ * @property string                             $type
+ * @property int                                $modified_at
+ * @property string                             $account
+ * @property string                             $comment
+ * @property array                              $created_at
+ * @property array                              $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereAccount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereComment($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereDomainId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereModifiedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Comment whereUpdatedAt($value)
+ * @method static Builder|Comment newModelQuery()
+ * @method static Builder|Comment newQuery()
+ * @method static Builder|Comment query()
+ * @method static Builder|Comment whereAccount($value)
+ * @method static Builder|Comment whereComment($value)
+ * @method static Builder|Comment whereCreatedAt($value)
+ * @method static Builder|Comment whereDomainId($value)
+ * @method static Builder|Comment whereId($value)
+ * @method static Builder|Comment whereModifiedAt($value)
+ * @method static Builder|Comment whereName($value)
+ * @method static Builder|Comment whereType($value)
+ * @method static Builder|Comment whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Comment extends BaseModel
 {
+
     /**
      * The database table used by the model.
      *

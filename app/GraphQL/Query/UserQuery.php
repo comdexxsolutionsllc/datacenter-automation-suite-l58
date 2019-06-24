@@ -15,6 +15,7 @@ use GraphQL\Type\Definition\Type;
  */
 class UserQuery extends Query
 {
+
     /**
      * @var array
      */

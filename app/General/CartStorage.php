@@ -12,6 +12,7 @@ use Darryldecode\Cart\CartCollection;
  */
 class CartStorage
 {
+
     /**
      * Get an entry from the database.
      *

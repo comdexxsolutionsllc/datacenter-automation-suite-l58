@@ -7,6 +7,7 @@ namespace App\General;
  */
 class Pluralize
 {
+
     /**
      * @var array
      */

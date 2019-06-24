@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+
     /**
      * Display a listing of the customers.
      *
@@ -30,7 +31,7 @@ class CustomerController extends Controller
     public function create()
     {
         $accounts = Account::pluck('id', 'id')->all();
-        $stripes  = Stripe::pluck('id', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('customers.create', compact('accounts', 'stripes'));
     }
@@ -110,7 +111,7 @@ class CustomerController extends Controller
     {
         $customer = Customer::findOrFail($id);
         $accounts = Account::pluck('id', 'id')->all();
-        $stripes  = Stripe::pluck('id', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('customers.edit', compact('customer', 'accounts', 'stripes'));
     }

@@ -15,6 +15,7 @@ use Illuminate\View\View;
  */
 class PermissionController extends Controller
 {
+
     /**
      * Display a listing of the permissions.
      *

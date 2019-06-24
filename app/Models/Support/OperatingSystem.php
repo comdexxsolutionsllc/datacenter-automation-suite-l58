@@ -3,33 +3,35 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\OperatingSystem
  *
- * @property int $id
- * @property string $architecture
- * @property string $type
- * @property string $name
- * @property string $notes
- * @property int $active
+ * @property int                             $id
+ * @property string                          $architecture
+ * @property string                          $type
+ * @property string                          $name
+ * @property string                          $notes
+ * @property int                             $active
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereArchitecture($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereNotes($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\OperatingSystem whereUpdatedAt($value)
+ * @method static Builder|OperatingSystem newModelQuery()
+ * @method static Builder|OperatingSystem newQuery()
+ * @method static Builder|OperatingSystem query()
+ * @method static Builder|OperatingSystem whereActive($value)
+ * @method static Builder|OperatingSystem whereArchitecture($value)
+ * @method static Builder|OperatingSystem whereCreatedAt($value)
+ * @method static Builder|OperatingSystem whereId($value)
+ * @method static Builder|OperatingSystem whereName($value)
+ * @method static Builder|OperatingSystem whereNotes($value)
+ * @method static Builder|OperatingSystem whereType($value)
+ * @method static Builder|OperatingSystem whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class OperatingSystem extends BaseModel
 {
+
     /**
      * @var array
      */

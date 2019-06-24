@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 
 class StatusTableSeeder extends Seeder
 {
+
     public function run()
     {
         $statuses = json_decode(File::get(database_path('schema/statuses.json')), true);

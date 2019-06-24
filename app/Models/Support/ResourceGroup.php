@@ -3,29 +3,31 @@
 namespace App\Models\Support;
 
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * App\Models\Support\ResourceGroup
  *
- * @property int $id
- * @property string $serial_number
- * @property mixed $service_ids
- * @property string|null $notes
+ * @property int                             $id
+ * @property string                          $serial_number
+ * @property mixed                           $service_ids
+ * @property string|null                     $notes
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup whereNotes($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup whereSerialNumber($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup whereServiceIds($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ResourceGroup whereUpdatedAt($value)
+ * @method static Builder|ResourceGroup newModelQuery()
+ * @method static Builder|ResourceGroup newQuery()
+ * @method static Builder|ResourceGroup query()
+ * @method static Builder|ResourceGroup whereCreatedAt($value)
+ * @method static Builder|ResourceGroup whereId($value)
+ * @method static Builder|ResourceGroup whereNotes($value)
+ * @method static Builder|ResourceGroup whereSerialNumber($value)
+ * @method static Builder|ResourceGroup whereServiceIds($value)
+ * @method static Builder|ResourceGroup whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class ResourceGroup extends BaseModel
 {
+
     /**
      * @var array
      */

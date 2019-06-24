@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class InvoiceItemController extends Controller
 {
+
     /**
      * Display a listing of the invoice items.
      *
@@ -100,8 +101,8 @@ class InvoiceItemController extends Controller
     public function edit($id)
     {
         $invoiceItem = InvoiceItem::findOrFail($id);
-        $invoices    = Invoice::pluck('subtotal', 'id')->all();
-        $services    = Service::pluck('service_type', 'id')->all();
+        $invoices = Invoice::pluck('subtotal', 'id')->all();
+        $services = Service::pluck('service_type', 'id')->all();
 
         return view('invoice_items.edit', compact('invoiceItem', 'invoices', 'services'));
     }

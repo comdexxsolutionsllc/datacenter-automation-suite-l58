@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class NameserverTsigkeyController extends Controller
 {
+
     /**
      * Display a listing of the nameserver tsigkeys.
      *

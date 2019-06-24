@@ -9,6 +9,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateAboutUsRequest extends FormRequest
 {
+
     protected $guard;
 
     public function __construct(

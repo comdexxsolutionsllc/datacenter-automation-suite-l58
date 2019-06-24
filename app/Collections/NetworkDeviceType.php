@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class NetworkDeviceType extends Collection
 {
+
     /**
      * @var array
      */

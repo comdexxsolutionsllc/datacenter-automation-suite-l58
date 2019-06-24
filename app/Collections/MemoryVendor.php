@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class MemoryVendor extends Collection
 {
+
     /**
      * @var array
      */

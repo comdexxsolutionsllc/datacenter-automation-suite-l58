@@ -12,6 +12,7 @@ use Laravel\Passport\Passport;
  */
 class AuthServiceProvider extends ServiceProvider
 {
+
     /**
      * The policy mappings for the application.
      *

@@ -10,6 +10,7 @@ use Illuminate\Support\Collection;
 
 class MailgunWidgetsController extends Controller
 {
+
     /**
      * @param \App\Http\Requests\MailgunRequest $request
      *

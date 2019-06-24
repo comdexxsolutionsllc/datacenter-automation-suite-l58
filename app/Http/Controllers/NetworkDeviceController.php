@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class NetworkDeviceController extends Controller
 {
+
     /**
      * Display a listing of the network devices.
      *
@@ -103,7 +104,7 @@ class NetworkDeviceController extends Controller
      */
     public function edit($id)
     {
-        $networkDevice      = NetworkDevice::findOrFail($id);
+        $networkDevice = NetworkDevice::findOrFail($id);
         $networkDeviceTypes = NetworkDeviceType::pluck('name', 'id')->all();
 
         return view('network_devices.edit', compact('networkDevice', 'networkDeviceTypes'));

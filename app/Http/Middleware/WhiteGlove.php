@@ -7,6 +7,7 @@ use Closure;
 // @todo
 class WhiteGlove
 {
+
     /**
      * Handle an incoming request.
      *

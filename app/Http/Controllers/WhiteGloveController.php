@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class WhiteGloveController extends Controller
 {
+
     /**
      * Display a listing of the white gloves.
      *
@@ -30,7 +31,7 @@ class WhiteGloveController extends Controller
     public function create()
     {
         $accounts = Account::pluck('id', 'id')->all();
-        $stripes  = Stripe::pluck('id', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('white_gloves.create', compact('accounts', 'stripes'));
     }
@@ -109,8 +110,8 @@ class WhiteGloveController extends Controller
     public function edit($id)
     {
         $whiteglove = Whiteglove::findOrFail($id);
-        $accounts   = Account::pluck('id', 'id')->all();
-        $stripes    = Stripe::pluck('id', 'id')->all();
+        $accounts = Account::pluck('id', 'id')->all();
+        $stripes = Stripe::pluck('id', 'id')->all();
 
         return view('white_gloves.edit', compact('whiteglove', 'accounts', 'stripes'));
     }

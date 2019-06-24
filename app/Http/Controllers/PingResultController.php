@@ -9,5 +9,6 @@ use Illuminate\Routing\Controller as BaseController;
 
 class PingResultController extends BaseController
 {
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

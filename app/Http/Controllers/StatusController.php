@@ -15,6 +15,7 @@ use Illuminate\View\View;
  */
 class StatusController extends Controller
 {
+
     /**
      * Display a listing of the statuses.
      *

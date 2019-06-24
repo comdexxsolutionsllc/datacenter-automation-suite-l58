@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
 {
+
     /**
      * Display a listing of the invoices.
      *
@@ -30,7 +31,7 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-        $customers    = Customer::pluck('name', 'id')->all();
+        $customers = Customer::pluck('name', 'id')->all();
         $transactions = Transaction::pluck('id', 'id')->all();
         $billingInfos = BillingInfo::pluck('first_name', 'id')->all();
 
@@ -106,8 +107,8 @@ class InvoiceController extends Controller
      */
     public function edit($id)
     {
-        $invoice      = Invoice::findOrFail($id);
-        $customers    = Customer::pluck('name', 'id')->all();
+        $invoice = Invoice::findOrFail($id);
+        $customers = Customer::pluck('name', 'id')->all();
         $transactions = Transaction::pluck('id', 'id')->all();
         $billingInfos = BillingInfo::pluck('first_name', 'id')->all();
 

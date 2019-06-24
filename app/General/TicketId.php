@@ -11,6 +11,7 @@ use OutOfBoundsException;
  */
 class TicketId implements IdentificationFormat
 {
+
     protected const LOWER_BOUNDS = 3;
 
     /**
@@ -30,7 +31,7 @@ class TicketId implements IdentificationFormat
 
         $ticketId = '';
 
-        for ($count = 0; $count < $length; $count++) {
+        for ($count = 0; $count < $length; $count ++) {
             $ticketId .= strtoupper($chars[rand(0, count($chars) - 1)]);
         }
 

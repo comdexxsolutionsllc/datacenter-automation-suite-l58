@@ -71,8 +71,7 @@ Route::group(['prefix' => '/dashboard', 'middleware' => ['auth']], function () {
     Route::resource('/technicians', 'TechnicianController')->names(DCASHelper::makeNamedRoutes('switchport_information'));
     Route::resource('/tickets', 'TicketController')->names(DCASHelper::makeNamedRoutes('ticket'));
     Route::resource('/tld-extensions', 'TldExtensionController')->names(DCASHelper::makeNamedRoutes('tld_extension'));
-    Route::resource('/users', 'UserController')->names(DCASHelper::makeNamedRoutes('user'));
-    ;
+    Route::resource('/users', 'UserController')->names(DCASHelper::makeNamedRoutes('user'));;
     Route::resource('/vendors', 'VendorController')->names(DCASHelper::makeNamedRoutes('vendor'));
     Route::resource('/whitegloves', 'WhiteGloveController')->names(DCASHelper::makeNamedRoutes('whiteglove'));
 });

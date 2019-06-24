@@ -4,6 +4,7 @@ namespace App\General;
 
 interface IdentificationFormat
 {
+
     /**
      * Generate a {Type} identification number.
      *

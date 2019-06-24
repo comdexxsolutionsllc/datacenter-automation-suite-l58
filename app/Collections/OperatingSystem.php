@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 
 class OperatingSystem extends Collection
 {
+
     /**
      * @var array
      */
