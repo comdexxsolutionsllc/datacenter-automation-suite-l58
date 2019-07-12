@@ -10,25 +10,25 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 /**
  * App\Models\General\InvoiceItem
  *
- * @property int                              $id
- * @property int                              $invoice_id
- * @property int                              $service_id
- * @property string                           $description
- * @property string                           $price
- * @property \Illuminate\Support\Carbon|null  $created_at
- * @property \Illuminate\Support\Carbon|null  $updated_at
+ * @property int $id
+ * @property int $invoice_id
+ * @property int $service_id
+ * @property string $description
+ * @property string $price
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\General\Invoice $invoice
  * @property-read \App\Models\General\Service $service
- * @method static Builder|InvoiceItem newModelQuery()
- * @method static Builder|InvoiceItem newQuery()
- * @method static Builder|InvoiceItem query()
- * @method static Builder|InvoiceItem whereCreatedAt($value)
- * @method static Builder|InvoiceItem whereDescription($value)
- * @method static Builder|InvoiceItem whereId($value)
- * @method static Builder|InvoiceItem whereInvoiceId($value)
- * @method static Builder|InvoiceItem wherePrice($value)
- * @method static Builder|InvoiceItem whereServiceId($value)
- * @method static Builder|InvoiceItem whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereInvoiceId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem wherePrice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereServiceId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class InvoiceItem extends BaseModel

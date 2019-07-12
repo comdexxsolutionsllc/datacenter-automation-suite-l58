@@ -9,21 +9,21 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\Note
  *
- * @property int            $id
- * @property string         $body
- * @property string         $noteable_type
- * @property int            $noteable_id
+ * @property int $id
+ * @property string $body
+ * @property string $noteable_type
+ * @property int $noteable_id
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
- * @method static Builder|Note newModelQuery()
- * @method static Builder|Note newQuery()
- * @method static Builder|Note query()
- * @method static Builder|Note whereBody($value)
- * @method static Builder|Note whereCreatedAt($value)
- * @method static Builder|Note whereId($value)
- * @method static Builder|Note whereNoteableId($value)
- * @method static Builder|Note whereNoteableType($value)
- * @method static Builder|Note whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereNoteableId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereNoteableType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Note extends BaseModel

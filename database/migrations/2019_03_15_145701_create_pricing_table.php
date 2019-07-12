@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePricingTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

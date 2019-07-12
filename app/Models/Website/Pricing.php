@@ -8,21 +8,21 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Website\Pricing
  *
- * @property int                             $id
- * @property string                          $plan
- * @property string                          $price
- * @property array                           $details
+ * @property int $id
+ * @property string $plan
+ * @property string $price
+ * @property array $details
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|Pricing newModelQuery()
- * @method static Builder|Pricing newQuery()
- * @method static Builder|Pricing query()
- * @method static Builder|Pricing whereCreatedAt($value)
- * @method static Builder|Pricing whereDetails($value)
- * @method static Builder|Pricing whereId($value)
- * @method static Builder|Pricing wherePlan($value)
- * @method static Builder|Pricing wherePrice($value)
- * @method static Builder|Pricing whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereDetails($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing wherePlan($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing wherePrice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Pricing extends BaseModel

@@ -8,21 +8,21 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\TldExtension
  *
- * @property int                             $id
- * @property string                          $domain
- * @property string|null                     $description
- * @property string                          $type
+ * @property int $id
+ * @property string $domain
+ * @property string|null $description
+ * @property string $type
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|TldExtension newModelQuery()
- * @method static Builder|TldExtension newQuery()
- * @method static Builder|TldExtension query()
- * @method static Builder|TldExtension whereCreatedAt($value)
- * @method static Builder|TldExtension whereDescription($value)
- * @method static Builder|TldExtension whereDomain($value)
- * @method static Builder|TldExtension whereId($value)
- * @method static Builder|TldExtension whereType($value)
- * @method static Builder|TldExtension whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension whereDomain($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\TldExtension whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class TldExtension extends BaseModel

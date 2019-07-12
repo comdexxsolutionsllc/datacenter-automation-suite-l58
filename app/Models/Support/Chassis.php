@@ -8,41 +8,41 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\Chassis
  *
- * @property int                             $id
- * @property int|null                        $asset_owner
- * @property string|null                     $accountable_type
- * @property int|null                        $accountable_id
- * @property string                          $vendor
- * @property string                          $model
- * @property string|null                     $serial_number
- * @property string                          $form_factor_in_u
- * @property string                          $chassis_type
- * @property string                          $power_supply
- * @property int                             $hot_swap_drive_bays
- * @property int                             $internal_drive_bays
- * @property int                             $expansion_slots
- * @property string                          $expansion_slot_information
+ * @property int $id
+ * @property int|null $asset_owner
+ * @property string|null $accountable_type
+ * @property int|null $accountable_id
+ * @property string $vendor
+ * @property string $model
+ * @property string|null $serial_number
+ * @property string $form_factor_in_u
+ * @property string $chassis_type
+ * @property string $power_supply
+ * @property int $hot_swap_drive_bays
+ * @property int $internal_drive_bays
+ * @property int $expansion_slots
+ * @property string $expansion_slot_information
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|Chassis newModelQuery()
- * @method static Builder|Chassis newQuery()
- * @method static Builder|Chassis query()
- * @method static Builder|Chassis whereAccountableId($value)
- * @method static Builder|Chassis whereAccountableType($value)
- * @method static Builder|Chassis whereAssetOwner($value)
- * @method static Builder|Chassis whereChassisType($value)
- * @method static Builder|Chassis whereCreatedAt($value)
- * @method static Builder|Chassis whereExpansionSlotInformation($value)
- * @method static Builder|Chassis whereExpansionSlots($value)
- * @method static Builder|Chassis whereFormFactorInU($value)
- * @method static Builder|Chassis whereHotSwapDriveBays($value)
- * @method static Builder|Chassis whereId($value)
- * @method static Builder|Chassis whereInternalDriveBays($value)
- * @method static Builder|Chassis whereModel($value)
- * @method static Builder|Chassis wherePowerSupply($value)
- * @method static Builder|Chassis whereSerialNumber($value)
- * @method static Builder|Chassis whereUpdatedAt($value)
- * @method static Builder|Chassis whereVendor($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereAccountableId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereAccountableType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereAssetOwner($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereChassisType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereExpansionSlotInformation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereExpansionSlots($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereFormFactorInU($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereHotSwapDriveBays($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereInternalDriveBays($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereModel($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis wherePowerSupply($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereSerialNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereVendor($value)
  * @mixin \Eloquent
  */
 class Chassis extends BaseModel

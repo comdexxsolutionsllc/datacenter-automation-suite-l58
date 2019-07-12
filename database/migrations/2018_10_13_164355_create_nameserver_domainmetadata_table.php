@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateNameserverDomainmetadataTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

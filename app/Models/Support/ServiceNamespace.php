@@ -8,19 +8,19 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\ServiceNamespace
  *
- * @property int                             $id
- * @property int                             $services_id
- * @property string                          $namespace
+ * @property int $id
+ * @property int $services_id
+ * @property string $namespace
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|ServiceNamespace newModelQuery()
- * @method static Builder|ServiceNamespace newQuery()
- * @method static Builder|ServiceNamespace query()
- * @method static Builder|ServiceNamespace whereCreatedAt($value)
- * @method static Builder|ServiceNamespace whereId($value)
- * @method static Builder|ServiceNamespace whereNamespace($value)
- * @method static Builder|ServiceNamespace whereServicesId($value)
- * @method static Builder|ServiceNamespace whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereNamespace($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereServicesId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class ServiceNamespace extends BaseModel

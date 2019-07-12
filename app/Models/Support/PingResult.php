@@ -10,32 +10,32 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\PingResult
  *
- * @property int                                  $id
- * @property int|null                             $device_id
- * @property string                               $run_date
- * @property int                                  $timeout
- * @property int                                  $reply_i
- * @property int                                  $time_to_live
- * @property string                               $response_time
- * @property int                                  $response_ttl
- * @property string                               $status
- * @property \Illuminate\Support\Carbon|null      $created_at
- * @property \Illuminate\Support\Carbon|null      $updated_at
+ * @property int $id
+ * @property int|null $device_id
+ * @property string $run_date
+ * @property int $timeout
+ * @property int $reply_i
+ * @property int $time_to_live
+ * @property string $response_time
+ * @property int $response_ttl
+ * @property string $status
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Support\Device|null $device
- * @method static Builder|PingResult newModelQuery()
- * @method static Builder|PingResult newQuery()
- * @method static Builder|PingResult query()
- * @method static Builder|PingResult whereCreatedAt($value)
- * @method static Builder|PingResult whereDeviceId($value)
- * @method static Builder|PingResult whereId($value)
- * @method static Builder|PingResult whereReplyI($value)
- * @method static Builder|PingResult whereResponseTime($value)
- * @method static Builder|PingResult whereResponseTtl($value)
- * @method static Builder|PingResult whereRunDate($value)
- * @method static Builder|PingResult whereStatus($value)
- * @method static Builder|PingResult whereTimeToLive($value)
- * @method static Builder|PingResult whereTimeout($value)
- * @method static Builder|PingResult whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereDeviceId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereReplyI($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereResponseTime($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereResponseTtl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereRunDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereTimeToLive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereTimeout($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class PingResult extends BaseModel implements Transformable

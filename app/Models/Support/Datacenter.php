@@ -10,24 +10,24 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * App\Models\Support\Datacenter
  *
- * @property int                                                                       $id
- * @property string                                                                    $code
- * @property string                                                                    $location
- * @property string                                                                    $status
- * @property string                                                                    $opening_date
- * @property \Illuminate\Support\Carbon|null                                           $created_at
- * @property \Illuminate\Support\Carbon|null                                           $updated_at
+ * @property int $id
+ * @property string $code
+ * @property string $location
+ * @property string $status
+ * @property string $opening_date
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Asset[] $assets
- * @method static Builder|Datacenter newModelQuery()
- * @method static Builder|Datacenter newQuery()
- * @method static Builder|Datacenter query()
- * @method static Builder|Datacenter whereCode($value)
- * @method static Builder|Datacenter whereCreatedAt($value)
- * @method static Builder|Datacenter whereId($value)
- * @method static Builder|Datacenter whereLocation($value)
- * @method static Builder|Datacenter whereOpeningDate($value)
- * @method static Builder|Datacenter whereStatus($value)
- * @method static Builder|Datacenter whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereLocation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereOpeningDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Datacenter extends BaseModel

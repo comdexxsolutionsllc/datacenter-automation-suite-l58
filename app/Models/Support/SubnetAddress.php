@@ -8,25 +8,25 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\SubnetAddress
  *
- * @property int                             $id
- * @property string                          $subnet_address
- * @property string                          $network_block
- * @property int                             $network_mask
- * @property int                             $datacenter_id
- * @property string|null                     $available
+ * @property int $id
+ * @property string $subnet_address
+ * @property string $network_block
+ * @property int $network_mask
+ * @property int $datacenter_id
+ * @property string|null $available
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|SubnetAddress newModelQuery()
- * @method static Builder|SubnetAddress newQuery()
- * @method static Builder|SubnetAddress query()
- * @method static Builder|SubnetAddress whereAvailable($value)
- * @method static Builder|SubnetAddress whereCreatedAt($value)
- * @method static Builder|SubnetAddress whereDatacenterId($value)
- * @method static Builder|SubnetAddress whereId($value)
- * @method static Builder|SubnetAddress whereNetworkBlock($value)
- * @method static Builder|SubnetAddress whereNetworkMask($value)
- * @method static Builder|SubnetAddress whereSubnetAddress($value)
- * @method static Builder|SubnetAddress whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereAvailable($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereDatacenterId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereNetworkBlock($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereNetworkMask($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereSubnetAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class SubnetAddress extends BaseModel

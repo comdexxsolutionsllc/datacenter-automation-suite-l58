@@ -9,28 +9,28 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 /**
  * App\Models\General\Company
  *
- * @property int                               $id
- * @property string                            $name
- * @property string                            $contact_name
- * @property string|null                       $contact_email
- * @property string|null                       $contact_phone
- * @property string                            $phone_type
- * @property int                               $active
- * @property \Illuminate\Support\Carbon|null   $created_at
- * @property \Illuminate\Support\Carbon|null   $updated_at
+ * @property int $id
+ * @property string $name
+ * @property string $contact_name
+ * @property string|null $contact_email
+ * @property string|null $contact_phone
+ * @property string $phone_type
+ * @property int $active
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\General\Reseller $reseller
- * @method static Builder|Company newModelQuery()
- * @method static Builder|Company newQuery()
- * @method static Builder|Company query()
- * @method static Builder|Company whereActive($value)
- * @method static Builder|Company whereContactEmail($value)
- * @method static Builder|Company whereContactName($value)
- * @method static Builder|Company whereContactPhone($value)
- * @method static Builder|Company whereCreatedAt($value)
- * @method static Builder|Company whereId($value)
- * @method static Builder|Company whereName($value)
- * @method static Builder|Company wherePhoneType($value)
- * @method static Builder|Company whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereContactEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereContactName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereContactPhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company wherePhoneType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Company extends BaseModel

@@ -9,33 +9,33 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 /**
  * App\Models\Support\SwitchportInformation
  *
- * @property int                                           $id
- * @property int                                           $network_device_id
- * @property int                                           $switchport_number
- * @property string                                        $category
- * @property string                                        $port_speed
- * @property string                                        $connection_type
- * @property string                                        $poe_status
- * @property string                                        $stackable_status
- * @property string                                        $duplex_type
- * @property \Illuminate\Support\Carbon|null               $created_at
- * @property \Illuminate\Support\Carbon|null               $updated_at
+ * @property int $id
+ * @property int $network_device_id
+ * @property int $switchport_number
+ * @property string $category
+ * @property string $port_speed
+ * @property string $connection_type
+ * @property string $poe_status
+ * @property string $stackable_status
+ * @property string $duplex_type
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Support\NetworkConfiguration $networkConfiguration
- * @property-read \App\Models\Support\NetworkDevice        $networkDevice
- * @method static Builder|SwitchportInformation newModelQuery()
- * @method static Builder|SwitchportInformation newQuery()
- * @method static Builder|SwitchportInformation query()
- * @method static Builder|SwitchportInformation whereCategory($value)
- * @method static Builder|SwitchportInformation whereConnectionType($value)
- * @method static Builder|SwitchportInformation whereCreatedAt($value)
- * @method static Builder|SwitchportInformation whereDuplexType($value)
- * @method static Builder|SwitchportInformation whereId($value)
- * @method static Builder|SwitchportInformation whereNetworkDeviceId($value)
- * @method static Builder|SwitchportInformation wherePoeStatus($value)
- * @method static Builder|SwitchportInformation wherePortSpeed($value)
- * @method static Builder|SwitchportInformation whereStackableStatus($value)
- * @method static Builder|SwitchportInformation whereSwitchportNumber($value)
- * @method static Builder|SwitchportInformation whereUpdatedAt($value)
+ * @property-read \App\Models\Support\NetworkDevice $networkDevice
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereCategory($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereConnectionType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereDuplexType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereNetworkDeviceId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation wherePoeStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation wherePortSpeed($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereStackableStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereSwitchportNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class SwitchportInformation extends BaseModel

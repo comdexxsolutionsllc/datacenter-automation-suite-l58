@@ -9,22 +9,22 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 /**
  * App\Models\Support\NetworkDeviceType
  *
- * @property int                                    $id
- * @property string                                 $name
- * @property string|null                            $description
- * @property int                                    $active
- * @property \Illuminate\Support\Carbon|null        $created_at
- * @property \Illuminate\Support\Carbon|null        $updated_at
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property int $active
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Support\NetworkDevice $networkDevice
- * @method static Builder|NetworkDeviceType newModelQuery()
- * @method static Builder|NetworkDeviceType newQuery()
- * @method static Builder|NetworkDeviceType query()
- * @method static Builder|NetworkDeviceType whereActive($value)
- * @method static Builder|NetworkDeviceType whereCreatedAt($value)
- * @method static Builder|NetworkDeviceType whereDescription($value)
- * @method static Builder|NetworkDeviceType whereId($value)
- * @method static Builder|NetworkDeviceType whereName($value)
- * @method static Builder|NetworkDeviceType whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class NetworkDeviceType extends BaseModel

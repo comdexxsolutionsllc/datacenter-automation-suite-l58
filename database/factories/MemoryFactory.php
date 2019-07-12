@@ -6,11 +6,11 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\Memory::class, function (Faker $faker) {
     return [
-        'vendor'     => $faker->word,
-        'model'      => $faker->word,
-        'capacity'   => $faker->word,
-        'type'       => $faker->word,
-        'speed'      => $faker->word,
+        'vendor'     => $faker->text,
+        'model'      => $faker->text,
+        'capacity'   => $faker->text,
+        'type'       => $faker->text,
+        'speed'      => $faker->text,
         'ecc'        => $faker->boolean,
         'buffered'   => $faker->boolean,
         'registered' => $faker->boolean,

@@ -6,17 +6,17 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\RaidCard::class, function (Faker $faker) {
     return [
-        'vendor'                      => $faker->word,
-        'model'                       => $faker->word,
-        'launch_date'                 => $faker->dateTime,
-        'expected_discontinuance'     => $faker->randomElement([null, $faker->dateTime]),
-        'data_transfer_rate'          => $faker->randomNumber(4),
-        'supported_devices'           => [],
-        'supported_raid_levels'       => [],
+        'vendor'                      => $faker->text,
+        'model'                       => $faker->text,
+        'launch_date'                 => $faker->dateTimeBetween(),
+        'expected_discontinuance'     => $faker->dateTimeBetween(),
+        'data_transfer_rate'          => $faker->randomNumber(),
+        'supported_devices'           => $faker->word,
+        'supported_raid_levels'       => $faker->word,
         'jbod_mode'                   => $faker->boolean,
-        'number_of_internal_ports'    => $faker->randomNumber(1),
-        'number_of_supported_devices' => $faker->randomNumber(2),
-        'embedded_memory'             => $faker->randomNumber(4),
-        'supported_oses'              => [],
+        'number_of_internal_ports'    => $faker->randomNumber(),
+        'number_of_supported_devices' => $faker->randomNumber(),
+        'embedded_memory'             => $faker->randomNumber(),
+        'supported_oses'              => $faker->word,
     ];
 });

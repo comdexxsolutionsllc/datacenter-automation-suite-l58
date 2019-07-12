@@ -8,23 +8,23 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\Queue
  *
- * @property int                             $id
- * @property string                          $name
- * @property string|null                     $description
- * @property int                             $visible
- * @property string|null                     $deleted_at
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property int $visible
+ * @property string|null $deleted_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|Queue newModelQuery()
- * @method static Builder|Queue newQuery()
- * @method static Builder|Queue query()
- * @method static Builder|Queue whereCreatedAt($value)
- * @method static Builder|Queue whereDeletedAt($value)
- * @method static Builder|Queue whereDescription($value)
- * @method static Builder|Queue whereId($value)
- * @method static Builder|Queue whereName($value)
- * @method static Builder|Queue whereUpdatedAt($value)
- * @method static Builder|Queue whereVisible($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue whereVisible($value)
  * @mixin \Eloquent
  */
 class Queue extends BaseModel

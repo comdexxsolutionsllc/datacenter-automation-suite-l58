@@ -8,47 +8,47 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\General\InboundEmail
  *
- * @property int                             $id
- * @property string                          $body_plain
- * @property string                          $date
- * @property string                          $domain
- * @property string                          $from
- * @property string                          $from_full
- * @property string                          $message_headers
- * @property string                          $message_id
- * @property string                          $message_url
- * @property string                          $recipient
- * @property string                          $sender
- * @property string                          $stripped_html
- * @property string|null                     $stripped_signature
- * @property string                          $stripped_text
- * @property string                          $subject
- * @property string                          $response_timestamp
- * @property string                          $token
+ * @property int $id
+ * @property string $body_plain
+ * @property string $date
+ * @property string $domain
+ * @property string $from
+ * @property string $from_full
+ * @property string $message_headers
+ * @property string $message_id
+ * @property string $message_url
+ * @property string $recipient
+ * @property string $sender
+ * @property string $stripped_html
+ * @property string|null $stripped_signature
+ * @property string $stripped_text
+ * @property string $subject
+ * @property string $response_timestamp
+ * @property string $token
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|InboundEmail newModelQuery()
- * @method static Builder|InboundEmail newQuery()
- * @method static Builder|InboundEmail query()
- * @method static Builder|InboundEmail whereBodyPlain($value)
- * @method static Builder|InboundEmail whereCreatedAt($value)
- * @method static Builder|InboundEmail whereDate($value)
- * @method static Builder|InboundEmail whereDomain($value)
- * @method static Builder|InboundEmail whereFrom($value)
- * @method static Builder|InboundEmail whereFromFull($value)
- * @method static Builder|InboundEmail whereId($value)
- * @method static Builder|InboundEmail whereMessageHeaders($value)
- * @method static Builder|InboundEmail whereMessageId($value)
- * @method static Builder|InboundEmail whereMessageUrl($value)
- * @method static Builder|InboundEmail whereRecipient($value)
- * @method static Builder|InboundEmail whereResponseTimestamp($value)
- * @method static Builder|InboundEmail whereSender($value)
- * @method static Builder|InboundEmail whereStrippedHtml($value)
- * @method static Builder|InboundEmail whereStrippedSignature($value)
- * @method static Builder|InboundEmail whereStrippedText($value)
- * @method static Builder|InboundEmail whereSubject($value)
- * @method static Builder|InboundEmail whereToken($value)
- * @method static Builder|InboundEmail whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereBodyPlain($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereDomain($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereFrom($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereFromFull($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereMessageHeaders($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereMessageId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereMessageUrl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereRecipient($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereResponseTimestamp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereSender($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereStrippedHtml($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereStrippedSignature($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereStrippedText($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereSubject($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class InboundEmail extends BaseModel

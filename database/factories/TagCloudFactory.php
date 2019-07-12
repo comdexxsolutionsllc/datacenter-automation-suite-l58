@@ -2,15 +2,13 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Models\General\TagCloud;
-use App\Models\General\TagType;
 use Faker\Generator as Faker;
 
-$factory->define(TagCloud::class, function (Faker $faker) {
+$factory->define(App\Models\General\TagCloud::class, function (Faker $faker) {
     return [
-        'tag_type'  => factory(TagType::class),
+        'tag_type'  => $faker->randomNumber(),
         'keyword'   => $faker->word,
-        'frequency' => $faker->numberBetween(1, 1000),
+        'frequency' => $faker->randomNumber(),
         'visible'   => $faker->boolean,
     ];
 });

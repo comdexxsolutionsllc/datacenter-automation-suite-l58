@@ -9,22 +9,22 @@ use Spatie\Permission\Models\Role as BaseRole;
 /**
  * App\Models\General\Role
  *
- * @property int                                                                                  $id
- * @property string                                                                               $name
- * @property string                                                                               $guard_name
- * @property bool|\DateTime                                                                       $created_at
- * @property bool|\DateTime                                                                       $updated_at
+ * @property int $id
+ * @property string $name
+ * @property string $guard_name
+ * @property bool|\DateTime $created_at
+ * @property bool|\DateTime $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[] $permissions
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Roles\Customer[]           $users
- * @method static Builder|Role newModelQuery()
- * @method static Builder|Role newQuery()
- * @method static Builder|BaseRole permission($permissions)
- * @method static Builder|Role query()
- * @method static Builder|Role whereCreatedAt($value)
- * @method static Builder|Role whereGuardName($value)
- * @method static Builder|Role whereId($value)
- * @method static Builder|Role whereName($value)
- * @method static Builder|Role whereUpdatedAt($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Roles\Customer[] $users
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\Spatie\Permission\Models\Role permission($permissions)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role whereGuardName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Role extends BaseRole

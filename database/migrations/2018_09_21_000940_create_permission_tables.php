@@ -6,13 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePermissionTables extends Migration
 {
+
     /**
      * Run the migrations.
      *
      */
     public function up()
     {
-        $tableNames  = config('permission.table_names');
+        $tableNames = config('permission.table_names');
         $columnNames = config('permission.column_names');
 
         Schema::create($tableNames['permissions'], function (Blueprint $table) {
@@ -37,7 +38,7 @@ class CreatePermissionTables extends Migration
 
             $table->string('model_type');
             $table->unsignedBigInteger($columnNames['model_morph_key']);
-            $table->index([$columnNames['model_morph_key'], 'model_type', ]);
+            $table->index([$columnNames['model_morph_key'], 'model_type',]);
 
             $table->foreign('permission_id')->references('id')->on($tableNames['permissions'])->onDelete('cascade');
 
@@ -53,7 +54,7 @@ class CreatePermissionTables extends Migration
 
             $table->string('model_type');
             $table->unsignedBigInteger($columnNames['model_morph_key']);
-            $table->index([$columnNames['model_morph_key'], 'model_type', ]);
+            $table->index([$columnNames['model_morph_key'], 'model_type',]);
 
             $table->foreign('role_id')->references('id')->on($tableNames['roles'])->onDelete('cascade');
 

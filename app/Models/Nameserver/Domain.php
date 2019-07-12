@@ -10,31 +10,31 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * App\Models\Nameserver\Domain
  *
- * @property int                                                                                   $id
- * @property string                                                                                $name
- * @property string|null                                                                           $master
- * @property int|null                                                                              $last_check
- * @property string                                                                                $type
- * @property int|null                                                                              $notified_serial
- * @property string|null                                                                           $account
- * @property array                                                                                 $created_at
- * @property array                                                                                 $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Comment[]        $comments
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Cryptokey[]      $cryptokeys
+ * @property int $id
+ * @property string $name
+ * @property string|null $master
+ * @property int|null $last_check
+ * @property string $type
+ * @property int|null $notified_serial
+ * @property string|null $account
+ * @property array $created_at
+ * @property array $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Comment[] $comments
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Cryptokey[] $cryptokeys
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Domainmetadata[] $metadata
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Record[]         $records
- * @method static Builder|Domain newModelQuery()
- * @method static Builder|Domain newQuery()
- * @method static Builder|Domain query()
- * @method static Builder|Domain whereAccount($value)
- * @method static Builder|Domain whereCreatedAt($value)
- * @method static Builder|Domain whereId($value)
- * @method static Builder|Domain whereLastCheck($value)
- * @method static Builder|Domain whereMaster($value)
- * @method static Builder|Domain whereName($value)
- * @method static Builder|Domain whereNotifiedSerial($value)
- * @method static Builder|Domain whereType($value)
- * @method static Builder|Domain whereUpdatedAt($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Record[] $records
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereAccount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereLastCheck($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereMaster($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereNotifiedSerial($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Domain extends BaseModel

@@ -8,22 +8,15 @@ $factory->define(App\Models\General\BillingInfo::class, function (Faker $faker) 
     return [
         'first_name'   => $faker->firstName,
         'last_name'    => $faker->lastName,
-        'company'      => $faker->randomElement([null, $faker->company]),
-        'address_1'    => $faker->streetAddress,
-        'address_2'    => null,
+        'company'      => $faker->company,
+        'address_1'    => $faker->word,
+        'address_2'    => $faker->word,
         'city'         => $faker->city,
-        'state'        => 'IL',
-        'postal_code'  => $faker->postcode,
+        'state'        => $faker->word,
+        'postal_code'  => $faker->word,
         'country'      => $faker->country,
-        'phone_number' => $faker->phoneNumber,
-        'phone_type'   => function () use ($faker) {
-            return $faker->randomElement([
-                'home',
-                'mobile',
-                'office',
-                'work',
-                'other',
-            ]);
-        },
+        'phone_number' => $faker->word,
+        'phone_type'   => $faker->word,
+        'invoice_id'   => factory(App\Models\General\Invoice::class)->create()->id,
     ];
 });

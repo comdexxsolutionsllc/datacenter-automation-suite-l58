@@ -2,24 +2,13 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Models\Roles\Employee;
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\Technician::class, function (Faker $faker) {
     return [
-        'employee_id'   => function () use ($faker) {
-            if (Employee::count()) {
-                return $faker->randomElement(App\Models\Roles\Employee::all()->toArray())['id'];
-            }
-
-            return factory(App\Models\Roles\Employee::class)->create()->id;
-        },
-        'department_id' => function () use ($faker) {
-            if (Employee::count()) {
-                return $faker->randomElement(App\Models\Support\Department::all()->toArray())['id'];
-            }
-
-            return factory(App\Models\Support\Department::class)->create()->id;
-        },
+        'id'            => $faker->randomNumber(),
+        'department_id' => $faker->randomNumber(),
+        'employee_id'   => $faker->randomNumber(),
+        'user_id'       => factory(App\Models\Roles\Employee::class)->create()->id,
     ];
 });

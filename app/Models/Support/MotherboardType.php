@@ -8,43 +8,43 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\MotherboardType
  *
- * @property int                             $id
- * @property string                          $vendor
- * @property string                          $model
- * @property string                          $form_factor
- * @property int|null                        $assigned_chassis
- * @property mixed                           $assigned_hdds
- * @property mixed                           $assigned_memory
- * @property mixed                           $assigned_networking_cards
- * @property mixed                           $assigned_raid_cards
- * @property string                          $bios_features
- * @property string                          $chipset
- * @property string                          $expansion_slots
- * @property string                          $front_side_bus
- * @property string                          $hdd_connection_type
- * @property mixed                           $processor_information
+ * @property int $id
+ * @property string $vendor
+ * @property string $model
+ * @property string $form_factor
+ * @property int|null $assigned_chassis
+ * @property mixed $assigned_hdds
+ * @property mixed $assigned_memory
+ * @property mixed $assigned_networking_cards
+ * @property mixed $assigned_raid_cards
+ * @property string $bios_features
+ * @property string $chipset
+ * @property string $expansion_slots
+ * @property string $front_side_bus
+ * @property string $hdd_connection_type
+ * @property mixed $processor_information
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|MotherboardType newModelQuery()
- * @method static Builder|MotherboardType newQuery()
- * @method static Builder|MotherboardType query()
- * @method static Builder|MotherboardType whereAssignedChassis($value)
- * @method static Builder|MotherboardType whereAssignedHdds($value)
- * @method static Builder|MotherboardType whereAssignedMemory($value)
- * @method static Builder|MotherboardType whereAssignedNetworkingCards($value)
- * @method static Builder|MotherboardType whereAssignedRaidCards($value)
- * @method static Builder|MotherboardType whereBiosFeatures($value)
- * @method static Builder|MotherboardType whereChipset($value)
- * @method static Builder|MotherboardType whereCreatedAt($value)
- * @method static Builder|MotherboardType whereExpansionSlots($value)
- * @method static Builder|MotherboardType whereFormFactor($value)
- * @method static Builder|MotherboardType whereFrontSideBus($value)
- * @method static Builder|MotherboardType whereHddConnectionType($value)
- * @method static Builder|MotherboardType whereId($value)
- * @method static Builder|MotherboardType whereModel($value)
- * @method static Builder|MotherboardType whereProcessorInformation($value)
- * @method static Builder|MotherboardType whereUpdatedAt($value)
- * @method static Builder|MotherboardType whereVendor($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereAssignedChassis($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereAssignedHdds($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereAssignedMemory($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereAssignedNetworkingCards($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereAssignedRaidCards($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereBiosFeatures($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereChipset($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereExpansionSlots($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereFormFactor($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereFrontSideBus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereHddConnectionType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereModel($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereProcessorInformation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\MotherboardType whereVendor($value)
  * @mixin \Eloquent
  */
 class MotherboardType extends BaseModel

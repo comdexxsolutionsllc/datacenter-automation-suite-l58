@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Schema;
  */
 class CreateNetworkConfigurationsTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

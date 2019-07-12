@@ -2,28 +2,19 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\General\TicketId;
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\Ticket::class, function (Faker $faker) {
     return [
-        'ticket_id'              => TicketId::generate(),
-        'title'                  => $faker->sentence,
-        'body'                   => $faker->paragraph,
-        'status_id'              => factory(App\Models\Support\Status::class),
-        'department_id'          => factory(App\Models\Support\Department::class),
-        'technician_assigned_id' => function () {
-            return factory(App\Models\Support\Technician::class)->create()->employee_id;
-        },
+        'ticket_id'              => $faker->word,
+        'title'                  => $faker->word,
+        'body'                   => $faker->text,
+        'status_id'              => factory(App\Models\Support\Status::class)->create()->id,
+        'department_id'          => factory(App\Models\Support\Department::class)->create()->id,
+        'technician_assigned_id' => $faker->randomNumber(),
         'is_resolved'            => $faker->boolean,
-        'ticketable_type'        => $ticketableType = $faker->randomElement([
-            'App\Models\Roles\Customer',
-            'App\Models\Roles\Employee',
-            'App\Models\Roles\Vendor',
-            'App\Models\Roles\Whiteglove',
-        ]),
-        'ticketable_id'          => function () use ($faker, $ticketableType) {
-            return $faker->randomElement(range(1, (new $ticketableType)->count()));
-        },
+        'deleted_at'             => $faker->dateTimeBetween(),
+        'ticketable_type'        => $faker->word,
+        'ticketable_id'          => $faker->randomNumber(),
     ];
 });

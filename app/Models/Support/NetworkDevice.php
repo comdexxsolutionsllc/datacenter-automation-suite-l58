@@ -11,38 +11,38 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 /**
  * App\Models\Support\NetworkDevice
  *
- * @property int                                                                                       $id
- * @property string                                                                                    $asset_number
- * @property string|null                                                                               $serial_number
- * @property int                                                                                       $network_device_type_id
- * @property string                                                                                    $hostname
- * @property string                                                                                    $ip_address
- * @property string|null                                                                               $ip_address_alt
- * @property string                                                                                    $hardware_maker
- * @property string                                                                                    $hardware_version
- * @property string                                                                                    $device_os_version
- * @property int                                                                                       $total_ports
- * @property \Illuminate\Support\Carbon|null                                                           $created_at
- * @property \Illuminate\Support\Carbon|null                                                           $updated_at
- * @property-read \App\Models\General\Asset                                                            $asset
- * @property-read \App\Models\Support\NetworkDeviceType                                                $networkDeviceType
+ * @property int $id
+ * @property string $asset_number
+ * @property string|null $serial_number
+ * @property int $network_device_type_id
+ * @property string $hostname
+ * @property string $ip_address
+ * @property string|null $ip_address_alt
+ * @property string $hardware_maker
+ * @property string $hardware_version
+ * @property string $device_os_version
+ * @property int $total_ports
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\General\Asset $asset
+ * @property-read \App\Models\Support\NetworkDeviceType $networkDeviceType
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\SwitchportInformation[] $switchPortInformation
- * @method static Builder|NetworkDevice newModelQuery()
- * @method static Builder|NetworkDevice newQuery()
- * @method static Builder|NetworkDevice query()
- * @method static Builder|NetworkDevice whereAssetNumber($value)
- * @method static Builder|NetworkDevice whereCreatedAt($value)
- * @method static Builder|NetworkDevice whereDeviceOsVersion($value)
- * @method static Builder|NetworkDevice whereHardwareMaker($value)
- * @method static Builder|NetworkDevice whereHardwareVersion($value)
- * @method static Builder|NetworkDevice whereHostname($value)
- * @method static Builder|NetworkDevice whereId($value)
- * @method static Builder|NetworkDevice whereIpAddress($value)
- * @method static Builder|NetworkDevice whereIpAddressAlt($value)
- * @method static Builder|NetworkDevice whereNetworkDeviceTypeId($value)
- * @method static Builder|NetworkDevice whereSerialNumber($value)
- * @method static Builder|NetworkDevice whereTotalPorts($value)
- * @method static Builder|NetworkDevice whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereAssetNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereDeviceOsVersion($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereHardwareMaker($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereHardwareVersion($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereHostname($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereIpAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereIpAddressAlt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereNetworkDeviceTypeId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereSerialNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereTotalPorts($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class NetworkDevice extends BaseModel

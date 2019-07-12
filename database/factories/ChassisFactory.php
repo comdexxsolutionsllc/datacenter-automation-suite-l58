@@ -2,25 +2,22 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Models\Roles\Customer;
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\Chassis::class, function (Faker $faker) {
     return [
-        'asset_owner'                => factory(App\Models\General\Asset::class),
-        'accountable_id'             => function () {
-            return Customer::inRandomOrder()->first()->id;
-        },
-        'accountable_type'           => 'App\Models\Roles\Customer',
-        'vendor'                     => $faker->company,
-        'model'                      => $faker->word,
-        'serial_number'              => $faker->uuid,
-        'form_factor_in_u'           => $faker->randomElement(range(0.5, 6.0)),
-        'chassis_type'               => $faker->randomElement(['rackmount', 'tower']),
-        'power_supply'               => $faker->word,
-        'hot_swap_drive_bays'        => $faker->randomNumber(1),
-        'internal_drive_bays'        => $faker->randomNumber(1),
-        'expansion_slots'            => $faker->randomNumber(1),
-        'expansion_slot_information' => $faker->sentence(),
+        'asset_owner'                => $faker->randomNumber(),
+        'accountable_type'           => $faker->word,
+        'accountable_id'             => $faker->randomNumber(),
+        'vendor'                     => $faker->word,
+        'model'                      => $faker->text,
+        'serial_number'              => $faker->word,
+        'form_factor_in_u'           => $faker->word,
+        'chassis_type'               => $faker->word,
+        'power_supply'               => $faker->text,
+        'hot_swap_drive_bays'        => $faker->randomNumber(),
+        'internal_drive_bays'        => $faker->randomNumber(),
+        'expansion_slots'            => $faker->randomNumber(),
+        'expansion_slot_information' => $faker->text,
     ];
 });

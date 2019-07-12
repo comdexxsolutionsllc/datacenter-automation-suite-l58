@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-06-23 23:58:35.
+    * Generated on 2019-07-14 02:18:07.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -81,6 +81,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,
@@ -300,6 +301,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,
@@ -519,6 +521,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,
@@ -738,6 +741,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,
@@ -957,6 +961,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,
@@ -1176,6 +1181,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,
@@ -1395,6 +1401,7 @@ namespace PHPSTORM_META {
         'League\OAuth2\Server\ResourceServer' => \League\OAuth2\Server\ResourceServer::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Protoqol\Prequel\Classes\Database\DatabaseTraverser' => \Protoqol\Prequel\Classes\Database\DatabaseTraverser::class,
         'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'Psr\Http\Message\ServerRequestInterface' => \Zend\Diactoros\ServerRequest::class,
         'RomegaDigital\Multitenancy\Contracts\Tenant' => \RomegaDigital\Multitenancy\Models\Tenant::class,

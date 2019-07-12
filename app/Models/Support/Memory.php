@@ -8,31 +8,31 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\Memory
  *
- * @property int                             $id
- * @property string                          $vendor
- * @property string                          $model
- * @property string                          $capacity
- * @property string                          $type
- * @property string                          $speed
- * @property int                             $ecc
- * @property int                             $buffered
- * @property int                             $registered
+ * @property int $id
+ * @property string $vendor
+ * @property string $model
+ * @property string $capacity
+ * @property string $type
+ * @property string $speed
+ * @property int $ecc
+ * @property int $buffered
+ * @property int $registered
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|Memory newModelQuery()
- * @method static Builder|Memory newQuery()
- * @method static Builder|Memory query()
- * @method static Builder|Memory whereBuffered($value)
- * @method static Builder|Memory whereCapacity($value)
- * @method static Builder|Memory whereCreatedAt($value)
- * @method static Builder|Memory whereEcc($value)
- * @method static Builder|Memory whereId($value)
- * @method static Builder|Memory whereModel($value)
- * @method static Builder|Memory whereRegistered($value)
- * @method static Builder|Memory whereSpeed($value)
- * @method static Builder|Memory whereType($value)
- * @method static Builder|Memory whereUpdatedAt($value)
- * @method static Builder|Memory whereVendor($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereBuffered($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereCapacity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereEcc($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereModel($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereRegistered($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereSpeed($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Memory whereVendor($value)
  * @mixin \Eloquent
  */
 class Memory extends BaseModel

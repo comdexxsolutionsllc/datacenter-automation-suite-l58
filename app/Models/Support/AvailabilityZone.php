@@ -8,19 +8,19 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\AvailabilityZone
  *
- * @property int                             $id
- * @property mixed                           $region_ids
- * @property string|null                     $comments
+ * @property int $id
+ * @property mixed $region_ids
+ * @property string|null $comments
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static Builder|AvailabilityZone newModelQuery()
- * @method static Builder|AvailabilityZone newQuery()
- * @method static Builder|AvailabilityZone query()
- * @method static Builder|AvailabilityZone whereComments($value)
- * @method static Builder|AvailabilityZone whereCreatedAt($value)
- * @method static Builder|AvailabilityZone whereId($value)
- * @method static Builder|AvailabilityZone whereRegionIds($value)
- * @method static Builder|AvailabilityZone whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone whereComments($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone whereRegionIds($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AvailabilityZone whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class AvailabilityZone extends BaseModel

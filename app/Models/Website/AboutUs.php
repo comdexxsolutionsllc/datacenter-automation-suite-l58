@@ -10,25 +10,25 @@ use Lorisleiva\LaravelSearchString\Concerns\SearchString;
 /**
  * App\Models\Website\AboutUs
  *
- * @property int                             $id
- * @property string                          $name
- * @property string|null                     $portrait
- * @property string                          $job_title
- * @property string                          $job_summary
+ * @property int $id
+ * @property string $name
+ * @property string|null $portrait
+ * @property string $job_title
+ * @property string $job_summary
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read string                     $portrait_link
- * @method static Builder|AboutUs newModelQuery()
- * @method static Builder|AboutUs newQuery()
- * @method static Builder|AboutUs query()
- * @method static Builder|AboutUs usingSearchString($string)
- * @method static Builder|AboutUs whereCreatedAt($value)
- * @method static Builder|AboutUs whereId($value)
- * @method static Builder|AboutUs whereJobSummary($value)
- * @method static Builder|AboutUs whereJobTitle($value)
- * @method static Builder|AboutUs whereName($value)
- * @method static Builder|AboutUs wherePortrait($value)
- * @method static Builder|AboutUs whereUpdatedAt($value)
+ * @property-read string $portrait_link
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs usingSearchString($string)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereJobSummary($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereJobTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs wherePortrait($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class AboutUs extends BaseModel

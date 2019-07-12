@@ -11,39 +11,39 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 /**
  * App\Models\Support\Ticket
  *
- * @property int                                                                        $id
- * @property string                                                                     $ticket_id
- * @property string                                                                     $title
- * @property string                                                                     $body
- * @property int                                                                        $status_id
- * @property int                                                                        $department_id
- * @property int                                                                        $technician_assigned_id
- * @property int                                                                        $is_resolved
- * @property bool|\DateTime                                                             $deleted_at
- * @property bool|\DateTime                                                             $created_at
- * @property bool|\DateTime                                                             $updated_at
- * @property string                                                                     $ticketable_type
- * @property int                                                                        $ticketable_id
- * @property-read \App\Models\Support\Department                                        $department
- * @property-read \App\Models\Support\Status                                            $status
- * @property-read \App\Models\Support\Technician                                        $technicianAssigned
+ * @property int $id
+ * @property string $ticket_id
+ * @property string $title
+ * @property string $body
+ * @property int $status_id
+ * @property int $department_id
+ * @property int $technician_assigned_id
+ * @property int $is_resolved
+ * @property bool|\DateTime $deleted_at
+ * @property bool|\DateTime $created_at
+ * @property bool|\DateTime $updated_at
+ * @property string $ticketable_type
+ * @property int $ticketable_id
+ * @property-read \App\Models\Support\Department $department
+ * @property-read \App\Models\Support\Status $status
+ * @property-read \App\Models\Support\Technician $technicianAssigned
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $user
- * @method static Builder|Ticket newModelQuery()
- * @method static Builder|Ticket newQuery()
- * @method static Builder|Ticket query()
- * @method static Builder|Ticket whereBody($value)
- * @method static Builder|Ticket whereCreatedAt($value)
- * @method static Builder|Ticket whereDeletedAt($value)
- * @method static Builder|Ticket whereDepartmentId($value)
- * @method static Builder|Ticket whereId($value)
- * @method static Builder|Ticket whereIsResolved($value)
- * @method static Builder|Ticket whereStatusId($value)
- * @method static Builder|Ticket whereTechnicianAssignedId($value)
- * @method static Builder|Ticket whereTicketId($value)
- * @method static Builder|Ticket whereTicketableId($value)
- * @method static Builder|Ticket whereTicketableType($value)
- * @method static Builder|Ticket whereTitle($value)
- * @method static Builder|Ticket whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereDepartmentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereIsResolved($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereStatusId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereTechnicianAssignedId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereTicketId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereTicketableId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereTicketableType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Ticket extends BaseModel

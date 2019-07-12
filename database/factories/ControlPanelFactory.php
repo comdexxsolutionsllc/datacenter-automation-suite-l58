@@ -6,16 +6,16 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\ControlPanel::class, function (Faker $faker) {
     return [
-        'control_panel'    => $faker->word,
+        'control_panel'    => $faker->text,
         'free'             => $faker->boolean,
-        'frontend'         => $faker->word,
-        'backend'          => $faker->word,
-        'databases'        => $faker->word,
-        'dns'              => $faker->word,
-        'ftp'              => $faker->word,
-        'email'            => $faker->word,
+        'frontend'         => $faker->text,
+        'backend'          => $faker->text,
+        'databases'        => $faker->text,
+        'dns'              => $faker->text,
+        'ftp'              => $faker->text,
+        'email'            => $faker->safeEmail,
         'multi_server'     => $faker->boolean,
-        'operating_system' => $faker->randomElement(['linux', 'windows']),
+        'operating_system' => $faker->word,
         'ipv6_enabled'     => $faker->boolean,
     ];
 });

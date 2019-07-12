@@ -9,28 +9,28 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 /**
  * App\Models\General\Service
  *
- * @property int                                                                             $id
- * @property int                                                                             $account_id
- * @property string                                                                          $account_type
- * @property string                                                                          $service_type
- * @property string                                                                          $status
- * @property string|null                                                                     $last_payment
- * @property string|null                                                                     $last_invoice
- * @property \Illuminate\Support\Carbon|null                                                 $created_at
- * @property \Illuminate\Support\Carbon|null                                                 $updated_at
+ * @property int $id
+ * @property int $account_id
+ * @property string $account_type
+ * @property string $service_type
+ * @property string $status
+ * @property string|null $last_payment
+ * @property string|null $last_invoice
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\InvoiceItem[] $invoiceItems
- * @method static Builder|Service newModelQuery()
- * @method static Builder|Service newQuery()
- * @method static Builder|Service query()
- * @method static Builder|Service whereAccountId($value)
- * @method static Builder|Service whereAccountType($value)
- * @method static Builder|Service whereCreatedAt($value)
- * @method static Builder|Service whereId($value)
- * @method static Builder|Service whereLastInvoice($value)
- * @method static Builder|Service whereLastPayment($value)
- * @method static Builder|Service whereServiceType($value)
- * @method static Builder|Service whereStatus($value)
- * @method static Builder|Service whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereAccountId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereAccountType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereLastInvoice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereLastPayment($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereServiceType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Service extends BaseModel

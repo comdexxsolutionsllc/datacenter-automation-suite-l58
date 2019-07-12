@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateMotherboardTypesTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

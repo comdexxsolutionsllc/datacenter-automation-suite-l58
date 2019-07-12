@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTelescopeEntriesTable extends Migration
 {
+
     /**
      * The database schema.
      *

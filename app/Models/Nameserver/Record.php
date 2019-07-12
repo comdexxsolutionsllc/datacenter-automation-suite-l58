@@ -9,36 +9,36 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Nameserver\Record
  *
- * @property int                                $id
- * @property int                                $domain_id
- * @property string|null                        $name
- * @property string|null                        $type
- * @property string|null                        $content
- * @property int|null                           $ttl
- * @property int|null                           $priority
- * @property int|null                           $change_date
- * @property int                                $disabled
- * @property string|null                        $ordername
- * @property int                                $auth
- * @property array                              $created_at
- * @property array                              $updated_at
+ * @property int $id
+ * @property int $domain_id
+ * @property string|null $name
+ * @property string|null $type
+ * @property string|null $content
+ * @property int|null $ttl
+ * @property int|null $priority
+ * @property int|null $change_date
+ * @property int $disabled
+ * @property string|null $ordername
+ * @property int $auth
+ * @property array $created_at
+ * @property array $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
- * @method static Builder|Record newModelQuery()
- * @method static Builder|Record newQuery()
- * @method static Builder|Record query()
- * @method static Builder|Record whereAuth($value)
- * @method static Builder|Record whereChangeDate($value)
- * @method static Builder|Record whereContent($value)
- * @method static Builder|Record whereCreatedAt($value)
- * @method static Builder|Record whereDisabled($value)
- * @method static Builder|Record whereDomainId($value)
- * @method static Builder|Record whereId($value)
- * @method static Builder|Record whereName($value)
- * @method static Builder|Record whereOrdername($value)
- * @method static Builder|Record wherePriority($value)
- * @method static Builder|Record whereTtl($value)
- * @method static Builder|Record whereType($value)
- * @method static Builder|Record whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereAuth($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereChangeDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereContent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereDisabled($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereDomainId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereOrdername($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record wherePriority($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereTtl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Record whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Record extends BaseModel

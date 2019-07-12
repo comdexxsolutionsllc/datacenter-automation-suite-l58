@@ -6,8 +6,9 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Models\Support\Queue::class, function (Faker $faker) {
     return [
-        'name'        => $faker->word,
-        'description' => $faker->sentence,
+        'name'        => $faker->name,
+        'description' => $faker->text,
         'visible'     => $faker->boolean,
+        'deleted_at'  => $faker->dateTimeBetween(),
     ];
 });

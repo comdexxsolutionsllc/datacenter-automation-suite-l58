@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateMenuPagesTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

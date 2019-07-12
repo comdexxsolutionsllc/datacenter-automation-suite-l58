@@ -1,24 +1,24 @@
 .
 ├── [4.0K]  ./app
-│   ├── [ 189]  ./app/ApplicationVersion.php
+│   ├── [ 190]  ./app/ApplicationVersion.php
 │   ├── [4.0K]  ./app/Collections
 │   │   ├── [1.7K]  ./app/Collections/ChassisVendor.php
-│   │   ├── [ 528]  ./app/Collections/ControlPanelVendor.php
-│   │   ├── [ 760]  ./app/Collections/CpuVendor.php
+│   │   ├── [ 529]  ./app/Collections/ControlPanelVendor.php
+│   │   ├── [ 761]  ./app/Collections/CpuVendor.php
 │   │   ├── [1.4K]  ./app/Collections/DiskVendor.php
 │   │   ├── [1.1K]  ./app/Collections/MemoryVendor.php
 │   │   ├── [1.2K]  ./app/Collections/MotherboardVendor.php
-│   │   ├── [ 547]  ./app/Collections/NetworkDeviceType.php
+│   │   ├── [ 548]  ./app/Collections/NetworkDeviceType.php
 │   │   ├── [1.5K]  ./app/Collections/NicVendor.php
 │   │   ├── [1.1K]  ./app/Collections/OperatingSystem.php
 │   │   ├── [1.2K]  ./app/Collections/PowerSupplyUnit.php
-│   │   └── [ 586]  ./app/Collections/RaidCardVendor.php
+│   │   └── [ 587]  ./app/Collections/RaidCardVendor.php
 │   ├── [4.0K]  ./app/Console
 │   │   ├── [4.0K]  ./app/Console/Commands
-│   │   │   ├── [ 967]  ./app/Console/Commands/ClearProjectFiles.php
+│   │   │   ├── [ 968]  ./app/Console/Commands/ClearProjectFiles.php
 │   │   │   ├── [2.7K]  ./app/Console/Commands/EmailParserCommand.php
 │   │   │   ├── [1.6K]  ./app/Console/Commands/MakePHPDevelopmentReports.php
-│   │   │   └── [ 838]  ./app/Console/Commands/MakeTreeOutput.php
+│   │   │   └── [ 839]  ./app/Console/Commands/MakeTreeOutput.php
 │   │   └── [1.0K]  ./app/Console/Kernel.php
 │   ├── [4.0K]  ./app/Events
 │   ├── [4.0K]  ./app/Exceptions
@@ -29,15 +29,15 @@
 │   │   ├── [1.2K]  ./app/General/BuildBaseMenu.php
 │   │   ├── [1.2K]  ./app/General/CartStorage.php
 │   │   ├── [4.9K]  ./app/General/DCASHelper.php
-│   │   ├── [ 922]  ./app/General/EmailParser.php
-│   │   ├── [ 821]  ./app/General/EmployeeId.php
-│   │   ├── [ 820]  ./app/General/HardwareId.php
+│   │   ├── [ 923]  ./app/General/EmailParser.php
+│   │   ├── [ 823]  ./app/General/EmployeeId.php
+│   │   ├── [ 822]  ./app/General/HardwareId.php
 │   │   ├── [ 255]  ./app/General/IdentificationFormat.php
 │   │   ├── [ 253]  ./app/General/IdentificationTypeFormat.php
-│   │   ├── [ 351]  ./app/General/MenuBuilder.php
+│   │   ├── [ 352]  ./app/General/MenuBuilder.php
 │   │   ├── [2.1K]  ./app/General/Pluralize.php
 │   │   ├── [5.8K]  ./app/General/ProcessMenu.php
-│   │   ├── [ 822]  ./app/General/TicketId.php
+│   │   ├── [ 824]  ./app/General/TicketId.php
 │   │   └── [ 642]  ./app/General/TransactionId.php
 │   ├── [4.0K]  ./app/GraphQL
 │   │   ├── [4.0K]  ./app/GraphQL/Mutation
@@ -45,20 +45,20 @@
 │   │   ├── [4.0K]  ./app/GraphQL/Query
 │   │   │   └── [2.3K]  ./app/GraphQL/Query/UserQuery.php
 │   │   └── [4.0K]  ./app/GraphQL/Type
-│   │       ├── [ 353]  ./app/GraphQL/Type/Comment.php
-│   │       ├── [ 359]  ./app/GraphQL/Type/Department.php
-│   │       ├── [ 347]  ./app/GraphQL/Type/Note.php
-│   │       ├── [ 359]  ./app/GraphQL/Type/Permission.php
-│   │       ├── [ 347]  ./app/GraphQL/Type/Role.php
-│   │       ├── [ 351]  ./app/GraphQL/Type/Status.php
-│   │       ├── [ 359]  ./app/GraphQL/Type/Technician.php
+│   │       ├── [ 354]  ./app/GraphQL/Type/Comment.php
+│   │       ├── [ 360]  ./app/GraphQL/Type/Department.php
+│   │       ├── [ 348]  ./app/GraphQL/Type/Note.php
+│   │       ├── [ 360]  ./app/GraphQL/Type/Permission.php
+│   │       ├── [ 348]  ./app/GraphQL/Type/Role.php
+│   │       ├── [ 352]  ./app/GraphQL/Type/Status.php
+│   │       ├── [ 360]  ./app/GraphQL/Type/Technician.php
 │   │       ├── [2.6K]  ./app/GraphQL/Type/Ticket.php
 │   │       └── [2.8K]  ./app/GraphQL/Type/User.php
 │   ├── [4.0K]  ./app/Http
 │   │   ├── [4.0K]  ./app/Http/Controllers
 │   │   │   ├── [1.4K]  ./app/Http/Controllers/AboutUsController.php
 │   │   │   ├── [4.0K]  ./app/Http/Controllers/API
-│   │   │   │   ├── [ 335]  ./app/Http/Controllers/API/UserController.php
+│   │   │   │   ├── [ 336]  ./app/Http/Controllers/API/UserController.php
 │   │   │   │   ├── [4.0K]  ./app/Http/Controllers/API/V1
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/AboutUsController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/AssetController.php
@@ -67,7 +67,7 @@
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/ChassisController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/CommentController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/CompanyController.php
-│   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/ControlPanelController.php
+│   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/ControlPanelController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/CouponController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/CpuController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/DatacenterController.php
@@ -75,7 +75,7 @@
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/DiskController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/DomainController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/EmployeeController.php
-│   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/FirewallZoneController.php
+│   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/FirewallZoneController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/InvoiceController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/InvoiceItemController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/IpAddressController.php
@@ -94,7 +94,7 @@
 │   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/NetworkDeviceTypeController.php
 │   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/NetworkInterfaceCardController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/NoteController.php
-│   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/NotificationController.php
+│   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/NotificationController.php
 │   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/OperatingSystemController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/PermissionController.php
 │   │   │   │   │   ├── [1.3K]  ./app/Http/Controllers/API/V1/ProductController.php
@@ -106,37 +106,37 @@
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/ServiceController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/StatusController.php
 │   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/SubnetAddressController.php
-│   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/SubscriptionController.php
+│   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/SubscriptionController.php
 │   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/SwitchportInformationController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/TechnicianController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/TicketController.php
-│   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/TldExtensionController.php
+│   │   │   │   │   ├── [1.2K]  ./app/Http/Controllers/API/V1/TldExtensionController.php
 │   │   │   │   │   ├── [1.1K]  ./app/Http/Controllers/API/V1/VendorController.php
 │   │   │   │   │   └── [1.1K]  ./app/Http/Controllers/API/V1/WhitegloveController.php
-│   │   │   │   └── [ 347]  ./app/Http/Controllers/API/VersionController.php
-│   │   │   ├── [ 476]  ./app/Http/Controllers/ApplicationVersionController.php
+│   │   │   │   └── [ 348]  ./app/Http/Controllers/API/VersionController.php
+│   │   │   ├── [ 477]  ./app/Http/Controllers/ApplicationVersionController.php
 │   │   │   ├── [6.0K]  ./app/Http/Controllers/AssetController.php
-│   │   │   ├── [  91]  ./app/Http/Controllers/AssetRegionController.php
+│   │   │   ├── [  92]  ./app/Http/Controllers/AssetRegionController.php
 │   │   │   ├── [4.0K]  ./app/Http/Controllers/Auth
-│   │   │   │   ├── [ 897]  ./app/Http/Controllers/Auth/ForgotPasswordController.php
+│   │   │   │   ├── [ 898]  ./app/Http/Controllers/Auth/ForgotPasswordController.php
 │   │   │   │   ├── [1.6K]  ./app/Http/Controllers/Auth/Loginable.php
 │   │   │   │   ├── [2.2K]  ./app/Http/Controllers/Auth/LoginController.php
 │   │   │   │   ├── [2.0K]  ./app/Http/Controllers/Auth/RegisterController.php
-│   │   │   │   ├── [1019]  ./app/Http/Controllers/Auth/ResetPasswordController.php
+│   │   │   │   ├── [1020]  ./app/Http/Controllers/Auth/ResetPasswordController.php
 │   │   │   │   └── [1.1K]  ./app/Http/Controllers/Auth/VerificationController.php
-│   │   │   ├── [  96]  ./app/Http/Controllers/AvailabilityZoneController.php
+│   │   │   ├── [  97]  ./app/Http/Controllers/AvailabilityZoneController.php
 │   │   │   ├── [4.4K]  ./app/Http/Controllers/BillingInfoController.php
 │   │   │   ├── [3.7K]  ./app/Http/Controllers/CartController.php
-│   │   │   ├── [ 691]  ./app/Http/Controllers/ChatController.php
+│   │   │   ├── [ 692]  ./app/Http/Controllers/ChatController.php
 │   │   │   ├── [3.7K]  ./app/Http/Controllers/CommentController.php
 │   │   │   ├── [3.9K]  ./app/Http/Controllers/CompanyController.php
-│   │   │   ├── [ 425]  ./app/Http/Controllers/Controller.php
-│   │   │   ├── [ 794]  ./app/Http/Controllers/CSVExporter.php
+│   │   │   ├── [ 426]  ./app/Http/Controllers/Controller.php
+│   │   │   ├── [ 795]  ./app/Http/Controllers/CSVExporter.php
 │   │   │   ├── [4.8K]  ./app/Http/Controllers/CustomerController.php
 │   │   │   ├── [3.9K]  ./app/Http/Controllers/DatacenterController.php
 │   │   │   ├── [3.9K]  ./app/Http/Controllers/DepartmentController.php
 │   │   │   ├── [1.8K]  ./app/Http/Controllers/DeviceAPIController.php
-│   │   │   ├── [ 367]  ./app/Http/Controllers/DeviceController.php
+│   │   │   ├── [ 368]  ./app/Http/Controllers/DeviceController.php
 │   │   │   ├── [4.5K]  ./app/Http/Controllers/DomainController.php
 │   │   │   ├── [2.6K]  ./app/Http/Controllers/EmailParserController.php
 │   │   │   ├── [4.4K]  ./app/Http/Controllers/EmployeeController.php
@@ -160,23 +160,23 @@
 │   │   │   ├── [4.1K]  ./app/Http/Controllers/OperatingSystemController.php
 │   │   │   ├── [4.0K]  ./app/Http/Controllers/PermissionController.php
 │   │   │   ├── [1.7K]  ./app/Http/Controllers/PingResultAPIController.php
-│   │   │   ├── [ 371]  ./app/Http/Controllers/PingResultController.php
-│   │   │   ├── [ 429]  ./app/Http/Controllers/PricingController.php
+│   │   │   ├── [ 372]  ./app/Http/Controllers/PingResultController.php
+│   │   │   ├── [ 430]  ./app/Http/Controllers/PricingController.php
 │   │   │   ├── [1.4K]  ./app/Http/Controllers/ProductController.php
 │   │   │   ├── [3.6K]  ./app/Http/Controllers/QueueController.php
 │   │   │   ├── [1.6K]  ./app/Http/Controllers/RaidCardController.php
 │   │   │   ├── [1.4K]  ./app/Http/Controllers/RecordController.php
 │   │   │   ├── [3.7K]  ./app/Http/Controllers/RegistrarController.php
 │   │   │   ├── [4.3K]  ./app/Http/Controllers/ResellerController.php
-│   │   │   ├── [  93]  ./app/Http/Controllers/ResourceGroupController.php
-│   │   │   ├── [  92]  ./app/Http/Controllers/ResourceNameController.php
+│   │   │   ├── [  94]  ./app/Http/Controllers/ResourceGroupController.php
+│   │   │   ├── [  93]  ./app/Http/Controllers/ResourceNameController.php
 │   │   │   ├── [3.7K]  ./app/Http/Controllers/RoleController.php
 │   │   │   ├── [4.0K]  ./app/Http/Controllers/SalesRepController.php
-│   │   │   ├── [  93]  ./app/Http/Controllers/SecurityGroupController.php
+│   │   │   ├── [  94]  ./app/Http/Controllers/SecurityGroupController.php
 │   │   │   ├── [4.0K]  ./app/Http/Controllers/ServiceController.php
-│   │   │   ├── [  92]  ./app/Http/Controllers/ServiceLimitController.php
-│   │   │   ├── [  96]  ./app/Http/Controllers/ServiceNamespaceController.php
-│   │   │   ├── [ 164]  ./app/Http/Controllers/StaticPageController.php
+│   │   │   ├── [  93]  ./app/Http/Controllers/ServiceLimitController.php
+│   │   │   ├── [  97]  ./app/Http/Controllers/ServiceNamespaceController.php
+│   │   │   ├── [ 165]  ./app/Http/Controllers/StaticPageController.php
 │   │   │   ├── [3.9K]  ./app/Http/Controllers/StatusController.php
 │   │   │   ├── [4.4K]  ./app/Http/Controllers/SubMenuController.php
 │   │   │   ├── [4.7K]  ./app/Http/Controllers/SubscriptionController.php
@@ -191,172 +191,172 @@
 │   │   │   └── [4.9K]  ./app/Http/Controllers/WhiteGloveController.php
 │   │   ├── [4.6K]  ./app/Http/Kernel.php
 │   │   ├── [4.0K]  ./app/Http/Middleware
-│   │   │   ├── [ 403]  ./app/Http/Middleware/APIversion.php
-│   │   │   ├── [ 422]  ./app/Http/Middleware/Authenticate.php
-│   │   │   ├── [ 377]  ./app/Http/Middleware/CheckForMaintenanceMode.php
-│   │   │   ├── [ 356]  ./app/Http/Middleware/Customer.php
-│   │   │   ├── [ 278]  ./app/Http/Middleware/EncryptCookies.php
-│   │   │   ├── [ 356]  ./app/Http/Middleware/Internal.php
-│   │   │   ├── [ 574]  ./app/Http/Middleware/Local.php
-│   │   │   ├── [ 699]  ./app/Http/Middleware/LogRequestsWithXRequestId.php
-│   │   │   ├── [ 719]  ./app/Http/Middleware/MustBeActive.php
+│   │   │   ├── [ 404]  ./app/Http/Middleware/APIversion.php
+│   │   │   ├── [ 423]  ./app/Http/Middleware/Authenticate.php
+│   │   │   ├── [ 378]  ./app/Http/Middleware/CheckForMaintenanceMode.php
+│   │   │   ├── [ 357]  ./app/Http/Middleware/Customer.php
+│   │   │   ├── [ 279]  ./app/Http/Middleware/EncryptCookies.php
+│   │   │   ├── [ 357]  ./app/Http/Middleware/Internal.php
+│   │   │   ├── [ 576]  ./app/Http/Middleware/Local.php
+│   │   │   ├── [ 698]  ./app/Http/Middleware/LogRequestsWithXRequestId.php
+│   │   │   ├── [ 720]  ./app/Http/Middleware/MustBeActive.php
 │   │   │   ├── [1.2K]  ./app/Http/Middleware/RedirectIfAuthenticated.php
-│   │   │   ├── [ 378]  ./app/Http/Middleware/RobotMiddleware.php
-│   │   │   ├── [ 340]  ./app/Http/Middleware/TrimStrings.php
-│   │   │   ├── [ 429]  ./app/Http/Middleware/TrustProxies.php
+│   │   │   ├── [ 379]  ./app/Http/Middleware/RobotMiddleware.php
+│   │   │   ├── [ 341]  ./app/Http/Middleware/TrimStrings.php
+│   │   │   ├── [ 430]  ./app/Http/Middleware/TrustProxies.php
 │   │   │   ├── [1.1K]  ./app/Http/Middleware/ValidateMailgunWebhook.php
-│   │   │   ├── [ 345]  ./app/Http/Middleware/Vendor.php
-│   │   │   ├── [ 489]  ./app/Http/Middleware/VerifyCsrfToken.php
-│   │   │   └── [ 358]  ./app/Http/Middleware/WhiteGlove.php
+│   │   │   ├── [ 346]  ./app/Http/Middleware/Vendor.php
+│   │   │   ├── [ 490]  ./app/Http/Middleware/VerifyCsrfToken.php
+│   │   │   └── [ 359]  ./app/Http/Middleware/WhiteGlove.php
 │   │   └── [4.0K]  ./app/Http/Requests
 │   │       ├── [1.3K]  ./app/Http/Requests/MailgunRequest.php
 │   │       └── [2.1K]  ./app/Http/Requests/UpdateAboutUsRequest.php
 │   ├── [4.0K]  ./app/Jobs
-│   │   └── [ 994]  ./app/Jobs/CompileTagCloud.php
+│   │   └── [ 995]  ./app/Jobs/CompileTagCloud.php
 │   ├── [4.0K]  ./app/Listeners
 │   ├── [4.0K]  ./app/Mailboxes
-│   │   └── [ 315]  ./app/Mailboxes/MyMailbox.php
+│   │   └── [ 316]  ./app/Mailboxes/MyMailbox.php
 │   ├── [4.0K]  ./app/Models
-│   │   ├── [ 916]  ./app/Models/BaseModel.php
+│   │   ├── [ 917]  ./app/Models/BaseModel.php
 │   │   ├── [4.0K]  ./app/Models/General
-│   │   │   ├── [6.1K]  ./app/Models/General/Asset.php
+│   │   │   ├── [6.2K]  ./app/Models/General/Asset.php
 │   │   │   ├── [3.7K]  ./app/Models/General/BillingInfo.php
 │   │   │   ├── [1.9K]  ./app/Models/General/Cart.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Company.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Coupon.php
-│   │   │   ├── [3.3K]  ./app/Models/General/Domain.php
+│   │   │   ├── [3.4K]  ./app/Models/General/Domain.php
 │   │   │   ├── [4.1K]  ./app/Models/General/InboundEmail.php
 │   │   │   ├── [2.8K]  ./app/Models/General/InvoiceItem.php
 │   │   │   ├── [3.8K]  ./app/Models/General/Invoice.php
 │   │   │   ├── [3.5K]  ./app/Models/General/Notification.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Permission.php
-│   │   │   ├── [2.5K]  ./app/Models/General/Product.php
+│   │   │   ├── [2.6K]  ./app/Models/General/Product.php
 │   │   │   ├── [2.3K]  ./app/Models/General/Registrar.php
-│   │   │   ├── [2.7K]  ./app/Models/General/Reseller.php
-│   │   │   ├── [2.6K]  ./app/Models/General/Role.php
+│   │   │   ├── [2.8K]  ./app/Models/General/Reseller.php
+│   │   │   ├── [2.7K]  ./app/Models/General/Role.php
 │   │   │   ├── [2.9K]  ./app/Models/General/Service.php
 │   │   │   ├── [4.5K]  ./app/Models/General/Subscription.php
-│   │   │   ├── [2.2K]  ./app/Models/General/TagCloud.php
+│   │   │   ├── [2.3K]  ./app/Models/General/TagCloud.php
 │   │   │   └── [1.8K]  ./app/Models/General/TagType.php
 │   │   ├── [4.0K]  ./app/Models/Nameserver
-│   │   │   ├── [3.3K]  ./app/Models/Nameserver/Comment.php
+│   │   │   ├── [3.4K]  ./app/Models/Nameserver/Comment.php
 │   │   │   ├── [3.1K]  ./app/Models/Nameserver/Cryptokey.php
 │   │   │   ├── [3.0K]  ./app/Models/Nameserver/Domainmetadata.php
 │   │   │   ├── [4.3K]  ./app/Models/Nameserver/Domain.php
-│   │   │   ├── [3.9K]  ./app/Models/Nameserver/Record.php
-│   │   │   ├── [2.7K]  ./app/Models/Nameserver/Supermaster.php
+│   │   │   ├── [4.0K]  ./app/Models/Nameserver/Record.php
+│   │   │   ├── [2.8K]  ./app/Models/Nameserver/Supermaster.php
 │   │   │   └── [2.7K]  ./app/Models/Nameserver/Tsigkey.php
 │   │   ├── [4.0K]  ./app/Models/Roles
 │   │   │   ├── [3.8K]  ./app/Models/Roles/BaseRole.php
 │   │   │   ├── [5.5K]  ./app/Models/Roles/Customer.php
 │   │   │   ├── [5.1K]  ./app/Models/Roles/Employee.php
-│   │   │   ├── [ 891]  ./app/Models/Roles/RoleCollection.php
-│   │   │   ├── [5.2K]  ./app/Models/Roles/Vendor.php
-│   │   │   └── [5.3K]  ./app/Models/Roles/Whiteglove.php
+│   │   │   ├── [ 892]  ./app/Models/Roles/RoleCollection.php
+│   │   │   ├── [5.3K]  ./app/Models/Roles/Vendor.php
+│   │   │   └── [5.4K]  ./app/Models/Roles/Whiteglove.php
 │   │   ├── [4.0K]  ./app/Models/Support
 │   │   │   ├── [2.2K]  ./app/Models/Support/AssetRegion.php
-│   │   │   ├── [1.9K]  ./app/Models/Support/AvailabilityZone.php
+│   │   │   ├── [2.0K]  ./app/Models/Support/AvailabilityZone.php
 │   │   │   ├── [3.7K]  ./app/Models/Support/Chassis.php
 │   │   │   ├── [2.6K]  ./app/Models/Support/Comment.php
 │   │   │   ├── [3.3K]  ./app/Models/Support/ControlPanel.php
-│   │   │   ├── [2.5K]  ./app/Models/Support/Cpu.php
-│   │   │   ├── [2.5K]  ./app/Models/Support/Datacenter.php
-│   │   │   ├── [3.4K]  ./app/Models/Support/Department.php
-│   │   │   ├── [2.7K]  ./app/Models/Support/Device.php
-│   │   │   ├── [2.8K]  ./app/Models/Support/Disk.php
+│   │   │   ├── [2.6K]  ./app/Models/Support/Cpu.php
+│   │   │   ├── [2.6K]  ./app/Models/Support/Datacenter.php
+│   │   │   ├── [3.5K]  ./app/Models/Support/Department.php
+│   │   │   ├── [2.8K]  ./app/Models/Support/Device.php
+│   │   │   ├── [2.9K]  ./app/Models/Support/Disk.php
 │   │   │   ├── [2.3K]  ./app/Models/Support/FirewallZone.php
-│   │   │   ├── [4.1K]  ./app/Models/Support/IpAddress.php
-│   │   │   ├── [2.7K]  ./app/Models/Support/Memory.php
+│   │   │   ├── [4.2K]  ./app/Models/Support/IpAddress.php
+│   │   │   ├── [2.8K]  ./app/Models/Support/Memory.php
 │   │   │   ├── [5.4K]  ./app/Models/Support/Motherboard.php
 │   │   │   ├── [4.1K]  ./app/Models/Support/MotherboardType.php
-│   │   │   ├── [2.4K]  ./app/Models/Support/NetworkConfiguration.php
+│   │   │   ├── [2.5K]  ./app/Models/Support/NetworkConfiguration.php
 │   │   │   ├── [4.3K]  ./app/Models/Support/NetworkDevice.php
-│   │   │   ├── [2.4K]  ./app/Models/Support/NetworkDeviceType.php
+│   │   │   ├── [2.5K]  ./app/Models/Support/NetworkDeviceType.php
 │   │   │   ├── [2.8K]  ./app/Models/Support/NetworkInterfaceCard.php
 │   │   │   ├── [2.5K]  ./app/Models/Support/Note.php
 │   │   │   ├── [2.4K]  ./app/Models/Support/OperatingSystem.php
 │   │   │   ├── [3.4K]  ./app/Models/Support/PingResult.php
 │   │   │   ├── [1.9K]  ./app/Models/Support/PowerSupplyUnit.php
 │   │   │   ├── [2.1K]  ./app/Models/Support/Queue.php
-│   │   │   ├── [3.6K]  ./app/Models/Support/RaidCard.php
+│   │   │   ├── [3.7K]  ./app/Models/Support/RaidCard.php
 │   │   │   ├── [2.1K]  ./app/Models/Support/ResourceGroup.php
-│   │   │   ├── [2.4K]  ./app/Models/Support/ResourceName.php
+│   │   │   ├── [2.5K]  ./app/Models/Support/ResourceName.php
 │   │   │   ├── [2.8K]  ./app/Models/Support/SalesRep.php
 │   │   │   ├── [2.6K]  ./app/Models/Support/SecurityGroup.php
-│   │   │   ├── [2.9K]  ./app/Models/Support/ServiceLimit.php
-│   │   │   ├── [1.9K]  ./app/Models/Support/ServiceNamespace.php
+│   │   │   ├── [3.0K]  ./app/Models/Support/ServiceLimit.php
+│   │   │   ├── [2.0K]  ./app/Models/Support/ServiceNamespace.php
 │   │   │   ├── [3.8K]  ./app/Models/Support/Status.php
-│   │   │   ├── [2.4K]  ./app/Models/Support/SubnetAddress.php
+│   │   │   ├── [2.5K]  ./app/Models/Support/SubnetAddress.php
 │   │   │   ├── [3.8K]  ./app/Models/Support/SwitchportInformation.php
 │   │   │   ├── [2.7K]  ./app/Models/Support/Technician.php
-│   │   │   ├── [5.2K]  ./app/Models/Support/Ticket.php
+│   │   │   ├── [5.3K]  ./app/Models/Support/Ticket.php
 │   │   │   └── [2.1K]  ./app/Models/Support/TldExtension.php
 │   │   └── [4.0K]  ./app/Models/Website
-│   │       ├── [2.8K]  ./app/Models/Website/AboutUs.php
+│   │       ├── [2.9K]  ./app/Models/Website/AboutUs.php
 │   │       ├── [3.0K]  ./app/Models/Website/Chat.php
-│   │       ├── [2.7K]  ./app/Models/Website/MenuPage.php
+│   │       ├── [2.8K]  ./app/Models/Website/MenuPage.php
 │   │       └── [2.7K]  ./app/Models/Website/Pricing.php
 │   ├── [4.0K]  ./app/Permissions
 │   ├── [4.0K]  ./app/Policies
 │   ├── [4.0K]  ./app/Providers
-│   │   ├── [ 504]  ./app/Providers/AppServiceProvider.php
-│   │   ├── [ 733]  ./app/Providers/AuthServiceProvider.php
-│   │   ├── [ 431]  ./app/Providers/BroadcastServiceProvider.php
-│   │   ├── [ 904]  ./app/Providers/EventServiceProvider.php
-│   │   ├── [ 990]  ./app/Providers/HorizonServiceProvider.php
-│   │   ├── [ 351]  ./app/Providers/MailboxServiceProvider.php
+│   │   ├── [ 505]  ./app/Providers/AppServiceProvider.php
+│   │   ├── [ 734]  ./app/Providers/AuthServiceProvider.php
+│   │   ├── [ 432]  ./app/Providers/BroadcastServiceProvider.php
+│   │   ├── [ 905]  ./app/Providers/EventServiceProvider.php
+│   │   ├── [ 978]  ./app/Providers/HorizonServiceProvider.php
+│   │   ├── [ 352]  ./app/Providers/MailboxServiceProvider.php
 │   │   ├── [2.7K]  ./app/Providers/MenuServiceProvider.php
 │   │   ├── [4.1K]  ./app/Providers/RouteServiceProvider.php
 │   │   ├── [1.1K]  ./app/Providers/TelescopeServiceProvider.php
-│   │   └── [ 632]  ./app/Providers/TransformerServiceProvider.php
+│   │   └── [ 633]  ./app/Providers/TransformerServiceProvider.php
 │   ├── [4.0K]  ./app/Repositories
 │   ├── [4.0K]  ./app/Resources
 │   │   └── [4.0K]  ./app/Resources/Api
 │   │       └── [4.0K]  ./app/Resources/Api/v1
 │   ├── [4.0K]  ./app/Traits
-│   │   ├── [ 561]  ./app/Traits/ActiveStatus.php
+│   │   ├── [ 563]  ./app/Traits/ActiveStatus.php
 │   │   └── [1.2K]  ./app/Traits/API.php
 │   ├── [4.0K]  ./app/Transformers
 │   │   ├── [1.6K]  ./app/Transformers/AssetTransformer.php
-│   │   ├── [ 675]  ./app/Transformers/BillingInfoTransformer.php
-│   │   ├── [ 647]  ./app/Transformers/CommentTransformer.php
-│   │   ├── [ 647]  ./app/Transformers/CompanyTransformer.php
-│   │   ├── [ 640]  ./app/Transformers/CouponTransformer.php
-│   │   ├── [ 650]  ./app/Transformers/CustomerTransformer.php
-│   │   ├── [ 668]  ./app/Transformers/DatacenterTransformer.php
-│   │   ├── [ 668]  ./app/Transformers/DepartmentTransformer.php
-│   │   ├── [ 853]  ./app/Transformers/DeviceTransformer.php
-│   │   ├── [ 640]  ./app/Transformers/DomainTransformer.php
-│   │   ├── [ 650]  ./app/Transformers/EmployeeTransformer.php
-│   │   ├── [ 738]  ./app/Transformers/NetworkConfigurationTransformer.php
-│   │   ├── [ 689]  ./app/Transformers/NetworkDeviceTransformer.php
-│   │   ├── [ 717]  ./app/Transformers/NetworkDeviceTypeTransformer.php
-│   │   ├── [ 626]  ./app/Transformers/NoteTransformer.php
-│   │   ├── [ 682]  ./app/Transformers/NotificationTransformer.php
-│   │   ├── [ 703]  ./app/Transformers/OperatingSystemTransformer.php
-│   │   ├── [ 668]  ./app/Transformers/PermissionTransformer.php
-│   │   ├── [ 934]  ./app/Transformers/PingResultsTransformer.php
-│   │   ├── [ 647]  ./app/Transformers/ProductTransformer.php
-│   │   ├── [ 633]  ./app/Transformers/QueueTransformer.php
-│   │   ├── [ 661]  ./app/Transformers/RegistrarTransformer.php
-│   │   ├── [ 654]  ./app/Transformers/ResellerTransformer.php
-│   │   ├── [ 626]  ./app/Transformers/RoleTransformer.php
-│   │   ├── [ 654]  ./app/Transformers/SalesRepTransformer.php
-│   │   ├── [ 647]  ./app/Transformers/ServiceTransformer.php
-│   │   ├── [ 640]  ./app/Transformers/StatusTransformer.php
-│   │   ├── [ 682]  ./app/Transformers/SubscriptionTransformer.php
-│   │   ├── [ 706]  ./app/Transformers/SwitchportInformationTransformer.php
-│   │   ├── [ 668]  ./app/Transformers/TechnicianTransformer.php
-│   │   ├── [ 640]  ./app/Transformers/TicketTransformer.php
-│   │   ├── [ 710]  ./app/Transformers/UserTransformer.php
-│   │   ├── [ 636]  ./app/Transformers/VendorTransformer.php
-│   │   └── [ 664]  ./app/Transformers/WhiteGloveTransformer.php
+│   │   ├── [ 676]  ./app/Transformers/BillingInfoTransformer.php
+│   │   ├── [ 648]  ./app/Transformers/CommentTransformer.php
+│   │   ├── [ 648]  ./app/Transformers/CompanyTransformer.php
+│   │   ├── [ 641]  ./app/Transformers/CouponTransformer.php
+│   │   ├── [ 651]  ./app/Transformers/CustomerTransformer.php
+│   │   ├── [ 669]  ./app/Transformers/DatacenterTransformer.php
+│   │   ├── [ 669]  ./app/Transformers/DepartmentTransformer.php
+│   │   ├── [ 854]  ./app/Transformers/DeviceTransformer.php
+│   │   ├── [ 641]  ./app/Transformers/DomainTransformer.php
+│   │   ├── [ 651]  ./app/Transformers/EmployeeTransformer.php
+│   │   ├── [ 739]  ./app/Transformers/NetworkConfigurationTransformer.php
+│   │   ├── [ 690]  ./app/Transformers/NetworkDeviceTransformer.php
+│   │   ├── [ 718]  ./app/Transformers/NetworkDeviceTypeTransformer.php
+│   │   ├── [ 627]  ./app/Transformers/NoteTransformer.php
+│   │   ├── [ 683]  ./app/Transformers/NotificationTransformer.php
+│   │   ├── [ 704]  ./app/Transformers/OperatingSystemTransformer.php
+│   │   ├── [ 669]  ./app/Transformers/PermissionTransformer.php
+│   │   ├── [ 935]  ./app/Transformers/PingResultsTransformer.php
+│   │   ├── [ 648]  ./app/Transformers/ProductTransformer.php
+│   │   ├── [ 634]  ./app/Transformers/QueueTransformer.php
+│   │   ├── [ 662]  ./app/Transformers/RegistrarTransformer.php
+│   │   ├── [ 655]  ./app/Transformers/ResellerTransformer.php
+│   │   ├── [ 627]  ./app/Transformers/RoleTransformer.php
+│   │   ├── [ 655]  ./app/Transformers/SalesRepTransformer.php
+│   │   ├── [ 648]  ./app/Transformers/ServiceTransformer.php
+│   │   ├── [ 641]  ./app/Transformers/StatusTransformer.php
+│   │   ├── [ 683]  ./app/Transformers/SubscriptionTransformer.php
+│   │   ├── [ 707]  ./app/Transformers/SwitchportInformationTransformer.php
+│   │   ├── [ 669]  ./app/Transformers/TechnicianTransformer.php
+│   │   ├── [ 641]  ./app/Transformers/TicketTransformer.php
+│   │   ├── [ 711]  ./app/Transformers/UserTransformer.php
+│   │   ├── [ 637]  ./app/Transformers/VendorTransformer.php
+│   │   └── [ 665]  ./app/Transformers/WhiteGloveTransformer.php
 │   ├── [4.0K]  ./app/Translations
 │   └── [4.0K]  ./app/Types
-│       ├── [1.4K]  ./app/Types/Customer.php
-│       ├── [ 766]  ./app/Types/Department.php
-│       ├── [ 853]  ./app/Types/Queue.php
-│       └── [ 567]  ./app/Types/Typeable.php
+│       ├── [1.5K]  ./app/Types/Customer.php
+│       ├── [ 767]  ./app/Types/Department.php
+│       ├── [ 854]  ./app/Types/Queue.php
+│       └── [ 568]  ./app/Types/Typeable.php
 ├── [1.6K]  ./artisan
 ├── [ 588]  ./behat.yml
 ├── [4.0K]  ./bin
@@ -365,7 +365,7 @@
 │   ├── [ 264]  ./bin/git-silent
 │   ├── [  48]  ./bin/start-dusk-dashboard.sh
 │   └── [ 184]  ./bin/update-submodule.sh
-├── [5.0K]  ./composer.json
+├── [5.1K]  ./composer.json
 ├── [4.0K]  ./config
 │   ├── [4.9K]  ./config/adminlte.php
 │   ├── [ 322]  ./config/airports.php
@@ -378,7 +378,7 @@
 │   ├── [ 596]  ./config/cors.php
 │   ├── [  70]  ./config/dashboard.php
 │   ├── [3.9K]  ./config/database.php
-│   ├── [7.8K]  ./config/debugbar.php
+│   ├── [7.9K]  ./config/debugbar.php
 │   ├── [ 165]  ./config/debug-server.php
 │   ├── [2.6K]  ./config/erd-generator.php
 │   ├── [2.1K]  ./config/filesystems.php
@@ -386,12 +386,13 @@
 │   ├── [2.8K]  ./config/graphql.php
 │   ├── [1.6K]  ./config/hashing.php
 │   ├── [2.9K]  ./config/horizon.php
-│   ├── [5.9K]  ./config/ide-helper.php
+│   ├── [5.8K]  ./config/ide-helper.php
 │   ├── [1.9K]  ./config/imagecache.php
 │   ├── [ 507]  ./config/image.php
 │   ├── [ 706]  ./config/imageup.php
 │   ├── [ 990]  ./config/javascript.php
 │   ├── [8.4K]  ./config/larametrics.php
+│   ├── [1.8K]  ./config/laravel-code-generator.php
 │   ├── [1.9K]  ./config/laravel-form-builder.php
 │   ├── [ 969]  ./config/laravel-swagger.php
 │   ├── [5.8K]  ./config/larecipe.php
@@ -402,6 +403,7 @@
 │   ├── [ 258]  ./config/open-on-make.php
 │   ├── [ 553]  ./config/passport.php
 │   ├── [3.4K]  ./config/permission.php
+│   ├── [2.3K]  ./config/prequel.php
 │   ├── [2.0K]  ./config/queue.php
 │   ├── [3.7K]  ./config/responder.php
 │   ├── [3.3K]  ./config/scout.php
@@ -409,7 +411,7 @@
 │   ├── [ 371]  ./config/sentry.php
 │   ├── [1.0K]  ./config/services.php
 │   ├── [6.8K]  ./config/session.php
-│   ├── [  46]  ./config/shield.php
+│   ├── [  41]  ./config/shield.php
 │   ├── [1020]  ./config/shopping_cart.php
 │   ├── [4.4K]  ./config/sluggable.php
 │   ├── [ 163]  ./config/snipe.php
@@ -421,7 +423,9 @@
 │   ├── [2.2K]  ./config/translation.php
 │   ├── [1.9K]  ./config/translation_sheet.php
 │   ├── [1.2K]  ./config/trustedproxy.php
-│   └── [1002]  ./config/view.php
+│   ├── [1002]  ./config/view.php
+│   ├── [1.8K]  ./config/webhook-client.php
+│   └── [1.6K]  ./config/webhook-server.php
 ├── [4.0K]  ./config-set
 │   ├── [ 339]  ./config-set/jsonapi.php
 │   ├── [1.4K]  ./config-set/laravel_api.php
@@ -535,7 +539,7 @@
 │   │   ├── [ 430]  ./database/factories.old/NetworkConfigurationFactory.php
 │   │   ├── [1.1K]  ./database/factories.old/NetworkDeviceFactory.php
 │   │   ├── [ 333]  ./database/factories.old/NetworkDeviceTypeFactory.php
-│   │   ├── [ 212]  ./database/factories.old/NetworkInterfaceCardFactory.php
+│   │   ├── [ 207]  ./database/factories.old/NetworkInterfaceCardFactory.php
 │   │   ├── [ 668]  ./database/factories.old/NoteFactory.php
 │   │   ├── [ 506]  ./database/factories.old/NotificationFactory.php
 │   │   ├── [ 613]  ./database/factories.old/OperatingSystemFactory.php
@@ -566,87 +570,87 @@
 │   │   └── [2.5K]  ./database/factories.old/UserFactory.php
 │   ├── [ 12K]  ./database/migrations
 │   │   ├── [1.7K]  ./database/migrations/2014_10_12_000000_create_customers_table.php
-│   │   ├── [ 999]  ./database/migrations/2014_10_12_000000_create_employees_table.php
+│   │   ├── [1000]  ./database/migrations/2014_10_12_000000_create_employees_table.php
 │   │   ├── [1.2K]  ./database/migrations/2014_10_12_000000_create_vendors_table.php
 │   │   ├── [1.2K]  ./database/migrations/2014_10_12_000000_create_whitegloves_table.php
-│   │   ├── [ 781]  ./database/migrations/2016_06_01_000001_create_oauth_auth_codes_table.php
-│   │   ├── [ 893]  ./database/migrations/2016_06_01_000002_create_oauth_access_tokens_table.php
-│   │   ├── [ 724]  ./database/migrations/2016_06_01_000003_create_oauth_refresh_tokens_table.php
-│   │   ├── [ 890]  ./database/migrations/2016_06_01_000004_create_oauth_clients_table.php
-│   │   ├── [ 666]  ./database/migrations/2016_06_01_000005_create_oauth_personal_access_clients_table.php
+│   │   ├── [ 782]  ./database/migrations/2016_06_01_000001_create_oauth_auth_codes_table.php
+│   │   ├── [ 894]  ./database/migrations/2016_06_01_000002_create_oauth_access_tokens_table.php
+│   │   ├── [ 725]  ./database/migrations/2016_06_01_000003_create_oauth_refresh_tokens_table.php
+│   │   ├── [ 891]  ./database/migrations/2016_06_01_000004_create_oauth_clients_table.php
+│   │   ├── [ 667]  ./database/migrations/2016_06_01_000005_create_oauth_personal_access_clients_table.php
 │   │   ├── [1.9K]  ./database/migrations/2018_08_08_100000_create_telescope_entries_table.php
 │   │   ├── [3.2K]  ./database/migrations/2018_09_21_000940_create_permission_tables.php
-│   │   ├── [ 741]  ./database/migrations/2018_09_21_004306_create_notifications_table.php
-│   │   ├── [ 749]  ./database/migrations/2018_09_21_004313_create_failed_jobs_table.php
-│   │   ├── [ 780]  ./database/migrations/2018_09_21_004315_create_sessions_table.php
+│   │   ├── [ 742]  ./database/migrations/2018_09_21_004306_create_notifications_table.php
+│   │   ├── [ 750]  ./database/migrations/2018_09_21_004313_create_failed_jobs_table.php
+│   │   ├── [ 781]  ./database/migrations/2018_09_21_004315_create_sessions_table.php
 │   │   ├── [1.0K]  ./database/migrations/2018_09_22_002744_create_tickets_table.php
-│   │   ├── [ 773]  ./database/migrations/2018_09_22_004105_create_statuses_table.php
-│   │   ├── [ 782]  ./database/migrations/2018_09_22_004119_create_departments_table.php
-│   │   ├── [ 763]  ./database/migrations/2018_09_22_013701_create_department_employee_table.php
-│   │   ├── [ 632]  ./database/migrations/2018_09_22_032808_create_comments_table.php
-│   │   ├── [ 620]  ./database/migrations/2018_09_22_032824_create_notes_table.php
-│   │   ├── [ 724]  ./database/migrations/2018_09_24_232053_create_about_us_table.php
-│   │   ├── [ 918]  ./database/migrations/2018_10_13_164227_create_nameserver_domains_table.php
+│   │   ├── [ 774]  ./database/migrations/2018_09_22_004105_create_statuses_table.php
+│   │   ├── [ 783]  ./database/migrations/2018_09_22_004119_create_departments_table.php
+│   │   ├── [ 764]  ./database/migrations/2018_09_22_013701_create_department_employee_table.php
+│   │   ├── [ 633]  ./database/migrations/2018_09_22_032808_create_comments_table.php
+│   │   ├── [ 621]  ./database/migrations/2018_09_22_032824_create_notes_table.php
+│   │   ├── [ 725]  ./database/migrations/2018_09_24_232053_create_about_us_table.php
+│   │   ├── [ 919]  ./database/migrations/2018_10_13_164227_create_nameserver_domains_table.php
 │   │   ├── [1.2K]  ./database/migrations/2018_10_13_164256_create_nameserver_records_table.php
-│   │   ├── [ 717]  ./database/migrations/2018_10_13_164306_create_nameserver_supermasters_table.php
-│   │   ├── [ 978]  ./database/migrations/2018_10_13_164328_create_nameserver_comments_table.php
-│   │   ├── [ 807]  ./database/migrations/2018_10_13_164355_create_nameserver_domainmetadata_table.php
-│   │   ├── [ 826]  ./database/migrations/2018_10_13_164423_create_nameserver_cryptokeys_table.php
-│   │   ├── [ 763]  ./database/migrations/2018_10_13_164452_create_nameserver_tsigkeys_table.php
-│   │   ├── [ 769]  ./database/migrations/2018_10_14_170339_create_resellers_table.php
-│   │   ├── [ 988]  ./database/migrations/2018_10_14_170401_create_companies_table.php
+│   │   ├── [ 718]  ./database/migrations/2018_10_13_164306_create_nameserver_supermasters_table.php
+│   │   ├── [ 979]  ./database/migrations/2018_10_13_164328_create_nameserver_comments_table.php
+│   │   ├── [ 808]  ./database/migrations/2018_10_13_164355_create_nameserver_domainmetadata_table.php
+│   │   ├── [ 827]  ./database/migrations/2018_10_13_164423_create_nameserver_cryptokeys_table.php
+│   │   ├── [ 764]  ./database/migrations/2018_10_13_164452_create_nameserver_tsigkeys_table.php
+│   │   ├── [ 770]  ./database/migrations/2018_10_14_170339_create_resellers_table.php
+│   │   ├── [ 989]  ./database/migrations/2018_10_14_170401_create_companies_table.php
 │   │   ├── [1.3K]  ./database/migrations/2018_10_14_170413_create_invoices_table.php
-│   │   ├── [ 840]  ./database/migrations/2018_10_14_170421_create_invoice_items_table.php
+│   │   ├── [ 841]  ./database/migrations/2018_10_14_170421_create_invoice_items_table.php
 │   │   ├── [1.6K]  ./database/migrations/2018_10_14_170428_create_assets_table.php
 │   │   ├── [1.0K]  ./database/migrations/2018_10_14_170436_create_domains_table.php
-│   │   ├── [ 854]  ./database/migrations/2018_10_14_170445_create_services_table.php
-│   │   ├── [ 668]  ./database/migrations/2018_10_14_170454_create_registrars_table.php
+│   │   ├── [ 855]  ./database/migrations/2018_10_14_170445_create_services_table.php
+│   │   ├── [ 669]  ./database/migrations/2018_10_14_170454_create_registrars_table.php
 │   │   ├── [1.1K]  ./database/migrations/2018_10_14_171806_create_billing_info_table.php
-│   │   ├── [ 671]  ./database/migrations/2018_10_16_045426_create_sales_reps_table.php
-│   │   ├── [ 737]  ./database/migrations/2018_10_16_052158_create_datacenters_table.php
+│   │   ├── [ 672]  ./database/migrations/2018_10_16_045426_create_sales_reps_table.php
+│   │   ├── [ 738]  ./database/migrations/2018_10_16_052158_create_datacenters_table.php
 │   │   ├── [1.1K]  ./database/migrations/2018_10_16_052207_create_network_devices_table.php
 │   │   ├── [2.2K]  ./database/migrations/2018_10_16_052215_create_switchport_information_table.php
-│   │   ├── [ 728]  ./database/migrations/2018_10_16_053041_create_queues_table.php
-│   │   ├── [ 975]  ./database/migrations/2018_10_17_011250_create_operating_systems_table.php
-│   │   ├── [ 920]  ./database/migrations/2018_10_18_183254_create_tld_extensions_table.php
-│   │   ├── [ 775]  ./database/migrations/2018_10_18_222517_create_network_configurations_table.php
-│   │   ├── [ 736]  ./database/migrations/2018_10_19_024829_create_network_device_types_table.php
+│   │   ├── [ 729]  ./database/migrations/2018_10_16_053041_create_queues_table.php
+│   │   ├── [ 976]  ./database/migrations/2018_10_17_011250_create_operating_systems_table.php
+│   │   ├── [ 921]  ./database/migrations/2018_10_18_183254_create_tld_extensions_table.php
+│   │   ├── [ 776]  ./database/migrations/2018_10_18_222517_create_network_configurations_table.php
+│   │   ├── [ 737]  ./database/migrations/2018_10_19_024829_create_network_device_types_table.php
 │   │   ├── [1.4K]  ./database/migrations/2018_11_05_055336_add_last_active_to_roles_tables.php
-│   │   ├── [ 905]  ./database/migrations/2018_11_12_104516_create_menu_pages_table.php
+│   │   ├── [ 906]  ./database/migrations/2018_11_12_104516_create_menu_pages_table.php
 │   │   ├── [2.1K]  ./database/migrations/2018_11_27_011023_add_cart_session_id_to_users_table.php
-│   │   ├── [ 845]  ./database/migrations/2018_11_27_192059_create_products_table.php
-│   │   ├── [ 876]  ./database/migrations/2018_11_27_192138_create_coupons_table.php
-│   │   ├── [ 630]  ./database/migrations/2018_12_01_111324_create_carts_table.php
+│   │   ├── [ 846]  ./database/migrations/2018_11_27_192059_create_products_table.php
+│   │   ├── [ 877]  ./database/migrations/2018_11_27_192138_create_coupons_table.php
+│   │   ├── [ 631]  ./database/migrations/2018_12_01_111324_create_carts_table.php
 │   │   ├── [1.4K]  ./database/migrations/2018_12_24_014515_modify_tickets_table.php
 │   │   ├── [1.2K]  ./database/migrations/2018_12_26_013737_create_network_interface_cards_table.php
 │   │   ├── [1.5K]  ./database/migrations/2018_12_26_013905_create_ip_addresses_table.php
 │   │   ├── [1.3K]  ./database/migrations/2018_12_26_014005_create_chassis_table.php
 │   │   ├── [1.6K]  ./database/migrations/2018_12_26_014113_create_motherboard_types_table.php
-│   │   ├── [ 859]  ./database/migrations/2018_12_26_014218_create_cpus_table.php
-│   │   ├── [ 895]  ./database/migrations/2018_12_26_014321_create_memory_table.php
-│   │   ├── [ 877]  ./database/migrations/2018_12_26_014425_create_disks_table.php
+│   │   ├── [ 860]  ./database/migrations/2018_12_26_014218_create_cpus_table.php
+│   │   ├── [ 896]  ./database/migrations/2018_12_26_014321_create_memory_table.php
+│   │   ├── [ 878]  ./database/migrations/2018_12_26_014425_create_disks_table.php
 │   │   ├── [1.0K]  ./database/migrations/2018_12_26_014535_create_control_panels_table.php
-│   │   ├── [ 800]  ./database/migrations/2018_12_27_030612_create_firewall_zones_table.php
-│   │   ├── [ 846]  ./database/migrations/2018_12_27_203625_create_subnet_addresses_table.php
+│   │   ├── [ 801]  ./database/migrations/2018_12_27_030612_create_firewall_zones_table.php
+│   │   ├── [ 847]  ./database/migrations/2018_12_27_203625_create_subnet_addresses_table.php
 │   │   ├── [1.6K]  ./database/migrations/2019_01_05_023349_create_motherboards_table.php
 │   │   ├── [1.2K]  ./database/migrations/2019_01_05_023509_create_raid_cards_table.php
-│   │   ├── [ 860]  ./database/migrations/2019_01_15_224323_create_security_groups_table.php
-│   │   ├── [ 718]  ./database/migrations/2019_01_15_224417_create_resource_groups_table.php
-│   │   ├── [ 783]  ./database/migrations/2019_01_15_224506_create_resource_names_table.php
-│   │   ├── [ 681]  ./database/migrations/2019_01_15_224556_create_service_namespaces_table.php
-│   │   ├── [ 674]  ./database/migrations/2019_01_15_224646_create_availability_zones_table.php
-│   │   ├── [ 760]  ./database/migrations/2019_01_15_224737_create_asset_regions_table.php
+│   │   ├── [ 861]  ./database/migrations/2019_01_15_224323_create_security_groups_table.php
+│   │   ├── [ 719]  ./database/migrations/2019_01_15_224417_create_resource_groups_table.php
+│   │   ├── [ 784]  ./database/migrations/2019_01_15_224506_create_resource_names_table.php
+│   │   ├── [ 682]  ./database/migrations/2019_01_15_224556_create_service_namespaces_table.php
+│   │   ├── [ 675]  ./database/migrations/2019_01_15_224646_create_availability_zones_table.php
+│   │   ├── [ 761]  ./database/migrations/2019_01_15_224737_create_asset_regions_table.php
 │   │   ├── [1.0K]  ./database/migrations/2019_01_15_224828_create_service_limits_table.php
-│   │   ├── [ 676]  ./database/migrations/2019_01_25_223926_create_power_supply_units_table.php
-│   │   ├── [ 672]  ./database/migrations/2019_01_26_010607_create_mailbox_inbound_emails_table.php
+│   │   ├── [ 677]  ./database/migrations/2019_01_25_223926_create_power_supply_units_table.php
+│   │   ├── [ 673]  ./database/migrations/2019_01_26_010607_create_mailbox_inbound_emails_table.php
 │   │   ├── [1.3K]  ./database/migrations/2019_01_27_181942_create_inbound_emails_table.php
-│   │   ├── [ 724]  ./database/migrations/2019_03_04_225023_setup_airports_table.php
+│   │   ├── [ 725]  ./database/migrations/2019_03_04_225023_setup_airports_table.php
 │   │   ├── [1.4K]  ./database/migrations/2019_03_04_225024_charify_airports_table.php
-│   │   ├── [ 664]  ./database/migrations/2019_03_15_145701_create_pricing_table.php
-│   │   ├── [ 781]  ./database/migrations/2019_04_01_161643_create_chats_table.php
-│   │   ├── [ 794]  ./database/migrations/2019_04_26_013337_create_tag_cloud_table.php
-│   │   ├── [ 650]  ./database/migrations/2019_05_08_005640_create_tag_types_table.php
-│   │   ├── [ 670]  ./database/migrations/2019_06_8_165500_create_devices_table.php
+│   │   ├── [ 665]  ./database/migrations/2019_03_15_145701_create_pricing_table.php
+│   │   ├── [ 782]  ./database/migrations/2019_04_01_161643_create_chats_table.php
+│   │   ├── [ 795]  ./database/migrations/2019_04_26_013337_create_tag_cloud_table.php
+│   │   ├── [ 651]  ./database/migrations/2019_05_08_005640_create_tag_types_table.php
+│   │   ├── [ 671]  ./database/migrations/2019_06_8_165500_create_devices_table.php
 │   │   └── [1.0K]  ./database/migrations/2019_06_8_165501_create_ping_results_table.php
 │   ├── [4.0K]  ./database/schema
 │   │   ├── [ 303]  ./database/schema/about_us.json
@@ -662,22 +666,22 @@
 │   │   ├── [2.2K]  ./database/schema/statuses.json
 │   │   └── [159K]  ./database/schema/tld-info.json
 │   ├── [4.0K]  ./database/seeds
-│   │   ├── [ 122]  ./database/seeds/AboutUsTableSeeder.php
-│   │   ├── [ 708]  ./database/seeds/AirportsSeeder.php
-│   │   ├── [ 729]  ./database/seeds/AirportTableSeeder.php
+│   │   ├── [ 123]  ./database/seeds/AboutUsTableSeeder.php
+│   │   ├── [ 709]  ./database/seeds/AirportsSeeder.php
+│   │   ├── [ 730]  ./database/seeds/AirportTableSeeder.php
 │   │   ├── [3.4K]  ./database/seeds/DatabaseSeeder.php
-│   │   ├── [ 125]  ./database/seeds/DatacenterTableSeeder.php
-│   │   ├── [ 125]  ./database/seeds/DepartmentTableSeeder.php
-│   │   ├── [ 247]  ./database/seeds/DeviceSeeder.php
-│   │   ├── [ 130]  ./database/seeds/OperatingSystemTableSeeder.php
-│   │   ├── [ 566]  ./database/seeds/PermissionTableSeeder.php
-│   │   ├── [ 259]  ./database/seeds/PingResultSeeder.php
-│   │   ├── [ 174]  ./database/seeds/QueueTableSeeder.php
-│   │   ├── [ 124]  ./database/seeds/RegistrarTableSeeder.php
-│   │   ├── [ 687]  ./database/seeds/RoleHasPermissionsTableSeeder.php
-│   │   ├── [ 524]  ./database/seeds/RoleTableSeeder.php
-│   │   ├── [ 668]  ./database/seeds/StatusTableSeeder.php
-│   │   └── [ 613]  ./database/seeds/TldExtensionTableSeeder.php
+│   │   ├── [ 126]  ./database/seeds/DatacenterTableSeeder.php
+│   │   ├── [ 126]  ./database/seeds/DepartmentTableSeeder.php
+│   │   ├── [ 248]  ./database/seeds/DeviceSeeder.php
+│   │   ├── [ 131]  ./database/seeds/OperatingSystemTableSeeder.php
+│   │   ├── [ 567]  ./database/seeds/PermissionTableSeeder.php
+│   │   ├── [ 260]  ./database/seeds/PingResultSeeder.php
+│   │   ├── [ 175]  ./database/seeds/QueueTableSeeder.php
+│   │   ├── [ 125]  ./database/seeds/RegistrarTableSeeder.php
+│   │   ├── [ 688]  ./database/seeds/RoleHasPermissionsTableSeeder.php
+│   │   ├── [ 525]  ./database/seeds/RoleTableSeeder.php
+│   │   ├── [ 669]  ./database/seeds/StatusTableSeeder.php
+│   │   └── [ 614]  ./database/seeds/TldExtensionTableSeeder.php
 │   └── [   0]  ./database/testing.sqlite
 ├── [ 140]  ./docker-compose.debug.yml
 ├── [  96]  ./docker-compose.yml
@@ -722,11 +726,11 @@
 │   ├── [4.0K]  ./public/img
 │   ├── [1.8K]  ./public/index.php
 │   ├── [4.0K]  ./public/js
-│   │   ├── [2.8M]  ./public/js/app.js
+│   │   ├── [2.9M]  ./public/js/app.js
 │   │   └── [6.1K]  ./public/js/manifest.js
 │   ├── [ 45K]  ./public/loading.gif
 │   ├── [2.2K]  ./public/mix-manifest.json
-│   ├── [ 150]  ./public/phpcs.xml
+│   ├── [1.4K]  ./public/phpcs.xml
 │   ├── [4.0K]  ./public/phpcs.xsl
 │   ├── [ 99K]  ./public/phpmd.html
 │   ├── [4.0K]  ./public/svg
@@ -1378,4 +1382,4 @@
 ├── [2.1K]  ./webpack.mix.js
 └── [4.0K]  ./working
 
-160 directories, 1218 files
+160 directories, 1222 files

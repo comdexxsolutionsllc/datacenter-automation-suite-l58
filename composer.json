@@ -44,6 +44,7 @@
     "phlak/semver": "^2.0",
     "php-mime-mail-parser/php-mime-mail-parser": "^5.0",
     "predis/predis": "^1.1",
+    "protoqol/prequel": "^0.6.2@beta",
     "qcod/laravel-imageup": "^1.0",
     "romegadigital/multitenancy": "^2.0",
     "sentry/sentry-laravel": "^1.0",

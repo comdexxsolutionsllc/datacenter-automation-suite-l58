@@ -9,22 +9,22 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Nameserver\Domainmetadata
  *
- * @property int                                $id
- * @property int                                $domain_id
- * @property string|null                        $kind
- * @property string|null                        $content
- * @property array                              $created_at
- * @property array                              $updated_at
+ * @property int $id
+ * @property int $domain_id
+ * @property string|null $kind
+ * @property string|null $content
+ * @property array $created_at
+ * @property array $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
- * @method static Builder|Domainmetadata newModelQuery()
- * @method static Builder|Domainmetadata newQuery()
- * @method static Builder|Domainmetadata query()
- * @method static Builder|Domainmetadata whereContent($value)
- * @method static Builder|Domainmetadata whereCreatedAt($value)
- * @method static Builder|Domainmetadata whereDomainId($value)
- * @method static Builder|Domainmetadata whereId($value)
- * @method static Builder|Domainmetadata whereKind($value)
- * @method static Builder|Domainmetadata whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereContent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereDomainId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereKind($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Domainmetadata extends BaseModel

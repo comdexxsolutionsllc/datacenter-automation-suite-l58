@@ -3636,8 +3636,8 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   }
 
   100% {
-    -webkit-transform: translateY(0) rotateZ(0);
-            transform: translateY(0) rotateZ(0);
+    -webkit-transform: translateY(0) rotateZ(0deg);
+            transform: translateY(0) rotateZ(0deg);
   }
 }
 
@@ -3658,8 +3658,8 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   }
 
   100% {
-    -webkit-transform: translateY(0) rotateZ(0);
-            transform: translateY(0) rotateZ(0);
+    -webkit-transform: translateY(0) rotateZ(0deg);
+            transform: translateY(0) rotateZ(0deg);
   }
 }
 
@@ -21063,7 +21063,7 @@ a.text-dark:focus {
 }
 
 /*!
-  Ionicons, v4.5.7
+  Ionicons, v4.6.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
   MIT License: https://github.com/driftyco/ionicons
@@ -21076,8 +21076,8 @@ a.text-dark:focus {
 
 @font-face {
   font-family: "Ionicons";
-  src: url("../fonts/ionicons.eot?v=4.5.7");
-  src: url("../fonts/ionicons.eot?v=4.5.7#iefix") format("embedded-opentype"), url("../fonts/ionicons.woff2?v=4.5.7") format("woff2"), url("../fonts/ionicons.woff?v=4.5.7") format("woff"), url("../fonts/ionicons.ttf?v=4.5.7") format("truetype"), url("../fonts/ionicons.svg?v=4.5.7#Ionicons") format("svg");
+  src: url("../fonts/ionicons.eot?v=4.6.1");
+  src: url("../fonts/ionicons.eot?v=4.6.1#iefix") format("embedded-opentype"), url("../fonts/ionicons.woff2?v=4.6.1") format("woff2"), url("../fonts/ionicons.woff?v=4.6.1") format("woff"), url("../fonts/ionicons.ttf?v=4.6.1") format("truetype"), url("../fonts/ionicons.svg?v=4.6.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal;
 }

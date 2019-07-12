@@ -10,22 +10,22 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Support\Device
  *
- * @property int                                                                            $id
- * @property string                                                                         $name
- * @property string                                                                         $ip
- * @property bool                                                                           $is_active
- * @property \Illuminate\Support\Carbon|null                                                $created_at
- * @property \Illuminate\Support\Carbon|null                                                $updated_at
+ * @property int $id
+ * @property string $name
+ * @property string $ip
+ * @property bool $is_active
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\PingResult[] $pingResults
- * @method static Builder|Device newModelQuery()
- * @method static Builder|Device newQuery()
- * @method static Builder|Device query()
- * @method static Builder|Device whereCreatedAt($value)
- * @method static Builder|Device whereId($value)
- * @method static Builder|Device whereIp($value)
- * @method static Builder|Device whereIsActive($value)
- * @method static Builder|Device whereName($value)
- * @method static Builder|Device whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereIp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereIsActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Device extends BaseModel implements Transformable

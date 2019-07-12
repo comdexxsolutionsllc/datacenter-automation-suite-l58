@@ -11,21 +11,21 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 /**
  * App\Models\Support\Technician
  *
- * @property int                                                                        $id
- * @property int                                                                        $department_id
- * @property int                                                                        $employee_id
- * @property \Illuminate\Support\Carbon|null                                            $created_at
- * @property \Illuminate\Support\Carbon|null                                            $updated_at
+ * @property int $id
+ * @property int $department_id
+ * @property int $employee_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
- * @property-read \App\Models\Roles\Employee                                            $user
- * @method static Builder|Technician newModelQuery()
- * @method static Builder|Technician newQuery()
- * @method static Builder|Technician query()
- * @method static Builder|Technician whereCreatedAt($value)
- * @method static Builder|Technician whereDepartmentId($value)
- * @method static Builder|Technician whereEmployeeId($value)
- * @method static Builder|Technician whereId($value)
- * @method static Builder|Technician whereUpdatedAt($value)
+ * @property-read \App\Models\Roles\Employee $user
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician whereDepartmentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician whereEmployeeId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Technician extends Pivot

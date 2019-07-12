@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateChatsTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

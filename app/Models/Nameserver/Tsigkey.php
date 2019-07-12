@@ -9,21 +9,21 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * App\Models\Nameserver\Tsigkey
  *
- * @property int    $id
+ * @property int $id
  * @property string $name
  * @property string $algorithm
  * @property string $secret
- * @property array  $created_at
- * @property array  $updated_at
- * @method static Builder|Tsigkey newModelQuery()
- * @method static Builder|Tsigkey newQuery()
- * @method static Builder|Tsigkey query()
- * @method static Builder|Tsigkey whereAlgorithm($value)
- * @method static Builder|Tsigkey whereCreatedAt($value)
- * @method static Builder|Tsigkey whereId($value)
- * @method static Builder|Tsigkey whereName($value)
- * @method static Builder|Tsigkey whereSecret($value)
- * @method static Builder|Tsigkey whereUpdatedAt($value)
+ * @property array $created_at
+ * @property array $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereAlgorithm($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereSecret($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Tsigkey extends BaseModel

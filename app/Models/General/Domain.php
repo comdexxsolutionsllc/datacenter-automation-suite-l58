@@ -9,34 +9,34 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 /**
  * App\Models\General\Domain
  *
- * @property int                                $id
- * @property int                                $account_id
- * @property string                             $account_type
- * @property int                                $registrar_id
- * @property string                             $domain_name
- * @property int                                $active
- * @property int                                $monitor
- * @property string|null                        $whois_record_updated
- * @property string|null                        $whois_record_created
- * @property string|null                        $whois_record_expiry
- * @property \Illuminate\Support\Carbon|null    $created_at
- * @property \Illuminate\Support\Carbon|null    $updated_at
+ * @property int $id
+ * @property int $account_id
+ * @property string $account_type
+ * @property int $registrar_id
+ * @property string $domain_name
+ * @property int $active
+ * @property int $monitor
+ * @property string|null $whois_record_updated
+ * @property string|null $whois_record_created
+ * @property string|null $whois_record_expiry
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\General\Registrar $registrar
- * @method static Builder|Domain newModelQuery()
- * @method static Builder|Domain newQuery()
- * @method static Builder|Domain query()
- * @method static Builder|Domain whereAccountId($value)
- * @method static Builder|Domain whereAccountType($value)
- * @method static Builder|Domain whereActive($value)
- * @method static Builder|Domain whereCreatedAt($value)
- * @method static Builder|Domain whereDomainName($value)
- * @method static Builder|Domain whereId($value)
- * @method static Builder|Domain whereMonitor($value)
- * @method static Builder|Domain whereRegistrarId($value)
- * @method static Builder|Domain whereUpdatedAt($value)
- * @method static Builder|Domain whereWhoisRecordCreated($value)
- * @method static Builder|Domain whereWhoisRecordExpiry($value)
- * @method static Builder|Domain whereWhoisRecordUpdated($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereAccountId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereAccountType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereDomainName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereMonitor($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereRegistrarId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereWhoisRecordCreated($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereWhoisRecordExpiry($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereWhoisRecordUpdated($value)
  * @mixin \Eloquent
  */
 class Domain extends BaseModel

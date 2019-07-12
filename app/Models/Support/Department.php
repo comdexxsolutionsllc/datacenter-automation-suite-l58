@@ -10,26 +10,26 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * App\Models\Support\Department
  *
- * @property int                                                                        $id
- * @property string                                                                     $name
- * @property string|null                                                                $description
- * @property string                                                                     $hexcode
- * @property int                                                                        $visible
- * @property bool|\DateTime                                                             $deleted_at
- * @property bool|\DateTime                                                             $created_at
- * @property bool|\DateTime                                                             $updated_at
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property string $hexcode
+ * @property int $visible
+ * @property bool|\DateTime $deleted_at
+ * @property bool|\DateTime $created_at
+ * @property bool|\DateTime $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
- * @method static Builder|Department newModelQuery()
- * @method static Builder|Department newQuery()
- * @method static Builder|Department query()
- * @method static Builder|Department whereCreatedAt($value)
- * @method static Builder|Department whereDeletedAt($value)
- * @method static Builder|Department whereDescription($value)
- * @method static Builder|Department whereHexcode($value)
- * @method static Builder|Department whereId($value)
- * @method static Builder|Department whereName($value)
- * @method static Builder|Department whereUpdatedAt($value)
- * @method static Builder|Department whereVisible($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereHexcode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereVisible($value)
  * @mixin \Eloquent
  */
 class Department extends BaseModel
