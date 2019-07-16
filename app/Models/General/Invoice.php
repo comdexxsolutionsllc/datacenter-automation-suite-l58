@@ -24,6 +24,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\General\BillingInfo $billingInfo
+ * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\InvoiceItem[] $invoiceItems
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice newQuery()

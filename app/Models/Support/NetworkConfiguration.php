@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $configuration
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\SwitchportInformation[] $switchportInformation
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkConfiguration newQuery()

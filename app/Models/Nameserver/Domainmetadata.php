@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property array $created_at
  * @property array $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata query()

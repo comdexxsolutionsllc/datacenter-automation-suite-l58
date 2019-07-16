@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $visible
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagCloud query()

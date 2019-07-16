@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $ipv6_enabled
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ControlPanel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ControlPanel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ControlPanel query()

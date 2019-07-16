@@ -25,6 +25,7 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property string $ticketable_type
  * @property int $ticketable_id
  * @property-read \App\Models\Support\Department $department
+ * @property-read mixed $path
  * @property-read \App\Models\Support\Status $status
  * @property-read \App\Models\Support\Technician $technicianAssigned
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $user

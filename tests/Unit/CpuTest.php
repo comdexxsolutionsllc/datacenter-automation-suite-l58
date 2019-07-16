@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class CpuTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $price
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Product query()

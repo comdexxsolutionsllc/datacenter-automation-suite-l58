@@ -2,20 +2,17 @@
 
 namespace App\Models;
 
-//use Altek\Accountant\Contracts\Recordable as IRecordable;
-//use Altek\Accountant\Recordable;
-//use Altek\Eventually\Eventually;
+use Altek\Eventually\Eventually;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
 
 /**
  * Class BaseModel
  */
-abstract class BaseModel extends Model //implements IRecordable
+abstract class BaseModel extends Model
 {
 
-    //use Eventually, Recordable,
-    use Searchable;
+    use Eventually, Searchable;
 
     /**
      * Displayable Fields for export.
@@ -30,6 +27,11 @@ abstract class BaseModel extends Model //implements IRecordable
      * @return string
      */
     abstract public function path(): string;
+
+    public function getPathAttribute()
+    {
+        $this->path();
+    }
 
     /**
      * Get the index name for the model.

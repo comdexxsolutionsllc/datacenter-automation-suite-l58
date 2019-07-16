@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class RegistrarTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

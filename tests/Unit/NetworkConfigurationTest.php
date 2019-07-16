@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class NetworkConfigurationTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

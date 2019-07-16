@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class SalesRepTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

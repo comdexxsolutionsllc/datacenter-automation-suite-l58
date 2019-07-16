@@ -9023,7 +9023,7 @@ if(false) {}
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.14';
+  var VERSION = '4.17.15';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -53655,10 +53655,12 @@ var TableMap = function TableMap(width, height, map, problems) {
 // :: (number) → Rect
 // Find the dimensions of the cell at the given position.
 TableMap.prototype.findCell = function findCell (pos) {
+    var this$1 = this;
+
   for (var i = 0; i < this.map.length; i++) {
-    var curPos = this.map[i];
+    var curPos = this$1.map[i];
     if (curPos != pos) { continue }
-    var left = i % this.width, top = (i / this.width) | 0;
+    var left = i % this$1.width, top = (i / this$1.width) | 0;
     var right = left + 1, bottom = top + 1;
     for (var j = 1; right < this.width && this.map[i + j] == curPos; j++) { right++; }
     for (var j$1 = 1; bottom < this.height && this.map[i + (this.width * j$1)] == curPos; j$1++) { bottom++; }
@@ -53670,8 +53672,10 @@ TableMap.prototype.findCell = function findCell (pos) {
 // :: (number) → number
 // Find the left side of the cell at the given position.
 TableMap.prototype.colCount = function colCount (pos) {
+    var this$1 = this;
+
   for (var i = 0; i < this.map.length; i++)
-    { if (this.map[i] == pos) { return i % this.width } }
+    { if (this$1.map[i] == pos) { return i % this$1.width } }
   throw new RangeError("No cell with offset " + pos + " found")
 };
 
@@ -53714,14 +53718,16 @@ TableMap.prototype.rectBetween = function rectBetween (a, b) {
 // Return the position of all cells that have the top left corner in
 // the given rectangle.
 TableMap.prototype.cellsInRect = function cellsInRect (rect) {
+    var this$1 = this;
+
   var result = [], seen = {};
   for (var row = rect.top; row < rect.bottom; row++) {
     for (var col = rect.left; col < rect.right; col++) {
-      var index = row * this.width + col, pos = this.map[index];
+      var index = row * this$1.width + col, pos = this$1.map[index];
       if (seen[pos]) { continue }
       seen[pos] = true;
-      if ((col != rect.left || !col || this.map[index - 1] != pos) &&
-          (row != rect.top || !row || this.map[index - this.width] != pos))
+      if ((col != rect.left || !col || this$1.map[index - 1] != pos) &&
+          (row != rect.top || !row || this$1.map[index - this$1.width] != pos))
         { result.push(pos); }
     }
   }
@@ -53732,13 +53738,15 @@ TableMap.prototype.cellsInRect = function cellsInRect (rect) {
 // Return the position at which the cell at the given row and column
 // starts, or would start, if a cell started there.
 TableMap.prototype.positionAt = function positionAt (row, col, table) {
+    var this$1 = this;
+
   for (var i = 0, rowStart = 0;; i++) {
     var rowEnd = rowStart + table.child(i).nodeSize;
     if (i == row) {
-      var index = col + row * this.width, rowEndIndex = (row + 1) * this.width;
+      var index = col + row * this$1.width, rowEndIndex = (row + 1) * this$1.width;
       // Skip past cells from previous rows (via rowspan)
       while (index < rowEndIndex && this.map[index] < rowStart) { index++; }
-      return index == rowEndIndex ? rowEnd - 1 : this.map[index]
+      return index == rowEndIndex ? rowEnd - 1 : this$1.map[index]
     }
     rowStart = rowEnd;
   }
@@ -53967,7 +53975,7 @@ function addColSpan(attrs, pos, n) {
 // With the plugin enabled, these will be created when the user
 // selects across cells, and will be drawn by giving selected cells a
 // `selectedCell` CSS class.
-var CellSelection = /*@__PURE__*/(function (Selection) {
+var CellSelection = (function (Selection) {
   function CellSelection($anchorCell, $headCell) {
     if ( $headCell === void 0 ) $headCell = $anchorCell;
 
@@ -55182,48 +55190,59 @@ function mergeCells(state, dispatch) {
   }
   return true
 }
-
 // :: (EditorState, dispatch: ?(tr: Transaction)) → bool
 // Split a selected cell, whose rowpan or colspan is greater than one,
-// into smaller cells.
+// into smaller cells. Use the first cell type for the new cells.
 function splitCell(state, dispatch) {
-  var sel = state.selection;
-  var cellNode, cellPos;
-  if (!(sel instanceof CellSelection)) {
-    cellNode = cellWrapping(sel.$from);
-    if (!cellNode) { return false }
-    cellPos = cellAround(sel.$from).pos;
-  } else {
-    if (sel.$anchorCell.pos != sel.$headCell.pos) { return false }
-    cellNode = sel.$anchorCell.nodeAfter;
-    cellPos = sel.$anchorCell.pos;
-  }
-  if (cellNode.attrs.colspan == 1 && cellNode.attrs.rowspan == 1) {return false}
-  if (dispatch) {
-    var baseAttrs = cellNode.attrs, attrs = [], colwidth = baseAttrs.colwidth;
-    if (baseAttrs.rowspan > 1) { baseAttrs = setAttr(baseAttrs, "rowspan", 1); }
-    if (baseAttrs.colspan > 1) { baseAttrs = setAttr(baseAttrs, "colspan", 1); }
-    var rect = selectedRect(state), tr = state.tr;
-    for (var i = 0; i < rect.right - rect.left; i++)
-      { attrs.push(colwidth ? setAttr(baseAttrs, "colwidth", colwidth && colwidth[i] ? [colwidth[i]] : null) : baseAttrs); }
-    var lastCell, cellType = tableNodeTypes(state.schema)[cellNode.type.spec.tableRole];
-    for (var row = 0; row < rect.bottom; row++) {
-      if (row >= rect.top) {
+  var nodeTypes = tableNodeTypes(state.schema);
+  return splitCellWithType(function (ref) {
+    var node = ref.node;
+
+    return nodeTypes[node.type.spec.tableRole]
+  })(state, dispatch)
+}
+
+// :: (getCellType: ({ row: number, col: number, node: Node}) → NodeType) → (EditorState, dispatch: ?(tr: Transaction)) → bool
+// Split a selected cell, whose rowpan or colspan is greater than one,
+// into smaller cells with the cell type (th, td) returned by getType function.
+function splitCellWithType(getCellType) {
+  return function (state, dispatch) {
+    var sel = state.selection;
+    var cellNode, cellPos;
+    if (!(sel instanceof CellSelection)) {
+      cellNode = cellWrapping(sel.$from);
+      if (!cellNode) { return false }
+      cellPos = cellAround(sel.$from).pos;
+    } else {
+      if (sel.$anchorCell.pos != sel.$headCell.pos) { return false }
+      cellNode = sel.$anchorCell.nodeAfter;
+      cellPos = sel.$anchorCell.pos;
+    }
+    if (cellNode.attrs.colspan == 1 && cellNode.attrs.rowspan == 1) {return false}
+    if (dispatch) {
+      var baseAttrs = cellNode.attrs, attrs = [], colwidth = baseAttrs.colwidth;
+      if (baseAttrs.rowspan > 1) { baseAttrs = setAttr(baseAttrs, "rowspan", 1); }
+      if (baseAttrs.colspan > 1) { baseAttrs = setAttr(baseAttrs, "colspan", 1); }
+      var rect = selectedRect(state), tr = state.tr;
+      for (var i = 0; i < rect.right - rect.left; i++)
+        { attrs.push(colwidth ? setAttr(baseAttrs, "colwidth", colwidth && colwidth[i] ? [colwidth[i]] : null) : baseAttrs); }
+      var lastCell;
+      for (var row = rect.top; row < rect.bottom; row++) {
         var pos = rect.map.positionAt(row, rect.left, rect.table);
         if (row == rect.top) { pos += cellNode.nodeSize; }
         for (var col = rect.left, i$1 = 0; col < rect.right; col++, i$1++) {
           if (col == rect.left && row == rect.top) { continue }
-          tr.insert(lastCell = tr.mapping.map(pos + rect.tableStart, 1), cellType.createAndFill(attrs[i$1]));
+          tr.insert(lastCell = tr.mapping.map(pos + rect.tableStart, 1), getCellType({ node: cellNode, row: row, col: col}).createAndFill(attrs[i$1]));
         }
       }
+      tr.setNodeMarkup(cellPos, getCellType({ node: cellNode, row: rect.top, col: rect.left}), attrs[0]);
+      if (sel instanceof CellSelection)
+        { tr.setSelection(new CellSelection(tr.doc.resolve(sel.$anchorCell.pos),
+                                          lastCell && tr.doc.resolve(lastCell))); }
+      dispatch(tr);
     }
-    tr.setNodeMarkup(cellPos, null, attrs[0]);
-    if (sel instanceof CellSelection)
-      { tr.setSelection(new CellSelection(tr.doc.resolve(sel.$anchorCell.pos),
-                                        lastCell && tr.doc.resolve(lastCell))); }
-    dispatch(tr);
+    return true
   }
-  return true
 }
 
 // :: (string, any) → (EditorState, dispatch: ?(tr: Transaction)) → bool
@@ -55775,6 +55794,7 @@ exports.removeRow = removeRow;
 exports.deleteRow = deleteRow;
 exports.mergeCells = mergeCells;
 exports.splitCell = splitCell;
+exports.splitCellWithType = splitCellWithType;
 exports.setCellAttr = setCellAttr;
 exports.toggleHeader = toggleHeader;
 exports.toggleHeaderRow = toggleHeaderRow;
@@ -58745,9 +58765,11 @@ var selectTable = function selectTable(tr) {
 var emptyCell = function emptyCell(cell, schema) {
   return function (tr) {
     if (cell) {
-      var content = tableNodeTypes(schema).cell.createAndFill().content;
+      var _tableNodeTypes$cell$ = tableNodeTypes(schema).cell.createAndFill(),
+          content = _tableNodeTypes$cell$.content;
+
       if (!cell.node.content.eq(content)) {
-        tr.replaceWith(cell.pos, cell.pos + cell.node.nodeSize - 1, new prosemirrorModel.Slice(content, 0, 0));
+        tr.replaceWith(cell.pos + 1, cell.pos + cell.node.nodeSize, content);
         return cloneTr(tr);
       }
     }
@@ -60140,6 +60162,9 @@ function posAtCoords(view, coords) {
   }
   elt = targetKludge(elt, coords);
   if (node) {
+    // Firefox will sometimes return offsets into <input> nodes, which
+    // have no actual children, from caretPositionFromPoint (#953)
+    if (node.nodeType == 1) { offset = Math.min(offset, node.childNodes.length); }
     // Suspiciously specific kludge to work around caret*FromPoint
     // never returning a position at the end of the document
     if (node == view.dom && offset == node.childNodes.length - 1 && node.lastChild.nodeType == 1 &&
@@ -62048,7 +62073,7 @@ function selectionToDOM(view, takeFocus, force) {
       view.dom.focus();
       view.domObserver.connectSelection();
     }
-  } else if (!view.editable && !hasSelection(view) && !takeFocus) {
+  } else if (!view.editable && !(hasSelection(view) && document.activeElement.contains(view.dom)) && !takeFocus) {
     return
   }
 
@@ -62551,10 +62576,10 @@ function parseFromClipboard(view, text, html, plainText, $context) {
     slice = parser.parseSlice(dom, {preserveWhitespace: !!(asText || sliceData), context: $context});
   }
   if (sliceData)
-    { slice = addContext(new prosemirrorModel.Slice(slice.content, Math.min(slice.openStart, +sliceData[1]),
-                                 Math.min(slice.openEnd, +sliceData[2])), sliceData[3]); }
+    { slice = addContext(closeSlice(slice, +sliceData[1], +sliceData[2]), sliceData[3]); }
   else // HTML wasn't created by ProseMirror. Make sure top-level siblings are coherent
     { slice = prosemirrorModel.Slice.maxOpen(normalizeSiblings(slice.content, $context), false); }
+
   view.someProp("transformPasted", function (f) { slice = f(slice); });
   return slice
 }
@@ -62625,6 +62650,23 @@ function closeRight(node, depth) {
   return node.copy(fragment.append(fill))
 }
 
+function closeRange(fragment, side, from, to, depth, openEnd) {
+  var node = side < 0 ? fragment.firstChild : fragment.lastChild, inner = node.content;
+  if (depth < to - 1) { inner = closeRange(inner, side, from, to, depth + 1, openEnd); }
+  if (depth >= from)
+    { inner = side < 0 ? node.contentMatchAt(0).fillBefore(inner, fragment.childCount > 1 || openEnd <= depth).append(inner)
+      : inner.append(node.contentMatchAt(node.childCount).fillBefore(prosemirrorModel.Fragment.empty, true)); }
+  return fragment.replaceChild(side < 0 ? 0 : fragment.childCount - 1, node.copy(inner))
+}
+
+function closeSlice(slice, openStart, openEnd) {
+  if (openStart < slice.openStart)
+    { slice = new prosemirrorModel.Slice(closeRange(slice.content, -1, openStart, slice.openStart, 0, slice.openEnd), openStart, slice.openEnd); }
+  if (openEnd < slice.openEnd)
+    { slice = new prosemirrorModel.Slice(closeRange(slice.content, 1, openEnd, slice.openEnd, 0, 0), slice.openStart, openEnd); }
+  return slice
+}
+
 // Trick from jQuery -- some elements must be wrapped in other
 // elements for innerHTML to work. I.e. if you do `div.innerHTML =
 // "<td>..</td>"` the table cells are ignored.
@@ -62687,7 +62729,17 @@ var DOMObserver = function DOMObserver(view, handleDOMChange) {
   this.view = view;
   this.handleDOMChange = handleDOMChange;
   this.observer = window.MutationObserver &&
-    new window.MutationObserver(function (mutations) { return this$1.flush(mutations); });
+    new window.MutationObserver(function (mutations) {
+      // IE11 will sometimes (on backspacing out a single character
+      // text node after a BR node) call the observer callback
+      // before actually updating the DOM, which will cause
+      // ProseMirror to miss the change (see #930)
+      if (result.ie && result.ie_version <= 11 && mutations.some(
+        function (m) { return m.type == "childList" && m.removedNodes.length == 1 && m.removedNodes[0].parentNode == m.target; }))
+        { setTimeout(function () { return this$1.flush(mutations); }, 10); }
+      else
+        { this$1.flush(mutations); }
+    });
   this.currentSelection = new SelectionState;
   this.queue = [];
   if (useCharData) {
@@ -63822,7 +63874,7 @@ DecorationSet.prototype.eq = function eq (other) {
     { if (this$1.children[i$1] != other.children[i$1] ||
         this$1.children[i$1 + 1] != other.children[i$1 + 1] ||
         !this$1.children[i$1 + 2].eq(other.children[i$1 + 2])) { return false } }
-  return false
+  return true
 };
 
 DecorationSet.prototype.locals = function locals (node) {
@@ -66487,7 +66539,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prosemirror_utils__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prosemirror_utils__WEBPACK_IMPORTED_MODULE_6__);
 
     /*!
-    * tiptap-commands v1.10.8
+    * tiptap-commands v1.10.11
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -66932,7 +66984,7 @@ function updateMark (type, attrs) {
 /*!*****************************************************!*\
   !*** ./node_modules/tiptap-utils/dist/utils.esm.js ***!
   \*****************************************************/
-/*! exports provided: getMarkAttrs, getMarkRange, markIsActive, nodeIsActive */
+/*! exports provided: getMarkAttrs, getMarkRange, markIsActive, nodeEqualsType, nodeIsActive */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66940,12 +66992,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMarkAttrs", function() { return getMarkAttrs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMarkRange", function() { return getMarkRange; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "markIsActive", function() { return markIsActive; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nodeEqualsType", function() { return nodeEqualsType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nodeIsActive", function() { return nodeIsActive; });
 /* harmony import */ var prosemirror_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prosemirror-utils */ "./node_modules/prosemirror-utils/dist/index.js");
 /* harmony import */ var prosemirror_utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prosemirror_utils__WEBPACK_IMPORTED_MODULE_0__);
 
     /*!
-    * tiptap-utils v1.5.6
+    * tiptap-utils v1.6.0
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -66972,7 +67025,7 @@ function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance");
 }
 
-function getMarkAttrs (state, type) {
+function getMarkAttrs(state, type) {
   var _state$selection = state.selection,
       from = _state$selection.from,
       to = _state$selection.to;
@@ -66991,7 +67044,7 @@ function getMarkAttrs (state, type) {
   return {};
 }
 
-function getMarkRange () {
+function getMarkRange() {
   var $pos = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
   var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
@@ -67034,7 +67087,7 @@ function getMarkRange () {
   };
 }
 
-function markIsActive (state, type) {
+function markIsActive(state, type) {
   var _state$selection = state.selection,
       from = _state$selection.from,
       $from = _state$selection.$from,
@@ -67048,7 +67101,13 @@ function markIsActive (state, type) {
   return !!state.doc.rangeHasMark(from, to, type);
 }
 
-function nodeIsActive (state, type) {
+function nodeEqualsType(_ref) {
+  var types = _ref.types,
+      node = _ref.node;
+  return Array.isArray(types) && types.includes(node.type) || node.type === types;
+}
+
+function nodeIsActive(state, type) {
   var attrs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
   var predicate = function predicate(node) {
@@ -67119,7 +67178,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tiptap_commands__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tiptap-commands */ "./node_modules/tiptap-commands/dist/commands.esm.js");
 
     /*!
-    * tiptap v1.23.1
+    * tiptap v1.24.0
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -67192,12 +67251,13 @@ function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
-    keys.push.apply(keys, Object.getOwnPropertySymbols(object));
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
   }
 
-  if (enumerableOnly) keys = keys.filter(function (sym) {
-    return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-  });
   return keys;
 }
 
@@ -67381,6 +67441,11 @@ function () {
           return _this.updateAttrs(attrs);
         }
       };
+
+      if (typeof this.extension.setSelection === 'function') {
+        this.setSelection = this.extension.setSelection;
+      }
+
       this.vm = new Component({
         parent: this.parent,
         propsData: props
@@ -67484,10 +67549,12 @@ function () {
         }
       }
 
+      var isCopy = event.type === 'copy';
       var isPaste = event.type === 'paste';
+      var isCut = event.type === 'cut';
       var isDrag = event.type.startsWith('drag') || event.type === 'drop';
 
-      if (draggable && isDrag || isPaste) {
+      if (draggable && isDrag || isCopy || isPaste || isCut) {
         return false;
       }
 
@@ -68130,6 +68197,11 @@ function (_Emitter) {
 
       var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       this.setOptions(_objectSpread2({}, this.defaultOptions, {}, options));
+      this.focused = false;
+      this.selection = {
+        from: 0,
+        to: 0
+      };
       this.element = document.createElement('div');
       this.extensions = this.createExtensions();
       this.nodes = this.createNodes();
@@ -68256,18 +68328,30 @@ function (_Emitter) {
             },
             handleDOMEvents: {
               focus: function focus(view, event) {
+                _this3.focused = true;
+
                 _this3.emit('focus', {
                   event: event,
                   state: view.state,
                   view: view
                 });
+
+                var transaction = _this3.state.tr.setMeta('focused', true);
+
+                _this3.view.dispatch(transaction);
               },
               blur: function blur(view, event) {
+                _this3.focused = false;
+
                 _this3.emit('blur', {
                   event: event,
                   state: view.state,
                   view: view
                 });
+
+                var transaction = _this3.state.tr.setMeta('focused', false);
+
+                _this3.view.dispatch(transaction);
               }
             }
           }
@@ -68375,6 +68459,10 @@ function (_Emitter) {
     value: function dispatchTransaction(transaction) {
       var newState = this.state.apply(transaction);
       this.view.updateState(newState);
+      this.selection = {
+        from: this.state.selection.from,
+        to: this.state.selection.to
+      };
       this.setActiveNodesAndMarks();
       this.emit('transaction', {
         getHTML: this.getHTML.bind(this),
@@ -68406,13 +68494,15 @@ function (_Emitter) {
 
       var position = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
 
-      if (position === null || position === false) {
+      if (this.view.focused && position === null || position === false) {
         return;
       }
 
       var pos = position;
 
-      if (position === 'start' || position === true) {
+      if (this.selection && position === null) {
+        pos = this.selection.from;
+      } else if (position === 'start') {
         pos = 0;
       } else if (position === 'end') {
         pos = this.state.doc.nodeSize - 2;
@@ -68420,7 +68510,7 @@ function (_Emitter) {
 
 
       pos = Math.max(0, pos);
-      pos = Math.min(this.state.doc.nodeSize - 2, pos);
+      pos = Math.min(this.state.doc.content.size, pos);
       var selection = prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["TextSelection"].near(this.state.doc.resolve(pos));
       var transaction = this.state.tr.setSelection(selection);
       this.view.dispatch(transaction);
@@ -68616,11 +68706,68 @@ var EditorContent = {
   }
 };
 
+var Menu =
+/*#__PURE__*/
+function () {
+  function Menu(_ref) {
+    var options = _ref.options;
+
+    _classCallCheck(this, Menu);
+
+    this.options = options; // the mousedown event is fired before blur so we can prevent it
+
+    this.options.element.addEventListener('mousedown', this.handleClick);
+  }
+
+  _createClass(Menu, [{
+    key: "handleClick",
+    value: function handleClick(event) {
+      event.preventDefault();
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      this.options.element.removeEventListener('mousedown', this.handleClick);
+    }
+  }]);
+
+  return Menu;
+}();
+
+function MenuBar (options) {
+  return new prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["Plugin"]({
+    key: new prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["PluginKey"]('menu_bar'),
+    view: function view(editorView) {
+      return new Menu({
+        editorView: editorView,
+        options: options
+      });
+    }
+  });
+}
+
 var EditorMenuBar = {
   props: {
     editor: {
       default: null,
       type: Object
+    }
+  },
+  watch: {
+    editor: {
+      immediate: true,
+      handler: function handler(editor) {
+        var _this = this;
+
+        if (editor) {
+          this.$nextTick(function () {
+            editor.registerPlugin(MenuBar({
+              editor: editor,
+              element: _this.$el
+            }));
+          });
+        }
+      }
     }
   },
   render: function render() {
@@ -68694,7 +68841,7 @@ function coordsAtPos(view, pos) {
   };
 }
 
-var Menu =
+var Menu$1 =
 /*#__PURE__*/
 function () {
   function Menu(_ref) {
@@ -68765,7 +68912,14 @@ function () {
       var start = coordsAtPos(view, from);
       var end = coordsAtPos(view, to, true); // The box in which the tooltip is positioned, to use as base
 
-      var box = this.options.element.offsetParent.getBoundingClientRect();
+      var parent = this.options.element.offsetParent;
+
+      if (!parent) {
+        this.hide();
+        return;
+      }
+
+      var box = parent.getBoundingClientRect();
       var el = this.options.element.getBoundingClientRect(); // Find a center-ish x position from the selection endpoints (when
       // crossing lines, end may be more to the left)
 
@@ -68809,7 +68963,7 @@ function MenuBubble (options) {
   return new prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["Plugin"]({
     key: new prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["PluginKey"]('menu_bubble'),
     view: function view(editorView) {
-      return new Menu({
+      return new Menu$1({
         editorView: editorView,
         options: options
       });
@@ -68884,7 +69038,7 @@ var EditorMenuBubble = {
   }
 };
 
-var Menu$1 =
+var Menu$2 =
 /*#__PURE__*/
 function () {
   function Menu(_ref) {
@@ -68956,7 +69110,14 @@ function () {
         return;
       }
 
-      var editorBoundings = this.options.element.offsetParent.getBoundingClientRect();
+      var parent = this.options.element.offsetParent;
+
+      if (!parent) {
+        this.hide();
+        return;
+      }
+
+      var editorBoundings = parent.getBoundingClientRect();
       var cursorBoundings = view.coordsAtPos(state.selection.anchor);
       var top = cursorBoundings.top - editorBoundings.top;
       this.isActive = true;
@@ -68999,7 +69160,7 @@ function FloatingMenu (options) {
   return new prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["Plugin"]({
     key: new prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["PluginKey"]('floating_menu'),
     view: function view(editorView) {
-      return new Menu$1({
+      return new Menu$2({
         editorView: editorView,
         options: options
       });

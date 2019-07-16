@@ -23,6 +23,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $phone_type
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read \App\Models\General\Invoice $invoice
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo newQuery()

@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property bool|\DateTime $deleted_at
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
+ * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Status newQuery()

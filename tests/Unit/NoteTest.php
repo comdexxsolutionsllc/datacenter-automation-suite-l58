@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class NoteTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

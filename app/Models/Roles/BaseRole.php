@@ -67,26 +67,26 @@ abstract class BaseRole extends Authenticatable implements MustVerifyEmail
         return Auth::logoutOtherDevices($password);
     }
 
-    /**
-     * Set the email_verified_at.
-     *
-     * @param string $value
-     *
-     */
-    public function setEmailVerifiedAtAttribute($value)
-    {
-        $this->attributes['email_verified_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
-    }
-
-    /**
-     * Set the trial_ends_at.
-     *
-     * @param string $value
-     */
-    public function setTrialEndsAtAttribute($value)
-    {
-        $this->attributes['trial_ends_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
-    }
+    ///**
+    // * Set the email_verified_at.
+    // *
+    // * @param string $value
+    // *
+    // */
+    //public function setEmailVerifiedAtAttribute($value)
+    //{
+    //    $this->attributes['email_verified_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+    //}
+    //
+    ///**
+    // * Set the trial_ends_at.
+    // *
+    // * @param string $value
+    // */
+    //public function setTrialEndsAtAttribute($value)
+    //{
+    //    $this->attributes['trial_ends_at'] = ! empty($value) ? DateTime::createFromFormat($this->getDateFormat(), $value) : null;
+    //}
 
     /**
      * Get email_verified_at in array format

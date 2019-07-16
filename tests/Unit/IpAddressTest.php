@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class IpAddressTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

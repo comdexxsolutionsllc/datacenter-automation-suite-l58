@@ -6,6 +6,7 @@ use Laravel\Dusk\Browser;
 
 class HomePage extends Page
 {
+
     /**
      * Assert that the browser is on the page.
      *

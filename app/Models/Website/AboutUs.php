@@ -3,7 +3,6 @@
 namespace App\Models\Website;
 
 use App\Models\BaseModel;
-use Illuminate\Database\Eloquent\Builder;
 use Laravel\Scout\Searchable;
 use Lorisleiva\LaravelSearchString\Concerns\SearchString;
 
@@ -17,6 +16,7 @@ use Lorisleiva\LaravelSearchString\Concerns\SearchString;
  * @property string $job_summary
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read string $portrait_link
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs newQuery()
@@ -57,9 +57,12 @@ class AboutUs extends BaseModel
     ];
 
     /**
+     * The accessors to append to the model's array form.
+     *
      * @var array
      */
     protected $appends = [
+        'path',
         'portrait_link',
     ];
 

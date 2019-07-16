@@ -14,7 +14,6 @@ return [
     */
     'enabled' => env('PREQUEL_ENABLED', true),
 
-
     /*
     |--------------------------------------------------------------------------
     | Prequel Path
@@ -68,8 +67,8 @@ return [
         'performance_schema'  => ['*'],
         'mysql'               => ['*'],
         '#mysql50#lost+found' => ['*'],
-	'dcas' => ['*'],
-	'dcas_l57' => ['*'],
-	'dcas_l57_wiki' => ['*'],	
+        'dcas'                => ['*'],
+        'dcas_l57'            => ['*'],
+        'dcas_l57_wiki'       => ['*'],
     ],
 ];

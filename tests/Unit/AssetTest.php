@@ -13,6 +13,7 @@ use Tests\TestCase;
 
 class AssetTest extends TestCase
 {
+
     use RefreshDatabase;
 
     protected $asset;
@@ -63,13 +64,13 @@ class AssetTest extends TestCase
     {
         parent::setUp();
 
-        $this->datacenter        = factory(Datacenter::class)->create();
+        $this->datacenter = factory(Datacenter::class)->create();
         $this->networkDeviceType = factory(NetworkDeviceType::class)->create();
-        $this->networkDevice     = factory(NetworkDevice::class)->create([
+        $this->networkDevice = factory(NetworkDevice::class)->create([
             'network_device_type_id' => $this->networkDeviceType->id,
         ]);
         $this->operatingSystem = factory(OperatingSystem::class)->create();
-        $this->switchport      = factory(SwitchportInformation::class)->create();
+        $this->switchport = factory(SwitchportInformation::class)->create();
 
         $this->asset = factory(Asset::class)->create([
             'datacenter_id'       => $this->datacenter->id,

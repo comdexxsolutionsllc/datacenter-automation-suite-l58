@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class AvailabilityZoneTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

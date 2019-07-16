@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ResellerTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

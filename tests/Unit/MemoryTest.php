@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class MemoryTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class NameserverTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

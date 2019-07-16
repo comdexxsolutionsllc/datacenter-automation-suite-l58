@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class SubscriptionTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

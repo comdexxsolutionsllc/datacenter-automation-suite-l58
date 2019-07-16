@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class DiskTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

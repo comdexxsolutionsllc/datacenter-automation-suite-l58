@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class MailgunParserTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /** @test */

@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class CompanyTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

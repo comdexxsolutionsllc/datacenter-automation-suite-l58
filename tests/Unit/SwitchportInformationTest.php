@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class SwitchportInformationTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

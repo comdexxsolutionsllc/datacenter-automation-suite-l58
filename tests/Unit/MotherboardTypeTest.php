@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class MotherboardTypeTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

@@ -21,6 +21,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string|null $whois_record_expiry
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read \App\Models\General\Registrar $registrar
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain newQuery()

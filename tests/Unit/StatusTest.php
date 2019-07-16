@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class StatusTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

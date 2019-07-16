@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
  * @property string|null $cart_session_id
  * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Client[] $clients
  * @property-read string $cart_instance
- * @property bool|\DateTime $trial_ends_at
+ * @property-read bool|\DateTime $trial_ends_at
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[] $permissions
  * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Role[] $roles

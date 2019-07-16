@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class BillingInfoTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

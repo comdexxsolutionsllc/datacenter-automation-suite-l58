@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $active
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read \App\Models\General\Reseller $reseller
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company newQuery()

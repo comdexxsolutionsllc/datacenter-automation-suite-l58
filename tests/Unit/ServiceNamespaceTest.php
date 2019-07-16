@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ServiceNamespaceTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

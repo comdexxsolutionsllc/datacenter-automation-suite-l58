@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class NetworkDeviceTypeTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

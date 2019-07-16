@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class NetworkInterfaceCardTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

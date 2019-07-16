@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $noteable_id
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note query()

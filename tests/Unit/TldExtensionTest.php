@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class TldExtensionTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

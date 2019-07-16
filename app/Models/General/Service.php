@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null $last_invoice
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\InvoiceItem[] $invoiceItems
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service newQuery()

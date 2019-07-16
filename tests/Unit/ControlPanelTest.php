@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ControlPanelTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

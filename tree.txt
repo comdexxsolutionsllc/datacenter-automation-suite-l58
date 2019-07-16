@@ -28,7 +28,7 @@
 │   │   ├── [1.2K]  ./app/General/AccountId.php
 │   │   ├── [1.2K]  ./app/General/BuildBaseMenu.php
 │   │   ├── [1.2K]  ./app/General/CartStorage.php
-│   │   ├── [4.9K]  ./app/General/DCASHelper.php
+│   │   ├── [5.3K]  ./app/General/DCASHelper.php
 │   │   ├── [ 923]  ./app/General/EmailParser.php
 │   │   ├── [ 823]  ./app/General/EmployeeId.php
 │   │   ├── [ 822]  ./app/General/HardwareId.php
@@ -217,48 +217,48 @@
 │   ├── [4.0K]  ./app/Mailboxes
 │   │   └── [ 316]  ./app/Mailboxes/MyMailbox.php
 │   ├── [4.0K]  ./app/Models
-│   │   ├── [ 917]  ./app/Models/BaseModel.php
+│   │   ├── [ 848]  ./app/Models/BaseModel.php
 │   │   ├── [4.0K]  ./app/Models/General
 │   │   │   ├── [6.2K]  ./app/Models/General/Asset.php
 │   │   │   ├── [3.7K]  ./app/Models/General/BillingInfo.php
-│   │   │   ├── [1.9K]  ./app/Models/General/Cart.php
+│   │   │   ├── [2.0K]  ./app/Models/General/Cart.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Company.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Coupon.php
 │   │   │   ├── [3.4K]  ./app/Models/General/Domain.php
-│   │   │   ├── [4.1K]  ./app/Models/General/InboundEmail.php
+│   │   │   ├── [4.2K]  ./app/Models/General/InboundEmail.php
 │   │   │   ├── [2.8K]  ./app/Models/General/InvoiceItem.php
 │   │   │   ├── [3.8K]  ./app/Models/General/Invoice.php
-│   │   │   ├── [3.5K]  ./app/Models/General/Notification.php
+│   │   │   ├── [3.6K]  ./app/Models/General/Notification.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Permission.php
 │   │   │   ├── [2.6K]  ./app/Models/General/Product.php
-│   │   │   ├── [2.3K]  ./app/Models/General/Registrar.php
+│   │   │   ├── [2.4K]  ./app/Models/General/Registrar.php
 │   │   │   ├── [2.8K]  ./app/Models/General/Reseller.php
 │   │   │   ├── [2.7K]  ./app/Models/General/Role.php
 │   │   │   ├── [2.9K]  ./app/Models/General/Service.php
-│   │   │   ├── [4.5K]  ./app/Models/General/Subscription.php
+│   │   │   ├── [4.6K]  ./app/Models/General/Subscription.php
 │   │   │   ├── [2.3K]  ./app/Models/General/TagCloud.php
-│   │   │   └── [1.8K]  ./app/Models/General/TagType.php
+│   │   │   └── [1.9K]  ./app/Models/General/TagType.php
 │   │   ├── [4.0K]  ./app/Models/Nameserver
 │   │   │   ├── [3.4K]  ./app/Models/Nameserver/Comment.php
 │   │   │   ├── [3.1K]  ./app/Models/Nameserver/Cryptokey.php
 │   │   │   ├── [3.0K]  ./app/Models/Nameserver/Domainmetadata.php
-│   │   │   ├── [4.3K]  ./app/Models/Nameserver/Domain.php
+│   │   │   ├── [4.4K]  ./app/Models/Nameserver/Domain.php
 │   │   │   ├── [4.0K]  ./app/Models/Nameserver/Record.php
 │   │   │   ├── [2.8K]  ./app/Models/Nameserver/Supermaster.php
 │   │   │   └── [2.7K]  ./app/Models/Nameserver/Tsigkey.php
 │   │   ├── [4.0K]  ./app/Models/Roles
-│   │   │   ├── [3.8K]  ./app/Models/Roles/BaseRole.php
-│   │   │   ├── [5.5K]  ./app/Models/Roles/Customer.php
+│   │   │   ├── [3.9K]  ./app/Models/Roles/BaseRole.php
+│   │   │   ├── [5.8K]  ./app/Models/Roles/Customer.php
 │   │   │   ├── [5.1K]  ./app/Models/Roles/Employee.php
 │   │   │   ├── [ 892]  ./app/Models/Roles/RoleCollection.php
 │   │   │   ├── [5.3K]  ./app/Models/Roles/Vendor.php
 │   │   │   └── [5.4K]  ./app/Models/Roles/Whiteglove.php
 │   │   ├── [4.0K]  ./app/Models/Support
-│   │   │   ├── [2.2K]  ./app/Models/Support/AssetRegion.php
+│   │   │   ├── [2.3K]  ./app/Models/Support/AssetRegion.php
 │   │   │   ├── [2.0K]  ./app/Models/Support/AvailabilityZone.php
-│   │   │   ├── [3.7K]  ./app/Models/Support/Chassis.php
+│   │   │   ├── [3.8K]  ./app/Models/Support/Chassis.php
 │   │   │   ├── [2.6K]  ./app/Models/Support/Comment.php
-│   │   │   ├── [3.3K]  ./app/Models/Support/ControlPanel.php
+│   │   │   ├── [3.4K]  ./app/Models/Support/ControlPanel.php
 │   │   │   ├── [2.6K]  ./app/Models/Support/Cpu.php
 │   │   │   ├── [2.6K]  ./app/Models/Support/Datacenter.php
 │   │   │   ├── [3.5K]  ./app/Models/Support/Department.php
@@ -267,35 +267,40 @@
 │   │   │   ├── [2.3K]  ./app/Models/Support/FirewallZone.php
 │   │   │   ├── [4.2K]  ./app/Models/Support/IpAddress.php
 │   │   │   ├── [2.8K]  ./app/Models/Support/Memory.php
-│   │   │   ├── [5.4K]  ./app/Models/Support/Motherboard.php
+│   │   │   ├── [5.5K]  ./app/Models/Support/Motherboard.php
 │   │   │   ├── [4.1K]  ./app/Models/Support/MotherboardType.php
 │   │   │   ├── [2.5K]  ./app/Models/Support/NetworkConfiguration.php
 │   │   │   ├── [4.3K]  ./app/Models/Support/NetworkDevice.php
 │   │   │   ├── [2.5K]  ./app/Models/Support/NetworkDeviceType.php
-│   │   │   ├── [2.8K]  ./app/Models/Support/NetworkInterfaceCard.php
-│   │   │   ├── [2.5K]  ./app/Models/Support/Note.php
-│   │   │   ├── [2.4K]  ./app/Models/Support/OperatingSystem.php
-│   │   │   ├── [3.4K]  ./app/Models/Support/PingResult.php
+│   │   │   ├── [2.9K]  ./app/Models/Support/NetworkInterfaceCard.php
+│   │   │   ├── [2.6K]  ./app/Models/Support/Note.php
+│   │   │   ├── [2.5K]  ./app/Models/Support/OperatingSystem.php
+│   │   │   ├── [3.5K]  ./app/Models/Support/PingResult.php
 │   │   │   ├── [1.9K]  ./app/Models/Support/PowerSupplyUnit.php
 │   │   │   ├── [2.1K]  ./app/Models/Support/Queue.php
 │   │   │   ├── [3.7K]  ./app/Models/Support/RaidCard.php
 │   │   │   ├── [2.1K]  ./app/Models/Support/ResourceGroup.php
 │   │   │   ├── [2.5K]  ./app/Models/Support/ResourceName.php
-│   │   │   ├── [2.8K]  ./app/Models/Support/SalesRep.php
+│   │   │   ├── [2.9K]  ./app/Models/Support/SalesRep.php
 │   │   │   ├── [2.6K]  ./app/Models/Support/SecurityGroup.php
 │   │   │   ├── [3.0K]  ./app/Models/Support/ServiceLimit.php
 │   │   │   ├── [2.0K]  ./app/Models/Support/ServiceNamespace.php
-│   │   │   ├── [3.8K]  ./app/Models/Support/Status.php
+│   │   │   ├── [3.9K]  ./app/Models/Support/Status.php
 │   │   │   ├── [2.5K]  ./app/Models/Support/SubnetAddress.php
-│   │   │   ├── [3.8K]  ./app/Models/Support/SwitchportInformation.php
+│   │   │   ├── [3.9K]  ./app/Models/Support/SwitchportInformation.php
 │   │   │   ├── [2.7K]  ./app/Models/Support/Technician.php
 │   │   │   ├── [5.3K]  ./app/Models/Support/Ticket.php
 │   │   │   └── [2.1K]  ./app/Models/Support/TldExtension.php
 │   │   └── [4.0K]  ./app/Models/Website
 │   │       ├── [2.9K]  ./app/Models/Website/AboutUs.php
-│   │       ├── [3.0K]  ./app/Models/Website/Chat.php
+│   │       ├── [3.1K]  ./app/Models/Website/Chat.php
 │   │       ├── [2.8K]  ./app/Models/Website/MenuPage.php
 │   │       └── [2.7K]  ./app/Models/Website/Pricing.php
+│   ├── [4.0K]  ./app/Notifications
+│   │   ├── [1.1K]  ./app/Notifications/TicketClosed.php
+│   │   ├── [1.1K]  ./app/Notifications/TicketCreated.php
+│   │   ├── [1.1K]  ./app/Notifications/TicketUpdated.php
+│   │   └── [1.3K]  ./app/Notifications/Welcome.php
 │   ├── [4.0K]  ./app/Permissions
 │   ├── [4.0K]  ./app/Policies
 │   ├── [4.0K]  ./app/Providers
@@ -307,6 +312,8 @@
 │   │   ├── [ 352]  ./app/Providers/MailboxServiceProvider.php
 │   │   ├── [2.7K]  ./app/Providers/MenuServiceProvider.php
 │   │   ├── [4.1K]  ./app/Providers/RouteServiceProvider.php
+│   │   ├── [4.3K]  ./app/Providers/SafeQueryServiceProvider.php
+│   │   ├── [1.2K]  ./app/Providers/SubscribableServiceProvider.php
 │   │   ├── [1.1K]  ./app/Providers/TelescopeServiceProvider.php
 │   │   └── [ 633]  ./app/Providers/TransformerServiceProvider.php
 │   ├── [4.0K]  ./app/Repositories
@@ -365,11 +372,11 @@
 │   ├── [ 264]  ./bin/git-silent
 │   ├── [  48]  ./bin/start-dusk-dashboard.sh
 │   └── [ 184]  ./bin/update-submodule.sh
-├── [5.1K]  ./composer.json
+├── [5.2K]  ./composer.json
 ├── [4.0K]  ./config
 │   ├── [4.9K]  ./config/adminlte.php
 │   ├── [ 322]  ./config/airports.php
-│   ├── [9.9K]  ./config/app.php
+│   ├── [10.0K]  ./config/app.php
 │   ├── [4.3K]  ./config/auth.php
 │   ├── [1.6K]  ./config/broadcasting.php
 │   ├── [2.0K]  ./config/cache.php
@@ -397,6 +404,7 @@
 │   ├── [ 969]  ./config/laravel-swagger.php
 │   ├── [5.8K]  ./config/larecipe.php
 │   ├── [2.9K]  ./config/logging.php
+│   ├── [1.9K]  ./config/mailbox.php
 │   ├── [4.1K]  ./config/mail.php
 │   ├── [2.4K]  ./config/multitenancy.php
 │   ├── [ 484]  ./config/opcache.php
@@ -424,8 +432,8 @@
 │   ├── [1.9K]  ./config/translation_sheet.php
 │   ├── [1.2K]  ./config/trustedproxy.php
 │   ├── [1002]  ./config/view.php
-│   ├── [1.8K]  ./config/webhook-client.php
-│   └── [1.6K]  ./config/webhook-server.php
+│   ├── [1.9K]  ./config/webhook-client.php
+│   └── [1.7K]  ./config/webhook-server.php
 ├── [4.0K]  ./config-set
 │   ├── [ 339]  ./config-set/jsonapi.php
 │   ├── [1.4K]  ./config-set/laravel_api.php
@@ -448,7 +456,7 @@
 │   │   ├── [ 532]  ./database/factories/CouponFactory.php
 │   │   ├── [ 506]  ./database/factories/CpuFactory.php
 │   │   ├── [ 411]  ./database/factories/CryptokeyFactory.php
-│   │   ├── [ 936]  ./database/factories/CustomerFactory.php
+│   │   ├── [ 964]  ./database/factories/CustomerFactory.php
 │   │   ├── [ 375]  ./database/factories/DatacenterFactory.php
 │   │   ├── [ 413]  ./database/factories/DepartmentFactory.php
 │   │   ├── [ 312]  ./database/factories/DeviceFactory.php
@@ -690,16 +698,16 @@
 ├── [ 207]  ./horizon-supervisor.conf
 ├── [2.8K]  ./laravel-stats.json
 ├── [ 11K]  ./LICENSE
-├── [ 769]  ./ngrok-tunnels.json
+├── [ 963]  ./ngrok-tunnels.json
 ├── [5.4K]  ./package.json
 ├── [2.5K]  ./phpcs-ruleset.xml
 ├── [2.4K]  ./phpmd-ruleset.xml
 ├── [ 716]  ./phpunit.dusk.xml
-├── [1.3K]  ./phpunit.xml
+├── [1.5K]  ./phpunit.xml
 ├── [1.5K]  ./pipe-dream-history.json
 ├── [4.0K]  ./public
 │   ├── [4.0K]  ./public/css
-│   │   └── [1007K]  ./public/css/app.css
+│   │   └── [1008K]  ./public/css/app.css
 │   ├── [   0]  ./public/favicon.ico
 │   ├── [4.0K]  ./public/fonts
 │   │   ├── [132K]  ./public/fonts/FontAwesome.otf
@@ -730,9 +738,9 @@
 │   │   └── [6.1K]  ./public/js/manifest.js
 │   ├── [ 45K]  ./public/loading.gif
 │   ├── [2.2K]  ./public/mix-manifest.json
-│   ├── [1.4K]  ./public/phpcs.xml
+│   ├── [1021]  ./public/phpcs.xml
 │   ├── [4.0K]  ./public/phpcs.xsl
-│   ├── [ 99K]  ./public/phpmd.html
+│   ├── [108K]  ./public/phpmd.html
 │   ├── [4.0K]  ./public/svg
 │   └── [1.2K]  ./public/web.config
 ├── [4.0K]  ./resources
@@ -1251,6 +1259,11 @@
 │       │   ├── [7.6K]  ./resources/views/switchport_information/form.blade.php
 │       │   ├── [4.0K]  ./resources/views/switchport_information/index.blade.php
 │       │   └── [2.8K]  ./resources/views/switchport_information/show.blade.php
+│       ├── [4.0K]  ./resources/views/system-notifications
+│       │   ├── [ 191]  ./resources/views/system-notifications/ticket-closed.blade.php
+│       │   ├── [ 191]  ./resources/views/system-notifications/ticket-created.blade.php
+│       │   ├── [ 191]  ./resources/views/system-notifications/ticket-updated.blade.php
+│       │   └── [ 567]  ./resources/views/system-notifications/welcome.blade.php
 │       ├── [4.0K]  ./resources/views/technicians
 │       │   ├── [1.4K]  ./resources/views/technicians/create.blade.php
 │       │   ├── [1.6K]  ./resources/views/technicians/edit.blade.php
@@ -1298,9 +1311,10 @@
 │   ├── [  71]  ./routes/customer.php
 │   ├── [ 375]  ./routes/internal.php
 │   ├── [ 324]  ./routes/local.php
-│   ├── [5.7K]  ./routes/web.php
+│   ├── [5.8K]  ./routes/web.php
 │   └── [  85]  ./routes/whiteglove.php
 ├── [ 566]  ./server.php
+├── [ 328]  ./sonar-project.properties
 ├── [   0]  ./stats.json
 ├── [ 27K]  ./tailwind.js
 ├── [4.0K]  ./tests
@@ -1309,17 +1323,17 @@
 │   │   ├── [4.0K]  ./tests/Browser/Components
 │   │   ├── [4.0K]  ./tests/Browser/console
 │   │   │   └── [ 246]  ./tests/Browser/console/Tests_Browser_ExampleTest_testBasicExample-0.log
-│   │   ├── [ 406]  ./tests/Browser/ExampleTest.php
+│   │   ├── [ 407]  ./tests/Browser/ExampleTest.php
 │   │   ├── [4.0K]  ./tests/Browser/Pages
-│   │   │   ├── [ 602]  ./tests/Browser/Pages/HomePage.php
-│   │   │   └── [ 335]  ./tests/Browser/Pages/Page.php
+│   │   │   ├── [ 603]  ./tests/Browser/Pages/HomePage.php
+│   │   │   └── [ 336]  ./tests/Browser/Pages/Page.php
 │   │   └── [4.0K]  ./tests/Browser/screenshots
-│   ├── [ 382]  ./tests/CreatesApplication.php
-│   ├── [ 904]  ./tests/DuskTestCase.php
+│   ├── [ 383]  ./tests/CreatesApplication.php
+│   ├── [ 905]  ./tests/DuskTestCase.php
 │   ├── [4.0K]  ./tests/Feature
 │   │   ├── [2.5K]  ./tests/Feature/AboutUsTest.php
 │   │   ├── [4.0K]  ./tests/Feature/Api
-│   │   │   └── [ 486]  ./tests/Feature/Api/FallbackRouteTest.php
+│   │   │   └── [ 487]  ./tests/Feature/Api/FallbackRouteTest.php
 │   │   └── [ 13K]  ./tests/Feature/MailgunParserTest.php
 │   ├── [4.0K]  ./tests/Javascript
 │   │   └── [4.0K]  ./tests/Javascript/helpers
@@ -1327,59 +1341,59 @@
 │   ├── [  62]  ./tests/setup.js
 │   ├── [4.0K]  ./tests/snipe-base
 │   │   └── [101K]  ./tests/snipe-base/snipe_snapshot.sql
-│   ├── [ 226]  ./tests/TestCase.php
+│   ├── [ 227]  ./tests/TestCase.php
 │   └── [4.0K]  ./tests/Unit
-│       ├── [ 302]  ./tests/Unit/AssetRegionTest.php
+│       ├── [ 303]  ./tests/Unit/AssetRegionTest.php
 │       ├── [2.1K]  ./tests/Unit/AssetTest.php
-│       ├── [ 307]  ./tests/Unit/AvailabilityZoneTest.php
-│       ├── [ 302]  ./tests/Unit/BillingInfoTest.php
-│       ├── [ 295]  ./tests/Unit/CartTest.php
-│       ├── [ 298]  ./tests/Unit/ChassisTest.php
-│       ├── [ 298]  ./tests/Unit/CommentTest.php
-│       ├── [ 298]  ./tests/Unit/CompanyTest.php
-│       ├── [ 303]  ./tests/Unit/ControlPanelTest.php
-│       ├── [ 297]  ./tests/Unit/CouponTest.php
-│       ├── [ 294]  ./tests/Unit/CpuTest.php
-│       ├── [ 301]  ./tests/Unit/DatacenterTest.php
-│       ├── [ 301]  ./tests/Unit/DepartmentTest.php
-│       ├── [ 295]  ./tests/Unit/DiskTest.php
-│       ├── [ 297]  ./tests/Unit/DomainTest.php
-│       ├── [ 303]  ./tests/Unit/FirewallZoneTest.php
-│       ├── [ 298]  ./tests/Unit/InvoiceTest.php
-│       ├── [ 300]  ./tests/Unit/IpAddressTest.php
-│       ├── [ 297]  ./tests/Unit/MemoryTest.php
-│       ├── [ 302]  ./tests/Unit/MotherboardTest.php
-│       ├── [ 306]  ./tests/Unit/MotherboardTypeTest.php
-│       ├── [ 301]  ./tests/Unit/NameserverTest.php
-│       ├── [ 311]  ./tests/Unit/NetworkConfigurationTest.php
-│       ├── [ 304]  ./tests/Unit/NetworkDeviceTest.php
-│       ├── [ 308]  ./tests/Unit/NetworkDeviceTypeTest.php
-│       ├── [ 311]  ./tests/Unit/NetworkInterfaceCardTest.php
-│       ├── [ 295]  ./tests/Unit/NoteTest.php
-│       ├── [ 306]  ./tests/Unit/OperatingSystemTest.php
-│       ├── [ 298]  ./tests/Unit/ProductTest.php
-│       ├── [ 296]  ./tests/Unit/QueueTest.php
-│       ├── [ 299]  ./tests/Unit/RaidCardTest.php
-│       ├── [ 300]  ./tests/Unit/RegistrarTest.php
-│       ├── [ 299]  ./tests/Unit/ResellerTest.php
-│       ├── [ 304]  ./tests/Unit/ResourceGroupTest.php
-│       ├── [ 303]  ./tests/Unit/ResourceNameTest.php
-│       ├── [ 299]  ./tests/Unit/SalesRepTest.php
-│       ├── [ 304]  ./tests/Unit/SecurityGroupTest.php
-│       ├── [ 303]  ./tests/Unit/ServiceLimitTest.php
-│       ├── [ 307]  ./tests/Unit/ServiceNamespaceTest.php
-│       ├── [ 298]  ./tests/Unit/ServiceTest.php
-│       ├── [ 297]  ./tests/Unit/StatusTest.php
-│       ├── [ 304]  ./tests/Unit/SubnetAddressTest.php
-│       ├── [ 303]  ./tests/Unit/SubscriptionTest.php
-│       ├── [ 312]  ./tests/Unit/SwitchportInformationTest.php
-│       ├── [ 301]  ./tests/Unit/TechnicianTest.php
+│       ├── [ 308]  ./tests/Unit/AvailabilityZoneTest.php
+│       ├── [ 303]  ./tests/Unit/BillingInfoTest.php
+│       ├── [ 296]  ./tests/Unit/CartTest.php
+│       ├── [ 299]  ./tests/Unit/ChassisTest.php
+│       ├── [ 299]  ./tests/Unit/CommentTest.php
+│       ├── [ 299]  ./tests/Unit/CompanyTest.php
+│       ├── [ 304]  ./tests/Unit/ControlPanelTest.php
+│       ├── [ 298]  ./tests/Unit/CouponTest.php
+│       ├── [ 295]  ./tests/Unit/CpuTest.php
+│       ├── [ 302]  ./tests/Unit/DatacenterTest.php
+│       ├── [ 302]  ./tests/Unit/DepartmentTest.php
+│       ├── [ 296]  ./tests/Unit/DiskTest.php
+│       ├── [ 298]  ./tests/Unit/DomainTest.php
+│       ├── [ 304]  ./tests/Unit/FirewallZoneTest.php
+│       ├── [ 299]  ./tests/Unit/InvoiceTest.php
+│       ├── [ 301]  ./tests/Unit/IpAddressTest.php
+│       ├── [ 298]  ./tests/Unit/MemoryTest.php
+│       ├── [ 303]  ./tests/Unit/MotherboardTest.php
+│       ├── [ 307]  ./tests/Unit/MotherboardTypeTest.php
+│       ├── [ 302]  ./tests/Unit/NameserverTest.php
+│       ├── [ 312]  ./tests/Unit/NetworkConfigurationTest.php
+│       ├── [ 305]  ./tests/Unit/NetworkDeviceTest.php
+│       ├── [ 309]  ./tests/Unit/NetworkDeviceTypeTest.php
+│       ├── [ 312]  ./tests/Unit/NetworkInterfaceCardTest.php
+│       ├── [ 296]  ./tests/Unit/NoteTest.php
+│       ├── [ 307]  ./tests/Unit/OperatingSystemTest.php
+│       ├── [ 299]  ./tests/Unit/ProductTest.php
+│       ├── [ 297]  ./tests/Unit/QueueTest.php
+│       ├── [ 300]  ./tests/Unit/RaidCardTest.php
+│       ├── [ 301]  ./tests/Unit/RegistrarTest.php
+│       ├── [ 300]  ./tests/Unit/ResellerTest.php
+│       ├── [ 305]  ./tests/Unit/ResourceGroupTest.php
+│       ├── [ 304]  ./tests/Unit/ResourceNameTest.php
+│       ├── [ 300]  ./tests/Unit/SalesRepTest.php
+│       ├── [ 305]  ./tests/Unit/SecurityGroupTest.php
+│       ├── [ 304]  ./tests/Unit/ServiceLimitTest.php
+│       ├── [ 308]  ./tests/Unit/ServiceNamespaceTest.php
+│       ├── [ 299]  ./tests/Unit/ServiceTest.php
+│       ├── [ 298]  ./tests/Unit/StatusTest.php
+│       ├── [ 305]  ./tests/Unit/SubnetAddressTest.php
+│       ├── [ 304]  ./tests/Unit/SubscriptionTest.php
+│       ├── [ 313]  ./tests/Unit/SwitchportInformationTest.php
+│       ├── [ 302]  ./tests/Unit/TechnicianTest.php
 │       ├── [1.4K]  ./tests/Unit/TicketTest.php
-│       └── [ 303]  ./tests/Unit/TldExtensionTest.php
+│       └── [ 304]  ./tests/Unit/TldExtensionTest.php
 ├── [5.0K]  ./tinker.config.php
 ├── [ 173]  ./tsconfig.json
 ├── [ 295]  ./webpack.config.js
 ├── [2.1K]  ./webpack.mix.js
 └── [4.0K]  ./working
 
-160 directories, 1222 files
+162 directories, 1234 files

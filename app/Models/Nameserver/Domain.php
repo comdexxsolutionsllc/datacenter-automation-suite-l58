@@ -21,6 +21,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property array $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Comment[] $comments
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Cryptokey[] $cryptokeys
+ * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Domainmetadata[] $metadata
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Record[] $records
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain newModelQuery()

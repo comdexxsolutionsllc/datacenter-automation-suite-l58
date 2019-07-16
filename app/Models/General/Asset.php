@@ -37,6 +37,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Support\Datacenter|null $datacenter
+ * @property-read mixed $path
  * @property-read \App\Models\General\Asset|null $networkDevice
  * @property-read \App\Models\Support\OperatingSystem|null $operatingSystem
  * @property-read \App\Models\Support\SwitchportInformation|null $switchport

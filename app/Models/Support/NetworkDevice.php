@@ -25,6 +25,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\General\Asset $asset
+ * @property-read mixed $path
  * @property-read \App\Models\Support\NetworkDeviceType $networkDeviceType
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\SwitchportInformation[] $switchPortInformation
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice newModelQuery()

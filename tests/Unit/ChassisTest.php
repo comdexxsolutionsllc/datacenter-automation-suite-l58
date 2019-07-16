@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ChassisTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

@@ -11,6 +11,7 @@ use Tests\TestCase;
 
 class AboutUsTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /** @test */

@@ -6,6 +6,7 @@ use Tests\TestCase;
 
 class FallbackRouteTest extends TestCase
 {
+
     /** @test */
     public function missing_api_routes_should_return_a_json_404()
     {

@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string|null $comments
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SecurityGroup newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SecurityGroup newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SecurityGroup query()

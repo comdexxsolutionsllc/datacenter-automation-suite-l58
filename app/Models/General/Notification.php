@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property bool|\DateTime $read_at
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification query()

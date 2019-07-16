@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $account
  * @property array $created_at
  * @property array $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster query()

@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class FirewallZoneTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

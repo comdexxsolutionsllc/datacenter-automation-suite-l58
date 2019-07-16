@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class RaidCardTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string|null $deleted_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Queue query()

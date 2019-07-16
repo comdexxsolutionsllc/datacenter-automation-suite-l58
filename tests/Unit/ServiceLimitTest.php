@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ServiceLimitTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

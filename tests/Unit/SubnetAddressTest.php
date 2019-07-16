@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class SubnetAddressTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

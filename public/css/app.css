@@ -2636,12 +2636,6 @@ be a descendant of the grid when it is being dragged.
   list-style: none;
 }
 
-.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
-  color: #999;
-  margin-top: 5px;
-  float: left;
-}
-
 .select2-container--default .select2-selection--multiple .select2-selection__clear {
   cursor: pointer;
   float: right;
@@ -2674,7 +2668,6 @@ be a descendant of the grid when it is being dragged.
 }
 
 .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice,
-.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder,
 .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {
   float: right;
 }
@@ -3526,6 +3519,7 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
 
 .swal2-popup.swal2-toast .swal2-actions {
   flex-basis: auto !important;
+  width: auto;
   height: auto;
   margin: 0 .3125em;
 }
@@ -3559,7 +3553,7 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 2em 2em;
-           transform-origin: 2em 2em;
+          transform-origin: 2em 2em;
   border-radius: 4em 0 0 4em;
 }
 
@@ -4062,6 +4056,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 }
 
 .swal2-actions {
+  display: flex;
   z-index: 1;
   flex-wrap: wrap;
   align-items: center;
@@ -4519,7 +4514,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 3.75em 3.75em;
-           transform-origin: 3.75em 3.75em;
+          transform-origin: 3.75em 3.75em;
   border-radius: 7.5em 0 0 7.5em;
 }
 
@@ -4529,7 +4524,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 0 3.75em;
-           transform-origin: 0 3.75em;
+          transform-origin: 0 3.75em;
   border-radius: 0 7.5em 7.5em 0;
 }
 
@@ -4720,7 +4715,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 @charset "UTF-8";
 
 /*
-Trix 1.1.1
+Trix 1.2.0
 Copyright © 2019 Basecamp, LLC
 http://trix-editor.org/*/
 
@@ -4854,6 +4849,12 @@ trix-toolbar .trix-button--icon.trix-active::before {
 
 trix-toolbar .trix-button--icon:disabled::before {
   opacity: .125;
+}
+
+trix-toolbar .trix-button--icon-attach::before {
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%3E%3Cpath%20d%3D%22M16.5%206v11.5a4%204%200%201%201-8%200V5a2.5%202.5%200%200%201%205%200v10.5a1%201%200%201%201-2%200V6H10v9.5a2.5%202.5%200%200%200%205%200V5a4%204%200%201%200-8%200v12.5a5.5%205.5%200%200%200%2011%200V6h-1.5z%22%2F%3E%3C%2Fsvg%3E);
+  top: 8%;
+  bottom: 4%;
 }
 
 trix-toolbar .trix-button--icon-bold::before {
@@ -21063,7 +21064,7 @@ a.text-dark:focus {
 }
 
 /*!
-  Ionicons, v4.6.1
+  Ionicons, v4.6.2
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
   MIT License: https://github.com/driftyco/ionicons
@@ -21076,8 +21077,8 @@ a.text-dark:focus {
 
 @font-face {
   font-family: "Ionicons";
-  src: url("../fonts/ionicons.eot?v=4.6.1");
-  src: url("../fonts/ionicons.eot?v=4.6.1#iefix") format("embedded-opentype"), url("../fonts/ionicons.woff2?v=4.6.1") format("woff2"), url("../fonts/ionicons.woff?v=4.6.1") format("woff"), url("../fonts/ionicons.ttf?v=4.6.1") format("truetype"), url("../fonts/ionicons.svg?v=4.6.1#Ionicons") format("svg");
+  src: url("../fonts/ionicons.eot?v=4.6.2");
+  src: url("../fonts/ionicons.eot?v=4.6.2#iefix") format("embedded-opentype"), url("../fonts/ionicons.woff2?v=4.6.2") format("woff2"), url("../fonts/ionicons.woff?v=4.6.2") format("woff"), url("../fonts/ionicons.ttf?v=4.6.2") format("truetype"), url("../fonts/ionicons.svg?v=4.6.2#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal;
 }

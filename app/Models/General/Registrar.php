@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Domain[] $domains
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Registrar query()

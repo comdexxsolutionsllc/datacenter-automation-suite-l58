@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ServiceTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

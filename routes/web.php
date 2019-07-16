@@ -75,3 +75,7 @@ Route::group(['prefix' => '/dashboard', 'middleware' => ['auth']], function () {
     Route::resource('/vendors', 'VendorController')->names(DCASHelper::makeNamedRoutes('vendor'));
     Route::resource('/whitegloves', 'WhiteGloveController')->names(DCASHelper::makeNamedRoutes('whiteglove'));
 });
+
+Route::get('/mail/notify/welcome', function () {
+    return (new App\Notifications\Welcome)->toMail(null);
+});

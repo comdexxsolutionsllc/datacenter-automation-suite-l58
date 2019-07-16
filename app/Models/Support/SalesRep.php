@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Company[] $company
  * @property-read \App\Models\Roles\Employee $employee
+ * @property-read mixed $path
  * @property-read \App\Models\General\Reseller $reseller
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep newQuery()

@@ -7,6 +7,7 @@ use Tests\DuskTestCase;
 
 class ExampleTest extends DuskTestCase
 {
+
     /**
      * A basic test example.
      *

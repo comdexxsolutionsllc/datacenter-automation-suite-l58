@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $commentable_id
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
+ * @property-read mixed $path
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment query()

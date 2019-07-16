@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class DatacenterTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

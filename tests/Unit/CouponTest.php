@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class CouponTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

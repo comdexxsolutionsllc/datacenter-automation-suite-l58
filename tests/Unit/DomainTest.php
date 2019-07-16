@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class DomainTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

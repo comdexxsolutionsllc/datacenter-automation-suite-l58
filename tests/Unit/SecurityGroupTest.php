@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class SecurityGroupTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

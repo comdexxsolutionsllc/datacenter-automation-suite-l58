@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property bool|\DateTime $ends_at
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
+ * @property-read mixed $path
  * @property-read \App\Models\Roles\Customer $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription newQuery()

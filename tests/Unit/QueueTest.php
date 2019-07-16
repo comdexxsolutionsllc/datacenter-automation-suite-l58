@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class QueueTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

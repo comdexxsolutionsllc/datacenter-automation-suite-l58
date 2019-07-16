@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class CartTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

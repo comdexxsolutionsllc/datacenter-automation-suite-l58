@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\General\Company $company
+ * @property-read mixed $path
  * @property-read \App\Models\Support\SalesRep $salesRep
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller newQuery()

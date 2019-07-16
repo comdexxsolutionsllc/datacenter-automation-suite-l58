@@ -210,4 +210,17 @@ class DCASHelper
     {
         return Pluralize::make($string, $count);
     }
+
+    /**
+     * Will check if the write host is the same as the
+     * read host given a connection name.
+     *
+     * @param string $connectionName
+     *
+     * @return bool
+     */
+    public static function connectionHasSameReadAndWrite(string $connectionName): bool
+    {
+        return config("database.connections.$connectionName.write.host") !== config("database.connections.$connectionName.read.host");
+    }
 }

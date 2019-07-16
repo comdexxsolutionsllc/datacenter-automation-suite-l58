@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class InvoiceTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

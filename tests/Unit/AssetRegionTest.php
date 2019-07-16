@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class AssetRegionTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

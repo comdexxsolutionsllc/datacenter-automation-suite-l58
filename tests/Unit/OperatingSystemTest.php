@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class OperatingSystemTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

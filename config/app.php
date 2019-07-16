@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         //App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\SafeQueryServiceProvider::class,
+        App\Providers\SubscribableServiceProvider::class,
 
         Folklore\GraphQL\ServiceProvider::class,
         ijeffro\Airports\AirportsServiceProvider::class,

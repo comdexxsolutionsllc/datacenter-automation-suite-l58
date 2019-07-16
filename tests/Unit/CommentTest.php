@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class CommentTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

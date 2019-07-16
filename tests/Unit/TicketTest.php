@@ -11,6 +11,7 @@ use Tests\TestCase;
 
 class TicketTest extends TestCase
 {
+
     use RefreshDatabase;
 
     protected $department;

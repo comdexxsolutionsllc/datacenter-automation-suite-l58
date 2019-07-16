@@ -5,6 +5,8 @@ namespace App\Models\Roles;
 use App\Models\Support\Ticket;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use YlsIdeas\SubscribableNotifications\Contracts\CanUnsubscribe;
+use YlsIdeas\SubscribableNotifications\MailSubscriber;
 
 /**
  * App\Models\Roles\Customer
@@ -62,8 +64,10 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Roles\Customer whereUsername($value)
  * @mixin \Eloquent
  */
-class Customer extends BaseRole
+class Customer extends BaseRole implements CanUnsubscribe
 {
+
+    use MailSubscriber;
 
     /**
      * Displayable Fields for export.
@@ -134,5 +138,10 @@ class Customer extends BaseRole
     public function tickets(): MorphMany
     {
         return $this->morphMany(Ticket::class, 'ticketable');
+    }
+
+    public function unsubscribeLink(?string $service = null): string
+    {
+        // TODO: Implement unsubscribeLink() method.
     }
 }

@@ -7,6 +7,7 @@ use Tests\TestCase;
 
 class ResourceGroupTest extends TestCase
 {
+
     use RefreshDatabase;
 
     /**

@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $duplex_type
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read mixed $path
  * @property-read \App\Models\Support\NetworkConfiguration $networkConfiguration
  * @property-read \App\Models\Support\NetworkDevice $networkDevice
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation newModelQuery()
