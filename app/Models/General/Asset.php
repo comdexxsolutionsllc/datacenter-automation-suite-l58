@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\Support\Datacenter;
 use App\Models\Support\OperatingSystem;
@@ -41,9 +42,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read \App\Models\General\Asset|null $networkDevice
  * @property-read \App\Models\Support\OperatingSystem|null $operatingSystem
  * @property-read \App\Models\Support\SwitchportInformation|null $switchport
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Asset newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Asset newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Asset query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Asset newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Asset newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Asset query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Asset whereAdministratorPassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Asset whereChassis($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Asset whereControlPanel($value)

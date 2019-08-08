@@ -2,6 +2,7 @@
 
 namespace App\Models\Website;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -15,9 +16,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\Pricing newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\Pricing newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\Pricing query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereDetails($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Pricing whereId($value)

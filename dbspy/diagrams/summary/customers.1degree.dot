@@ -1,0 +1,48 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "customers" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "customers" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">customers</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="account_id" COLSPAN="3" ALIGN="LEFT">account_id</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="username" COLSPAN="3" ALIGN="LEFT">username</TD></TR>
+      <TR><TD PORT="email" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email</TD></TR>
+      <TR><TD PORT="email_verified_at" COLSPAN="3" ALIGN="LEFT">email_verified_at</TD></TR>
+      <TR><TD PORT="password" COLSPAN="3" ALIGN="LEFT">password</TD></TR>
+      <TR><TD PORT="stripe_id" COLSPAN="3" ALIGN="LEFT">stripe_id</TD></TR>
+      <TR><TD PORT="card_brand" COLSPAN="3" ALIGN="LEFT">card_brand</TD></TR>
+      <TR><TD PORT="card_last_four" COLSPAN="3" ALIGN="LEFT">card_last_four</TD></TR>
+      <TR><TD PORT="trial_ends_at" COLSPAN="3" ALIGN="LEFT">trial_ends_at</TD></TR>
+      <TR><TD PORT="cover" COLSPAN="3" ALIGN="LEFT">cover</TD></TR>
+      <TR><TD PORT="avatar" COLSPAN="3" ALIGN="LEFT">avatar</TD></TR>
+      <TR><TD PORT="remember_token" COLSPAN="3" ALIGN="LEFT">remember_token</TD></TR>
+      <TR><TD PORT="deleted_at" COLSPAN="3" ALIGN="LEFT">deleted_at</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="3" ALIGN="LEFT">created_at</TD></TR>
+      <TR><TD PORT="updated_at" COLSPAN="3" ALIGN="LEFT">updated_at</TD></TR>
+      <TR><TD PORT="last_active" COLSPAN="3" ALIGN="LEFT">last_active</TD></TR>
+      <TR><TD PORT="cart_session_id" COLSPAN="3" ALIGN="LEFT">cart_session_id</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/customers.html"
+    tooltip="customers"
+  ];
+}

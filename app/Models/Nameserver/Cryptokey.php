@@ -2,6 +2,7 @@
 
 namespace App\Models\Nameserver;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -18,9 +19,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property array $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Cryptokey newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Cryptokey newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Cryptokey query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereContent($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Cryptokey whereCreatedAt($value)

@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\General\Asset;
 use Illuminate\Database\Eloquent\Builder;
@@ -18,10 +19,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Asset[] $assets
+ * @property-read int|null $assets_count
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Datacenter newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Datacenter newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Datacenter query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Datacenter whereId($value)

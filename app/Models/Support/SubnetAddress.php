@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -17,9 +18,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SubnetAddress newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SubnetAddress newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SubnetAddress query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereAvailable($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SubnetAddress whereDatacenterId($value)

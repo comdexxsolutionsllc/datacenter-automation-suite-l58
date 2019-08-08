@@ -1,0 +1,44 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "raid_cards" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "raid_cards" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">raid_cards</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="vendor" COLSPAN="3" ALIGN="LEFT">vendor</TD></TR>
+      <TR><TD PORT="model" COLSPAN="3" ALIGN="LEFT">model</TD></TR>
+      <TR><TD PORT="launch_date" COLSPAN="3" ALIGN="LEFT">launch_date</TD></TR>
+      <TR><TD PORT="expected_discontinuance" COLSPAN="3" ALIGN="LEFT">expected_discontinuance</TD></TR>
+      <TR><TD PORT="data_transfer_rate" COLSPAN="3" ALIGN="LEFT">data_transfer_rate</TD></TR>
+      <TR><TD PORT="supported_devices" COLSPAN="3" ALIGN="LEFT">supported_devices</TD></TR>
+      <TR><TD PORT="supported_raid_levels" COLSPAN="3" ALIGN="LEFT">supported_raid_levels</TD></TR>
+      <TR><TD PORT="jbod_mode" COLSPAN="3" ALIGN="LEFT">jbod_mode</TD></TR>
+      <TR><TD PORT="number_of_internal_ports" COLSPAN="3" ALIGN="LEFT">number_of_internal_ports</TD></TR>
+      <TR><TD PORT="number_of_supported_devices" COLSPAN="3" ALIGN="LEFT">number_of_supported_devices</TD></TR>
+      <TR><TD PORT="embedded_memory" COLSPAN="3" ALIGN="LEFT">embedded_memory</TD></TR>
+      <TR><TD PORT="supported_oses" COLSPAN="3" ALIGN="LEFT">supported_oses</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="3" ALIGN="LEFT">created_at</TD></TR>
+      <TR><TD PORT="updated_at" COLSPAN="3" ALIGN="LEFT">updated_at</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/raid_cards.html"
+    tooltip="raid_cards"
+  ];
+}

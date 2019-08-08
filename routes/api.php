@@ -26,13 +26,17 @@ Route::get('/version', '\App\Http\Controllers\ApplicationVersionController');
 
 //Route::group(['prefix' => 'mailgun', 'middleware' => ['mailgun.webhook']], function () {
 Route::post('/mailgun/widgets', 'MailgunWidgetsController@store')->name('mailgun.store');
-//});
+//})
 
 Route::post('/parse/email', '\App\Http\Controllers\EmailParserController');
 
 Route::post('/stripe/webhook', '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook');
 
 Route::middleware('auth:api')->get('/user', 'API\UserController@user');
+
+Route::middleware('apilogger')->post('/test',function(){
+    return response()->json(['status' => 'success']);
+});
 
 Route::fallback(function () {
     return response()->json(['message' => 'Not Found.'], 404);

@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers\API\V1;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\API\ApiController;
+use App\Models\Website\AboutUs;
 use Illuminate\Http\Request;
 
-class AboutUsController extends Controller
+//use App\Http\Controllers\Controller;
+
+class AboutUsController extends ApiController
 {
 
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return array|\Illuminate\Http\Response
      */
     public function index()
     {
@@ -37,6 +40,13 @@ class AboutUsController extends Controller
      */
     public function show($id)
     {
+        $aboutus = AboutUs::find($id);
+
+        return [
+            'id'     => $aboutus->id,
+            'name'   => $aboutus->name,
+            //'_links' => $this->links(),
+        ];
     }
 
     /**

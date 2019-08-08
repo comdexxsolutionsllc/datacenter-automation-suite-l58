@@ -1,0 +1,33 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "oauth_refresh_tokens" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "oauth_refresh_tokens" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">oauth_refresh_tokens</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="access_token_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">access_token_id</TD></TR>
+      <TR><TD PORT="revoked" COLSPAN="3" ALIGN="LEFT">revoked</TD></TR>
+      <TR><TD PORT="expires_at" COLSPAN="3" ALIGN="LEFT">expires_at</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/oauth_refresh_tokens.html"
+    tooltip="oauth_refresh_tokens"
+  ];
+}

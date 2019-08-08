@@ -1,0 +1,56 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "motherboards" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "motherboards" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">motherboards</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="vendor" COLSPAN="3" ALIGN="LEFT">vendor</TD></TR>
+      <TR><TD PORT="model" COLSPAN="3" ALIGN="LEFT">model</TD></TR>
+      <TR><TD PORT="cpu_id" COLSPAN="3" ALIGN="LEFT">cpu_id</TD></TR>
+      <TR><TD PORT="chipset" COLSPAN="3" ALIGN="LEFT">chipset</TD></TR>
+      <TR><TD PORT="socket_type" COLSPAN="3" ALIGN="LEFT">socket_type</TD></TR>
+      <TR><TD PORT="form_factor" COLSPAN="3" ALIGN="LEFT">form_factor</TD></TR>
+      <TR><TD PORT="dvi" COLSPAN="3" ALIGN="LEFT">dvi</TD></TR>
+      <TR><TD PORT="hdmi" COLSPAN="3" ALIGN="LEFT">hdmi</TD></TR>
+      <TR><TD PORT="display_port" COLSPAN="3" ALIGN="LEFT">display_port</TD></TR>
+      <TR><TD PORT="bios" COLSPAN="3" ALIGN="LEFT">bios</TD></TR>
+      <TR><TD PORT="graphics" COLSPAN="3" ALIGN="LEFT">graphics</TD></TR>
+      <TR><TD PORT="audio" COLSPAN="3" ALIGN="LEFT">audio</TD></TR>
+      <TR><TD PORT="audio_chipset" COLSPAN="3" ALIGN="LEFT">audio_chipset</TD></TR>
+      <TR><TD PORT="lan" COLSPAN="3" ALIGN="LEFT">lan</TD></TR>
+      <TR><TD PORT="max_lan_speed" COLSPAN="3" ALIGN="LEFT">max_lan_speed</TD></TR>
+      <TR><TD PORT="memory_slots" COLSPAN="3" ALIGN="LEFT">memory_slots</TD></TR>
+      <TR><TD PORT="maximum_memory_supported" COLSPAN="3" ALIGN="LEFT">maximum_memory_supported</TD></TR>
+      <TR><TD PORT="channels_supported" COLSPAN="3" ALIGN="LEFT">channels_supported</TD></TR>
+      <TR><TD PORT="storage" COLSPAN="3" ALIGN="LEFT">storage</TD></TR>
+      <TR><TD PORT="connectors" COLSPAN="3" ALIGN="LEFT">connectors</TD></TR>
+      <TR><TD PORT="supported_oses" COLSPAN="3" ALIGN="LEFT">supported_oses</TD></TR>
+      <TR><TD PORT="notes" COLSPAN="3" ALIGN="LEFT">notes</TD></TR>
+      <TR><TD PORT="eol_announced" COLSPAN="3" ALIGN="LEFT">eol_announced</TD></TR>
+      <TR><TD PORT="ipmi_enabled" COLSPAN="3" ALIGN="LEFT">ipmi_enabled</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="3" ALIGN="LEFT">created_at</TD></TR>
+      <TR><TD PORT="updated_at" COLSPAN="3" ALIGN="LEFT">updated_at</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/motherboards.html"
+    tooltip="motherboards"
+  ];
+}

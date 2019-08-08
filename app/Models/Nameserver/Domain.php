@@ -2,6 +2,7 @@
 
 namespace App\Models\Nameserver;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -20,13 +21,17 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property array $created_at
  * @property array $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Comment[] $comments
+ * @property-read int|null $comments_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Cryptokey[] $cryptokeys
+ * @property-read int|null $cryptokeys_count
  * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Domainmetadata[] $metadata
+ * @property-read int|null $metadata_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nameserver\Record[] $records
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain query()
+ * @property-read int|null $records_count
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Domain newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Domain newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Domain query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereAccount($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domain whereId($value)

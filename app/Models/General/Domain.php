@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -23,9 +24,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read \App\Models\General\Registrar $registrar
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Domain newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Domain newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Domain query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereAccountId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereAccountType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Domain whereActive($value)

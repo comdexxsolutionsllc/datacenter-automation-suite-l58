@@ -1,0 +1,40 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "switchport_information" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "switchport_information" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">switchport_information</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="network_device_id" COLSPAN="3" ALIGN="LEFT">network_device_id</TD></TR>
+      <TR><TD PORT="switchport_number" COLSPAN="3" ALIGN="LEFT">switchport_number</TD></TR>
+      <TR><TD PORT="category" COLSPAN="3" ALIGN="LEFT">category</TD></TR>
+      <TR><TD PORT="port_speed" COLSPAN="3" ALIGN="LEFT">port_speed</TD></TR>
+      <TR><TD PORT="connection_type" COLSPAN="3" ALIGN="LEFT">connection_type</TD></TR>
+      <TR><TD PORT="poe_status" COLSPAN="3" ALIGN="LEFT">poe_status</TD></TR>
+      <TR><TD PORT="stackable_status" COLSPAN="3" ALIGN="LEFT">stackable_status</TD></TR>
+      <TR><TD PORT="duplex_type" COLSPAN="3" ALIGN="LEFT">duplex_type</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="3" ALIGN="LEFT">created_at</TD></TR>
+      <TR><TD PORT="updated_at" COLSPAN="3" ALIGN="LEFT">updated_at</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/switchport_information.html"
+    tooltip="switchport_information"
+  ];
+}

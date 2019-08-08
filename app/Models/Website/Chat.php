@@ -2,6 +2,7 @@
 
 namespace App\Models\Website;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\Support\Technician;
 use Illuminate\Database\Eloquent\Builder;
@@ -20,12 +21,12 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property mixed $message
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Website\Chat[] $accountable
+ * @property-read \App\Models\Website\Chat $accountable
  * @property-read mixed $path
  * @property-read \App\Models\Support\Technician $technician
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Chat newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Chat newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Chat query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\Chat newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\Chat newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\Chat query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Chat whereAccountableId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Chat whereAccountableType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\Chat whereCreatedAt($value)

@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -20,9 +21,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkInterfaceCard newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkInterfaceCard newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkInterfaceCard query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkInterfaceCard newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkInterfaceCard newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkInterfaceCard query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkInterfaceCard whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkInterfaceCard whereDuplex($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkInterfaceCard whereId($value)

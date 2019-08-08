@@ -164,7 +164,7 @@ return [
         ComdexxSolutionsLLC\MySQLScout\Providers\MySQLScoutServiceProvider::class,
         App\Providers\TransformerServiceProvider::class,
         App\Providers\MenuServiceProvider::class,
-        //App\Providers\MailboxServiceProvider::class,
+        App\Providers\MailboxServiceProvider::class,
 
         /*
          * Application Service Providers...

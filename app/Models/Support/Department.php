@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -20,9 +21,10 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property bool|\DateTime $updated_at
  * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department query()
+ * @property-read int|null $tickets_count
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Department newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Department newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Department query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Department whereDescription($value)

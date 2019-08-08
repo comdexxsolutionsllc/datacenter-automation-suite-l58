@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\General\Company;
 use App\Models\General\Reseller;
@@ -19,12 +20,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\Company[] $company
+ * @property-read int|null $company_count
  * @property-read \App\Models\Roles\Employee $employee
  * @property-read mixed $path
  * @property-read \App\Models\General\Reseller $reseller
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SalesRep newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SalesRep newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SalesRep query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereCompanyId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SalesRep whereEmployeeId($value)

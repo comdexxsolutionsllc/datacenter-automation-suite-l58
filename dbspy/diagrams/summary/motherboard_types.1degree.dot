@@ -1,0 +1,46 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "motherboard_types" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "motherboard_types" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">motherboard_types</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="vendor" COLSPAN="3" ALIGN="LEFT">vendor</TD></TR>
+      <TR><TD PORT="model" COLSPAN="3" ALIGN="LEFT">model</TD></TR>
+      <TR><TD PORT="form_factor" COLSPAN="3" ALIGN="LEFT">form_factor</TD></TR>
+      <TR><TD PORT="assigned_chassis" COLSPAN="3" ALIGN="LEFT">assigned_chassis</TD></TR>
+      <TR><TD PORT="assigned_hdds" COLSPAN="3" ALIGN="LEFT">assigned_hdds</TD></TR>
+      <TR><TD PORT="assigned_memory" COLSPAN="3" ALIGN="LEFT">assigned_memory</TD></TR>
+      <TR><TD PORT="assigned_networking_cards" COLSPAN="3" ALIGN="LEFT">assigned_networking_cards</TD></TR>
+      <TR><TD PORT="assigned_raid_cards" COLSPAN="3" ALIGN="LEFT">assigned_raid_cards</TD></TR>
+      <TR><TD PORT="bios_features" COLSPAN="3" ALIGN="LEFT">bios_features</TD></TR>
+      <TR><TD PORT="chipset" COLSPAN="3" ALIGN="LEFT">chipset</TD></TR>
+      <TR><TD PORT="expansion_slots" COLSPAN="3" ALIGN="LEFT">expansion_slots</TD></TR>
+      <TR><TD PORT="front_side_bus" COLSPAN="3" ALIGN="LEFT">front_side_bus</TD></TR>
+      <TR><TD PORT="hdd_connection_type" COLSPAN="3" ALIGN="LEFT">hdd_connection_type</TD></TR>
+      <TR><TD PORT="processor_information" COLSPAN="3" ALIGN="LEFT">processor_information</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="3" ALIGN="LEFT">created_at</TD></TR>
+      <TR><TD PORT="updated_at" COLSPAN="3" ALIGN="LEFT">updated_at</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/motherboard_types.html"
+    tooltip="motherboard_types"
+  ];
+}

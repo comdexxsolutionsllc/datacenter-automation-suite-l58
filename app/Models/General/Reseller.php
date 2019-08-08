@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\Support\SalesRep;
 use Illuminate\Database\Eloquent\Builder;
@@ -20,9 +21,9 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property-read \App\Models\General\Company $company
  * @property-read mixed $path
  * @property-read \App\Models\Support\SalesRep $salesRep
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Reseller newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Reseller newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Reseller query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereAccountId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereCompanyId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Reseller whereCreatedAt($value)

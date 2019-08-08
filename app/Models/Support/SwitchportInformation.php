@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -23,9 +24,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read mixed $path
  * @property-read \App\Models\Support\NetworkConfiguration $networkConfiguration
  * @property-read \App\Models\Support\NetworkDevice $networkDevice
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SwitchportInformation newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SwitchportInformation newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\SwitchportInformation query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereCategory($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereConnectionType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\SwitchportInformation whereCreatedAt($value)

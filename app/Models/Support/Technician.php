@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $tickets
+ * @property-read int|null $tickets_count
  * @property-read \App\Models\Roles\Employee $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Technician newQuery()

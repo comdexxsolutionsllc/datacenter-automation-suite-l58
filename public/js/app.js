@@ -7431,10 +7431,10 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7443,7 +7443,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".login[data-v-6bdc8b8e] {\n  border: 1px solid black;\n  border-radius: 5px;\n  padding: 1.5rem;\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n}\n.login .container-loading[data-v-6bdc8b8e] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: rgba(0, 0, 0, .3);\n}\n.login .container-loading img[data-v-6bdc8b8e] {\n  width: 2rem;\n  height: 2rem;\n}\n.login form[data-v-6bdc8b8e] {\n  display: flex;\n  flex-flow: column;\n}\n.login form *[data-v-6bdc8b8e]:not(:last-child) {\n  margin-bottom: 1rem;\n}\n.login form input[data-v-6bdc8b8e] {\n  padding: .5rem;\n}\n.login form button[data-v-6bdc8b8e] {\n  padding: .5rem;\n  background-color: lightgray;\n  border: 1px solid gray;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.login form button[data-v-6bdc8b8e]:hover {\n  background-color: lightslategray;\n}\n", ""]);
+exports.push([module.i, ".login[data-v-6bdc8b8e] {\n  border: 1px solid black;\n  border-radius: 5px;\n  padding: 1.5rem;\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n}\n.login .container-loading[data-v-6bdc8b8e] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: rgba(0, 0, 0, 0.3);\n}\n.login .container-loading img[data-v-6bdc8b8e] {\n  width: 2rem;\n  height: 2rem;\n}\n.login form[data-v-6bdc8b8e] {\n  display: flex;\n  flex-flow: column;\n}\n.login form *[data-v-6bdc8b8e]:not(:last-child) {\n  margin-bottom: 1rem;\n}\n.login form input[data-v-6bdc8b8e] {\n  padding: 0.5rem;\n}\n.login form button[data-v-6bdc8b8e] {\n  padding: 0.5rem;\n  background-color: lightgray;\n  border: 1px solid gray;\n  border-radius: 3px;\n  cursor: pointer;\n}\n.login form button[data-v-6bdc8b8e]:hover {\n  background-color: lightslategray;\n}", ""]);
 
 // exports
 
@@ -7462,7 +7462,7 @@ exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*\r\n* iziToast | v1.4.0\r\n* http://izitoast.marcelodolce.com\r\n* by Marcelo Dolce.\r\n*/\n\n.iziToast-capsule {\n  font-size: 0;\n  height: 0;\n  width: 100%;\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  transition: height .5s cubic-bezier(.25, .8, .25, 1), -webkit-transform .5s cubic-bezier(.25, .8, .25, 1);\n  transition: transform .5s cubic-bezier(.25, .8, .25, 1), height .5s cubic-bezier(.25, .8, .25, 1);\n  transition: transform .5s cubic-bezier(.25, .8, .25, 1), height .5s cubic-bezier(.25, .8, .25, 1), -webkit-transform .5s cubic-bezier(.25, .8, .25, 1);\n}\n\n.iziToast-capsule,\n.iziToast-capsule * {\n  box-sizing: border-box;\n}\n\n.iziToast-overlay {\n  display: block;\n  position: fixed;\n  top: -100px;\n  left: 0;\n  right: 0;\n  bottom: -100px;\n  z-index: 997;\n}\n\n.iziToast {\n  display: inline-block;\n  clear: both;\n  position: relative;\n  font-family: 'Lato', Tahoma, Arial;\n  font-size: 14px;\n  padding: 8px 45px 9px 0;\n  background: rgba(238, 238, 238, .9);\n  border-color: rgba(238, 238, 238, .9);\n  width: 100%;\n  pointer-events: all;\n  cursor: default;\n  -webkit-transform: translateX(0);\n          transform: translateX(0);\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  min-height: 54px;\n}\n\n.iziToast>.iziToast-progressbar {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  z-index: 1;\n  background: rgba(255, 255, 255, .2);\n}\n\n.iziToast>.iziToast-progressbar>div {\n  height: 2px;\n  width: 100%;\n  background: rgba(0, 0, 0, .3);\n  border-radius: 0 0 3px 3px;\n}\n\n.iziToast.iziToast-balloon:before {\n  content: '';\n  position: absolute;\n  right: 8px;\n  left: auto;\n  width: 0;\n  height: 0;\n  top: 100%;\n  border-right: 0 solid transparent;\n  border-left: 15px solid transparent;\n  border-top: 10px solid #000;\n  border-top-color: inherit;\n  border-radius: 0;\n}\n\n.iziToast.iziToast-balloon .iziToast-progressbar {\n  top: 0;\n  bottom: auto;\n}\n\n.iziToast.iziToast-balloon>div {\n  border-radius: 0 0 0 3px;\n}\n\n.iziToast>.iziToast-cover {\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  height: 100%;\n  margin: 0;\n  background-size: 100%;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-color: rgba(0, 0, 0, .1);\n}\n\n.iziToast>.iziToast-close {\n  position: absolute;\n  right: 0;\n  top: 0;\n  border: 0;\n  padding: 0;\n  opacity: .6;\n  width: 42px;\n  height: 100%;\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAJPAAACTwBcGfW0QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD3SURBVFiF1ZdtDoMgDEBfdi4PwAX8vLFn0qT7wxantojKupmQmCi8R4tSACpgjC2ICCUbEBa8ingjsU1AXRBeR8aLN64FiknswN8CYefBBDQ3whuFESy7WyQMeC0ipEI0A+0FeBvHUFN8xPaUhAH/iKoWsnXHGegy4J0yxialOfaHJAz4bhRzQzgDvdGnz4GbAonZbCQMuBm1K/kcFu8Mp1N2cFFpsxsMuJqqbIGExGl4loARajU1twskJLLhIsID7+tvUoDnIjTg5T9DPH9EBrz8rxjPzciAl9+O8SxI8CzJ8CxKFfh3ynK8Dyb8wNHM/XDqejx/AtNyPO87tNybAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size: 8px;\n  cursor: pointer;\n  outline: 0;\n}\n\n.iziToast>.iziToast-close:hover {\n  opacity: 1;\n}\n\n.iziToast>.iziToast-body {\n  position: relative;\n  padding: 0 0 0 10px;\n  height: auto;\n  min-height: 36px;\n  margin: 0 0 0 15px;\n  text-align: left;\n}\n\n.iziToast>.iziToast-body:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.iziToast>.iziToast-body .iziToast-texts {\n  margin: 10px 0 0;\n  padding-right: 2px;\n  display: inline-block;\n  float: left;\n}\n\n.iziToast>.iziToast-body .iziToast-inputs {\n  min-height: 19px;\n  float: left;\n  margin: 3px -2px;\n}\n\n.iziToast>.iziToast-body .iziToast-inputs>input:not([type=checkbox]):not([type=radio]),\n.iziToast>.iziToast-body .iziToast-inputs>select {\n  position: relative;\n  display: inline-block;\n  margin: 2px;\n  border-radius: 2px;\n  border: 0;\n  padding: 4px 7px;\n  font-size: 13px;\n  letter-spacing: .02em;\n  background: rgba(0, 0, 0, .1);\n  color: #000;\n  box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);\n  min-height: 26px;\n}\n\n.iziToast>.iziToast-body .iziToast-inputs>input:not([type=checkbox]):not([type=radio]):focus,\n.iziToast>.iziToast-body .iziToast-inputs>select:focus {\n  box-shadow: 0 0 0 1px rgba(0, 0, 0, .6);\n}\n\n.iziToast>.iziToast-body .iziToast-buttons {\n  min-height: 17px;\n  float: left;\n  margin: 4px -2px;\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a,\n.iziToast>.iziToast-body .iziToast-buttons>button,\n.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]) {\n  position: relative;\n  display: inline-block;\n  margin: 2px;\n  border-radius: 2px;\n  border: 0;\n  padding: 5px 10px;\n  font-size: 12px;\n  letter-spacing: .02em;\n  cursor: pointer;\n  background: rgba(0, 0, 0, .1);\n  color: #000;\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a:hover,\n.iziToast>.iziToast-body .iziToast-buttons>button:hover,\n.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):hover {\n  background: rgba(0, 0, 0, .2);\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a:focus,\n.iziToast>.iziToast-body .iziToast-buttons>button:focus,\n.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):focus {\n  box-shadow: 0 0 0 1px rgba(0, 0, 0, .6);\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a:active,\n.iziToast>.iziToast-body .iziToast-buttons>button:active,\n.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):active {\n  top: 1px;\n}\n\n.iziToast>.iziToast-body .iziToast-icon {\n  position: absolute;\n  left: 0;\n  top: 50%;\n  display: table;\n  font-size: 23px;\n  line-height: 24px;\n  margin-top: -12px;\n  color: #000;\n  width: 24px;\n  height: 24px;\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-info {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCtoPsAAAAKXRSTlMA6PsIvDob+OapavVhWRYPrIry2MxGQ97czsOzpJaMcE0qJQOwVtKjfxCVFeIAAAI3SURBVFjDlJPZsoIwEETnCiGyb8q+qmjl/3/wFmGKwjBROS9QWbtnOqDDGPq4MdMkSc0m7gcDDhF4NRdv8NoL4EcMpzoJglPl/KTDz4WW3IdvXEvxkfIKn7BMZb1bFK4yZFqghZ03jk0nG8N5NBwzx9xU5cxAg8fXi20/hDdC316lcA8o7t16eRuQvW1XGd2d2P8QSHQDDbdIII/9CR3lUF+lbucfJy4WfMS64EJPORnrZxtfc2pjJdnbuags3l04TTtJMXrdTph4Pyg4XAjugAJqMDf5Rf+oXx2/qi4u6nipakIi7CsgiuMSEF9IGKg8heQJKkxIfFSUU/egWSwNrS1fPDtLfon8sZOcYUQml1Qv9a3kfwsEUyJEMgFBKzdV8o3Iw9yAjg1jdLQCV4qbd3no8yD2GugaC3oMbF0NYHCpJYSDhNI5N2DAWB4F4z9Aj/04Cna/x7eVAQ17vRjQZPh+G/kddYv0h49yY4NWNDWMMOMUIRYvlTECmrN8pUAjo5RCMn8KoPmbJ/+Appgnk//Sy90GYBCGgm7IAskQ7D9hFKW4ApB1ei3FSYD9PjGAKygAV+ARFYBH5BsVgG9kkBSAQWKUFYBRZpkUgGVinRWAdUZQDABBQdIcAElDVBUAUUXWHQBZx1gMAGMprM0AsLbVXHsA5trZe93/wp3svQ0YNb/jWV3AIOLsMtlznSNOH7JqjOpDVh7z8qCZR10ftvO4nxeOvPLkpSuvfXnxzKtvXr7j+v8C5ii0e71At7cAAAAASUVORK5CYII=) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-warning {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAkFBMVEUAAAAAAAABAAIAAAABAAIAAAMAAAABAAIBAAIBAAIAAAIAAAABAAIAAAABAAICAAICAAIAAAIAAAAAAAAAAAABAAIBAAIAAAMAAAABAAIBAAMBAAECAAIAAAIAAAIAAAABAAIBAAIBAAMBAAIBAAEAAAIAAAMAAAAAAAABAAECAAICAAIAAAIAAAMAAAQAAAE05yNAAAAAL3RSTlMAB+kD7V8Q+PXicwv7I9iYhkAzJxnx01IV5cmnk2xmHfzexsK4eEw5L7Gei39aRw640awAAAHQSURBVFjD7ZfJdoJAEEWJgCiI4oDiPM8m7///LidErRO7sHrY5u7YXLr7vKqu9kTC0HPmo9n8cJbEQOzqqAdAUHeUZACQuTkGDQBoDJwkHZR0XBz9FkpafXuHP0SJ09mGeJLZ5wwlTmcbA0THPmdEK7XPGTG1zxmInn3OiJ19zkB0jSVTKExMHT0wjAwlWzC0fSPHF1gWRpIhWMYm7fYTFcQGlbemf4dFfdTGg0B/KXM8qBU/3wntbq7rSGqvJ9kla6IpueFJet8fxfem5yhykjyOgNaWF1qSGd5JMNNxpNF7SZQaVh5JzLrTCZIEJ1GyEyVyd+pClMjdaSJK5O40giSRu5PfFiVyd1pAksjdKRnrSsbVdbiHrgT7yss315fkVQPLFQrL+4FHeOXKO5YRFEKv5AiFaMlKLlBpJuVCJlC5sJfvCgztru/3NmBYccPgGTxRAzxn1XGEMUf58pXZvjoOsOCgjL08+b53mtfAM/SVsZcjKLtysQZPqIy9HPP3m/3zKItRwT0LyQo8sTr26tcO83DIUMWIJjierHLsJda/tbNBFY0BP/bKtcM8HNIWCK3aYR4OMzgxo5w5EFLOLKDExXAm9gI4E3iAO94/Ct/lKWuM2LMGbgAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-error {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVyEiIAAAAJ3RSTlMA3BsB98QV8uSyWVUFz7+kcWMM2LuZioBpTUVBNcq2qaibj4d1azLZZYABAAACZElEQVRYw7WX25KCMAyGAxUoFDkpiohnV97/DXeGBtoOUprZ2dyo1K82fxKbwJJVp+KQZ7so2mX5oThVQLKwjDe9YZu4DF3ptAn6rxY0qQPOEq9fNC9ha3y77a22ba24v+9Xbe8v8x03dPOC2/NdvB6xeSreLfGJpnx0TyotKqLm2s7Jd/WO6ivXNp0tCy02R/aFz5VQ5wUPlUL5fIfj5KIlVGU0nWHm/5QtoTVMWY8mzIVu1K9O7XH2JiU/xnOOT39gnUfj+lFHddx4tFjL3/H8jjzaFCy2Rf0c/fdQyQszI8BDR973IyMSKa4krjxAiW/lkRvMP+bKK9WbYS1ASQg8dKjaUGlYPwRe/WoIkz8tiQchH5QAEMv6T0k8MD4mUyWr4E7jAWqZ+xWcMIYkXvlwggJ3IvFK+wIOcpXAo8n8P0COAaXyKH4OsjBuZB4ew0IGu+H1SebhNazsQBbWm8yj+hFuUJB5eMsN0IUXmYendAFFfJB5uEkRMYwxmcd6zDGRtmQePEykAgubymMRFmMxCSIPCRbTuFNN5OGORTjmNGc0Po0m8Uv0gcCry6xUhR2QeLii9tofbEfhz/qvNti+OfPqNm2Mq6105FUMvdT4GPmufMiV8PqBMkc+DdT1bjYYbjzU/ew23VP4n3mLAz4n8Jtv/Ui3ceTT2mzz5o1mZt0gnBpmsdjqRqVlmplcPdqa7X23kL9brdm2t/uBYDPn2+tyu48mtIGD10JTuUrukVrbCFiwDzcHrPjxKt7PW+AZQyT/WESO+1WL7f3o+WLHL2dYMSZsg6dg/z360ofvP4//v1NPzgs28WlWAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size: 80%;\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-success {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMApAPhIFn82wgGv8mVtwAAAKVJREFUSMft0LEJAkEARNFFFEw1NFJb8CKjAy1AEOzAxNw+bEEEg6nyFjbY4LOzcBwX7S/gwUxoTdIn+Jbv4Lv8bx446+kB6VsBtK0B+wbMCKxrwL33wOrVeeChX28n7KTOTjgoEu6DRSYAgAAAAkAmAIAAAAIACQIkMkACAAgAIACAyECBKAOJuCagTJwSUCaUAEMAABEBRwAAEQFLbCJgO4bW+AZKGnktR+jAFAAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-question {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCQkUEhFovxTxAAAEDklEQVRo3s2ZTWgTQRTHf03ipTRUqghNSgsRjHgQrFUQC6JgD1Kak3gQUUoPqRdBglf1oBehBws9Cn4cGk+1SOmh2upBxAYVoeJHrR9tgq0i1Cq0lqYeks7MbpPdmU00/c8hm9n33v/t7Nt5M2+qMEWQI0QIibZKRrQpHvLL2KI2wnQzzBKrDm2RIeKEy01dTYKUI7G1ZRknQXV5yP10kTYgly1NF/5S6duZ8ES+1iZodyaocrjXxE0OFeifYYgp0mRIkwFChAkRJsIxGgrIP+I0n82fvZW5dc/zkss0O2o1c5mX6/TmaDWl77RFe5YkUW3tKEmyFv0lOvXJ/fTYnmCEFuMRbGHEZqVHLyT9DFjUJmkzJl9DG5MWWwM6Llif/gF1nukB6nhgGwUXdFrE+wiURA8QoM9i0zEWWpXQW+ZsyeRrOMuyEo5Fv4gmy4dXPvqcC+pH2VRYaMwy+OWG+iLGCgm0W0Kv9HdvR8ASjmKCXpuK/bxiV/76A/v5UdDIZuKcJGjrnec5KZ7wwsWFOp6xPX/9mt2sqDe7FO+Kf/fXHBPPDWpdXGhTpLvUG9VKwh1xMDDjkvu+cNDFBTk7ptX1QkKZ850m3duu6fcrWxwdaFFyREJ2j4vOpKP6Du6z4uJCv8sYJIVkCnJBGGZaBONO3roY2EqNrSfIPi7SKP4fdXyNUd6I6wbSAHEl33tFLe+FlSsusnK90A0+oEPcuufZgXnOi+u9LrKSJQZQw6LwqBnv2CKsfHORbFbyQhA6xN/pEuihSdj56Co7LWRjPiKie6gkB2LiKuUqK5kiPkLiz1QJ9K1cNXBAMoUCigNpQ9IqDtMI1HKA4/jyvUsaoSyZLA5kjOjDPFZen8Ql5TsvBskUgjciIPSX3QAXC86DT7VWvlEh/xZ+ij9BDVWJ0QL0SbZq6QaFxoLPcXPmBLveLCc4wXdDK6s+6/vwhCSniFLPXW0NJe5UB8zKCsviqpc7vGPVQFcyZbyPwGD+d5ZnxmNWlhG4xSBZZjivjIWHEQgoDkSMjMwTo54569JSE5IpA7EyJSMTyGTUAUFlO1ZKOtaHTMeL1PhYYFTcihmY2cQ5+ullj7EDkiVfVez2sCTz8yiv84djhg7IJVk81xFWJlPdfHBG0flkRC/zQFZ+DSllNtfDdUsOMCliyGX5uOzU3ZhIXFDof4m1gDuKbEx0t2YS25gVGpcMnr/I1kx3c6piB8P8ZoqEwfMX3ZyCXynJTmq/U7NUXqfUzCbWL1wqVKBQUeESzQYoUlW8TAcVL1RCxUu1G6BYXfFyfQ4VPbDI4T8d2WzgQ6sc/vmxnTsqfHCZQzUJxm1h5dxS5Tu6lQgTZ0ipqRVqSwzTbbLHMt+c19iO76tsx/cLZub+Ali+tYC93olEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA5LTA5VDIwOjE4OjE3KzAyOjAwjKtfjgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOS0wOVQyMDoxODoxNyswMjowMP325zIAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast>.iziToast-body .iziToast-message,\n.iziToast>.iziToast-body .iziToast-title {\n  padding: 0;\n  font-size: 14px;\n  line-height: 16px;\n  text-align: left;\n  float: left;\n  white-space: normal;\n}\n\n.iziToast>.iziToast-body .iziToast-title {\n  color: #000;\n  margin: 0;\n}\n\n.iziToast>.iziToast-body .iziToast-message {\n  margin: 0 0 10px;\n  color: rgba(0, 0, 0, .6);\n}\n\n.iziToast.iziToast-animateInside .iziToast-buttons-child,\n.iziToast.iziToast-animateInside .iziToast-icon,\n.iziToast.iziToast-animateInside .iziToast-inputs-child,\n.iziToast.iziToast-animateInside .iziToast-message,\n.iziToast.iziToast-animateInside .iziToast-title {\n  opacity: 0;\n}\n\n.iziToast-target {\n  position: relative;\n  width: 100%;\n  margin: 0 auto;\n}\n\n.iziToast-target .iziToast-capsule {\n  overflow: hidden;\n}\n\n.iziToast-target .iziToast-capsule:after {\n  visibility: hidden;\n  display: block;\n  font-size: 0;\n  content: \" \";\n  clear: both;\n  height: 0;\n}\n\n.iziToast-target .iziToast-capsule .iziToast {\n  width: 100%;\n  float: left;\n}\n\n.iziToast-wrapper {\n  z-index: 99999;\n  position: fixed;\n  width: 100%;\n  pointer-events: none;\n  display: flex;\n  flex-direction: column;\n}\n\n.iziToast-wrapper .iziToast.iziToast-balloon:before {\n  border-right: 0 solid transparent;\n  border-left: 15px solid transparent;\n  border-top: 10px solid #000;\n  border-top-color: inherit;\n  right: 8px;\n  left: auto;\n}\n\n.iziToast-wrapper-bottomLeft {\n  left: 0;\n  bottom: 0;\n  text-align: left;\n}\n\n.iziToast-wrapper-bottomLeft .iziToast.iziToast-balloon:before,\n.iziToast-wrapper-topLeft .iziToast.iziToast-balloon:before {\n  border-right: 15px solid transparent;\n  border-left: 0 solid transparent;\n  right: auto;\n  left: 8px;\n}\n\n.iziToast-wrapper-bottomRight {\n  right: 0;\n  bottom: 0;\n  text-align: right;\n}\n\n.iziToast-wrapper-topLeft {\n  left: 0;\n  top: 0;\n  text-align: left;\n}\n\n.iziToast-wrapper-topRight {\n  top: 0;\n  right: 0;\n  text-align: right;\n}\n\n.iziToast-wrapper-topCenter {\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: center;\n}\n\n.iziToast-wrapper-bottomCenter,\n.iziToast-wrapper-center {\n  bottom: 0;\n  left: 0;\n  right: 0;\n  text-align: center;\n}\n\n.iziToast-wrapper-center {\n  top: 0;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n}\n\n.iziToast-rtl {\n  direction: rtl;\n  padding: 8px 0 9px 45px;\n  font-family: Tahoma, 'Lato', Arial;\n}\n\n.iziToast-rtl .iziToast-cover {\n  left: auto;\n  right: 0;\n}\n\n.iziToast-rtl .iziToast-close {\n  right: auto;\n  left: 0;\n}\n\n.iziToast-rtl .iziToast-body {\n  padding: 0 10px 0 0;\n  margin: 0 16px 0 0;\n  text-align: right;\n}\n\n.iziToast-rtl .iziToast-body .iziToast-buttons,\n.iziToast-rtl .iziToast-body .iziToast-inputs,\n.iziToast-rtl .iziToast-body .iziToast-message,\n.iziToast-rtl .iziToast-body .iziToast-texts,\n.iziToast-rtl .iziToast-body .iziToast-title {\n  float: right;\n  text-align: right;\n}\n\n.iziToast-rtl .iziToast-body .iziToast-icon {\n  left: auto;\n  right: 0;\n}\n\n@media only screen and (min-width:568px) {\n  .iziToast-wrapper {\n    padding: 10px 15px;\n  }\n\n  .iziToast {\n    margin: 5px 0;\n    border-radius: 3px;\n    width: auto;\n  }\n\n  .iziToast:after {\n    content: '';\n    z-index: -1;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    border-radius: 3px;\n    box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, .2), inset 0 0 5px rgba(0, 0, 0, .1), 0 8px 8px -5px rgba(0, 0, 0, .25);\n  }\n\n  .iziToast:not(.iziToast-rtl) .iziToast-cover {\n    border-radius: 3px 0 0 3px;\n  }\n\n  .iziToast.iziToast-rtl .iziToast-cover {\n    border-radius: 0 3px 3px 0;\n  }\n\n  .iziToast.iziToast-color-dark:after {\n    box-shadow: inset 0 -10px 20px -10px rgba(255, 255, 255, .3), 0 10px 10px -5px rgba(0, 0, 0, .25);\n  }\n\n  .iziToast.iziToast-balloon .iziToast-progressbar {\n    background: 0 0;\n  }\n\n  .iziToast.iziToast-balloon:after {\n    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .25), inset 0 10px 20px -5px rgba(0, 0, 0, .25);\n  }\n\n  .iziToast-target .iziToast:after {\n    box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, .2), inset 0 0 5px rgba(0, 0, 0, .1);\n  }\n}\n\n.iziToast.iziToast-theme-dark {\n  background: #565c70;\n  border-color: #565c70;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-title {\n  color: #fff;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-message {\n  color: rgba(255, 255, 255, .7);\n  font-weight: 300;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-close {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgCR4OIQIPSao6AAAAwElEQVRIx72VUQ6EIAwFmz2XB+AConhjzqTJ7JeGKhLYlyx/BGdoBVpjIpMJNjgIZDKTkQHYmYfwmR2AfAqGFBcO2QjXZCd24bEggvd1KBx+xlwoDpYmvnBUUy68DYXD77ESr8WDtYqvxRex7a8oHP4Wo1Mkt5I68Mc+qYqv1h5OsZmZsQ3gj/02h6cO/KEYx29hu3R+VTTwz6D3TymIP1E8RvEiiVdZfEzicxYLiljSxKIqlnW5seitTW6uYnv/Aqh4whX3mEUrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA5LTMwVDE0OjMzOjAyKzAyOjAwl6RMVgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wOS0zMFQxNDozMzowMiswMjowMOb59OoAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size: 8px;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon {\n  color: #fff;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-info {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////vroaSAAAAKXRSTlMA6PsIvDob+OapavVhWRYPrIry2MxGQ97czsOzpJaMcE0qJQOwVtKjfxCVFeIAAAI3SURBVFjDlJPZsoIwEETnCiGyb8q+qmjl/3/wFmGKwjBROS9QWbtnOqDDGPq4MdMkSc0m7gcDDhF4NRdv8NoL4EcMpzoJglPl/KTDz4WW3IdvXEvxkfIKn7BMZb1bFK4yZFqghZ03jk0nG8N5NBwzx9xU5cxAg8fXi20/hDdC316lcA8o7t16eRuQvW1XGd2d2P8QSHQDDbdIII/9CR3lUF+lbucfJy4WfMS64EJPORnrZxtfc2pjJdnbuags3l04TTtJMXrdTph4Pyg4XAjugAJqMDf5Rf+oXx2/qi4u6nipakIi7CsgiuMSEF9IGKg8heQJKkxIfFSUU/egWSwNrS1fPDtLfon8sZOcYUQml1Qv9a3kfwsEUyJEMgFBKzdV8o3Iw9yAjg1jdLQCV4qbd3no8yD2GugaC3oMbF0NYHCpJYSDhNI5N2DAWB4F4z9Aj/04Cna/x7eVAQ17vRjQZPh+G/kddYv0h49yY4NWNDWMMOMUIRYvlTECmrN8pUAjo5RCMn8KoPmbJ/+Appgnk//Sy90GYBCGgm7IAskQ7D9hFKW4ApB1ei3FSYD9PjGAKygAV+ARFYBH5BsVgG9kkBSAQWKUFYBRZpkUgGVinRWAdUZQDABBQdIcAElDVBUAUUXWHQBZx1gMAGMprM0AsLbVXHsA5trZe93/wp3svQ0YNb/jWV3AIOLsMtlznSNOH7JqjOpDVh7z8qCZR10ftvO4nxeOvPLkpSuvfXnxzKtvXr7j+v8C5ii0e71At7cAAAAASUVORK5CYII=) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-warning {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAllBMVEUAAAD////+//3+//3+//3///////z+//3+//3+//3////////////9//3////+//39//3///3////////////+//3+//39//3///z+//z+//7///3///3///3///3////////+//3+//3+//3+//z+//3+//7///3///z////////+//79//3///3///z///v+//3///+trXouAAAAMHRSTlMAB+j87RBf+PXiCwQClSPYhkAzJxnx05tSyadzcmxmHRbp5d7Gwrh4TDkvsYt/WkdQzCITAAAB1UlEQVRYw+3XaXKCQBCGYSIIighoxCVqNJrEPfly/8vFImKXduNsf/Mc4K1y7FnwlMLQc/bUbj85R6bA1LXRDICg6RjJcZa7NQYtnLUGTpERSiOXxrOPkv9s30iGKDmtbYir3H7OUHJa2ylAuvZzRvzUfs7Ii/2cgfTt54x82s8ZSM848gJmYtroQzA2jHwA+LkBIEuMGt+QIng1igzlyMrkuP2CyOi47axRaYTL5jhDJehoR+aovC29s3iIyly3Eb+hRCvZo2qsGTnhKr2cLDS+J73GsqBI9W80UCmWWpEuhIjh6ZRGjyNRarjzKGJ2Ou2himCvjHwqI+rTqQdlRH06TZQR9ek0hiqiPp06mV4ke7QPX6ERUZxO8Uo3sqrfhxvoRrCpvXwL/UjR9GRHMIvLgke4d5QbiwhM6JV2YKKF4vIl7XIBkwm4keryJVmvk/TfwcmPwQNkUQuyA2/sYGwnXL7GPu4bW1jYsmevrNj09/MGZMOEPXslQVqO8hqykD17JfPHP/bmo2yGGpdZiH3IZvzZa7B3+IdDjjpjesHJcvbs5dZ/e+cddVoDdvlq7x12Nac+iN7e4R8OXTjp0pw5CGnOLNDEzeBs5gVwFniAO+8f8wvfeXP2hyqnmwAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-error {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAJ3RSTlMA3BsB98QV8uSyWVUFz6RxYwzYvbupmYqAaU1FQTXKv7abj4d1azKNUit3AAACZElEQVRYw7WXaZOCMAyGw30UORRQBLxX/v8/3BkaWjrY2szO5otKfGrzJrEp6Kw6F8f8sI+i/SE/FucKSBaWiT8p5idlaEtnXTB9tKDLLHAvdSatOan3je93k9F2vRF36+mr1a6eH2NFNydoHq/ieU/UXcWjjk9XykdNWq2ywtp4tXL6Wb2T/MqtzzZutsrNyfvA51KoQROhVCjfrnASIRpSVUZiD5v4RbWExjRdJzSmOsZFvzYz59kRSr6V5zE+/QELHkNdb3VRx45HS1b1u+zfkkcbRAZ3qJ9l/A4qefHUDMShJe+6kZKJDD2pLQ9Q4lu+5Q7rz7Plperd7AtQEgIPI6o2dxr2D4GXvxqCiKcn8cD4gxIAEt7/GYkHL16KqeJd0NB4gJbXfgVnzCGJlzGcocCVSLzUvoAj9xJ4NF7/R8gxoVQexc/hgBpSebjPjgPs59cHmYfn7NkDb6wXmUf1I1ygIPPw4gtgCE8yDw8eAop4J/PQcBExjQmZx37MsZB2ZB4cLKQCG5vKYxMWSzMxIg8pNtOyUkvkocEmXGo69mh8FgnxS4yBwMvDrJSNHZB4uC3ayz/YkcIP4lflwVIT+OU07ZSjrbTkZQ6dTPkYubZ8GC/Cqxu6WvJZII93dcCw46GdNqdpTeF/tiMOuDGB9z/NI6NvyWetGPM0g+bVNeovBmamHXWj0nCbEaGeTMN2PWrqd6cM26ZxP2DeJvj+ph/30Zi/GmRbtlK5SptI+nwGGnvH6gUruT+L16MJHF+58rwNIifTV0vM8+hwMeOXAb6Yx0wXT+b999WXfvn+8/X/F7fWzjdTord5AAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size: 80%;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-success {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAAD////////////////////////////////////////PIev5AAAACnRSTlMApAPhIFn82wgGv8mVtwAAAKVJREFUSMft0LEJAkEARNFFFEw1NFJb8CKjAy1AEOzAxNw+bEEEg6nyFjbY4LOzcBwX7S/gwUxoTdIn+Jbv4Lv8bx446+kB6VsBtK0B+wbMCKxrwL33wOrVeeChX28n7KTOTjgoEu6DRSYAgAAAAkAmAIAAAAIACQIkMkACAAgAIACAyECBKAOJuCagTJwSUCaUAEMAABEBRwAAEQFLbCJgO4bW+AZKGnktR+jAFAAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-question {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCQkUEg18vki+AAAETUlEQVRo3s1ZTWhbRxD+VlIuxsLFCYVIIQYVopBDoK5bKDWUBupDMNbJ5FBKg/FBziUQdE9yaC+FHBrwsdCfQ9RTGoLxwWl+DqHEojUFFydxnB9bInZDqOsErBrr6yGvs/ueX97bldTKo4Pe7puZb3Z33s7srIIjMY1jyCEjP6ImvyX8pF64arSHznKC06wzijY5xSKz7YbuYokV2lODsyyxqz3gSY6z6gCuqcpxJluFH+Z8U+D/0jyHoxFUBHgfvsGHIS9WMIUlVFFDFTUAGWSRQRY5HMeBEP6b+Ew9dh/7INd2jGeO59kfKdXP85zbIbfGQVf4sYC3N1hm3lo6zzIbPvk6x+zBk7wQGMEMB5xncIAzAS0XrFySSV72iS1yyBVcdA1x0afrsoUJgdFfY2+z8ADAXl7zz0KcwJiPfZKpVuABgClO+nRG+QIHDdfb4qlWwUXvKW4Z7vi6L4J9vg+vbfCeCeZH2RfOdMOc/HbCA4BvIW6EMQz7XK/ltd+hP+VzR9mgva2YSfyGI17fA7ynnocqeQNFfIJ0oHsdv6CC2+rXGBN6cQdveY3fcVRtmy/HDete+93zy8jA8zV7YkwYMrjHzRddRsCdiVCwwmh6wg9iTNC7Y9XIF1iS7kbUpsvvGEdPuTfSgAEjRpR096x0liPFD/Eqt2NMuBQzB2XhrACAApjFsuQFh9XdGAX70B3oSuNdnMVBaX+sopYxjwVpHFBVACyKTXNoktjD+6Ll8xhenS9MAAkAI/Lux2YNUOs4I413Ypg1SgEAu7kpFvWjaeJe0fJHDGe/cNaZBkekudw8PMA+0fMwlndZeAsJ5KR/qhUDUJCnSiyvRsolkJHGUgvjH8QXDgZopEzKMKDqCKrwEQ4C6MH7GEXC665buLJG8hlQc4LP4paxfJrOqYVYYY2UARfEIazTbgDg2dB98GebzJd54b8L/iWNdLyooeR6CHyZ+6xk0yKxkYg6nEVSUG4VJ9QJ9cxRCxO+9WiOyvgUeexXP1hLGH5nGuBWVtiSp4vqe3VP0UFWI9Wan4Er3v8q7jjPWVtm4FtcQQMrOKO2nOQCM5AyDMi56FDrKHA/1nyppS1ppBpYaE8wciEjGI2AaeM41kI4doDX4XiT3Qm1gevyruCgZg9P8xIv8m1nCzTKq6oiJ9xTMiZ505P5m8cdZ0CnZMVXHVljM7WMBzxpyDxygtdxoCEFTaMIWbZU85UvBjgUMYy0fBaAF8V1Lj9qWQ1aMZ5f4k9r+AGMSkMP1vZoZih6k6sicc5h/OFHM9vDqU/VIU7zJZdYYsKGH4g4nAJMGiXZRds1pVMoZ69RM5vfkbh0qkBhsnS2RLMLilQdL9MBHS9UAh0v1e6CYnXHy/WeeCcvLDwl/9OVze69tPKM+M+v7eJN6OzFpWdEF0ucDbhVNFXadnVrmJFlkVNGTS2M6pzmhMvltfPhnN2B63sVuL7fcNP3D1TSk2ihosPrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA5LTA5VDIwOjE4OjEzKzAyOjAweOR7nQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOS0wOVQyMDoxODoxMyswMjowMAm5wyEAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size: 85%;\n}\n\n.iziToast.iziToast-theme-dark .iziToast-buttons>a,\n.iziToast.iziToast-theme-dark .iziToast-buttons>button,\n.iziToast.iziToast-theme-dark .iziToast-buttons>input {\n  color: #fff;\n  background: rgba(255, 255, 255, .1);\n}\n\n.iziToast.iziToast-theme-dark .iziToast-buttons>a:hover,\n.iziToast.iziToast-theme-dark .iziToast-buttons>button:hover,\n.iziToast.iziToast-theme-dark .iziToast-buttons>input:hover {\n  background: rgba(255, 255, 255, .2);\n}\n\n.iziToast.iziToast-theme-dark .iziToast-buttons>a:focus,\n.iziToast.iziToast-theme-dark .iziToast-buttons>button:focus,\n.iziToast.iziToast-theme-dark .iziToast-buttons>input:focus {\n  box-shadow: 0 0 0 1px rgba(255, 255, 255, .6);\n}\n\n.iziToast.iziToast-color-red {\n  background: rgba(255, 175, 180, .9);\n  border-color: rgba(255, 175, 180, .9);\n}\n\n.iziToast.iziToast-color-orange {\n  background: rgba(255, 207, 165, .9);\n  border-color: rgba(255, 207, 165, .9);\n}\n\n.iziToast.iziToast-color-yellow {\n  background: rgba(255, 249, 178, .9);\n  border-color: rgba(255, 249, 178, .9);\n}\n\n.iziToast.iziToast-color-blue {\n  background: rgba(157, 222, 255, .9);\n  border-color: rgba(157, 222, 255, .9);\n}\n\n.iziToast.iziToast-color-green {\n  background: rgba(166, 239, 184, .9);\n  border-color: rgba(166, 239, 184, .9);\n}\n\n.iziToast.iziToast-layout2 .iziToast-body .iziToast-message,\n.iziToast.iziToast-layout2 .iziToast-body .iziToast-texts {\n  width: 100%;\n}\n\n.iziToast.iziToast-layout3 {\n  border-radius: 2px;\n}\n\n.iziToast.iziToast-layout3::after {\n  display: none;\n}\n\n.iziToast .revealIn,\n.iziToast.revealIn {\n  -webkit-animation: iziT-revealIn 1s cubic-bezier(.25, 1.6, .25, 1) both;\n          animation: iziT-revealIn 1s cubic-bezier(.25, 1.6, .25, 1) both;\n}\n\n.iziToast .slideIn,\n.iziToast.slideIn {\n  -webkit-animation: iziT-slideIn 1s cubic-bezier(.16, .81, .32, 1) both;\n          animation: iziT-slideIn 1s cubic-bezier(.16, .81, .32, 1) both;\n}\n\n.iziToast.bounceInLeft {\n  -webkit-animation: iziT-bounceInLeft .7s ease-in-out both;\n          animation: iziT-bounceInLeft .7s ease-in-out both;\n}\n\n.iziToast.bounceInRight {\n  -webkit-animation: iziT-bounceInRight .85s ease-in-out both;\n          animation: iziT-bounceInRight .85s ease-in-out both;\n}\n\n.iziToast.bounceInDown {\n  -webkit-animation: iziT-bounceInDown .7s ease-in-out both;\n          animation: iziT-bounceInDown .7s ease-in-out both;\n}\n\n.iziToast.bounceInUp {\n  -webkit-animation: iziT-bounceInUp .7s ease-in-out both;\n          animation: iziT-bounceInUp .7s ease-in-out both;\n}\n\n.iziToast .fadeIn,\n.iziToast.fadeIn {\n  -webkit-animation: iziT-fadeIn .5s ease both;\n          animation: iziT-fadeIn .5s ease both;\n}\n\n.iziToast.fadeInUp {\n  -webkit-animation: iziT-fadeInUp .7s ease both;\n          animation: iziT-fadeInUp .7s ease both;\n}\n\n.iziToast.fadeInDown {\n  -webkit-animation: iziT-fadeInDown .7s ease both;\n          animation: iziT-fadeInDown .7s ease both;\n}\n\n.iziToast.fadeInLeft {\n  -webkit-animation: iziT-fadeInLeft .85s cubic-bezier(.25, .8, .25, 1) both;\n          animation: iziT-fadeInLeft .85s cubic-bezier(.25, .8, .25, 1) both;\n}\n\n.iziToast.fadeInRight {\n  -webkit-animation: iziT-fadeInRight .85s cubic-bezier(.25, .8, .25, 1) both;\n          animation: iziT-fadeInRight .85s cubic-bezier(.25, .8, .25, 1) both;\n}\n\n.iziToast.flipInX {\n  -webkit-animation: iziT-flipInX .85s cubic-bezier(.35, 0, .25, 1) both;\n          animation: iziT-flipInX .85s cubic-bezier(.35, 0, .25, 1) both;\n}\n\n.iziToast.fadeOut {\n  -webkit-animation: iziT-fadeOut .7s ease both;\n          animation: iziT-fadeOut .7s ease both;\n}\n\n.iziToast.fadeOutDown {\n  -webkit-animation: iziT-fadeOutDown .7s cubic-bezier(.4, .45, .15, .91) both;\n          animation: iziT-fadeOutDown .7s cubic-bezier(.4, .45, .15, .91) both;\n}\n\n.iziToast.fadeOutUp {\n  -webkit-animation: iziT-fadeOutUp .7s cubic-bezier(.4, .45, .15, .91) both;\n          animation: iziT-fadeOutUp .7s cubic-bezier(.4, .45, .15, .91) both;\n}\n\n.iziToast.fadeOutLeft {\n  -webkit-animation: iziT-fadeOutLeft .5s ease both;\n          animation: iziT-fadeOutLeft .5s ease both;\n}\n\n.iziToast.fadeOutRight {\n  -webkit-animation: iziT-fadeOutRight .5s ease both;\n          animation: iziT-fadeOutRight .5s ease both;\n}\n\n.iziToast.flipOutX {\n  -webkit-backface-visibility: visible !important;\n          backface-visibility: visible !important;\n  -webkit-animation: iziT-flipOutX .7s cubic-bezier(.4, .45, .15, .91) both;\n          animation: iziT-flipOutX .7s cubic-bezier(.4, .45, .15, .91) both;\n}\n\n.iziToast-overlay.fadeIn {\n  -webkit-animation: iziT-fadeIn .5s ease both;\n          animation: iziT-fadeIn .5s ease both;\n}\n\n.iziToast-overlay.fadeOut {\n  -webkit-animation: iziT-fadeOut .7s ease both;\n          animation: iziT-fadeOut .7s ease both;\n}\n\n@-webkit-keyframes iziT-revealIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, 1);\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes iziT-slideIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(50px);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(280px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateX(-20px);\n  }\n\n  70% {\n    -webkit-transform: translateX(10px);\n  }\n\n  to {\n    -webkit-transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(-280px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateX(20px);\n  }\n\n  70% {\n    -webkit-transform: translateX(-10px);\n  }\n\n  to {\n    -webkit-transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-200px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateY(10px);\n  }\n\n  70% {\n    -webkit-transform: translateY(-5px);\n  }\n\n  to {\n    -webkit-transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(200px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateY(-10px);\n  }\n\n  70% {\n    -webkit-transform: translateY(5px);\n  }\n\n  to {\n    -webkit-transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeIn {\n  0% {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n            transform: translate3d(0, 100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n            transform: translate3d(0, -100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(300px, 0, 0);\n            transform: translate3d(300px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-300px, 0, 0);\n            transform: translate3d(-300px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOut {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutDown {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n            transform: translate3d(0, 100%, 0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutUp {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n            transform: translate3d(0, -100%, 0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutLeft {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-200px, 0, 0);\n            transform: translate3d(-200px, 0, 0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutRight {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(200px, 0, 0);\n            transform: translate3d(200px, 0, 0);\n  }\n}\n\n@-webkit-keyframes iziT-flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n@-webkit-keyframes iziT-revealIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, 1);\n            transform: scale3d(.3, .3, 1);\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes iziT-revealIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, 1);\n            transform: scale3d(.3, .3, 1);\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes iziT-slideIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(50px);\n            transform: translateX(50px);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@keyframes iziT-slideIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(50px);\n            transform: translateX(50px);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(280px);\n            transform: translateX(280px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateX(-20px);\n            transform: translateX(-20px);\n  }\n\n  70% {\n    -webkit-transform: translateX(10px);\n            transform: translateX(10px);\n  }\n\n  to {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@keyframes iziT-bounceInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(280px);\n            transform: translateX(280px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateX(-20px);\n            transform: translateX(-20px);\n  }\n\n  70% {\n    -webkit-transform: translateX(10px);\n            transform: translateX(10px);\n  }\n\n  to {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(-280px);\n            transform: translateX(-280px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateX(20px);\n            transform: translateX(20px);\n  }\n\n  70% {\n    -webkit-transform: translateX(-10px);\n            transform: translateX(-10px);\n  }\n\n  to {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@keyframes iziT-bounceInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateX(-280px);\n            transform: translateX(-280px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateX(20px);\n            transform: translateX(20px);\n  }\n\n  70% {\n    -webkit-transform: translateX(-10px);\n            transform: translateX(-10px);\n  }\n\n  to {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-200px);\n            transform: translateY(-200px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateY(10px);\n            transform: translateY(10px);\n  }\n\n  70% {\n    -webkit-transform: translateY(-5px);\n            transform: translateY(-5px);\n  }\n\n  to {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@keyframes iziT-bounceInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-200px);\n            transform: translateY(-200px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateY(10px);\n            transform: translateY(10px);\n  }\n\n  70% {\n    -webkit-transform: translateY(-5px);\n            transform: translateY(-5px);\n  }\n\n  to {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes iziT-bounceInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(200px);\n            transform: translateY(200px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateY(-10px);\n            transform: translateY(-10px);\n  }\n\n  70% {\n    -webkit-transform: translateY(5px);\n            transform: translateY(5px);\n  }\n\n  to {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@keyframes iziT-bounceInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(200px);\n            transform: translateY(200px);\n  }\n\n  50% {\n    opacity: 1;\n    -webkit-transform: translateY(-10px);\n            transform: translateY(-10px);\n  }\n\n  70% {\n    -webkit-transform: translateY(5px);\n            transform: translateY(5px);\n  }\n\n  to {\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeIn {\n  0% {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes iziT-fadeIn {\n  0% {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n            transform: translate3d(0, 100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@keyframes iziT-fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n            transform: translate3d(0, 100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n            transform: translate3d(0, -100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@keyframes iziT-fadeInDown {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n            transform: translate3d(0, -100%, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(300px, 0, 0);\n            transform: translate3d(300px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@keyframes iziT-fadeInLeft {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(300px, 0, 0);\n            transform: translate3d(300px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-300px, 0, 0);\n            transform: translate3d(-300px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@keyframes iziT-fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-300px, 0, 0);\n            transform: translate3d(-300px, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@-webkit-keyframes iziT-flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n}\n\n@keyframes iziT-flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n  }\n\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n\n  to {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOut {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n@keyframes iziT-fadeOut {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutDown {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n            transform: translate3d(0, 100%, 0);\n  }\n}\n\n@keyframes iziT-fadeOutDown {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 100%, 0);\n            transform: translate3d(0, 100%, 0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutUp {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n            transform: translate3d(0, -100%, 0);\n  }\n}\n\n@keyframes iziT-fadeOutUp {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -100%, 0);\n            transform: translate3d(0, -100%, 0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutLeft {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-200px, 0, 0);\n            transform: translate3d(-200px, 0, 0);\n  }\n}\n\n@keyframes iziT-fadeOutLeft {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-200px, 0, 0);\n            transform: translate3d(-200px, 0, 0);\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutRight {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(200px, 0, 0);\n            transform: translate3d(200px, 0, 0);\n  }\n}\n\n@keyframes iziT-fadeOutRight {\n  0% {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(200px, 0, 0);\n            transform: translate3d(200px, 0, 0);\n  }\n}\n\n@-webkit-keyframes iziT-flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n@keyframes iziT-flipOutX {\n  0% {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n", ""]);
+exports.push([module.i, "/*\r\n* iziToast | v1.4.0\r\n* http://izitoast.marcelodolce.com\r\n* by Marcelo Dolce.\r\n*/\n\n.iziToast-capsule{\n  font-size:0;\n  height:0;\n  width:100%;\n  -webkit-transform:translateZ(0);\n          transform:translateZ(0);\n  -webkit-backface-visibility:hidden;\n          backface-visibility:hidden;\n  transition:height .5s cubic-bezier(.25,.8,.25,1),-webkit-transform .5s cubic-bezier(.25,.8,.25,1);\n  transition:transform .5s cubic-bezier(.25,.8,.25,1),height .5s cubic-bezier(.25,.8,.25,1);\n  transition:transform .5s cubic-bezier(.25,.8,.25,1),height .5s cubic-bezier(.25,.8,.25,1),-webkit-transform .5s cubic-bezier(.25,.8,.25,1)\n}\n\n.iziToast-capsule,.iziToast-capsule *{\n  box-sizing:border-box\n}\n\n.iziToast-overlay{\n  display:block;\n  position:fixed;\n  top:-100px;\n  left:0;\n  right:0;\n  bottom:-100px;\n  z-index:997\n}\n\n.iziToast{\n  display:inline-block;\n  clear:both;\n  position:relative;\n  font-family:'Lato',Tahoma,Arial;\n  font-size:14px;\n  padding:8px 45px 9px 0;\n  background:rgba(238,238,238,.9);\n  border-color:rgba(238,238,238,.9);\n  width:100%;\n  pointer-events:all;\n  cursor:default;\n  -webkit-transform:translateX(0);\n          transform:translateX(0);\n  -webkit-touch-callout:none;\n  -webkit-user-select:none;\n  -moz-user-select:none;\n  -ms-user-select:none;\n  user-select:none;\n  min-height:54px\n}\n\n.iziToast>.iziToast-progressbar{\n  position:absolute;\n  left:0;\n  bottom:0;\n  width:100%;\n  z-index:1;\n  background:rgba(255,255,255,.2)\n}\n\n.iziToast>.iziToast-progressbar>div{\n  height:2px;\n  width:100%;\n  background:rgba(0,0,0,.3);\n  border-radius:0 0 3px 3px\n}\n\n.iziToast.iziToast-balloon:before{\n  content:'';\n  position:absolute;\n  right:8px;\n  left:auto;\n  width:0;\n  height:0;\n  top:100%;\n  border-right:0 solid transparent;\n  border-left:15px solid transparent;\n  border-top:10px solid #000;\n  border-top-color:inherit;\n  border-radius:0\n}\n\n.iziToast.iziToast-balloon .iziToast-progressbar{\n  top:0;\n  bottom:auto\n}\n\n.iziToast.iziToast-balloon>div{\n  border-radius:0 0 0 3px\n}\n\n.iziToast>.iziToast-cover{\n  position:absolute;\n  left:0;\n  top:0;\n  bottom:0;\n  height:100%;\n  margin:0;\n  background-size:100%;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n  background-color:rgba(0,0,0,.1)\n}\n\n.iziToast>.iziToast-close{\n  position:absolute;\n  right:0;\n  top:0;\n  border:0;\n  padding:0;\n  opacity:.6;\n  width:42px;\n  height:100%;\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAJPAAACTwBcGfW0QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD3SURBVFiF1ZdtDoMgDEBfdi4PwAX8vLFn0qT7wxantojKupmQmCi8R4tSACpgjC2ICCUbEBa8ingjsU1AXRBeR8aLN64FiknswN8CYefBBDQ3whuFESy7WyQMeC0ipEI0A+0FeBvHUFN8xPaUhAH/iKoWsnXHGegy4J0yxialOfaHJAz4bhRzQzgDvdGnz4GbAonZbCQMuBm1K/kcFu8Mp1N2cFFpsxsMuJqqbIGExGl4loARajU1twskJLLhIsID7+tvUoDnIjTg5T9DPH9EBrz8rxjPzciAl9+O8SxI8CzJ8CxKFfh3ynK8Dyb8wNHM/XDqejx/AtNyPO87tNybAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size:8px;\n  cursor:pointer;\n  outline:0\n}\n\n.iziToast>.iziToast-close:hover{\n  opacity:1\n}\n\n.iziToast>.iziToast-body{\n  position:relative;\n  padding:0 0 0 10px;\n  height:auto;\n  min-height:36px;\n  margin:0 0 0 15px;\n  text-align:left\n}\n\n.iziToast>.iziToast-body:after{\n  content:\"\";\n  display:table;\n  clear:both\n}\n\n.iziToast>.iziToast-body .iziToast-texts{\n  margin:10px 0 0;\n  padding-right:2px;\n  display:inline-block;\n  float:left\n}\n\n.iziToast>.iziToast-body .iziToast-inputs{\n  min-height:19px;\n  float:left;\n  margin:3px -2px\n}\n\n.iziToast>.iziToast-body .iziToast-inputs>input:not([type=checkbox]):not([type=radio]),.iziToast>.iziToast-body .iziToast-inputs>select{\n  position:relative;\n  display:inline-block;\n  margin:2px;\n  border-radius:2px;\n  border:0;\n  padding:4px 7px;\n  font-size:13px;\n  letter-spacing:.02em;\n  background:rgba(0,0,0,.1);\n  color:#000;\n  box-shadow:0 0 0 1px rgba(0,0,0,.2);\n  min-height:26px\n}\n\n.iziToast>.iziToast-body .iziToast-inputs>input:not([type=checkbox]):not([type=radio]):focus,.iziToast>.iziToast-body .iziToast-inputs>select:focus{\n  box-shadow:0 0 0 1px rgba(0,0,0,.6)\n}\n\n.iziToast>.iziToast-body .iziToast-buttons{\n  min-height:17px;\n  float:left;\n  margin:4px -2px\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a,.iziToast>.iziToast-body .iziToast-buttons>button,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]){\n  position:relative;\n  display:inline-block;\n  margin:2px;\n  border-radius:2px;\n  border:0;\n  padding:5px 10px;\n  font-size:12px;\n  letter-spacing:.02em;\n  cursor:pointer;\n  background:rgba(0,0,0,.1);\n  color:#000\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a:hover,.iziToast>.iziToast-body .iziToast-buttons>button:hover,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):hover{\n  background:rgba(0,0,0,.2)\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a:focus,.iziToast>.iziToast-body .iziToast-buttons>button:focus,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):focus{\n  box-shadow:0 0 0 1px rgba(0,0,0,.6)\n}\n\n.iziToast>.iziToast-body .iziToast-buttons>a:active,.iziToast>.iziToast-body .iziToast-buttons>button:active,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):active{\n  top:1px\n}\n\n.iziToast>.iziToast-body .iziToast-icon{\n  position:absolute;\n  left:0;\n  top:50%;\n  display:table;\n  font-size:23px;\n  line-height:24px;\n  margin-top:-12px;\n  color:#000;\n  width:24px;\n  height:24px\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-info{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCtoPsAAAAKXRSTlMA6PsIvDob+OapavVhWRYPrIry2MxGQ97czsOzpJaMcE0qJQOwVtKjfxCVFeIAAAI3SURBVFjDlJPZsoIwEETnCiGyb8q+qmjl/3/wFmGKwjBROS9QWbtnOqDDGPq4MdMkSc0m7gcDDhF4NRdv8NoL4EcMpzoJglPl/KTDz4WW3IdvXEvxkfIKn7BMZb1bFK4yZFqghZ03jk0nG8N5NBwzx9xU5cxAg8fXi20/hDdC316lcA8o7t16eRuQvW1XGd2d2P8QSHQDDbdIII/9CR3lUF+lbucfJy4WfMS64EJPORnrZxtfc2pjJdnbuags3l04TTtJMXrdTph4Pyg4XAjugAJqMDf5Rf+oXx2/qi4u6nipakIi7CsgiuMSEF9IGKg8heQJKkxIfFSUU/egWSwNrS1fPDtLfon8sZOcYUQml1Qv9a3kfwsEUyJEMgFBKzdV8o3Iw9yAjg1jdLQCV4qbd3no8yD2GugaC3oMbF0NYHCpJYSDhNI5N2DAWB4F4z9Aj/04Cna/x7eVAQ17vRjQZPh+G/kddYv0h49yY4NWNDWMMOMUIRYvlTECmrN8pUAjo5RCMn8KoPmbJ/+Appgnk//Sy90GYBCGgm7IAskQ7D9hFKW4ApB1ei3FSYD9PjGAKygAV+ARFYBH5BsVgG9kkBSAQWKUFYBRZpkUgGVinRWAdUZQDABBQdIcAElDVBUAUUXWHQBZx1gMAGMprM0AsLbVXHsA5trZe93/wp3svQ0YNb/jWV3AIOLsMtlznSNOH7JqjOpDVh7z8qCZR10ftvO4nxeOvPLkpSuvfXnxzKtvXr7j+v8C5ii0e71At7cAAAAASUVORK5CYII=) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-warning{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAkFBMVEUAAAAAAAABAAIAAAABAAIAAAMAAAABAAIBAAIBAAIAAAIAAAABAAIAAAABAAICAAICAAIAAAIAAAAAAAAAAAABAAIBAAIAAAMAAAABAAIBAAMBAAECAAIAAAIAAAIAAAABAAIBAAIBAAMBAAIBAAEAAAIAAAMAAAAAAAABAAECAAICAAIAAAIAAAMAAAQAAAE05yNAAAAAL3RSTlMAB+kD7V8Q+PXicwv7I9iYhkAzJxnx01IV5cmnk2xmHfzexsK4eEw5L7Gei39aRw640awAAAHQSURBVFjD7ZfJdoJAEEWJgCiI4oDiPM8m7///LidErRO7sHrY5u7YXLr7vKqu9kTC0HPmo9n8cJbEQOzqqAdAUHeUZACQuTkGDQBoDJwkHZR0XBz9FkpafXuHP0SJ09mGeJLZ5wwlTmcbA0THPmdEK7XPGTG1zxmInn3OiJ19zkB0jSVTKExMHT0wjAwlWzC0fSPHF1gWRpIhWMYm7fYTFcQGlbemf4dFfdTGg0B/KXM8qBU/3wntbq7rSGqvJ9kla6IpueFJet8fxfem5yhykjyOgNaWF1qSGd5JMNNxpNF7SZQaVh5JzLrTCZIEJ1GyEyVyd+pClMjdaSJK5O40giSRu5PfFiVyd1pAksjdKRnrSsbVdbiHrgT7yss315fkVQPLFQrL+4FHeOXKO5YRFEKv5AiFaMlKLlBpJuVCJlC5sJfvCgztru/3NmBYccPgGTxRAzxn1XGEMUf58pXZvjoOsOCgjL08+b53mtfAM/SVsZcjKLtysQZPqIy9HPP3m/3zKItRwT0LyQo8sTr26tcO83DIUMWIJjierHLsJda/tbNBFY0BP/bKtcM8HNIWCK3aYR4OMzgxo5w5EFLOLKDExXAm9gI4E3iAO94/Ct/lKWuM2LMGbgAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-error{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVyEiIAAAAJ3RSTlMA3BsB98QV8uSyWVUFz7+kcWMM2LuZioBpTUVBNcq2qaibj4d1azLZZYABAAACZElEQVRYw7WX25KCMAyGAxUoFDkpiohnV97/DXeGBtoOUprZ2dyo1K82fxKbwJJVp+KQZ7so2mX5oThVQLKwjDe9YZu4DF3ptAn6rxY0qQPOEq9fNC9ha3y77a22ba24v+9Xbe8v8x03dPOC2/NdvB6xeSreLfGJpnx0TyotKqLm2s7Jd/WO6ivXNp0tCy02R/aFz5VQ5wUPlUL5fIfj5KIlVGU0nWHm/5QtoTVMWY8mzIVu1K9O7XH2JiU/xnOOT39gnUfj+lFHddx4tFjL3/H8jjzaFCy2Rf0c/fdQyQszI8BDR973IyMSKa4krjxAiW/lkRvMP+bKK9WbYS1ASQg8dKjaUGlYPwRe/WoIkz8tiQchH5QAEMv6T0k8MD4mUyWr4E7jAWqZ+xWcMIYkXvlwggJ3IvFK+wIOcpXAo8n8P0COAaXyKH4OsjBuZB4ew0IGu+H1SebhNazsQBbWm8yj+hFuUJB5eMsN0IUXmYendAFFfJB5uEkRMYwxmcd6zDGRtmQePEykAgubymMRFmMxCSIPCRbTuFNN5OGORTjmNGc0Po0m8Uv0gcCry6xUhR2QeLii9tofbEfhz/qvNti+OfPqNm2Mq6105FUMvdT4GPmufMiV8PqBMkc+DdT1bjYYbjzU/ew23VP4n3mLAz4n8Jtv/Ui3ceTT2mzz5o1mZt0gnBpmsdjqRqVlmplcPdqa7X23kL9brdm2t/uBYDPn2+tyu48mtIGD10JTuUrukVrbCFiwDzcHrPjxKt7PW+AZQyT/WESO+1WL7f3o+WLHL2dYMSZsg6dg/z360ofvP4//v1NPzgs28WlWAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size:80%\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-success{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMApAPhIFn82wgGv8mVtwAAAKVJREFUSMft0LEJAkEARNFFFEw1NFJb8CKjAy1AEOzAxNw+bEEEg6nyFjbY4LOzcBwX7S/gwUxoTdIn+Jbv4Lv8bx446+kB6VsBtK0B+wbMCKxrwL33wOrVeeChX28n7KTOTjgoEu6DRSYAgAAAAkAmAIAAAAIACQIkMkACAAgAIACAyECBKAOJuCagTJwSUCaUAEMAABEBRwAAEQFLbCJgO4bW+AZKGnktR+jAFAAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast>.iziToast-body .iziToast-icon.ico-question{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCQkUEhFovxTxAAAEDklEQVRo3s2ZTWgTQRTHf03ipTRUqghNSgsRjHgQrFUQC6JgD1Kak3gQUUoPqRdBglf1oBehBws9Cn4cGk+1SOmh2upBxAYVoeJHrR9tgq0i1Cq0lqYeks7MbpPdmU00/c8hm9n33v/t7Nt5M2+qMEWQI0QIibZKRrQpHvLL2KI2wnQzzBKrDm2RIeKEy01dTYKUI7G1ZRknQXV5yP10kTYgly1NF/5S6duZ8ES+1iZodyaocrjXxE0OFeifYYgp0mRIkwFChAkRJsIxGgrIP+I0n82fvZW5dc/zkss0O2o1c5mX6/TmaDWl77RFe5YkUW3tKEmyFv0lOvXJ/fTYnmCEFuMRbGHEZqVHLyT9DFjUJmkzJl9DG5MWWwM6Llif/gF1nukB6nhgGwUXdFrE+wiURA8QoM9i0zEWWpXQW+ZsyeRrOMuyEo5Fv4gmy4dXPvqcC+pH2VRYaMwy+OWG+iLGCgm0W0Kv9HdvR8ASjmKCXpuK/bxiV/76A/v5UdDIZuKcJGjrnec5KZ7wwsWFOp6xPX/9mt2sqDe7FO+Kf/fXHBPPDWpdXGhTpLvUG9VKwh1xMDDjkvu+cNDFBTk7ptX1QkKZ850m3duu6fcrWxwdaFFyREJ2j4vOpKP6Du6z4uJCv8sYJIVkCnJBGGZaBONO3roY2EqNrSfIPi7SKP4fdXyNUd6I6wbSAHEl33tFLe+FlSsusnK90A0+oEPcuufZgXnOi+u9LrKSJQZQw6LwqBnv2CKsfHORbFbyQhA6xN/pEuihSdj56Co7LWRjPiKie6gkB2LiKuUqK5kiPkLiz1QJ9K1cNXBAMoUCigNpQ9IqDtMI1HKA4/jyvUsaoSyZLA5kjOjDPFZen8Ql5TsvBskUgjciIPSX3QAXC86DT7VWvlEh/xZ+ij9BDVWJ0QL0SbZq6QaFxoLPcXPmBLveLCc4wXdDK6s+6/vwhCSniFLPXW0NJe5UB8zKCsviqpc7vGPVQFcyZbyPwGD+d5ZnxmNWlhG4xSBZZjivjIWHEQgoDkSMjMwTo54569JSE5IpA7EyJSMTyGTUAUFlO1ZKOtaHTMeL1PhYYFTcihmY2cQ5+ullj7EDkiVfVez2sCTz8yiv84djhg7IJVk81xFWJlPdfHBG0flkRC/zQFZ+DSllNtfDdUsOMCliyGX5uOzU3ZhIXFDof4m1gDuKbEx0t2YS25gVGpcMnr/I1kx3c6piB8P8ZoqEwfMX3ZyCXynJTmq/U7NUXqfUzCbWL1wqVKBQUeESzQYoUlW8TAcVL1RCxUu1G6BYXfFyfQ4VPbDI4T8d2WzgQ6sc/vmxnTsqfHCZQzUJxm1h5dxS5Tu6lQgTZ0ipqRVqSwzTbbLHMt+c19iO76tsx/cLZub+Ali+tYC93olEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA5LTA5VDIwOjE4OjE3KzAyOjAwjKtfjgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOS0wOVQyMDoxODoxNyswMjowMP325zIAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast>.iziToast-body .iziToast-message,.iziToast>.iziToast-body .iziToast-title{\n  padding:0;\n  font-size:14px;\n  line-height:16px;\n  text-align:left;\n  float:left;\n  white-space:normal\n}\n\n.iziToast>.iziToast-body .iziToast-title{\n  color:#000;\n  margin:0\n}\n\n.iziToast>.iziToast-body .iziToast-message{\n  margin:0 0 10px;\n  color:rgba(0,0,0,.6)\n}\n\n.iziToast.iziToast-animateInside .iziToast-buttons-child,.iziToast.iziToast-animateInside .iziToast-icon,.iziToast.iziToast-animateInside .iziToast-inputs-child,.iziToast.iziToast-animateInside .iziToast-message,.iziToast.iziToast-animateInside .iziToast-title{\n  opacity:0\n}\n\n.iziToast-target{\n  position:relative;\n  width:100%;\n  margin:0 auto\n}\n\n.iziToast-target .iziToast-capsule{\n  overflow:hidden\n}\n\n.iziToast-target .iziToast-capsule:after{\n  visibility:hidden;\n  display:block;\n  font-size:0;\n  content:\" \";\n  clear:both;\n  height:0\n}\n\n.iziToast-target .iziToast-capsule .iziToast{\n  width:100%;\n  float:left\n}\n\n.iziToast-wrapper{\n  z-index:99999;\n  position:fixed;\n  width:100%;\n  pointer-events:none;\n  display:flex;\n  flex-direction:column\n}\n\n.iziToast-wrapper .iziToast.iziToast-balloon:before{\n  border-right:0 solid transparent;\n  border-left:15px solid transparent;\n  border-top:10px solid #000;\n  border-top-color:inherit;\n  right:8px;\n  left:auto\n}\n\n.iziToast-wrapper-bottomLeft{\n  left:0;\n  bottom:0;\n  text-align:left\n}\n\n.iziToast-wrapper-bottomLeft .iziToast.iziToast-balloon:before,.iziToast-wrapper-topLeft .iziToast.iziToast-balloon:before{\n  border-right:15px solid transparent;\n  border-left:0 solid transparent;\n  right:auto;\n  left:8px\n}\n\n.iziToast-wrapper-bottomRight{\n  right:0;\n  bottom:0;\n  text-align:right\n}\n\n.iziToast-wrapper-topLeft{\n  left:0;\n  top:0;\n  text-align:left\n}\n\n.iziToast-wrapper-topRight{\n  top:0;\n  right:0;\n  text-align:right\n}\n\n.iziToast-wrapper-topCenter{\n  top:0;\n  left:0;\n  right:0;\n  text-align:center\n}\n\n.iziToast-wrapper-bottomCenter,.iziToast-wrapper-center{\n  bottom:0;\n  left:0;\n  right:0;\n  text-align:center\n}\n\n.iziToast-wrapper-center{\n  top:0;\n  justify-content:center;\n  flex-flow:column;\n  align-items:center\n}\n\n.iziToast-rtl{\n  direction:rtl;\n  padding:8px 0 9px 45px;\n  font-family:Tahoma,'Lato',Arial\n}\n\n.iziToast-rtl .iziToast-cover{\n  left:auto;\n  right:0\n}\n\n.iziToast-rtl .iziToast-close{\n  right:auto;\n  left:0\n}\n\n.iziToast-rtl .iziToast-body{\n  padding:0 10px 0 0;\n  margin:0 16px 0 0;\n  text-align:right\n}\n\n.iziToast-rtl .iziToast-body .iziToast-buttons,.iziToast-rtl .iziToast-body .iziToast-inputs,.iziToast-rtl .iziToast-body .iziToast-message,.iziToast-rtl .iziToast-body .iziToast-texts,.iziToast-rtl .iziToast-body .iziToast-title{\n  float:right;\n  text-align:right\n}\n\n.iziToast-rtl .iziToast-body .iziToast-icon{\n  left:auto;\n  right:0\n}\n\n@media only screen and (min-width:568px){\n  .iziToast-wrapper{\n    padding:10px 15px\n  }\n\n  .iziToast{\n    margin:5px 0;\n    border-radius:3px;\n    width:auto\n  }\n\n  .iziToast:after{\n    content:'';\n    z-index:-1;\n    position:absolute;\n    top:0;\n    left:0;\n    width:100%;\n    height:100%;\n    border-radius:3px;\n    box-shadow:inset 0 -10px 20px -10px rgba(0,0,0,.2),inset 0 0 5px rgba(0,0,0,.1),0 8px 8px -5px rgba(0,0,0,.25)\n  }\n\n  .iziToast:not(.iziToast-rtl) .iziToast-cover{\n    border-radius:3px 0 0 3px\n  }\n\n  .iziToast.iziToast-rtl .iziToast-cover{\n    border-radius:0 3px 3px 0\n  }\n\n  .iziToast.iziToast-color-dark:after{\n    box-shadow:inset 0 -10px 20px -10px rgba(255,255,255,.3),0 10px 10px -5px rgba(0,0,0,.25)\n  }\n\n  .iziToast.iziToast-balloon .iziToast-progressbar{\n    background:0 0\n  }\n\n  .iziToast.iziToast-balloon:after{\n    box-shadow:0 10px 10px -5px rgba(0,0,0,.25),inset 0 10px 20px -5px rgba(0,0,0,.25)\n  }\n\n  .iziToast-target .iziToast:after{\n    box-shadow:inset 0 -10px 20px -10px rgba(0,0,0,.2),inset 0 0 5px rgba(0,0,0,.1)\n  }\n}\n\n.iziToast.iziToast-theme-dark{\n  background:#565c70;\n  border-color:#565c70\n}\n\n.iziToast.iziToast-theme-dark .iziToast-title{\n  color:#fff\n}\n\n.iziToast.iziToast-theme-dark .iziToast-message{\n  color:rgba(255,255,255,.7);\n  font-weight:300\n}\n\n.iziToast.iziToast-theme-dark .iziToast-close{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgCR4OIQIPSao6AAAAwElEQVRIx72VUQ6EIAwFmz2XB+AConhjzqTJ7JeGKhLYlyx/BGdoBVpjIpMJNjgIZDKTkQHYmYfwmR2AfAqGFBcO2QjXZCd24bEggvd1KBx+xlwoDpYmvnBUUy68DYXD77ESr8WDtYqvxRex7a8oHP4Wo1Mkt5I68Mc+qYqv1h5OsZmZsQ3gj/02h6cO/KEYx29hu3R+VTTwz6D3TymIP1E8RvEiiVdZfEzicxYLiljSxKIqlnW5seitTW6uYnv/Aqh4whX3mEUrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA5LTMwVDE0OjMzOjAyKzAyOjAwl6RMVgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wOS0zMFQxNDozMzowMiswMjowMOb59OoAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size:8px\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon{\n  color:#fff\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-info{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////vroaSAAAAKXRSTlMA6PsIvDob+OapavVhWRYPrIry2MxGQ97czsOzpJaMcE0qJQOwVtKjfxCVFeIAAAI3SURBVFjDlJPZsoIwEETnCiGyb8q+qmjl/3/wFmGKwjBROS9QWbtnOqDDGPq4MdMkSc0m7gcDDhF4NRdv8NoL4EcMpzoJglPl/KTDz4WW3IdvXEvxkfIKn7BMZb1bFK4yZFqghZ03jk0nG8N5NBwzx9xU5cxAg8fXi20/hDdC316lcA8o7t16eRuQvW1XGd2d2P8QSHQDDbdIII/9CR3lUF+lbucfJy4WfMS64EJPORnrZxtfc2pjJdnbuags3l04TTtJMXrdTph4Pyg4XAjugAJqMDf5Rf+oXx2/qi4u6nipakIi7CsgiuMSEF9IGKg8heQJKkxIfFSUU/egWSwNrS1fPDtLfon8sZOcYUQml1Qv9a3kfwsEUyJEMgFBKzdV8o3Iw9yAjg1jdLQCV4qbd3no8yD2GugaC3oMbF0NYHCpJYSDhNI5N2DAWB4F4z9Aj/04Cna/x7eVAQ17vRjQZPh+G/kddYv0h49yY4NWNDWMMOMUIRYvlTECmrN8pUAjo5RCMn8KoPmbJ/+Appgnk//Sy90GYBCGgm7IAskQ7D9hFKW4ApB1ei3FSYD9PjGAKygAV+ARFYBH5BsVgG9kkBSAQWKUFYBRZpkUgGVinRWAdUZQDABBQdIcAElDVBUAUUXWHQBZx1gMAGMprM0AsLbVXHsA5trZe93/wp3svQ0YNb/jWV3AIOLsMtlznSNOH7JqjOpDVh7z8qCZR10ftvO4nxeOvPLkpSuvfXnxzKtvXr7j+v8C5ii0e71At7cAAAAASUVORK5CYII=) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-warning{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAllBMVEUAAAD////+//3+//3+//3///////z+//3+//3+//3////////////9//3////+//39//3///3////////////+//3+//39//3///z+//z+//7///3///3///3///3////////+//3+//3+//3+//z+//3+//7///3///z////////+//79//3///3///z///v+//3///+trXouAAAAMHRSTlMAB+j87RBf+PXiCwQClSPYhkAzJxnx05tSyadzcmxmHRbp5d7Gwrh4TDkvsYt/WkdQzCITAAAB1UlEQVRYw+3XaXKCQBCGYSIIighoxCVqNJrEPfly/8vFImKXduNsf/Mc4K1y7FnwlMLQc/bUbj85R6bA1LXRDICg6RjJcZa7NQYtnLUGTpERSiOXxrOPkv9s30iGKDmtbYir3H7OUHJa2ylAuvZzRvzUfs7Ii/2cgfTt54x82s8ZSM848gJmYtroQzA2jHwA+LkBIEuMGt+QIng1igzlyMrkuP2CyOi47axRaYTL5jhDJehoR+aovC29s3iIyly3Eb+hRCvZo2qsGTnhKr2cLDS+J73GsqBI9W80UCmWWpEuhIjh6ZRGjyNRarjzKGJ2Ou2himCvjHwqI+rTqQdlRH06TZQR9ek0hiqiPp06mV4ke7QPX6ERUZxO8Uo3sqrfhxvoRrCpvXwL/UjR9GRHMIvLgke4d5QbiwhM6JV2YKKF4vIl7XIBkwm4keryJVmvk/TfwcmPwQNkUQuyA2/sYGwnXL7GPu4bW1jYsmevrNj09/MGZMOEPXslQVqO8hqykD17JfPHP/bmo2yGGpdZiH3IZvzZa7B3+IdDjjpjesHJcvbs5dZ/e+cddVoDdvlq7x12Nac+iN7e4R8OXTjp0pw5CGnOLNDEzeBs5gVwFniAO+8f8wvfeXP2hyqnmwAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-error{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAJ3RSTlMA3BsB98QV8uSyWVUFz6RxYwzYvbupmYqAaU1FQTXKv7abj4d1azKNUit3AAACZElEQVRYw7WXaZOCMAyGw30UORRQBLxX/v8/3BkaWjrY2szO5otKfGrzJrEp6Kw6F8f8sI+i/SE/FucKSBaWiT8p5idlaEtnXTB9tKDLLHAvdSatOan3je93k9F2vRF36+mr1a6eH2NFNydoHq/ieU/UXcWjjk9XykdNWq2ywtp4tXL6Wb2T/MqtzzZutsrNyfvA51KoQROhVCjfrnASIRpSVUZiD5v4RbWExjRdJzSmOsZFvzYz59kRSr6V5zE+/QELHkNdb3VRx45HS1b1u+zfkkcbRAZ3qJ9l/A4qefHUDMShJe+6kZKJDD2pLQ9Q4lu+5Q7rz7Plperd7AtQEgIPI6o2dxr2D4GXvxqCiKcn8cD4gxIAEt7/GYkHL16KqeJd0NB4gJbXfgVnzCGJlzGcocCVSLzUvoAj9xJ4NF7/R8gxoVQexc/hgBpSebjPjgPs59cHmYfn7NkDb6wXmUf1I1ygIPPw4gtgCE8yDw8eAop4J/PQcBExjQmZx37MsZB2ZB4cLKQCG5vKYxMWSzMxIg8pNtOyUkvkocEmXGo69mh8FgnxS4yBwMvDrJSNHZB4uC3ayz/YkcIP4lflwVIT+OU07ZSjrbTkZQ6dTPkYubZ8GC/Cqxu6WvJZII93dcCw46GdNqdpTeF/tiMOuDGB9z/NI6NvyWetGPM0g+bVNeovBmamHXWj0nCbEaGeTMN2PWrqd6cM26ZxP2DeJvj+ph/30Zi/GmRbtlK5SptI+nwGGnvH6gUruT+L16MJHF+58rwNIifTV0vM8+hwMeOXAb6Yx0wXT+b999WXfvn+8/X/F7fWzjdTord5AAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size:80%\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-success{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAAD////////////////////////////////////////PIev5AAAACnRSTlMApAPhIFn82wgGv8mVtwAAAKVJREFUSMft0LEJAkEARNFFFEw1NFJb8CKjAy1AEOzAxNw+bEEEg6nyFjbY4LOzcBwX7S/gwUxoTdIn+Jbv4Lv8bx446+kB6VsBtK0B+wbMCKxrwL33wOrVeeChX28n7KTOTjgoEu6DRSYAgAAAAkAmAIAAAAIACQIkMkACAAgAIACAyECBKAOJuCagTJwSUCaUAEMAABEBRwAAEQFLbCJgO4bW+AZKGnktR+jAFAAAAABJRU5ErkJggg==) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast.iziToast-theme-dark .iziToast-icon.ico-question{\n  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCQkUEg18vki+AAAETUlEQVRo3s1ZTWhbRxD+VlIuxsLFCYVIIQYVopBDoK5bKDWUBupDMNbJ5FBKg/FBziUQdE9yaC+FHBrwsdCfQ9RTGoLxwWl+DqHEojUFFydxnB9bInZDqOsErBrr6yGvs/ueX97bldTKo4Pe7puZb3Z33s7srIIjMY1jyCEjP6ImvyX8pF64arSHznKC06wzijY5xSKz7YbuYokV2lODsyyxqz3gSY6z6gCuqcpxJluFH+Z8U+D/0jyHoxFUBHgfvsGHIS9WMIUlVFFDFTUAGWSRQRY5HMeBEP6b+Ew9dh/7INd2jGeO59kfKdXP85zbIbfGQVf4sYC3N1hm3lo6zzIbPvk6x+zBk7wQGMEMB5xncIAzAS0XrFySSV72iS1yyBVcdA1x0afrsoUJgdFfY2+z8ADAXl7zz0KcwJiPfZKpVuABgClO+nRG+QIHDdfb4qlWwUXvKW4Z7vi6L4J9vg+vbfCeCeZH2RfOdMOc/HbCA4BvIW6EMQz7XK/ltd+hP+VzR9mgva2YSfyGI17fA7ynnocqeQNFfIJ0oHsdv6CC2+rXGBN6cQdveY3fcVRtmy/HDete+93zy8jA8zV7YkwYMrjHzRddRsCdiVCwwmh6wg9iTNC7Y9XIF1iS7kbUpsvvGEdPuTfSgAEjRpR096x0liPFD/Eqt2NMuBQzB2XhrACAApjFsuQFh9XdGAX70B3oSuNdnMVBaX+sopYxjwVpHFBVACyKTXNoktjD+6Ll8xhenS9MAAkAI/Lux2YNUOs4I413Ypg1SgEAu7kpFvWjaeJe0fJHDGe/cNaZBkekudw8PMA+0fMwlndZeAsJ5KR/qhUDUJCnSiyvRsolkJHGUgvjH8QXDgZopEzKMKDqCKrwEQ4C6MH7GEXC665buLJG8hlQc4LP4paxfJrOqYVYYY2UARfEIazTbgDg2dB98GebzJd54b8L/iWNdLyooeR6CHyZ+6xk0yKxkYg6nEVSUG4VJ9QJ9cxRCxO+9WiOyvgUeexXP1hLGH5nGuBWVtiSp4vqe3VP0UFWI9Wan4Er3v8q7jjPWVtm4FtcQQMrOKO2nOQCM5AyDMi56FDrKHA/1nyppS1ppBpYaE8wciEjGI2AaeM41kI4doDX4XiT3Qm1gevyruCgZg9P8xIv8m1nCzTKq6oiJ9xTMiZ505P5m8cdZ0CnZMVXHVljM7WMBzxpyDxygtdxoCEFTaMIWbZU85UvBjgUMYy0fBaAF8V1Lj9qWQ1aMZ5f4k9r+AGMSkMP1vZoZih6k6sicc5h/OFHM9vDqU/VIU7zJZdYYsKGH4g4nAJMGiXZRds1pVMoZ69RM5vfkbh0qkBhsnS2RLMLilQdL9MBHS9UAh0v1e6CYnXHy/WeeCcvLDwl/9OVze69tPKM+M+v7eJN6OzFpWdEF0ucDbhVNFXadnVrmJFlkVNGTS2M6pzmhMvltfPhnN2B63sVuL7fcNP3D1TSk2ihosPrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA5LTA5VDIwOjE4OjEzKzAyOjAweOR7nQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOS0wOVQyMDoxODoxMyswMjowMAm5wyEAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;\n  background-size:85%\n}\n\n.iziToast.iziToast-theme-dark .iziToast-buttons>a,.iziToast.iziToast-theme-dark .iziToast-buttons>button,.iziToast.iziToast-theme-dark .iziToast-buttons>input{\n  color:#fff;\n  background:rgba(255,255,255,.1)\n}\n\n.iziToast.iziToast-theme-dark .iziToast-buttons>a:hover,.iziToast.iziToast-theme-dark .iziToast-buttons>button:hover,.iziToast.iziToast-theme-dark .iziToast-buttons>input:hover{\n  background:rgba(255,255,255,.2)\n}\n\n.iziToast.iziToast-theme-dark .iziToast-buttons>a:focus,.iziToast.iziToast-theme-dark .iziToast-buttons>button:focus,.iziToast.iziToast-theme-dark .iziToast-buttons>input:focus{\n  box-shadow:0 0 0 1px rgba(255,255,255,.6)\n}\n\n.iziToast.iziToast-color-red{\n  background:rgba(255,175,180,.9);\n  border-color:rgba(255,175,180,.9)\n}\n\n.iziToast.iziToast-color-orange{\n  background:rgba(255,207,165,.9);\n  border-color:rgba(255,207,165,.9)\n}\n\n.iziToast.iziToast-color-yellow{\n  background:rgba(255,249,178,.9);\n  border-color:rgba(255,249,178,.9)\n}\n\n.iziToast.iziToast-color-blue{\n  background:rgba(157,222,255,.9);\n  border-color:rgba(157,222,255,.9)\n}\n\n.iziToast.iziToast-color-green{\n  background:rgba(166,239,184,.9);\n  border-color:rgba(166,239,184,.9)\n}\n\n.iziToast.iziToast-layout2 .iziToast-body .iziToast-message,.iziToast.iziToast-layout2 .iziToast-body .iziToast-texts{\n  width:100%\n}\n\n.iziToast.iziToast-layout3{\n  border-radius:2px\n}\n\n.iziToast.iziToast-layout3::after{\n  display:none\n}\n\n.iziToast .revealIn,.iziToast.revealIn{\n  -webkit-animation:iziT-revealIn 1s cubic-bezier(.25,1.6,.25,1) both;\n  animation:iziT-revealIn 1s cubic-bezier(.25,1.6,.25,1) both\n}\n\n.iziToast .slideIn,.iziToast.slideIn{\n  -webkit-animation:iziT-slideIn 1s cubic-bezier(.16,.81,.32,1) both;\n  animation:iziT-slideIn 1s cubic-bezier(.16,.81,.32,1) both\n}\n\n.iziToast.bounceInLeft{\n  -webkit-animation:iziT-bounceInLeft .7s ease-in-out both;\n  animation:iziT-bounceInLeft .7s ease-in-out both\n}\n\n.iziToast.bounceInRight{\n  -webkit-animation:iziT-bounceInRight .85s ease-in-out both;\n  animation:iziT-bounceInRight .85s ease-in-out both\n}\n\n.iziToast.bounceInDown{\n  -webkit-animation:iziT-bounceInDown .7s ease-in-out both;\n  animation:iziT-bounceInDown .7s ease-in-out both\n}\n\n.iziToast.bounceInUp{\n  -webkit-animation:iziT-bounceInUp .7s ease-in-out both;\n  animation:iziT-bounceInUp .7s ease-in-out both\n}\n\n.iziToast .fadeIn,.iziToast.fadeIn{\n  -webkit-animation:iziT-fadeIn .5s ease both;\n  animation:iziT-fadeIn .5s ease both\n}\n\n.iziToast.fadeInUp{\n  -webkit-animation:iziT-fadeInUp .7s ease both;\n  animation:iziT-fadeInUp .7s ease both\n}\n\n.iziToast.fadeInDown{\n  -webkit-animation:iziT-fadeInDown .7s ease both;\n  animation:iziT-fadeInDown .7s ease both\n}\n\n.iziToast.fadeInLeft{\n  -webkit-animation:iziT-fadeInLeft .85s cubic-bezier(.25,.8,.25,1) both;\n  animation:iziT-fadeInLeft .85s cubic-bezier(.25,.8,.25,1) both\n}\n\n.iziToast.fadeInRight{\n  -webkit-animation:iziT-fadeInRight .85s cubic-bezier(.25,.8,.25,1) both;\n  animation:iziT-fadeInRight .85s cubic-bezier(.25,.8,.25,1) both\n}\n\n.iziToast.flipInX{\n  -webkit-animation:iziT-flipInX .85s cubic-bezier(.35,0,.25,1) both;\n  animation:iziT-flipInX .85s cubic-bezier(.35,0,.25,1) both\n}\n\n.iziToast.fadeOut{\n  -webkit-animation:iziT-fadeOut .7s ease both;\n  animation:iziT-fadeOut .7s ease both\n}\n\n.iziToast.fadeOutDown{\n  -webkit-animation:iziT-fadeOutDown .7s cubic-bezier(.4,.45,.15,.91) both;\n  animation:iziT-fadeOutDown .7s cubic-bezier(.4,.45,.15,.91) both\n}\n\n.iziToast.fadeOutUp{\n  -webkit-animation:iziT-fadeOutUp .7s cubic-bezier(.4,.45,.15,.91) both;\n  animation:iziT-fadeOutUp .7s cubic-bezier(.4,.45,.15,.91) both\n}\n\n.iziToast.fadeOutLeft{\n  -webkit-animation:iziT-fadeOutLeft .5s ease both;\n  animation:iziT-fadeOutLeft .5s ease both\n}\n\n.iziToast.fadeOutRight{\n  -webkit-animation:iziT-fadeOutRight .5s ease both;\n  animation:iziT-fadeOutRight .5s ease both\n}\n\n.iziToast.flipOutX{\n  -webkit-backface-visibility:visible!important;\n  backface-visibility:visible!important;\n  -webkit-animation:iziT-flipOutX .7s cubic-bezier(.4,.45,.15,.91) both;\n  animation:iziT-flipOutX .7s cubic-bezier(.4,.45,.15,.91) both\n}\n\n.iziToast-overlay.fadeIn{\n  -webkit-animation:iziT-fadeIn .5s ease both;\n  animation:iziT-fadeIn .5s ease both\n}\n\n.iziToast-overlay.fadeOut{\n  -webkit-animation:iziT-fadeOut .7s ease both;\n  animation:iziT-fadeOut .7s ease both\n}\n\n@-webkit-keyframes iziT-revealIn{\n  0%{\n    opacity:0;\n    -webkit-transform:scale3d(.3,.3,1)\n  }\n\n  to{\n    opacity:1\n  }\n}\n\n@-webkit-keyframes iziT-slideIn{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(50px)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:translateX(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInLeft{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(280px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateX(-20px)\n  }\n\n  70%{\n    -webkit-transform:translateX(10px)\n  }\n\n  to{\n    -webkit-transform:translateX(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInRight{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(-280px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateX(20px)\n  }\n\n  70%{\n    -webkit-transform:translateX(-10px)\n  }\n\n  to{\n    -webkit-transform:translateX(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translateY(-200px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateY(10px)\n  }\n\n  70%{\n    -webkit-transform:translateY(-5px)\n  }\n\n  to{\n    -webkit-transform:translateY(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInUp{\n  0%{\n    opacity:0;\n    -webkit-transform:translateY(200px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateY(-10px)\n  }\n\n  70%{\n    -webkit-transform:translateY(5px)\n  }\n\n  to{\n    -webkit-transform:translateY(0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeIn{\n  0%{\n    opacity:0\n  }\n\n  to{\n    opacity:1\n  }\n}\n\n@-webkit-keyframes iziT-fadeInUp{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0,100%,0);\n    transform:translate3d(0,100%,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0,-100%,0);\n    transform:translate3d(0,-100%,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-fadeInLeft{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(300px,0,0);\n    transform:translate3d(300px,0,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-fadeInRight{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(-300px,0,0);\n    transform:translate3d(-300px,0,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-flipInX{\n  0%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);\n    transform:perspective(400px) rotate3d(1,0,0,90deg);\n    opacity:0\n  }\n\n  40%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    transform:perspective(400px) rotate3d(1,0,0,-20deg)\n  }\n\n  60%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);\n    transform:perspective(400px) rotate3d(1,0,0,10deg);\n    opacity:1\n  }\n\n  80%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);\n    transform:perspective(400px) rotate3d(1,0,0,-5deg)\n  }\n\n  to{\n    -webkit-transform:perspective(400px);\n    transform:perspective(400px)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOut{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutDown{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(0,100%,0);\n    transform:translate3d(0,100%,0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutUp{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(0,-100%,0);\n    transform:translate3d(0,-100%,0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutLeft{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(-200px,0,0);\n    transform:translate3d(-200px,0,0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutRight{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(200px,0,0);\n    transform:translate3d(200px,0,0)\n  }\n}\n\n@-webkit-keyframes iziT-flipOutX{\n  0%{\n    -webkit-transform:perspective(400px);\n    transform:perspective(400px)\n  }\n\n  30%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    opacity:1\n  }\n\n  to{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);\n    transform:perspective(400px) rotate3d(1,0,0,90deg);\n    opacity:0\n  }\n}\n\n@-webkit-keyframes iziT-revealIn{\n  0%{\n    opacity:0;\n    -webkit-transform:scale3d(.3,.3,1);\n            transform:scale3d(.3,.3,1)\n  }\n\n  to{\n    opacity:1\n  }\n}\n\n@keyframes iziT-revealIn{\n  0%{\n    opacity:0;\n    -webkit-transform:scale3d(.3,.3,1);\n            transform:scale3d(.3,.3,1)\n  }\n\n  to{\n    opacity:1\n  }\n}\n\n@-webkit-keyframes iziT-slideIn{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(50px);\n            transform:translateX(50px)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:translateX(0);\n            transform:translateX(0)\n  }\n}\n\n@keyframes iziT-slideIn{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(50px);\n            transform:translateX(50px)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:translateX(0);\n            transform:translateX(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInLeft{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(280px);\n            transform:translateX(280px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateX(-20px);\n            transform:translateX(-20px)\n  }\n\n  70%{\n    -webkit-transform:translateX(10px);\n            transform:translateX(10px)\n  }\n\n  to{\n    -webkit-transform:translateX(0);\n            transform:translateX(0)\n  }\n}\n\n@keyframes iziT-bounceInLeft{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(280px);\n            transform:translateX(280px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateX(-20px);\n            transform:translateX(-20px)\n  }\n\n  70%{\n    -webkit-transform:translateX(10px);\n            transform:translateX(10px)\n  }\n\n  to{\n    -webkit-transform:translateX(0);\n            transform:translateX(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInRight{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(-280px);\n            transform:translateX(-280px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateX(20px);\n            transform:translateX(20px)\n  }\n\n  70%{\n    -webkit-transform:translateX(-10px);\n            transform:translateX(-10px)\n  }\n\n  to{\n    -webkit-transform:translateX(0);\n            transform:translateX(0)\n  }\n}\n\n@keyframes iziT-bounceInRight{\n  0%{\n    opacity:0;\n    -webkit-transform:translateX(-280px);\n            transform:translateX(-280px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateX(20px);\n            transform:translateX(20px)\n  }\n\n  70%{\n    -webkit-transform:translateX(-10px);\n            transform:translateX(-10px)\n  }\n\n  to{\n    -webkit-transform:translateX(0);\n            transform:translateX(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translateY(-200px);\n            transform:translateY(-200px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateY(10px);\n            transform:translateY(10px)\n  }\n\n  70%{\n    -webkit-transform:translateY(-5px);\n            transform:translateY(-5px)\n  }\n\n  to{\n    -webkit-transform:translateY(0);\n            transform:translateY(0)\n  }\n}\n\n@keyframes iziT-bounceInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translateY(-200px);\n            transform:translateY(-200px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateY(10px);\n            transform:translateY(10px)\n  }\n\n  70%{\n    -webkit-transform:translateY(-5px);\n            transform:translateY(-5px)\n  }\n\n  to{\n    -webkit-transform:translateY(0);\n            transform:translateY(0)\n  }\n}\n\n@-webkit-keyframes iziT-bounceInUp{\n  0%{\n    opacity:0;\n    -webkit-transform:translateY(200px);\n            transform:translateY(200px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateY(-10px);\n            transform:translateY(-10px)\n  }\n\n  70%{\n    -webkit-transform:translateY(5px);\n            transform:translateY(5px)\n  }\n\n  to{\n    -webkit-transform:translateY(0);\n            transform:translateY(0)\n  }\n}\n\n@keyframes iziT-bounceInUp{\n  0%{\n    opacity:0;\n    -webkit-transform:translateY(200px);\n            transform:translateY(200px)\n  }\n\n  50%{\n    opacity:1;\n    -webkit-transform:translateY(-10px);\n            transform:translateY(-10px)\n  }\n\n  70%{\n    -webkit-transform:translateY(5px);\n            transform:translateY(5px)\n  }\n\n  to{\n    -webkit-transform:translateY(0);\n            transform:translateY(0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeIn{\n  0%{\n    opacity:0\n  }\n\n  to{\n    opacity:1\n  }\n}\n\n@keyframes iziT-fadeIn{\n  0%{\n    opacity:0\n  }\n\n  to{\n    opacity:1\n  }\n}\n\n@-webkit-keyframes iziT-fadeInUp{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0,100%,0);\n    transform:translate3d(0,100%,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@keyframes iziT-fadeInUp{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0,100%,0);\n    transform:translate3d(0,100%,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0,-100%,0);\n    transform:translate3d(0,-100%,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@keyframes iziT-fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0,-100%,0);\n    transform:translate3d(0,-100%,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-fadeInLeft{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(300px,0,0);\n    transform:translate3d(300px,0,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@keyframes iziT-fadeInLeft{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(300px,0,0);\n    transform:translate3d(300px,0,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-fadeInRight{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(-300px,0,0);\n    transform:translate3d(-300px,0,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@keyframes iziT-fadeInRight{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(-300px,0,0);\n    transform:translate3d(-300px,0,0)\n  }\n\n  to{\n    opacity:1;\n    -webkit-transform:none;\n    transform:none\n  }\n}\n\n@-webkit-keyframes iziT-flipInX{\n  0%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);\n    transform:perspective(400px) rotate3d(1,0,0,90deg);\n    opacity:0\n  }\n\n  40%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    transform:perspective(400px) rotate3d(1,0,0,-20deg)\n  }\n\n  60%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);\n    transform:perspective(400px) rotate3d(1,0,0,10deg);\n    opacity:1\n  }\n\n  80%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);\n    transform:perspective(400px) rotate3d(1,0,0,-5deg)\n  }\n\n  to{\n    -webkit-transform:perspective(400px);\n    transform:perspective(400px)\n  }\n}\n\n@keyframes iziT-flipInX{\n  0%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);\n    transform:perspective(400px) rotate3d(1,0,0,90deg);\n    opacity:0\n  }\n\n  40%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    transform:perspective(400px) rotate3d(1,0,0,-20deg)\n  }\n\n  60%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);\n    transform:perspective(400px) rotate3d(1,0,0,10deg);\n    opacity:1\n  }\n\n  80%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);\n    transform:perspective(400px) rotate3d(1,0,0,-5deg)\n  }\n\n  to{\n    -webkit-transform:perspective(400px);\n    transform:perspective(400px)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOut{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0\n  }\n}\n\n@keyframes iziT-fadeOut{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutDown{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(0,100%,0);\n    transform:translate3d(0,100%,0)\n  }\n}\n\n@keyframes iziT-fadeOutDown{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(0,100%,0);\n    transform:translate3d(0,100%,0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutUp{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(0,-100%,0);\n    transform:translate3d(0,-100%,0)\n  }\n}\n\n@keyframes iziT-fadeOutUp{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(0,-100%,0);\n    transform:translate3d(0,-100%,0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutLeft{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(-200px,0,0);\n    transform:translate3d(-200px,0,0)\n  }\n}\n\n@keyframes iziT-fadeOutLeft{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(-200px,0,0);\n    transform:translate3d(-200px,0,0)\n  }\n}\n\n@-webkit-keyframes iziT-fadeOutRight{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(200px,0,0);\n    transform:translate3d(200px,0,0)\n  }\n}\n\n@keyframes iziT-fadeOutRight{\n  0%{\n    opacity:1\n  }\n\n  to{\n    opacity:0;\n    -webkit-transform:translate3d(200px,0,0);\n    transform:translate3d(200px,0,0)\n  }\n}\n\n@-webkit-keyframes iziT-flipOutX{\n  0%{\n    -webkit-transform:perspective(400px);\n    transform:perspective(400px)\n  }\n\n  30%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    opacity:1\n  }\n\n  to{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);\n    transform:perspective(400px) rotate3d(1,0,0,90deg);\n    opacity:0\n  }\n}\n\n@keyframes iziT-flipOutX{\n  0%{\n    -webkit-transform:perspective(400px);\n    transform:perspective(400px)\n  }\n\n  30%{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    transform:perspective(400px) rotate3d(1,0,0,-20deg);\n    opacity:1\n  }\n\n  to{\n    -webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);\n    transform:perspective(400px) rotate3d(1,0,0,90deg);\n    opacity:0\n  }\n}", ""]);
 
 // exports
 
@@ -7481,7 +7481,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "body[data-v-b7f93bea] {\n  margin-top: 20px;\n  background: #eee;\n}\nh3[data-v-b7f93bea] {\n  font-size: 16px;\n}\nul#coupon-list[data-v-b7f93bea] {\n  padding-left: 0em;\n}\nli[data-v-b7f93bea] {\n  padding-top: 25px;\n}\n.text-navy[data-v-b7f93bea] {\n  color: #1ab394;\n}\n.cart-product-imitation[data-v-b7f93bea] {\n  text-align: center;\n  padding-top: 30px;\n  height: 80px;\n  width: 80px;\n  background-color: #f8f8f9;\n}\n.product-imitation.xl[data-v-b7f93bea] {\n  padding: 120px 0;\n}\n.product-desc[data-v-b7f93bea] {\n  padding: 20px;\n  position: relative;\n}\n.ecommerce .tag-list[data-v-b7f93bea] {\n  padding: 0;\n}\n.ecommerce .fa-star[data-v-b7f93bea] {\n  color: #d1dade;\n}\n.ecommerce .fa-star.active[data-v-b7f93bea] {\n  color: #f8ac59;\n}\n.ecommerce .note-editor[data-v-b7f93bea] {\n  border: 1px solid #e7eaec;\n}\ntable.shopping-cart-table[data-v-b7f93bea] {\n  margin-bottom: 0;\n}\ntable.shopping-cart-table tr td[data-v-b7f93bea] {\n  border: none;\n  text-align: right;\n}\ntable.shopping-cart-table tr td.desc.\ntable.shopping-cart-table tr td[data-v-b7f93bea]:first-child {\n  text-align: left;\n}\ntable.shopping-cart-table tr td[data-v-b7f93bea]:last-child {\n  width: 80px;\n}\n.ibox[data-v-b7f93bea] {\n  clear: both;\n  margin-bottom: 25px;\n  margin-top: 0;\n  padding: 0;\n}\n.ibox.collapsed .ibox-content[data-v-b7f93bea] {\n  display: none;\n}\n.ibox:after.\n.ibox[data-v-b7f93bea]:before {\n  display: table;\n}\n.ibox-title[data-v-b7f93bea] {\n  -moz-border-bottom-colors: none;\n  -moz-border-left-colors: none;\n  -moz-border-right-colors: none;\n  -moz-border-top-colors: none;\n  background-color: #fff;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 3px 0 0;\n  color: inherit;\n  margin-bottom: 0;\n  padding: 14px 15px 7px;\n  min-height: 48px;\n}\n.ibox-content[data-v-b7f93bea] {\n  background-color: #fff;\n  color: inherit;\n  padding: 15px 20px 20px 20px;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 1px 0;\n}\n.ibox-footer[data-v-b7f93bea] {\n  text-align: center;\n  color: inherit;\n  border-top: 1px solid #e7eaec;\n  font-size: 90%;\n  background: #fff;\n  padding: 10px 15px;\n  margin-top: 45px;\n}\n", ""]);
+exports.push([module.i, "body[data-v-b7f93bea] {\n  margin-top: 20px;\n  background: #eee;\n}\nh3[data-v-b7f93bea] {\n  font-size: 16px;\n}\nul#coupon-list[data-v-b7f93bea] {\n  padding-left: 0em;\n}\nli[data-v-b7f93bea] {\n  padding-top: 25px;\n}\n.text-navy[data-v-b7f93bea] {\n  color: #1ab394;\n}\n.cart-product-imitation[data-v-b7f93bea] {\n  text-align: center;\n  padding-top: 30px;\n  height: 80px;\n  width: 80px;\n  background-color: #f8f8f9;\n}\n.product-imitation.xl[data-v-b7f93bea] {\n  padding: 120px 0;\n}\n.product-desc[data-v-b7f93bea] {\n  padding: 20px;\n  position: relative;\n}\n.ecommerce .tag-list[data-v-b7f93bea] {\n  padding: 0;\n}\n.ecommerce .fa-star[data-v-b7f93bea] {\n  color: #d1dade;\n}\n.ecommerce .fa-star.active[data-v-b7f93bea] {\n  color: #f8ac59;\n}\n.ecommerce .note-editor[data-v-b7f93bea] {\n  border: 1px solid #e7eaec;\n}\ntable.shopping-cart-table[data-v-b7f93bea] {\n  margin-bottom: 0;\n}\ntable.shopping-cart-table tr td[data-v-b7f93bea] {\n  border: none;\n  text-align: right;\n}\ntable.shopping-cart-table tr td.desc.\ntable.shopping-cart-table tr td[data-v-b7f93bea]:first-child {\n  text-align: left;\n}\ntable.shopping-cart-table tr td[data-v-b7f93bea]:last-child {\n  width: 80px;\n}\n.ibox[data-v-b7f93bea] {\n  clear: both;\n  margin-bottom: 25px;\n  margin-top: 0;\n  padding: 0;\n}\n.ibox.collapsed .ibox-content[data-v-b7f93bea] {\n  display: none;\n}\n.ibox:after.\n.ibox[data-v-b7f93bea]:before {\n  display: table;\n}\n.ibox-title[data-v-b7f93bea] {\n  -moz-border-bottom-colors: none;\n  -moz-border-left-colors: none;\n  -moz-border-right-colors: none;\n  -moz-border-top-colors: none;\n  background-color: #ffffff;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 3px 0 0;\n  color: inherit;\n  margin-bottom: 0;\n  padding: 14px 15px 7px;\n  min-height: 48px;\n}\n.ibox-content[data-v-b7f93bea] {\n  background-color: #ffffff;\n  color: inherit;\n  padding: 15px 20px 20px 20px;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 1px 0;\n}\n.ibox-footer[data-v-b7f93bea] {\n  text-align: center;\n  color: inherit;\n  border-top: 1px solid #e7eaec;\n  font-size: 90%;\n  background: #ffffff;\n  padding: 10px 15px;\n  margin-top: 45px;\n}\n", ""]);
 
 // exports
 
@@ -7500,7 +7500,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300i|Rokkitt:300,400,500,600,700);", ""]);
 
 // module
-exports.push([module.i, "body[data-v-7f6ae384] {\n  margin-top: 20px;\n  background: #eee;\n}\nh3[data-v-7f6ae384] {\n  font-size: 16px;\n}\n.text-navy[data-v-7f6ae384] {\n  color: #1ab394;\n}\n.product[data-v-7f6ae384] {\n  float: left;\n  text-transform: uppercase;\n  font-size: 16px;\n  font-family: 'Rokkitt', serif;\n  font-weight: 600;\n}\n.description[data-v-7f6ae384] {\n  float: left;\n  font-size: 14px;\n  font-family: 'Fira Sans', sans-serif;\n}\n.cart-product-imitation[data-v-7f6ae384] {\n  text-align: center;\n  padding-top: 30px;\n  height: 80px;\n  width: 80px;\n  background-color: #f8f8f9;\n}\n.product-imitation.xl[data-v-7f6ae384] {\n  padding: 120px 0;\n}\n.product-desc[data-v-7f6ae384] {\n  padding: 20px;\n  position: relative;\n}\n.ecommerce .tag-list[data-v-7f6ae384] {\n  padding: 0;\n}\n.ecommerce .fa-star[data-v-7f6ae384] {\n  color: #d1dade;\n}\n.ecommerce .fa-star.active[data-v-7f6ae384] {\n  color: #f8ac59;\n}\n.ecommerce .note-editor[data-v-7f6ae384] {\n  border: 1px solid #e7eaec;\n}\ntable.shopping-cart-table[data-v-7f6ae384] {\n  margin-bottom: 0;\n}\ntable.shopping-cart-table tr td[data-v-7f6ae384] {\n  border: none;\n  text-align: right;\n}\ntable.shopping-cart-table tr td.desc.\ntable.shopping-cart-table tr td[data-v-7f6ae384]:first-child {\n  text-align: left;\n}\ntable.shopping-cart-table tr td[data-v-7f6ae384]:last-child {\n  width: 80px;\n}\n.ibox[data-v-7f6ae384] {\n  clear: both;\n  margin-bottom: 25px;\n  margin-top: 0;\n  padding: 0;\n}\n.ibox.collapsed .ibox-content[data-v-7f6ae384] {\n  display: none;\n}\n.ibox:after.\n.ibox[data-v-7f6ae384]:before {\n  display: table;\n}\n.ibox-title[data-v-7f6ae384] {\n  -moz-border-bottom-colors: none;\n  -moz-border-left-colors: none;\n  -moz-border-right-colors: none;\n  -moz-border-top-colors: none;\n  background-color: #fff;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 3px 0 0;\n  color: inherit;\n  margin-bottom: 0;\n  padding: 14px 15px 7px;\n  min-height: 48px;\n}\n.ibox-content[data-v-7f6ae384] {\n  background-color: #fff;\n  color: inherit;\n  padding: 15px 20px 20px 20px;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 1px 0;\n}\n.ibox-footer[data-v-7f6ae384] {\n  color: inherit;\n  border-top: 1px solid #e7eaec;\n  font-size: 90%;\n  background: #fff;\n  padding: 10px 15px;\n}\n", ""]);
+exports.push([module.i, "body[data-v-7f6ae384] {\n  margin-top: 20px;\n  background: #eee;\n}\nh3[data-v-7f6ae384] {\n  font-size: 16px;\n}\n.text-navy[data-v-7f6ae384] {\n  color: #1ab394;\n}\n.product[data-v-7f6ae384] {\n  float: left;\n  text-transform: uppercase;\n  font-size: 16px;\n  font-family: 'Rokkitt', serif;\n  font-weight: 600;\n}\n.description[data-v-7f6ae384] {\n  float: left;\n  font-size: 14px;\n  font-family: 'Fira Sans', sans-serif;\n}\n.cart-product-imitation[data-v-7f6ae384] {\n  text-align: center;\n  padding-top: 30px;\n  height: 80px;\n  width: 80px;\n  background-color: #f8f8f9;\n}\n.product-imitation.xl[data-v-7f6ae384] {\n  padding: 120px 0;\n}\n.product-desc[data-v-7f6ae384] {\n  padding: 20px;\n  position: relative;\n}\n.ecommerce .tag-list[data-v-7f6ae384] {\n  padding: 0;\n}\n.ecommerce .fa-star[data-v-7f6ae384] {\n  color: #d1dade;\n}\n.ecommerce .fa-star.active[data-v-7f6ae384] {\n  color: #f8ac59;\n}\n.ecommerce .note-editor[data-v-7f6ae384] {\n  border: 1px solid #e7eaec;\n}\ntable.shopping-cart-table[data-v-7f6ae384] {\n  margin-bottom: 0;\n}\ntable.shopping-cart-table tr td[data-v-7f6ae384] {\n  border: none;\n  text-align: right;\n}\ntable.shopping-cart-table tr td.desc.\ntable.shopping-cart-table tr td[data-v-7f6ae384]:first-child {\n  text-align: left;\n}\ntable.shopping-cart-table tr td[data-v-7f6ae384]:last-child {\n  width: 80px;\n}\n.ibox[data-v-7f6ae384] {\n  clear: both;\n  margin-bottom: 25px;\n  margin-top: 0;\n  padding: 0;\n}\n.ibox.collapsed .ibox-content[data-v-7f6ae384] {\n  display: none;\n}\n.ibox:after.\n.ibox[data-v-7f6ae384]:before {\n  display: table;\n}\n.ibox-title[data-v-7f6ae384] {\n  -moz-border-bottom-colors: none;\n  -moz-border-left-colors: none;\n  -moz-border-right-colors: none;\n  -moz-border-top-colors: none;\n  background-color: #ffffff;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 3px 0 0;\n  color: inherit;\n  margin-bottom: 0;\n  padding: 14px 15px 7px;\n  min-height: 48px;\n}\n.ibox-content[data-v-7f6ae384] {\n  background-color: #ffffff;\n  color: inherit;\n  padding: 15px 20px 20px 20px;\n  border-color: #e7eaec;\n  -o-border-image: none;\n     border-image: none;\n  border-style: solid solid none;\n  border-width: 1px 0;\n}\n.ibox-footer[data-v-7f6ae384] {\n  color: inherit;\n  border-top: 1px solid #e7eaec;\n  font-size: 90%;\n  background: #ffffff;\n  padding: 10px 15px;\n}\n", ""]);
 
 // exports
 
@@ -26118,6 +26118,27 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/lozad/dist/lozad.min.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lozad/dist/lozad.min.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*! lozad.js - v1.14.0 - 2019-10-19
+* https://github.com/ApoorvSaxena/lozad.js
+* Copyright (c) 2019 Apoorv Saxena; Licensed MIT */
+!function(t,e){ true?module.exports=e():undefined}(this,function(){"use strict";
+/**
+   * Detect IE browser
+   * @const {boolean}
+   * @private
+   */var d="undefined"!=typeof document&&document.documentMode,c={rootMargin:"0px",threshold:0,load:function(t){if("picture"===t.nodeName.toLowerCase()){var e=document.createElement("img");d&&t.getAttribute("data-iesrc")&&(e.src=t.getAttribute("data-iesrc")),t.getAttribute("data-alt")&&(e.alt=t.getAttribute("data-alt")),t.append(e)}if("video"===t.nodeName.toLowerCase()&&!t.getAttribute("data-src")&&t.children){for(var r=t.children,a=void 0,o=0;o<=r.length-1;o++)(a=r[o].getAttribute("data-src"))&&(r[o].src=a);t.load()}if(t.getAttribute("data-src")&&(t.src=t.getAttribute("data-src")),t.getAttribute("data-srcset")&&t.setAttribute("srcset",t.getAttribute("data-srcset")),t.getAttribute("data-background-image"))t.style.backgroundImage="url('"+t.getAttribute("data-background-image").split(",").join("'),url('")+"')";else if(t.getAttribute("data-background-image-set")){var i=t.getAttribute("data-background-image-set").split(","),n=i[0].substr(0,i[0].indexOf(" "))||i[0];// Substring before ... 1x
+n=-1===n.indexOf("url(")?"url("+n+")":n,1===i.length?t.style.backgroundImage=n:t.setAttribute("style",(t.getAttribute("style")||"")+"background-image: "+n+"; background-image: -webkit-image-set("+i+"); background-image: image-set("+i+")")}t.getAttribute("data-toggle-class")&&t.classList.toggle(t.getAttribute("data-toggle-class"))},loaded:function(){}};function l(t){t.setAttribute("data-loaded",!0)}var b=function(t){return"true"===t.getAttribute("data-loaded")};return function(){var r,a,o=0<arguments.length&&void 0!==arguments[0]?arguments[0]:".lozad",t=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=Object.assign({},c,t),i=e.root,n=e.rootMargin,d=e.threshold,u=e.load,s=e.loaded,g=void 0;return"undefined"!=typeof window&&window.IntersectionObserver&&(g=new IntersectionObserver((r=u,a=s,function(t,e){t.forEach(function(t){(0<t.intersectionRatio||t.isIntersecting)&&(e.unobserve(t.target),b(t.target)||(r(t.target),l(t.target),a(t.target)))})}),{root:i,rootMargin:n,threshold:d})),{observe:function(){for(var t=function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:document;return t instanceof Element?[t]:t instanceof NodeList?t:e.querySelectorAll(t)}(o,i),e=0;e<t.length;e++)b(t[e])||(g?g.observe(t[e]):(u(t[e]),l(t[e]),s(t[e])))},triggerLoad:function(t){b(t)||(u(t),l(t),s(t))},observer:g}}});
+
+
+/***/ }),
+
 /***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
 /*!**************************************************!*\
   !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
@@ -43949,7 +43970,7 @@ module.exports = OrderedMap
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(global) {/**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.15.0
+ * @version 1.16.0
  * @license
  * Copyright (c) 2016 Federico Zivolo and contributors
  *
@@ -43971,16 +43992,17 @@ __webpack_require__.r(__webpack_exports__);
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined' && typeof navigator !== 'undefined';
 
-var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
-var timeoutDuration = 0;
-for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
-  if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) {
-    timeoutDuration = 1;
-    break;
+var timeoutDuration = function () {
+  var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
+  for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
+    if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) {
+      return 1;
+    }
   }
-}
+  return 0;
+}();
 
 function microtaskDebounce(fn) {
   var called = false;
@@ -44098,6 +44120,17 @@ function getScrollParent(element) {
   }
 
   return getScrollParent(getParentNode(element));
+}
+
+/**
+ * Returns the reference node of the reference object, or the reference object itself.
+ * @method
+ * @memberof Popper.Utils
+ * @param {Element|Object} reference - the reference element (the popper will be relative to this)
+ * @returns {Element} parent
+ */
+function getReferenceNode(reference) {
+  return reference && reference.referenceNode ? reference.referenceNode : reference;
 }
 
 var isIE11 = isBrowser && !!(window.MSInputMethodContext && document.documentMode);
@@ -44408,8 +44441,8 @@ function getBoundingClientRect(element) {
 
   // subtract scrollbar size from sizes
   var sizes = element.nodeName === 'HTML' ? getWindowSizes(element.ownerDocument) : {};
-  var width = sizes.width || element.clientWidth || result.right - result.left;
-  var height = sizes.height || element.clientHeight || result.bottom - result.top;
+  var width = sizes.width || element.clientWidth || result.width;
+  var height = sizes.height || element.clientHeight || result.height;
 
   var horizScrollbar = element.offsetWidth - width;
   var vertScrollbar = element.offsetHeight - height;
@@ -44561,7 +44594,7 @@ function getBoundaries(popper, reference, padding, boundariesElement) {
   // NOTE: 1 DOM access here
 
   var boundaries = { top: 0, left: 0 };
-  var offsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
+  var offsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, getReferenceNode(reference));
 
   // Handle viewport case
   if (boundariesElement === 'viewport') {
@@ -44689,7 +44722,7 @@ function computeAutoPlacement(placement, refRect, popper, reference, boundariesE
 function getReferenceOffsets(state, popper, reference) {
   var fixedPosition = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
 
-  var commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
+  var commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, getReferenceNode(reference));
   return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition);
 }
 
@@ -44951,7 +44984,7 @@ function destroy() {
 
   this.disableEventListeners();
 
-  // remove the popper if user explicity asked for the deletion on destroy
+  // remove the popper if user explicitly asked for the deletion on destroy
   // do not use `remove` because IE11 doesn't support it
   if (this.options.removeOnDestroy) {
     this.popper.parentNode.removeChild(this.popper);
@@ -48069,6 +48102,21 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var prosemirrorState = __webpack_require__(/*! prosemirror-state */ "./node_modules/prosemirror-state/dist/index.js");
 var prosemirrorTransform = __webpack_require__(/*! prosemirror-transform */ "./node_modules/prosemirror-transform/dist/index.js");
 
+// :: (options: ?Object) → Plugin
+// Create a plugin that, when added to a ProseMirror instance,
+// causes a decoration to show up at the drop position when something
+// is dragged over the editor.
+//
+//   options::- These options are supported:
+//
+//     color:: ?string
+//     The color of the cursor. Defaults to `black`.
+//
+//     width:: ?number
+//     The precise width of the cursor in pixels. Defaults to 1.
+//
+//     class:: ?string
+//     A CSS class name to add to the cursor element.
 function dropCursor(options) {
   if ( options === void 0 ) options = {};
 
@@ -48083,6 +48131,7 @@ var DropCursorView = function DropCursorView(editorView, options) {
   this.editorView = editorView;
   this.width = options.width || 1;
   this.color = options.color || "black";
+  this.class = options.class;
   this.cursorPos = null;
   this.element = null;
   this.timeout = null;
@@ -48113,7 +48162,7 @@ DropCursorView.prototype.setCursor = function setCursor (pos) {
   if (pos == this.cursorPos) { return }
   this.cursorPos = pos;
   if (pos == null) {
-    this.element.remove();
+    this.element.parentNode.removeChild(this.element);
     this.element = null;
   } else {
     this.updateOverlay();
@@ -48140,9 +48189,10 @@ DropCursorView.prototype.updateOverlay = function updateOverlay () {
   var parent = this.editorView.dom.offsetParent;
   if (!this.element) {
     this.element = parent.appendChild(document.createElement("div"));
+    if (this.class) { this.element.className = this.class; }
     this.element.style.cssText = "position: absolute; z-index: 50; pointer-events: none; background-color: " + this.color;
   }
-  var parentRect = parent == document.body && getComputedStyle(parent).position == "static"
+  var parentRect = !parent || parent == document.body && getComputedStyle(parent).position == "static"
       ? {left: -pageXOffset, top: -pageYOffset} : parent.getBoundingClientRect();
   this.element.style.left = (rect.left - parentRect.left) + "px";
   this.element.style.top = (rect.top - parentRect.top) + "px";
@@ -48158,6 +48208,7 @@ DropCursorView.prototype.scheduleRemoval = function scheduleRemoval (timeout) {
 };
 
 DropCursorView.prototype.dragover = function dragover (event) {
+  if (!this.editorView.editable) { return }
   var pos = this.editorView.posAtCoords({left: event.clientX, top: event.clientY});
   if (pos) {
     var target = pos.pos;
@@ -48606,9 +48657,7 @@ exports.textblockTypeInputRule = textblockTypeInputRule;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var keyName = _interopDefault(__webpack_require__(/*! w3c-keyname */ "./node_modules/w3c-keyname/index.js"));
+var w3cKeyname = __webpack_require__(/*! w3c-keyname */ "./node_modules/w3c-keyname/index.js");
 var prosemirrorState = __webpack_require__(/*! prosemirror-state */ "./node_modules/prosemirror-state/dist/index.js");
 
 // declare global: navigator
@@ -48686,15 +48735,15 @@ function keymap(bindings) {
 // :: (Object) → (view: EditorView, event: dom.Event) → bool
 // Given a set of bindings (using the same format as
 // [`keymap`](#keymap.keymap), return a [keydown
-// handler](#view.EditorProps.handleKeyDown) handles them.
+// handler](#view.EditorProps.handleKeyDown) that handles them.
 function keydownHandler(bindings) {
   var map = normalize(bindings);
   return function(view, event) {
-    var name = keyName(event), isChar = name.length == 1 && name != " ", baseName;
+    var name = w3cKeyname.keyName(event), isChar = name.length == 1 && name != " ", baseName;
     var direct = map[modifiers(name, event, !isChar)];
     if (direct && direct(view.state, view.dispatch, view)) { return true }
     if (isChar && (event.shiftKey || event.altKey || event.metaKey) &&
-        (baseName = keyName.base[event.keyCode]) && baseName != name) {
+        (baseName = w3cKeyname.base[event.keyCode]) && baseName != name) {
       var fromCode = map[modifiers(baseName, event, true)];
       if (fromCode && fromCode(view.state, view.dispatch, view)) { return true }
     }
@@ -49514,7 +49563,7 @@ ResolvedPos.prototype.end = function end (depth) {
 
 // :: (?number) → number
 // The (absolute) position directly before the wrapping node at the
-// given level, or, when `level` is `this.depth + 1`, the original
+// given level, or, when `depth` is `this.depth + 1`, the original
 // position.
 ResolvedPos.prototype.before = function before (depth) {
   depth = this.resolveDepth(depth);
@@ -49524,7 +49573,7 @@ ResolvedPos.prototype.before = function before (depth) {
 
 // :: (?number) → number
 // The (absolute) position directly after the wrapping node at the
-// given level, or the original position when `level` is `this.depth + 1`.
+// given level, or the original position when `depth` is `this.depth + 1`.
 ResolvedPos.prototype.after = function after (depth) {
   depth = this.resolveDepth(depth);
   if (!depth) { throw new RangeError("There is no position after the top-level node") }
@@ -50522,7 +50571,7 @@ function nfa(expr) {
   }
 }
 
-function cmp(a, b) { return a - b }
+function cmp(a, b) { return b - a }
 
 // Get the set of nodes reachable by null edges from `node`. Omit
 // nodes with only a single null-out-edge, since they may lead to
@@ -51239,7 +51288,7 @@ function gatherMarks(schema, marks) {
 //   `"property=value"`, in which case the rule only matches if the
 //   propery's value exactly matches the given value. (For more
 //   complicated filters, use [`getAttrs`](#model.ParseRule.getAttrs)
-//   and return undefined to indicate that the match failed.)
+//   and return false to indicate that the match failed.)
 //
 //   priority:: ?number
 //   Can be used to change the order in which the parse rules in a
@@ -51501,7 +51550,7 @@ NodeContext.prototype.findWrapping = function findWrapping (node) {
 NodeContext.prototype.finish = function finish (openEnd) {
   if (!(this.options & OPT_PRESERVE_WS)) { // Strip trailing whitespace
     var last = this.content[this.content.length - 1], m;
-    if (last && last.isText && (m = /\s+$/.exec(last.text))) {
+    if (last && last.isText && (m = /[ \t\r\n\u000c]+$/.exec(last.text))) {
       if (last.text.length == m[0].length) { this.content.pop(); }
       else { this.content[this.content.length - 1] = last.withText(last.text.slice(0, last.text.length - m[0].length)); }
     }
@@ -51562,18 +51611,18 @@ ParseContext.prototype.addDOM = function addDOM (dom) {
 ParseContext.prototype.addTextNode = function addTextNode (dom) {
   var value = dom.nodeValue;
   var top = this.top;
-  if ((top.type ? top.type.inlineContent : top.content.length && top.content[0].isInline) || /\S/.test(value)) {
+  if ((top.type ? top.type.inlineContent : top.content.length && top.content[0].isInline) || /[^ \t\r\n\u000c]/.test(value)) {
     if (!(top.options & OPT_PRESERVE_WS)) {
-      value = value.replace(/\s+/g, " ");
+      value = value.replace(/[ \t\r\n\u000c]+/g, " ");
       // If this starts with whitespace, and there is no node before it, or
       // a hard break, or a text node that ends with whitespace, strip the
       // leading space.
-      if (/^\s/.test(value) && this.open == this.nodes.length - 1) {
+      if (/^[ \t\r\n\u000c]/.test(value) && this.open == this.nodes.length - 1) {
         var nodeBefore = top.content[top.content.length - 1];
         var domNodeBefore = dom.previousSibling;
         if (!nodeBefore ||
             (domNodeBefore && domNodeBefore.nodeName == 'BR') ||
-            (nodeBefore.isText && /\s$/.test(nodeBefore.text)))
+            (nodeBefore.isText && /[ \t\r\n\u000c]$/.test(nodeBefore.text)))
           { value = value.slice(1); }
       }
     } else if (!(top.options & OPT_PRESERVE_WS_FULL)) {
@@ -51601,6 +51650,9 @@ ParseContext.prototype.addElement = function addElement (dom) {
     if (blockTags.hasOwnProperty(name)) {
       sync = true;
       if (!top.type) { this.needsBlock = true; }
+    } else if (!dom.firstChild) {
+      this.leafFallback(dom);
+      return
     }
     this.addAll(dom);
     if (sync) { this.sync(top); }
@@ -51608,6 +51660,12 @@ ParseContext.prototype.addElement = function addElement (dom) {
   } else {
     this.addElementByRule(dom, rule);
   }
+};
+
+// Called for leaf DOM nodes that would otherwise be ignored
+ParseContext.prototype.leafFallback = function leafFallback (dom) {
+  if (dom.nodeName == "BR" && this.top.type && this.top.type.inlineContent)
+    { this.addTextNode(dom.ownerDocument.createTextNode("\n")); }
 };
 
 // Run any style parser associated with the node's styles. Either
@@ -51636,8 +51694,11 @@ ParseContext.prototype.addElementByRule = function addElementByRule (dom, rule) 
   var sync, nodeType, markType, mark;
   if (rule.node) {
     nodeType = this.parser.schema.nodes[rule.node];
-    if (nodeType.isLeaf) { this.insertNode(nodeType.create(rule.attrs)); }
-    else { sync = this.enter(nodeType, rule.attrs, rule.preserveWhitespace); }
+    if (!nodeType.isLeaf) {
+      sync = this.enter(nodeType, rule.attrs, rule.preserveWhitespace);
+    } else if (!this.insertNode(nodeType.create(rule.attrs))) {
+      this.leafFallback(dom);
+    }
   } else {
     markType = this.parser.schema.marks[rule.mark];
     mark = markType.create(rule.attrs);
@@ -51660,7 +51721,6 @@ ParseContext.prototype.addElementByRule = function addElementByRule (dom, rule) 
   }
   if (sync) { this.sync(startIn); this.open--; }
   if (mark) { this.removePendingMark(mark); }
-  return true
 };
 
 // : (dom.Node, ?NodeBuilder, ?number, ?number)
@@ -51723,7 +51783,9 @@ ParseContext.prototype.insertNode = function insertNode (node) {
       { if (!top.type || top.type.allowsMarkType(node.marks[i].type))
         { marks = node.marks[i].addToSet(marks); } }
     top.content.push(node.mark(marks));
+    return true
   }
+  return false
 };
 
 ParseContext.prototype.applyPendingMarks = function applyPendingMarks (top) {
@@ -51956,7 +52018,7 @@ function copy(obj) {
 // number zero.
 //
 // The number zero (pronounced “hole”) is used to indicate the place
-// where a node's child nodes should be inserted. It it occurs in an
+// where a node's child nodes should be inserted. If it occurs in an
 // output spec, it should be the only child element in its parent
 // node.
 
@@ -52312,7 +52374,7 @@ function splitListItem(itemType) {
       }
       return true
     }
-    var nextType = $to.pos == $from.end() ? grandParent.contentMatchAt($from.indexAfter(-1)).defaultType : null;
+    var nextType = $to.pos == $from.end() ? grandParent.contentMatchAt(0).defaultType : null;
     var tr = state.tr.delete($from.pos, $to.pos);
     var types = nextType && [null, {type: nextType}];
     if (!prosemirrorTransform.canSplit(tr.doc, $from.pos, 2, types)) { return false }
@@ -52986,6 +53048,8 @@ var Transaction = (function (Transform$$1) {
   // Update the transaction's current selection. Will determine the
   // selection that the editor gets when the transaction is applied.
   Transaction.prototype.setSelection = function setSelection (selection) {
+    if (selection.$from.doc != this.doc)
+      { throw new RangeError("Selection passed to setSelection must point at the current document") }
     this.curSelection = selection;
     this.curSelectionFor = this.steps.length;
     this.updated = (this.updated | UPDATED_SEL) & ~UPDATED_MARKS;
@@ -53878,7 +53942,7 @@ function cellAround($pos) {
 }
 
 function cellWrapping($pos) {
-  for (var d = $pos.depth - 1; d > 0; d--) {
+  for (var d = $pos.depth; d > 0; d--) { // Sometimes the cell can be in the same depth.
     var role = $pos.node(d).type.spec.tableRole;
     if (role === "cell" || role === 'header_cell') { return $pos.node(d) }
   }
@@ -54811,6 +54875,8 @@ function cellUnderMouse(view, event) {
 
 // This file defines helpers for normalizing tables, making sure no
 
+var fixTablesKey = new prosemirrorState.PluginKey("fix-tables");
+
 // Helper for iterating through the nodes in a document that changed
 // compared to the given previous document. Useful for avoiding
 // duplicate work on each transaction.
@@ -54903,7 +54969,7 @@ function fixTable(state, table, tablePos, tr) {
     }
     pos = end;
   }
-  return tr
+  return tr.setMeta(fixTablesKey, { fixTables: true })
 }
 
 // This file defines a number of table-related commands.
@@ -55765,6 +55831,8 @@ function tableEditing(ref) {
 exports.tableEditing = tableEditing;
 exports.fixTables = fixTables;
 exports.handlePaste = handlePaste;
+exports.fixTablesKey = fixTablesKey;
+exports.tableEditingKey = key;
 exports.cellAround = cellAround;
 exports.isInTable = isInTable;
 exports.selectionCell = selectionCell;
@@ -56054,7 +56122,7 @@ Mapping.prototype.appendMappingInverted = function appendMappingInverted (mappin
   }
 };
 
-// () → Mapping
+// :: () → Mapping
 // Create an inverted version of this mapping.
 Mapping.prototype.invert = function invert () {
   var inverse = new Mapping;
@@ -56642,7 +56710,7 @@ Transform.prototype.split = function(pos, depth, typesAfter) {
     var typeAfter = typesAfter && typesAfter[i];
     after = prosemirrorModel.Fragment.from(typeAfter ? typeAfter.type.create(typeAfter.attrs, after) : $pos.node(d).copy(after));
   }
-  return this.step(new ReplaceStep(pos, pos, new prosemirrorModel.Slice(before.append(after), depth, depth, true)))
+  return this.step(new ReplaceStep(pos, pos, new prosemirrorModel.Slice(before.append(after), depth, depth), true))
 };
 
 // :: (Node, number) → bool
@@ -57203,8 +57271,11 @@ function nodeRight(content, depth) {
 // : (ResolvedPos, Slice) → [{content: Fragment, openEnd: number, depth: number}]
 function placeSlice($from, slice) {
   var frontier = new Frontier($from);
-  for (var pass = 1; slice.size && pass <= 3; pass++)
-    { slice = frontier.placeSlice(slice.content, slice.openStart, slice.openEnd, pass); }
+  for (var pass = 1; slice.size && pass <= 3; pass++) {
+    var value = frontier.placeSlice(slice.content, slice.openStart, slice.openEnd, pass);
+    if (pass == 3 && value != slice && value.size) { pass = 0; } // Restart if the 3rd pass made progress but left content
+    slice = value;
+  }
   while (frontier.open.length) { frontier.closeNode(); }
   return frontier.placed
 }
@@ -57232,8 +57303,6 @@ var Frontier = function Frontier($pos) {
 // pass 2: allow wrapper nodes to be introduced
 // pass 3: allow unwrapping of nodes that aren't open
 Frontier.prototype.placeSlice = function placeSlice (fragment, openStart, openEnd, pass, parent) {
-    var this$1 = this;
-
   if (openStart > 0) {
     var first = fragment.firstChild;
     var inner = this.placeSlice(first.content, Math.max(0, openStart - 1),
@@ -57252,13 +57321,9 @@ Frontier.prototype.placeSlice = function placeSlice (fragment, openStart, openEn
   }
   var result = this.placeContent(fragment, openStart, openEnd, pass, parent);
   if (pass > 2 && result.size && openStart == 0) {
-    for (var i = 0; i < result.content.childCount; i++) {
-      var child = result.content.child(i);
-      this$1.placeContent(child.content, 0,
-                        openEnd && i == result.content.childCount.length - 1 ? openEnd - 1 : 0,
-                        pass, child);
-    }
-    result = prosemirrorModel.Fragment.empty;
+    var child = result.content.firstChild, single = result.content.childCount == 1;
+    this.placeContent(child.content, 0, openEnd && single ? openEnd - 1 : 0, pass, child);
+    result = single ? prosemirrorModel.Fragment.empty : new prosemirrorModel.Slice(result.content.cutByIndex(1), 0, openEnd);
   }
   return result
 };
@@ -57275,7 +57340,7 @@ Frontier.prototype.placeContent = function placeContent (fragment, openStart, op
       var open = this$1.open[d], wrap = (void 0);
 
       // If pass > 1, it is allowed to wrap the node to help find a
-      // fit, so if findWrappeing returns something, we add open
+      // fit, so if findWrapping returns something, we add open
       // nodes to the frontier for that wrapping.
       if (pass > 1 && (wrap = open.match.findWrapping(child.type)) &&
           !(parent && wrap.length && wrap[wrap.length - 1] == parent.type)) {
@@ -57459,7 +57524,15 @@ Transform.prototype.replaceRange = function(from, to, slice) {
     }
   }
 
-  return this.replace(from, to, slice)
+  var startSteps = this.steps.length;
+  for (var i$2 = targetDepths.length - 1; i$2 >= 0; i$2--) {
+    this$1.replace(from, to, slice);
+    if (this$1.steps.length > startSteps) { break }
+    var depth = targetDepths[i$2];
+    if (i$2 < 0) { continue }
+    from = $from.before(depth); to = $to.after(depth);
+  }
+  return this
 };
 
 function closeFragment(fragment, depth, oldOpen, newOpen, parent) {
@@ -57467,8 +57540,11 @@ function closeFragment(fragment, depth, oldOpen, newOpen, parent) {
     var first = fragment.firstChild;
     fragment = fragment.replaceChild(0, first.copy(closeFragment(first.content, depth + 1, oldOpen, newOpen, first)));
   }
-  if (depth > newOpen)
-    { fragment = parent.contentMatchAt(0).fillBefore(fragment, true).append(fragment); }
+  if (depth > newOpen) {
+    var match = parent.contentMatchAt(0);
+    var start = match.fillBefore(fragment).append(fragment);
+    fragment = start.append(match.matchFragment(start).fillBefore(prosemirrorModel.Fragment.empty, true));
+  }
   return fragment
 }
 
@@ -59843,8 +59919,8 @@ exports.removeNodeBefore = removeNodeBefore;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var prosemirrorModel = __webpack_require__(/*! prosemirror-model */ "./node_modules/prosemirror-model/dist/index.js");
 var prosemirrorState = __webpack_require__(/*! prosemirror-state */ "./node_modules/prosemirror-state/dist/index.js");
+var prosemirrorModel = __webpack_require__(/*! prosemirror-model */ "./node_modules/prosemirror-model/dist/index.js");
 var prosemirrorTransform = __webpack_require__(/*! prosemirror-transform */ "./node_modules/prosemirror-transform/dist/index.js");
 
 var result = {};
@@ -59900,7 +59976,7 @@ var atomElements = /^(img|br|input|textarea|hr)$/i;
 function scanFor(node, off, targetNode, targetOff, dir) {
   for (;;) {
     if (node == targetNode && off == targetOff) { return true }
-    if (off == (dir < 0 ? 0 : nodeSize(node)) || node.nodeType == 3 && node.nodeValue == "\ufeff") {
+    if (off == (dir < 0 ? 0 : nodeSize(node))) {
       var parent = node.parentNode;
       if (parent.nodeType != 1 || hasBlockDesc(node) || atomElements.test(node.nodeName) || node.contentEditable == "false")
         { return false }
@@ -59920,8 +59996,9 @@ function nodeSize(node) {
 }
 
 function hasBlockDesc(dom) {
-  var desc = dom.pmViewDesc;
-  return desc && desc.node && desc.node.isBlock
+  var desc;
+  for (var cur = dom; cur; cur = cur.parentNode) { if (desc = cur.pmViewDesc) { break } }
+  return desc && desc.node && desc.node.isBlock && (desc.dom == dom || desc.contentDOM == dom)
 }
 
 // Work around Chrome issue https://bugs.chromium.org/p/chromium/issues/detail?id=447523
@@ -60124,7 +60201,7 @@ function posFromCaret(view, node, offset, coords) {
 function elementFromPoint(element, coords, box) {
   var len = element.childNodes.length;
   if (len && box.top < box.bottom) {
-    for (var startI = Math.max(0, Math.floor(len * (coords.top - box.top) / (box.bottom - box.top)) - 2), i = startI;;) {
+    for (var startI = Math.max(0, Math.min(len - 1, Math.floor(len * (coords.top - box.top) / (box.bottom - box.top)) - 2)), i = startI;;) {
       var child = element.childNodes[i];
       if (child.nodeType == 1) {
         var rects = child.getClientRects();
@@ -60162,9 +60239,19 @@ function posAtCoords(view, coords) {
   }
   elt = targetKludge(elt, coords);
   if (node) {
-    // Firefox will sometimes return offsets into <input> nodes, which
-    // have no actual children, from caretPositionFromPoint (#953)
-    if (node.nodeType == 1) { offset = Math.min(offset, node.childNodes.length); }
+    if (result.gecko && node.nodeType == 1) {
+      // Firefox will sometimes return offsets into <input> nodes, which
+      // have no actual children, from caretPositionFromPoint (#953)
+      offset = Math.min(offset, node.childNodes.length);
+      // It'll also move the returned position before image nodes,
+      // even if those are behind it.
+      if (offset < node.childNodes.length) {
+        var next = node.childNodes[offset], box$1;
+        if (next.nodeName == "IMG" && (box$1 = next.getBoundingClientRect()).right <= coords.left &&
+            box$1.bottom > coords.top)
+          { offset++; }
+      }
+    }
     // Suspiciously specific kludge to work around caret*FromPoint
     // never returning a position at the end of the document
     if (node == view.dom && offset == node.childNodes.length - 1 && node.lastChild.nodeType == 1 &&
@@ -60329,6 +60416,7 @@ function endOfTextblockHorizontal(view, state, dir) {
     // textblock (or doesn't move it at all, when at the start/end of
     // the document).
     var oldRange = sel.getRangeAt(0), oldNode = sel.focusNode, oldOff = sel.focusOffset;
+    var oldBidiLevel = sel.caretBidiLevel; // Only for Firefox
     sel.modify("move", dir, "character");
     var parentDOM = $head.depth ? view.docView.domAfterPos($head.before()) : view.dom;
     var result$$1 = !parentDOM.contains(sel.focusNode.nodeType == 1 ? sel.focusNode : sel.focusNode.parentNode) ||
@@ -60336,6 +60424,7 @@ function endOfTextblockHorizontal(view, state, dir) {
     // Restore the previous selection
     sel.removeAllRanges();
     sel.addRange(oldRange);
+    if (oldBidiLevel != null) { sel.caretBidiLevel = oldBidiLevel; }
     return result$$1
   })
 }
@@ -60407,7 +60496,10 @@ function endOfTextblock(view, state, dir) {
 //   ignoreMutation:: ?(dom.MutationRecord) → bool
 //   Called when a DOM
 //   [mutation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
-//   happens within the view. Return false if the editor should
+//   or a selection change happens within the view. When the change is
+//   a selection change, the record will have a `type` property of
+//   `"selection"` (which doesn't occur for native mutation records).
+//   Return false if the editor should re-read the selection or
 //   re-parse the range around the mutation, true if it can safely be
 //   ignored.
 //
@@ -60758,7 +60850,8 @@ ViewDesc.prototype.markDirty = function markDirty (from, to) {
       var startInside = offset + child.border, endInside = end - child.border;
       if (from >= startInside && to <= endInside) {
         this$1.dirty = from == offset || to == end ? CONTENT_DIRTY : CHILD_DIRTY;
-        if (from == startInside && to == endInside && child.contentLost) { child.dirty = NODE_DIRTY; }
+        if (from == startInside && to == endInside &&
+            (child.contentLost || child.dom.parentNode != this$1.contentDOM)) { child.dirty = NODE_DIRTY; }
         else { child.markDirty(from - startInside, to - startInside); }
         return
       } else {
@@ -60833,26 +60926,6 @@ var WidgetViewDesc = (function (ViewDesc) {
   return WidgetViewDesc;
 }(ViewDesc));
 
-// A cursor wrapper is used to put the cursor in when newly typed text
-// needs to be styled differently from its surrounding text (for
-// example through storedMarks), so that the style of the text doesn't
-// visually 'pop' between typing it and actually updating the view.
-var CursorWrapperDesc = (function (WidgetViewDesc) {
-  function CursorWrapperDesc () {
-    WidgetViewDesc.apply(this, arguments);
-  }
-
-  if ( WidgetViewDesc ) CursorWrapperDesc.__proto__ = WidgetViewDesc;
-  CursorWrapperDesc.prototype = Object.create( WidgetViewDesc && WidgetViewDesc.prototype );
-  CursorWrapperDesc.prototype.constructor = CursorWrapperDesc;
-
-  CursorWrapperDesc.prototype.parseRule = function parseRule () { return {skip: withoutZeroWidthSpaces(this.dom)} };
-
-  CursorWrapperDesc.prototype.ignoreMutation = function ignoreMutation () { return false };
-
-  return CursorWrapperDesc;
-}(WidgetViewDesc));
-
 var CompositionViewDesc = (function (ViewDesc) {
   function CompositionViewDesc(parent, dom, textDOM, text) {
     ViewDesc.call(this, parent, nothing, dom, null);
@@ -60868,20 +60941,18 @@ var CompositionViewDesc = (function (ViewDesc) {
 
   prototypeAccessors$2.size.get = function () { return this.text.length };
 
-  CompositionViewDesc.prototype.parseRule = function parseRule () { return {skip: withoutZeroWidthSpaces(this.dom)} };
-
   CompositionViewDesc.prototype.localPosFromDOM = function localPosFromDOM (dom, offset) {
     if (dom != this.textDOM) { return this.posAtStart + (offset ? this.size : 0) }
-    var zwsp = this.textDOM.nodeValue.indexOf("\ufeff");
-    return this.posAtStart + offset - (zwsp > -1 && zwsp < offset ? 1 : 0)
+    return this.posAtStart + offset
   };
 
   CompositionViewDesc.prototype.domFromPos = function domFromPos (pos) {
-    var zwsp = this.textDOM.nodeValue.indexOf("\ufeff");
-    return {node: this.textDOM, offset: pos + (zwsp > -1 && zwsp <= pos ? 1 : 0)}
+    return {node: this.textDOM, offset: pos}
   };
 
-  CompositionViewDesc.prototype.ignoreMutation = function ignoreMutation () { return false };
+  CompositionViewDesc.prototype.ignoreMutation = function ignoreMutation (mut) {
+    return mut.type === 'characterData' && mut.target.nodeValue == mut.oldValue
+   };
 
   Object.defineProperties( CompositionViewDesc.prototype, prototypeAccessors$2 );
 
@@ -61089,7 +61160,7 @@ var NodeViewDesc = (function (ViewDesc) {
     // Find the text in the focused node in the node, stop if it's not
     // there (may have been modified through other means, in which
     // case it should overwritten)
-    var text = textNode.nodeValue.replace(/\ufeff/g, "");
+    var text = textNode.nodeValue;
     var textPos = findTextInFragment(this.node.content, text, from - pos, to - pos);
 
     return textPos < 0 ? null : {node: textNode, pos: textPos, text: text}
@@ -61185,8 +61256,7 @@ var TextViewDesc = (function (NodeViewDesc) {
   TextViewDesc.prototype.constructor = TextViewDesc;
 
   TextViewDesc.prototype.parseRule = function parseRule () {
-    var parent = this.nodeDOM.parentNode;
-    return parent ? {skip: parent} : {ignore: true}
+    return {skip: this.nodeDOM.parentNode || true}
   };
 
   TextViewDesc.prototype.update = function update (node, outerDeco) {
@@ -61216,7 +61286,7 @@ var TextViewDesc = (function (NodeViewDesc) {
   };
 
   TextViewDesc.prototype.ignoreMutation = function ignoreMutation (mutation) {
-    return mutation.type != "characterData"
+    return mutation.type != "characterData" && mutation.type != "selection"
   };
 
   TextViewDesc.prototype.slice = function slice (from, to, view) {
@@ -61491,7 +61561,7 @@ ViewTreeUpdater.prototype.syncToMarks = function syncToMarks (marks, inline, vie
     if (found > -1) {
       if (found > this$1.index) {
         this$1.changed = true;
-        this$1.top.children.splice(this$1.index, found - this$1.index);
+        this$1.destroyBetween(this$1.index, found);
       }
       this$1.top = this$1.top.children[this$1.index];
     } else {
@@ -61566,16 +61636,10 @@ ViewTreeUpdater.prototype.placeWidget = function placeWidget (widget, view, pos)
   if (this.index < this.top.children.length && this.top.children[this.index].matchesWidget(widget)) {
     this.index++;
   } else {
-    var desc = new (widget.spec.isCursorWrapper ? CursorWrapperDesc : WidgetViewDesc)(this.top, widget, view, pos);
+    var desc = new WidgetViewDesc(this.top, widget, view, pos);
     this.top.children.splice(this.index++, 0, desc);
     this.changed = true;
   }
-};
-
-ViewTreeUpdater.prototype.placeComposition = function placeComposition (view, desc) {
-  this.syncToMarks(nothing, true, view);
-  if (this.top.children[this.index] == desc) { this.index++; }
-  else { this.top.children.splice(this.index++, 0, desc); this.changed = true; }
 };
 
 // Make sure a textblock looks and behaves correctly in
@@ -61696,6 +61760,8 @@ function nearbyTextNode(node, offset) {
   for (;;) {
     if (node.nodeType == 3) { return node }
     if (node.nodeType == 1 && offset > 0) {
+      if (node.childNodes.length > offset && node.childNodes[offset].nodeType == 3)
+        { return node.childNodes[offset] }
       node = node.childNodes[offset - 1];
       offset = nodeSize(node);
     } else if (node.nodeType == 1 && offset < node.childNodes.length) {
@@ -61718,7 +61784,7 @@ function findTextInFragment(frag, text, from, to) {
         while (found > -1 && strStart + found > from) { found = str.lastIndexOf(text, found - 1); }
         if (found > -1 && strStart + found + text.length >= to) {
           return strStart + found
-        } else if (end > to - text.length) {
+        } else if (end > to) {
           break
         }
       }
@@ -61751,18 +61817,6 @@ function replaceNodes(nodes, from, to, view, replacement) {
     }
   }
   return result$$1
-}
-
-function withoutZeroWidthSpaces(dom) {
-  var clone = dom.cloneNode(true);
-  function scan(node) {
-    if (node.nodeType == 1)
-      { for (var child = node.firstChild; child; child = child.nextSibling) { scan(child); } }
-    else if (node.nodeType == 3)
-      { node.nodeValue = node.nodeValue.replace(/\ufeff/g, ""); }
-  }
-  scan(clone);
-  return clone
 }
 
 function moveSelectionBlock(state, dir) {
@@ -61836,13 +61890,7 @@ function skipIgnoredNodesLeft(view) {
   for (;;) {
     if (offset > 0) {
       if (node.nodeType != 1) {
-        if (node.nodeType == 3 && node.nodeValue.charAt(offset - 1) == "\ufeff") {
-          // IE11's cursor will still be stuck when placed at the
-          // beginning of the cursor wrapper text node (#807)
-          if (result.ie && result.ie_version <= 11) { force = true; }
-          moveNode = node;
-          moveOffset = --offset;
-        } else { break }
+        break
       } else {
         var before = node.childNodes[offset - 1];
         if (isIgnorable(before)) {
@@ -62146,8 +62194,9 @@ function removeClassOnSelectionChange(view) {
 
 function selectCursorWrapper(view) {
   var domSel = view.root.getSelection(), range = document.createRange();
-  var node = view.cursorWrapper.dom;
-  range.setEnd(node, node.childNodes.length);
+  var node = view.cursorWrapper.dom, img = node.nodeName == "IMG";
+  if (img) { range.setEnd(node.parentNode, domIndex(node) + 1); }
+  else { range.setEnd(node, 0); }
   range.collapse(false);
   domSel.removeAllRanges();
   domSel.addRange(range);
@@ -62156,7 +62205,7 @@ function selectCursorWrapper(view) {
   // resize handles and a selection that considers the absolutely
   // positioned wrapper, rather than the root editable node, the
   // focused element.
-  if (!view.state.selection.visible && result.ie && result.ie_version <= 11) {
+  if (!img && !view.state.selection.visible && result.ie && result.ie_version <= 11) {
     node.disabled = true;
     node.disabled = false;
   }
@@ -62208,23 +62257,6 @@ function hasSelection(view) {
   }
 }
 
-function nonInclusiveMark(mark) {
-  return mark.type.spec.inclusive === false
-}
-
-function needsCursorWrapper(state) {
-  var ref = state.selection;
-  var $head = ref.$head;
-  var $anchor = ref.$anchor;
-  var visible = ref.visible;
-  var $pos = $head.pos == $anchor.pos && (!visible || $head.parent.inlineContent) ? $head : null;
-  if ($pos && (!visible || state.storedMarks || $pos.parent.content.length == 0 ||
-               $pos.parentOffset && !$pos.textOffset && $pos.nodeBefore.marks.some(nonInclusiveMark)))
-    { return $pos }
-  else
-    { return null }
-}
-
 function anchorInRightPlace(view) {
   var anchorDOM = view.docView.domFromPos(view.state.selection.anchor);
   var domSel = view.root.getSelection();
@@ -62263,6 +62295,7 @@ function parseBetween(view, from_, to_) {
   var startDoc = view.state.doc;
   var parser = view.someProp("domParser") || prosemirrorModel.DOMParser.fromSchema(view.state.schema);
   var $from = startDoc.resolve(from);
+
   var sel = null, doc = parser.parse(parent, {
     topNode: $from.parent,
     topMatch: $from.parent.contentMatchAt($from.index()),
@@ -62296,6 +62329,8 @@ function ruleFromNode(parser, context) {
         { return parser.matchTag(document.createElement("li"), context) }
       else if (dom.parentNode.lastChild == dom || result.safari && /^(tr|table)$/i.test(dom.parentNode.nodeName))
         { return {ignore: true} }
+    } else if (dom.nodeName == "IMG" && dom.getAttribute("mark-placeholder")) {
+      return {ignore: true}
     }
   }
 }
@@ -62337,13 +62372,14 @@ function readDOMChange(view, from, to, typeOver) {
   if (!change) {
     if (typeOver && sel instanceof prosemirrorState.TextSelection && !sel.empty && sel.$head.sameParent(sel.$anchor) &&
         !view.composing && !(parse.sel && parse.sel.anchor != parse.sel.head)) {
-      var state = view.state, sel$1 = state.selection;
-      view.dispatch(state.tr.replaceSelectionWith(state.schema.text(state.doc.textBetween(sel$1.from, sel$1.to)), true).scrollIntoView());
-    } else if (parse.sel) {
-      var sel$2 = resolveSelection(view, view.state.doc, parse.sel);
-      if (sel$2 && !sel$2.eq(view.state.selection)) { view.dispatch(view.state.tr.setSelection(sel$2)); }
+      change = {start: sel.from, endA: sel.to, endB: sel.to};
+    } else {
+      if (parse.sel) {
+        var sel$1 = resolveSelection(view, view.state.doc, parse.sel);
+        if (sel$1 && !sel$1.eq(view.state.selection)) { view.dispatch(view.state.tr.setSelection(sel$1)); }
+      }
+      return
     }
-    return
   }
   view.domChangeCount++;
   // Handle the case where overwriting a selection by typing matches
@@ -62358,6 +62394,17 @@ function readDOMChange(view, from, to, typeOver) {
       change.endB += (view.state.selection.to - change.endA);
       change.endA = view.state.selection.to;
     }
+  }
+
+  // IE11 will insert a non-breaking space _ahead_ of the space after
+  // the cursor space when adding a space before another space. When
+  // that happened, adjust the change to cover the space instead.
+  if (result.ie && result.ie_version <= 11 && change.endB == change.start + 1 &&
+      change.endA == change.start && change.start > parse.from &&
+      parse.doc.textBetween(change.start - parse.from - 1, change.start - parse.from + 1) == " \u00a0") {
+    change.start--;
+    change.endA--;
+    change.endB--;
   }
 
   var $from = parse.doc.resolveNoCache(change.start - parse.from);
@@ -62410,8 +62457,12 @@ function readDOMChange(view, from, to, typeOver) {
   if (!tr)
     { tr = view.state.tr.replace(chFrom, chTo, parse.doc.slice(change.start - parse.from, change.endB - parse.from)); }
   if (parse.sel) {
-    var sel$3 = resolveSelection(view, tr.doc, parse.sel);
-    if (sel$3) { tr.setSelection(sel$3); }
+    var sel$2 = resolveSelection(view, tr.doc, parse.sel);
+    // Chrome Android will sometimes, during composition, report the
+    // selection in the wrong place. If it looks like that is
+    // happening, don't update the selection.
+    if (sel$2 && !(result.chrome && result.android && view.composing && sel$2.empty && sel$2.head == chFrom))
+      { tr.setSelection(sel$2); }
   }
   if (storedMarks) { tr.ensureMarks(storedMarks); }
   view.dispatch(tr.scrollIntoView());
@@ -62524,13 +62575,13 @@ function serializeForClipboard(view, slice) {
   }
 
   var serializer = view.someProp("clipboardSerializer") || prosemirrorModel.DOMSerializer.fromSchema(view.state.schema);
-  var wrap = document.createElement("div");
-  wrap.appendChild(serializer.serializeFragment(content));
+  var doc = detachedDoc(), wrap = doc.createElement("div");
+  wrap.appendChild(serializer.serializeFragment(content, {document: doc}));
 
   var firstChild = wrap.firstChild, needsWrap;
   while (firstChild && firstChild.nodeType == 1 && (needsWrap = wrapMap[firstChild.nodeName.toLowerCase()])) {
     for (var i = needsWrap.length - 1; i >= 0; i--) {
-      var wrapper = document.createElement(needsWrap[i]);
+      var wrapper = doc.createElement(needsWrap[i]);
       while (wrap.firstChild) { wrapper.appendChild(wrap.firstChild); }
       wrap.appendChild(wrapper);
     }
@@ -62672,12 +62723,16 @@ function closeSlice(slice, openStart, openEnd) {
 // "<td>..</td>"` the table cells are ignored.
 var wrapMap = {thead: ["table"], colgroup: ["table"], col: ["table", "colgroup"],
                  tr: ["table", "tbody"], td: ["table", "tbody", "tr"], th: ["table", "tbody", "tr"]};
-var detachedDoc = null;
+
+var _detachedDoc = null;
+function detachedDoc() {
+  return _detachedDoc || (_detachedDoc = document.implementation.createHTMLDocument("title"))
+}
+
 function readHTML(html) {
   var metas = /(\s*<meta [^>]*>)*/.exec(html);
   if (metas) { html = html.slice(metas[0].length); }
-  var doc = detachedDoc || (detachedDoc = document.implementation.createHTMLDocument("title"));
-  var elt = doc.createElement("div");
+  var elt = detachedDoc().createElement("div");
   var firstTag = /(?:<meta [^>]*>)*<([a-z][^>\s]+)/i.exec(html), wrap, depth = 0;
   if (wrap = firstTag && wrapMap[firstTag[1].toLowerCase()]) {
     html = wrap.map(function (n) { return "<" + n + ">"; }).join("") + html + wrap.map(function (n) { return "</" + n + ">"; }).reverse().join("");
@@ -62728,28 +62783,40 @@ var DOMObserver = function DOMObserver(view, handleDOMChange) {
 
   this.view = view;
   this.handleDOMChange = handleDOMChange;
+  this.queue = [];
+  this.flushingSoon = false;
   this.observer = window.MutationObserver &&
     new window.MutationObserver(function (mutations) {
+      for (var i = 0; i < mutations.length; i++) { this$1.queue.push(mutations[i]); }
       // IE11 will sometimes (on backspacing out a single character
       // text node after a BR node) call the observer callback
       // before actually updating the DOM, which will cause
       // ProseMirror to miss the change (see #930)
       if (result.ie && result.ie_version <= 11 && mutations.some(
-        function (m) { return m.type == "childList" && m.removedNodes.length == 1 && m.removedNodes[0].parentNode == m.target; }))
-        { setTimeout(function () { return this$1.flush(mutations); }, 10); }
+        function (m) { return m.type == "childList" && m.removedNodes.length ||
+             m.type == "characterData" && m.oldValue.length > m.target.nodeValue.length; }))
+        { this$1.flushSoon(); }
       else
-        { this$1.flush(mutations); }
+        { this$1.flush(); }
     });
   this.currentSelection = new SelectionState;
-  this.queue = [];
   if (useCharData) {
     this.onCharData = function (e) {
       this$1.queue.push({target: e.target, type: "characterData", oldValue: e.prevValue});
-      window.setTimeout(function () { return this$1.flush(); }, 20);
+      this$1.flushSoon();
     };
   }
   this.onSelectionChange = this.onSelectionChange.bind(this);
   this.suppressingSelectionUpdates = false;
+};
+
+DOMObserver.prototype.flushSoon = function flushSoon () {
+    var this$1 = this;
+
+  if (!this.flushingSoon) {
+    this.flushingSoon = true;
+    window.setTimeout(function () { this$1.flushingSoon = false; this$1.flush(); }, 20);
+  }
 };
 
 DOMObserver.prototype.start = function start () {
@@ -62763,12 +62830,14 @@ DOMObserver.prototype.start = function start () {
 DOMObserver.prototype.stop = function stop () {
     var this$1 = this;
 
-  var take = this.observer.takeRecords();
-  if (take.length) {
-    for (var i = 0; i < take.length; i++) { this$1.queue.push(take[i]); }
-    window.setTimeout(function () { return this$1.flush(); }, 20);
+  if (this.observer) {
+    var take = this.observer.takeRecords();
+    if (take.length) {
+      for (var i = 0; i < take.length; i++) { this$1.queue.push(take[i]); }
+      window.setTimeout(function () { return this$1.flush(); }, 20);
+    }
+    this.observer.disconnect();
   }
-  if (this.observer) { this.observer.disconnect(); }
   if (useCharData) { this.view.dom.removeEventListener("DOMCharacterDataModified", this.onCharData); }
   this.disconnectSelection();
 };
@@ -62791,6 +62860,15 @@ DOMObserver.prototype.suppressSelectionUpdates = function suppressSelectionUpdat
 DOMObserver.prototype.onSelectionChange = function onSelectionChange () {
   if (!hasFocusAndSelection(this.view)) { return }
   if (this.suppressingSelectionUpdates) { return selectionToDOM(this.view) }
+  // Deletions on IE11 fire their events in the wrong order, giving
+  // us a selection change event before the DOM changes are
+  // reported.
+  if (result.ie && result.ie_version <= 11 && !this.view.state.selection.empty) {
+    var sel = this.view.root.getSelection();
+    // Selection.isCollapsed isn't reliable on IE
+    if (sel.focusNode && isEquivalentPosition(sel.focusNode, sel.focusOffset, sel.anchorNode, sel.anchorOffset))
+      { return this.flushSoon() }
+  }
   this.flush();
 };
 
@@ -62798,18 +62876,25 @@ DOMObserver.prototype.setCurSelection = function setCurSelection () {
   this.currentSelection.set(this.view.root.getSelection());
 };
 
-DOMObserver.prototype.flush = function flush (mutations) {
+DOMObserver.prototype.ignoreSelectionChange = function ignoreSelectionChange (sel) {
+  if (sel.rangeCount == 0) { return true }
+  var container = sel.getRangeAt(0).commonAncestorContainer;
+  var desc = this.view.docView.nearestDesc(container);
+  return desc && desc.ignoreMutation({type: "selection", target: container.nodeType == 3 ? container.parentNode : container})
+};
+
+DOMObserver.prototype.flush = function flush () {
     var this$1 = this;
 
-  if (!this.view.docView) { return }
-  if (!mutations) { mutations = this.observer.takeRecords(); }
+  if (!this.view.docView || this.flushingSoon) { return }
+  var mutations = this.observer ? this.observer.takeRecords() : [];
   if (this.queue.length) {
     mutations = this.queue.concat(mutations);
     this.queue.length = 0;
   }
 
   var sel = this.view.root.getSelection();
-  var newSel = !this.suppressingSelectionUpdates && !this.currentSelection.eq(sel) && hasSelection(this.view);
+  var newSel = !this.suppressingSelectionUpdates && !this.currentSelection.eq(sel) && hasSelection(this.view) && !this.ignoreSelectionChange(sel);
 
   var from = -1, to = -1, typeOver = false;
   if (this.view.editable) {
@@ -62818,7 +62903,7 @@ DOMObserver.prototype.flush = function flush (mutations) {
       if (result$$1) {
         from = from < 0 ? result$$1.from : Math.min(result$$1.from, from);
         to = to < 0 ? result$$1.to : Math.max(result$$1.to, to);
-        if (result$$1.typeOver) { typeOver = true; }
+        if (result$$1.typeOver && !this$1.view.composing) { typeOver = true; }
       }
     }
   }
@@ -62833,15 +62918,30 @@ DOMObserver.prototype.flush = function flush (mutations) {
 DOMObserver.prototype.registerMutation = function registerMutation (mut) {
   var desc = this.view.docView.nearestDesc(mut.target);
   if (mut.type == "attributes" &&
-      (desc == this.view.docView || mut.attributeName == "contenteditable")) { return null }
+      (desc == this.view.docView || mut.attributeName == "contenteditable" ||
+       // Firefox sometimes fires spurious events for null/empty styles
+       (mut.attributeName == "style" && !mut.oldValue && !mut.target.getAttribute("style"))))
+    { return null }
   if (!desc || desc.ignoreMutation(mut)) { return null }
 
   if (mut.type == "childList") {
-    var fromOffset = mut.previousSibling && mut.previousSibling.parentNode == mut.target
-        ? domIndex(mut.previousSibling) + 1 : 0;
+    var prev = mut.previousSibling, next = mut.nextSibling;
+    if (result.ie && result.ie_version <= 11 && mut.addedNodes.length) {
+      // IE11 gives us incorrect next/prev siblings for some
+      // insertions, so if there are added nodes, recompute those
+      for (var i = 0; i < mut.addedNodes.length; i++) {
+        var ref = mut.addedNodes[i];
+          var previousSibling = ref.previousSibling;
+          var nextSibling = ref.nextSibling;
+        if (!previousSibling || Array.prototype.indexOf.call(mut.addedNodes, previousSibling) < 0) { prev = previousSibling; }
+        if (!nextSibling || Array.prototype.indexOf.call(mut.addedNodes, nextSibling) < 0) { next = nextSibling; }
+      }
+    }
+    var fromOffset = prev && prev.parentNode == mut.target
+        ? domIndex(prev) + 1 : 0;
     var from = desc.localPosFromDOM(mut.target, fromOffset, -1);
-    var toOffset = mut.nextSibling && mut.nextSibling.parentNode == mut.target
-        ? domIndex(mut.nextSibling) : mut.target.childNodes.length;
+    var toOffset = next && next.parentNode == mut.target
+        ? domIndex(next) : mut.target.childNodes.length;
     var to = desc.localPosFromDOM(mut.target, toOffset, 1);
     return {from: from, to: to}
   } else if (mut.type == "attributes") {
@@ -63181,8 +63281,6 @@ MouseDown.prototype.up = function up (event) {
   if (this.view.state.doc != this.startDoc) { pos = this.view.posAtCoords(eventCoords(event)); }
 
   if (this.allowDefault || !pos) {
-    // Force a cursor wrapper redraw if this was suppressed (to avoid an issue with IE drag-selection)
-    if (result.ie && needsCursorWrapper(this.view.state)) { this.view.updateState(this.view.state); }
     setSelectionOrigin(this.view, "pointer");
   } else if (handleSingleClick(this.view, pos.pos, pos.inside, event, this.selectNode)) {
     event.preventDefault();
@@ -63242,7 +63340,33 @@ var timeoutComposition = result.android ? 5000 : -1;
 editHandlers.compositionstart = editHandlers.compositionupdate = function (view) {
   if (!view.composing) {
     view.domObserver.flush();
-    endComposition(view);
+    var state = view.state;
+    var $pos = state.selection.$from;
+    if (state.selection.empty &&
+        (state.storedMarks || (!$pos.textOffset && $pos.parentOffset && $pos.nodeBefore.marks.some(function (m) { return m.type.spec.inclusive === false; })))) {
+      // Need to wrap the cursor in mark nodes different from the ones in the DOM context
+      view.markCursor = view.state.storedMarks || $pos.marks();
+      endComposition(view, true);
+      view.markCursor = null;
+    } else {
+      endComposition(view);
+      // In firefox, if the cursor is after but outside a marked node,
+      // the inserted text won't inherit the marks. So this moves it
+      // inside if necessary.
+      if (result.gecko && state.selection.empty && $pos.parentOffset && !$pos.textOffset && $pos.nodeBefore.marks.length) {
+        var sel = view.root.getSelection();
+        for (var node = sel.focusNode, offset = sel.focusOffset; node && node.nodeType == 1 && offset != 0;) {
+          var before = offset < 0 ? node.lastChild : node.childNodes[offset - 1];
+          if (before.nodeType == 3) {
+            sel.collapse(before, before.nodeValue.length);
+            break
+          } else {
+            node = before;
+            offset = -1;
+          }
+        }
+      }
+    }
     view.composing = true;
   }
   scheduleComposeEnd(view, timeoutComposition);
@@ -63261,10 +63385,10 @@ function scheduleComposeEnd(view, delay) {
   if (delay > -1) { view.composingTimeout = setTimeout(function () { return endComposition(view); }, delay); }
 }
 
-function endComposition(view) {
+function endComposition(view, forceUpdate) {
   view.composing = false;
   while (view.compositionNodes.length > 0) { view.compositionNodes.pop().markParentsDirty(); }
-  if (view.docView.dirty) {
+  if (forceUpdate || view.docView.dirty) {
     view.updateState(view.state);
     return true
   }
@@ -63274,7 +63398,7 @@ function endComposition(view) {
 function captureCopy(view, dom) {
   // The extra wrapper is somehow necessary on IE/Edge to prevent the
   // content from being mangled when it is put onto the clipboard
-  var doc = dom.ownerDocument;
+  var doc = view.dom.ownerDocument;
   var wrap = doc.body.appendChild(doc.createElement("div"));
   wrap.appendChild(dom);
   wrap.style.cssText = "position: fixed; left: -10000px; top: 10px";
@@ -63657,6 +63781,11 @@ Decoration.inline = function inline (from, to, attrs, spec) {
 // Creates a node decoration. `from` and `to` should point precisely
 // before and after a node in the document. That node, and only that
 // node, will receive the given attributes.
+//
+// spec::-
+//
+// Optional information to store with the decoration. It
+// is also used when comparing decorators for equality.
 Decoration.node = function node (from, to, attrs, spec) {
   return new Decoration(from, to, new NodeType(attrs, spec))
 };
@@ -63709,7 +63838,7 @@ DecorationSet.create = function create (doc, decorations) {
 // boundaries) and match the given predicate on their spec. When
 // `start` and `end` are omitted, all decorations in the set are
 // considered. When `predicate` isn't given, all decorations are
-// asssumed to match.
+// assumed to match.
 DecorationSet.prototype.find = function find (start, end, predicate) {
   var result = [];
   this.findInner(start == null ? 0 : start, end == null ? 1e9 : end, result, 0, predicate);
@@ -64188,7 +64317,10 @@ var EditorView = function EditorView(place, props) {
     else if (place.mount) { this.mounted = true; }
   }
 
+  // :: bool
+  // Indicates whether the editor is currently [editable](#view.EditorProps.editable).
   this.editable = getEditable(this);
+  this.markCursor = null;
   this.cursorWrapper = null;
   updateCursorWrapper(this);
   this.nodeViews = buildNodeViews(this);
@@ -64296,7 +64428,13 @@ EditorView.prototype.updateStateInner = function updateStateInner (state, reconf
         this.docView = docViewDesc(state.doc, outerDeco, innerDeco, this.dom, this);
       }
       if (startSelContext)
-        { forceSelUpdate = needChromeSelectionForce(startSelContext, this.root); }
+        { forceSelUpdate = !this.composing && needChromeSelectionForce(startSelContext, this.root); }
+      // IE11 will sometimes _report_ the selection as being in the
+      // right place but actually draw/use a different selection
+      // after a deletion (#973).
+      if (result.ie && result.ie_version <= 11 && !prev.selection.empty && state.selection.empty &&
+          state.doc.content.size < prev.doc.content.size)
+        { forceSelUpdate = true; }
     }
     // Work around for an issue where an update arriving right between
     // a DOM selection change and the "selectionchange" event for it
@@ -64379,8 +64517,11 @@ EditorView.prototype.hasFocus = function hasFocus () {
 EditorView.prototype.focus = function focus () {
   this.domObserver.stop();
   selectionToDOM(this, true);
+  if (this.editable) {
+    if (this.dom.setActive) { this.dom.setActive(); } // for IE
+    else { this.dom.focus({preventScroll: true}); }
+  }
   this.domObserver.start();
-  if (this.editable) { this.dom.focus(); }
 };
 
 // :: union<dom.Document, dom.DocumentFragment>
@@ -64526,34 +64667,28 @@ function computeDocDeco(view) {
   return [Decoration.node(0, view.state.doc.content.size, attrs)]
 }
 
-function cursorWrapperDOM(visible) {
-  var span = document.createElement("span");
-  span.textContent = "\ufeff"; // zero-width non-breaking space
-  if (!visible) {
-    span.style.position = "absolute";
-    span.style.left = "-100000px";
-  }
-  return span
-}
-
 function updateCursorWrapper(view) {
-  var $pos = needsCursorWrapper(view.state);
-  // On IE/Edge, moving the DOM selection will abort a mouse drag, so
-  // there we delay the creation of the wrapper when the mouse is down.
-  if ($pos && !(result.ie && view.mouseDown)) {
-    var visible = view.state.selection.visible;
-    // Needs a cursor wrapper
-    var marks = view.state.storedMarks || $pos.marks(), dom;
-    if (!view.cursorWrapper || !prosemirrorModel.Mark.sameSet(view.cursorWrapper.deco.spec.marks, marks) ||
-        view.cursorWrapper.dom.textContent != "\ufeff" ||
-        view.cursorWrapper.deco.spec.visible != visible)
-      { dom = cursorWrapperDOM(visible); }
-    else if (view.cursorWrapper.deco.pos != $pos.pos)
-      { dom = view.cursorWrapper.dom; }
-    if (dom)
-      { view.cursorWrapper = {dom: dom, deco: Decoration.widget($pos.pos, dom, {isCursorWrapper: true, marks: marks, raw: true, visible: visible})}; }
-  } else {
+  var ref = view.state.selection;
+  var $head = ref.$head;
+  var $anchor = ref.$anchor;
+  var visible = ref.visible;
+  if (view.markCursor) {
+    var dom = document.createElement("img");
+    dom.setAttribute("mark-placeholder", "true");
+    view.cursorWrapper = {dom: dom, deco: Decoration.widget($head.pos, dom, {raw: true, marks: view.markCursor})};
+  } else if (visible || $head.pos != $anchor.pos) {
     view.cursorWrapper = null;
+  } else {
+    var dom$1;
+    if (!view.cursorWrapper || view.cursorWrapper.dom.childNodes.length) {
+      dom$1 = document.createElement("div");
+      dom$1.style.position = "absolute";
+      dom$1.style.left = "-100000px";
+    } else if (view.cursorWrapper.deco.pos != $head.pos) {
+      dom$1 = view.cursorWrapper.dom;
+    }
+    if (dom$1)
+      { view.cursorWrapper = {dom: dom$1, deco: Decoration.widget($head.pos, dom$1, {raw: true})}; }
   }
 }
 
@@ -65721,15 +65856,15 @@ try {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -66539,7 +66674,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prosemirror_utils__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prosemirror_utils__WEBPACK_IMPORTED_MODULE_6__);
 
     /*!
-    * tiptap-commands v1.10.11
+    * tiptap-commands v1.12.2
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -66754,10 +66889,21 @@ function markPasteRule (regexp, type, getAttrs) {
 
 function removeMark (type) {
   return function (state, dispatch) {
-    var _state$selection = state.selection,
-        from = _state$selection.from,
-        to = _state$selection.to;
-    return dispatch(state.tr.removeMark(from, to, type));
+    var tr = state.tr,
+        selection = state.selection;
+    var from = selection.from,
+        to = selection.to;
+    var $from = selection.$from,
+        empty = selection.empty;
+
+    if (empty) {
+      var range = Object(tiptap_utils__WEBPACK_IMPORTED_MODULE_5__["getMarkRange"])($from, type);
+      from = range.from;
+      to = range.to;
+    }
+
+    tr.removeMark(from, to, type);
+    return dispatch(tr);
   };
 }
 
@@ -66968,10 +67114,28 @@ function toggleWrap (type) {
 
 function updateMark (type, attrs) {
   return function (state, dispatch) {
-    var _state$selection = state.selection,
-        from = _state$selection.from,
-        to = _state$selection.to;
-    return dispatch(state.tr.addMark(from, to, type.create(attrs)));
+    var tr = state.tr,
+        selection = state.selection,
+        doc = state.doc;
+    var from = selection.from,
+        to = selection.to;
+    var $from = selection.$from,
+        empty = selection.empty;
+
+    if (empty) {
+      var range = Object(tiptap_utils__WEBPACK_IMPORTED_MODULE_5__["getMarkRange"])($from, type);
+      from = range.from;
+      to = range.to;
+    }
+
+    var hasMark = doc.rangeHasMark(from, to, type);
+
+    if (hasMark) {
+      tr.removeMark(from, to, type);
+    }
+
+    tr.addMark(from, to, type.create(attrs));
+    return dispatch(tr);
   };
 }
 
@@ -66998,7 +67162,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prosemirror_utils__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prosemirror_utils__WEBPACK_IMPORTED_MODULE_0__);
 
     /*!
-    * tiptap-utils v1.6.0
+    * tiptap-utils v1.8.1
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -67178,7 +67342,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tiptap_commands__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tiptap-commands */ "./node_modules/tiptap-commands/dist/commands.esm.js");
 
     /*!
-    * tiptap v1.24.0
+    * tiptap v1.26.3
     * (c) 2019 Scrumpy UG (limited liability)
     * @license MIT
     */
@@ -67353,6 +67517,10 @@ function _iterableToArray(iter) {
 }
 
 function _iterableToArrayLimit(arr, i) {
+  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
+    return;
+  }
+
   var _arr = [];
   var _n = true;
   var _d = false;
@@ -68003,6 +68171,13 @@ function (_Extension) {
   return Mark;
 }(Extension);
 
+function minMax() {
+  var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var min = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var max = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  return Math.min(Math.max(parseInt(value, 10), min), max);
+}
+
 var Node =
 /*#__PURE__*/
 function (_Extension) {
@@ -68488,6 +68663,35 @@ function (_Emitter) {
       });
     }
   }, {
+    key: "resolveSelection",
+    value: function resolveSelection() {
+      var position = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+      if (this.selection && position === null) {
+        return this.selection;
+      }
+
+      if (position === 'start' || position === true) {
+        return {
+          from: 0,
+          to: 0
+        };
+      }
+
+      if (position === 'end') {
+        var doc = this.state.doc;
+        return {
+          from: doc.content.size,
+          to: doc.content.size
+        };
+      }
+
+      return {
+        from: position,
+        to: position
+      };
+    }
+  }, {
     key: "focus",
     value: function focus() {
       var _this6 = this;
@@ -68498,25 +68702,28 @@ function (_Emitter) {
         return;
       }
 
-      var pos = position;
+      var _this$resolveSelectio = this.resolveSelection(position),
+          from = _this$resolveSelectio.from,
+          to = _this$resolveSelectio.to;
 
-      if (this.selection && position === null) {
-        pos = this.selection.from;
-      } else if (position === 'start') {
-        pos = 0;
-      } else if (position === 'end') {
-        pos = this.state.doc.nodeSize - 2;
-      } // selection should be inside of the document range
-
-
-      pos = Math.max(0, pos);
-      pos = Math.min(this.state.doc.content.size, pos);
-      var selection = prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["TextSelection"].near(this.state.doc.resolve(pos));
-      var transaction = this.state.tr.setSelection(selection);
-      this.view.dispatch(transaction);
+      this.setSelection(from, to);
       setTimeout(function () {
         return _this6.view.focus();
       }, 10);
+    }
+  }, {
+    key: "setSelection",
+    value: function setSelection() {
+      var from = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      var to = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var _this$state = this.state,
+          doc = _this$state.doc,
+          tr = _this$state.tr;
+      var resolvedFrom = minMax(from, 0, doc.content.size);
+      var resolvedEnd = minMax(to, 0, doc.content.size);
+      var selection = prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["TextSelection"].create(doc, resolvedFrom, resolvedEnd);
+      var transaction = tr.setSelection(selection);
+      this.view.dispatch(transaction);
     }
   }, {
     key: "blur",
@@ -68550,9 +68757,9 @@ function (_Emitter) {
       var content = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var emitUpdate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
       var parseOptions = arguments.length > 2 ? arguments[2] : undefined;
-      var _this$state = this.state,
-          doc = _this$state.doc,
-          tr = _this$state.tr;
+      var _this$state2 = this.state,
+          doc = _this$state2.doc,
+          tr = _this$state2.tr;
       var document = this.createDocument(content, parseOptions);
       var selection = prosemirror_state__WEBPACK_IMPORTED_MODULE_0__["TextSelection"].create(doc, 0, doc.content.size);
       var transaction = tr.setSelection(selection).replaceSelectionWith(document, false).setMeta('preventUpdate', !emitUpdate);
@@ -68710,24 +68917,36 @@ var Menu =
 /*#__PURE__*/
 function () {
   function Menu(_ref) {
+    var _this = this;
+
     var options = _ref.options;
 
     _classCallCheck(this, Menu);
 
-    this.options = options; // the mousedown event is fired before blur so we can prevent it
+    this.options = options;
+    this.preventHide = false; // the mousedown event is fired before blur so we can prevent it
 
-    this.options.element.addEventListener('mousedown', this.handleClick);
+    this.mousedownHandler = this.handleClick.bind(this);
+    this.options.element.addEventListener('mousedown', this.mousedownHandler);
+    this.options.editor.on('blur', function () {
+      if (_this.preventHide) {
+        _this.preventHide = false;
+        return;
+      }
+
+      _this.options.editor.emit('menubar:focusUpdate', false);
+    });
   }
 
   _createClass(Menu, [{
     key: "handleClick",
-    value: function handleClick(event) {
-      event.preventDefault();
+    value: function handleClick() {
+      this.preventHide = true;
     }
   }, {
     key: "destroy",
     value: function destroy() {
-      this.options.element.removeEventListener('mousedown', this.handleClick);
+      this.options.element.removeEventListener('mousedown', this.mousedownHandler);
     }
   }]);
 
@@ -68753,6 +68972,11 @@ var EditorMenuBar = {
       type: Object
     }
   },
+  data: function data() {
+    return {
+      focused: false
+    };
+  },
   watch: {
     editor: {
       immediate: true,
@@ -68765,6 +68989,13 @@ var EditorMenuBar = {
               editor: editor,
               element: _this.$el
             }));
+            _this.focused = editor.focused;
+            editor.on('focus', function () {
+              _this.focused = true;
+            });
+            editor.on('menubar:focusUpdate', function (focused) {
+              _this.focused = focused;
+            });
           });
         }
       }
@@ -68776,7 +69007,7 @@ var EditorMenuBar = {
     }
 
     return this.$scopedSlots.default({
-      focused: this.editor.view.focused,
+      focused: this.focused,
       focus: this.editor.focus,
       commands: this.editor.commands,
       isActive: this.editor.isActive,
@@ -68862,9 +69093,12 @@ function () {
     this.editorView = editorView;
     this.isActive = false;
     this.left = 0;
-    this.bottom = 0; // the mousedown event is fired before blur so we can prevent it
+    this.bottom = 0;
+    this.top = 0;
+    this.preventHide = false; // the mousedown event is fired before blur so we can prevent it
 
-    this.options.element.addEventListener('mousedown', this.handleClick);
+    this.mousedownHandler = this.handleClick.bind(this);
+    this.options.element.addEventListener('mousedown', this.mousedownHandler);
     this.options.editor.on('focus', function (_ref2) {
       var view = _ref2.view;
 
@@ -68873,14 +69107,19 @@ function () {
     this.options.editor.on('blur', function (_ref3) {
       var event = _ref3.event;
 
+      if (_this.preventHide) {
+        _this.preventHide = false;
+        return;
+      }
+
       _this.hide(event);
     });
   }
 
   _createClass(Menu, [{
     key: "handleClick",
-    value: function handleClick(event) {
-      event.preventDefault();
+    value: function handleClick() {
+      this.preventHide = true;
     }
   }, {
     key: "update",
@@ -68927,6 +69166,7 @@ function () {
 
       this.left = Math.round(this.options.keepInBounds ? Math.min(box.width - el.width / 2, Math.max(left, el.width / 2)) : left);
       this.bottom = Math.round(box.bottom - start.top);
+      this.top = Math.round(end.bottom - box.top);
       this.isActive = true;
       this.sendUpdate();
     }
@@ -68936,13 +69176,14 @@ function () {
       this.options.onUpdate({
         isActive: this.isActive,
         left: this.left,
-        bottom: this.bottom
+        bottom: this.bottom,
+        top: this.top
       });
     }
   }, {
     key: "hide",
     value: function hide(event) {
-      if (event && event.relatedTarget) {
+      if (event && event.relatedTarget && this.options.element.parentNode.contains(event.relatedTarget)) {
         return;
       }
 
@@ -68952,7 +69193,7 @@ function () {
   }, {
     key: "destroy",
     value: function destroy() {
-      this.options.element.removeEventListener('mousedown', this.handleClick);
+      this.options.element.removeEventListener('mousedown', this.mousedownHandler);
     }
   }]);
 
@@ -69056,11 +69297,13 @@ function () {
         return false;
       }
     }, {}, options);
+    this.preventHide = false;
     this.editorView = editorView;
     this.isActive = false;
     this.top = 0; // the mousedown event is fired before blur so we can prevent it
 
-    this.options.element.addEventListener('mousedown', this.handleClick);
+    this.mousedownHandler = this.handleClick.bind(this);
+    this.options.element.addEventListener('mousedown', this.mousedownHandler);
     this.options.editor.on('focus', function (_ref2) {
       var view = _ref2.view;
 
@@ -69068,6 +69311,11 @@ function () {
     });
     this.options.editor.on('blur', function (_ref3) {
       var event = _ref3.event;
+
+      if (_this.preventHide) {
+        _this.preventHide = false;
+        return;
+      }
 
       _this.hide(event);
     }); // sometimes we have to update the position
@@ -69085,8 +69333,8 @@ function () {
 
   _createClass(Menu, [{
     key: "handleClick",
-    value: function handleClick(event) {
-      event.preventDefault();
+    value: function handleClick() {
+      this.preventHide = true;
     }
   }, {
     key: "update",
@@ -69135,7 +69383,7 @@ function () {
   }, {
     key: "hide",
     value: function hide(event) {
-      if (event && event.relatedTarget) {
+      if (event && event.relatedTarget && this.options.element.parentNode.contains(event.relatedTarget)) {
         return;
       }
 
@@ -69145,7 +69393,7 @@ function () {
   }, {
     key: "destroy",
     value: function destroy() {
-      this.options.element.removeEventListener('mousedown', this.handleClick);
+      this.options.element.removeEventListener('mousedown', this.mousedownHandler);
 
       if (this.resizeObserver) {
         this.resizeObserver.unobserve(this.editorView.dom);
@@ -69196,6 +69444,13 @@ var EditorFloatingMenu = {
               editor: editor,
               element: _this.$el,
               onUpdate: function onUpdate(menu) {
+                // the second check ensures event is fired only once
+                if (menu.isActive && _this.menu.isActive === false) {
+                  _this.$emit('show', menu);
+                } else if (!menu.isActive && _this.menu.isActive === true) {
+                  _this.$emit('hide', menu);
+                }
+
                 _this.menu = menu;
               }
             }));
@@ -69258,7 +69513,7 @@ Copyright © 2018 Basecamp, LLC
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /*!
- * vue-i18n v8.12.0 
+ * vue-i18n v8.15.0 
  * (c) 2019 kazuya kawaguchi
  * Released under the MIT License.
  */
@@ -69499,6 +69754,7 @@ var mixin = {
           options.i18n.root = this.$root;
           options.i18n.formatter = this.$root.$i18n.formatter;
           options.i18n.fallbackLocale = this.$root.$i18n.fallbackLocale;
+          options.i18n.formatFallbackMessages = this.$root.$i18n.formatFallbackMessages;
           options.i18n.silentTranslationWarn = this.$root.$i18n.silentTranslationWarn;
           options.i18n.silentFallbackWarn = this.$root.$i18n.silentFallbackWarn;
           options.i18n.pluralizationRules = this.$root.$i18n.pluralizationRules;
@@ -69605,8 +69861,7 @@ var interpolationComponent = {
   functional: true,
   props: {
     tag: {
-      type: String,
-      default: 'span'
+      type: String
     },
     path: {
       type: String,
@@ -69620,65 +69875,90 @@ var interpolationComponent = {
     }
   },
   render: function render (h, ref) {
-    var props = ref.props;
     var data = ref.data;
-    var children = ref.children;
     var parent = ref.parent;
+    var props = ref.props;
+    var slots = ref.slots;
 
-    var i18n = parent.$i18n;
-
-    children = (children || []).filter(function (child) {
-      return child.tag || (child.text = child.text.trim())
-    });
-
-    if (!i18n) {
+    var $i18n = parent.$i18n;
+    if (!$i18n) {
       if (true) {
         warn('Cannot find VueI18n instance!');
       }
-      return children
+      return
     }
 
     var path = props.path;
     var locale = props.locale;
+    var places = props.places;
+    var params = slots();
+    var children = $i18n.i(
+      path,
+      locale,
+      onlyHasDefaultPlace(params) || places
+        ? useLegacyPlaces(params.default, places)
+        : params
+    );
 
-    var params = {};
-    var places = props.places || {};
-
-    var hasPlaces = Array.isArray(places)
-      ? places.length > 0
-      : Object.keys(places).length > 0;
-
-    var everyPlace = children.every(function (child) {
-      if (child.data && child.data.attrs) {
-        var place = child.data.attrs.place;
-        return (typeof place !== 'undefined') && place !== ''
-      }
-    });
-
-    if ( true && hasPlaces && children.length > 0 && !everyPlace) {
-      warn('If places prop is set, all child elements must have place prop set.');
-    }
-
-    if (Array.isArray(places)) {
-      places.forEach(function (el, i) {
-        params[i] = el;
-      });
-    } else {
-      Object.keys(places).forEach(function (key) {
-        params[key] = places[key];
-      });
-    }
-
-    children.forEach(function (child, i) {
-      var key = everyPlace
-        ? ("" + (child.data.attrs.place))
-        : ("" + i);
-      params[key] = child;
-    });
-
-    return h(props.tag, data, i18n.i(path, locale, params))
+    var tag = props.tag || 'span';
+    return tag ? h(tag, data, children) : children
   }
 };
+
+function onlyHasDefaultPlace (params) {
+  var prop;
+  for (prop in params) {
+    if (prop !== 'default') { return false }
+  }
+  return Boolean(prop)
+}
+
+function useLegacyPlaces (children, places) {
+  var params = places ? createParamsFromPlaces(places) : {};
+
+  if (!children) { return params }
+
+  // Filter empty text nodes
+  children = children.filter(function (child) {
+    return child.tag || child.text.trim() !== ''
+  });
+
+  var everyPlace = children.every(vnodeHasPlaceAttribute);
+  if ( true && everyPlace) {
+    warn('`place` attribute is deprecated in next major version. Please switch to Vue slots.');
+  }
+
+  return children.reduce(
+    everyPlace ? assignChildPlace : assignChildIndex,
+    params
+  )
+}
+
+function createParamsFromPlaces (places) {
+  if (true) {
+    warn('`places` prop is deprecated in next major version. Please switch to Vue slots.');
+  }
+
+  return Array.isArray(places)
+    ? places.reduce(assignChildIndex, {})
+    : Object.assign({}, places)
+}
+
+function assignChildPlace (params, child) {
+  if (child.data && child.data.attrs && child.data.attrs.place) {
+    params[child.data.attrs.place] = child;
+  }
+  return params
+}
+
+function assignChildIndex (params, child, index) {
+  params[index] = child;
+  return params
+}
+
+function vnodeHasPlaceAttribute (vnode) {
+  return Boolean(vnode.data && vnode.data.attrs && vnode.data.attrs.place)
+}
 
 /*  */
 
@@ -70205,6 +70485,7 @@ function parse$1 (path) {
       actions[APPEND]();
     } else {
       subPathDepth = 0;
+      if (key === undefined) { return false }
       key = formatSubPath(key);
       if (key === false) {
         return false
@@ -70315,7 +70596,7 @@ var htmlTagMatcher = /<\/?[\w\s="/.':;#-\/]+>/;
 var linkKeyMatcher = /(?:@(?:\.[a-z]+)?:(?:[\w\-_|.]+|\([\w\-_|.]+\)))/g;
 var linkKeyPrefixMatcher = /^@(?:\.([a-z]+))?:/;
 var bracketsMatcher = /[()]/g;
-var formatters = {
+var defaultModifiers = {
   'upper': function (str) { return str.toLocaleUpperCase(); },
   'lower': function (str) { return str.toLocaleLowerCase(); }
 };
@@ -70342,15 +70623,19 @@ var VueI18n = function VueI18n (options) {
 
   this._vm = null;
   this._formatter = options.formatter || defaultFormatter;
+  this._modifiers = options.modifiers || {};
   this._missing = options.missing || null;
   this._root = options.root || null;
   this._sync = options.sync === undefined ? true : !!options.sync;
   this._fallbackRoot = options.fallbackRoot === undefined
     ? true
     : !!options.fallbackRoot;
+  this._formatFallbackMessages = options.formatFallbackMessages === undefined
+    ? false
+    : !!options.formatFallbackMessages;
   this._silentTranslationWarn = options.silentTranslationWarn === undefined
     ? false
-    : !!options.silentTranslationWarn;
+    : options.silentTranslationWarn;
   this._silentFallbackWarn = options.silentFallbackWarn === undefined
     ? false
     : !!options.silentFallbackWarn;
@@ -70387,7 +70672,7 @@ var VueI18n = function VueI18n (options) {
   });
 };
 
-var prototypeAccessors = { vm: { configurable: true },messages: { configurable: true },dateTimeFormats: { configurable: true },numberFormats: { configurable: true },availableLocales: { configurable: true },locale: { configurable: true },fallbackLocale: { configurable: true },missing: { configurable: true },formatter: { configurable: true },silentTranslationWarn: { configurable: true },silentFallbackWarn: { configurable: true },preserveDirectiveContent: { configurable: true },warnHtmlInMessage: { configurable: true } };
+var prototypeAccessors = { vm: { configurable: true },messages: { configurable: true },dateTimeFormats: { configurable: true },numberFormats: { configurable: true },availableLocales: { configurable: true },locale: { configurable: true },fallbackLocale: { configurable: true },formatFallbackMessages: { configurable: true },missing: { configurable: true },formatter: { configurable: true },silentTranslationWarn: { configurable: true },silentFallbackWarn: { configurable: true },preserveDirectiveContent: { configurable: true },warnHtmlInMessage: { configurable: true } };
 
 VueI18n.prototype._checkLocaleMessage = function _checkLocaleMessage (locale, level, message) {
   var paths = [];
@@ -70496,6 +70781,9 @@ prototypeAccessors.fallbackLocale.set = function (locale) {
   this._vm.$set(this._vm, 'fallbackLocale', locale);
 };
 
+prototypeAccessors.formatFallbackMessages.get = function () { return this._formatFallbackMessages };
+prototypeAccessors.formatFallbackMessages.set = function (fallback) { this._formatFallbackMessages = fallback; };
+
 prototypeAccessors.missing.get = function () { return this._missing };
 prototypeAccessors.missing.set = function (handler) { this._missing = handler; };
 
@@ -70537,22 +70825,40 @@ VueI18n.prototype._warnDefault = function _warnDefault (locale, key, result, vm,
       return missingRet
     }
   } else {
-    if ( true && !this._silentTranslationWarn) {
+    if ( true && !this._isSilentTranslationWarn(key)) {
       warn(
         "Cannot translate the value of keypath '" + key + "'. " +
         'Use the value of keypath as default.'
       );
     }
   }
-  return key
+
+  if (this._formatFallbackMessages) {
+    var parsedArgs = parseArgs.apply(void 0, values);
+    return this._render(key, 'string', parsedArgs.params, key)
+  } else {
+    return key
+  }
 };
 
 VueI18n.prototype._isFallbackRoot = function _isFallbackRoot (val) {
   return !val && !isNull(this._root) && this._fallbackRoot
 };
 
-VueI18n.prototype._isSilentFallback = function _isSilentFallback (locale) {
-  return this._silentFallbackWarn && (this._isFallbackRoot() || locale !== this.fallbackLocale)
+VueI18n.prototype._isSilentFallbackWarn = function _isSilentFallbackWarn (key) {
+  return this._silentFallbackWarn instanceof RegExp
+    ? this._silentFallbackWarn.test(key)
+    : this._silentFallbackWarn
+};
+
+VueI18n.prototype._isSilentFallback = function _isSilentFallback (locale, key) {
+  return this._isSilentFallbackWarn(key) && (this._isFallbackRoot() || locale !== this.fallbackLocale)
+};
+
+VueI18n.prototype._isSilentTranslationWarn = function _isSilentTranslationWarn (key) {
+  return this._silentTranslationWarn instanceof RegExp
+    ? this._silentTranslationWarn.test(key)
+    : this._silentTranslationWarn
 };
 
 VueI18n.prototype._interpolate = function _interpolate (
@@ -70575,7 +70881,7 @@ VueI18n.prototype._interpolate = function _interpolate (
     if (isPlainObject(message)) {
       ret = message[key];
       if (typeof ret !== 'string') {
-        if ( true && !this._silentTranslationWarn && !this._isSilentFallback(locale)) {
+        if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallback(locale, key)) {
           warn(("Value of key '" + key + "' is not a string!"));
         }
         return null
@@ -70588,7 +70894,7 @@ VueI18n.prototype._interpolate = function _interpolate (
     if (typeof pathRet === 'string') {
       ret = pathRet;
     } else {
-      if ( true && !this._silentTranslationWarn && !this._isSilentFallback(locale)) {
+      if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallback(locale, key)) {
         warn(("Value of key '" + key + "' is not a string!"));
       }
       return null
@@ -70649,7 +70955,7 @@ VueI18n.prototype._link = function _link (
     );
 
     if (this._isFallbackRoot(translated)) {
-      if ( true && !this._silentTranslationWarn) {
+      if ( true && !this._isSilentTranslationWarn(linkPlaceholder)) {
         warn(("Fall back to translate the link placeholder '" + linkPlaceholder + "' with root locale."));
       }
       /* istanbul ignore if */
@@ -70664,8 +70970,11 @@ VueI18n.prototype._link = function _link (
       locale, linkPlaceholder, translated, host,
       Array.isArray(values) ? values : [values]
     );
-    if (formatters.hasOwnProperty(formatterName)) {
-      translated = formatters[formatterName](translated);
+
+    if (this._modifiers.hasOwnProperty(formatterName)) {
+      translated = this._modifiers[formatterName](translated);
+    } else if (defaultModifiers.hasOwnProperty(formatterName)) {
+      translated = defaultModifiers[formatterName](translated);
     }
 
     visitedLinkStack.pop();
@@ -70705,7 +71014,7 @@ VueI18n.prototype._translate = function _translate (
 
   res = this._interpolate(fallback, messages[fallback], key, host, interpolateMode, args, [key]);
   if (!isNull(res)) {
-    if ( true && !this._silentTranslationWarn && !this._silentFallbackWarn) {
+    if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallbackWarn(key)) {
       warn(("Fall back to translate the keypath '" + key + "' with '" + fallback + "' locale."));
     }
     return res
@@ -70729,7 +71038,7 @@ VueI18n.prototype._t = function _t (key, _locale, messages, host) {
     host, 'string', parsedArgs.params
   );
   if (this._isFallbackRoot(ret)) {
-    if ( true && !this._silentTranslationWarn && !this._silentFallbackWarn) {
+    if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallbackWarn(key)) {
       warn(("Fall back to translate the keypath '" + key + "' with root locale."));
     }
     /* istanbul ignore if */
@@ -70752,7 +71061,7 @@ VueI18n.prototype._i = function _i (key, locale, messages, host, values) {
   var ret =
     this._translate(messages, locale, this.fallbackLocale, key, host, 'raw', values);
   if (this._isFallbackRoot(ret)) {
-    if ( true && !this._silentTranslationWarn) {
+    if ( true && !this._isSilentTranslationWarn(key)) {
       warn(("Fall back to interpolate the keypath '" + key + "' with root locale."));
     }
     if (!this._root) { throw Error('unexpected error') }
@@ -70898,8 +71207,8 @@ VueI18n.prototype._localizeDateTime = function _localizeDateTime (
 
   // fallback locale
   if (isNull(formats) || isNull(formats[key])) {
-    if ( true && !this._silentTranslationWarn) {
-      warn(("Fall back to '" + fallback + "' datetime formats from '" + locale + " datetime formats."));
+    if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallbackWarn(key)) {
+      warn(("Fall back to '" + fallback + "' datetime formats from '" + locale + "' datetime formats."));
     }
     _locale = fallback;
     formats = dateTimeFormats[_locale];
@@ -70932,8 +71241,8 @@ VueI18n.prototype._d = function _d (value, locale, key) {
   var ret =
     this._localizeDateTime(value, locale, this.fallbackLocale, this._getDateTimeFormats(), key);
   if (this._isFallbackRoot(ret)) {
-    if ( true && !this._silentTranslationWarn) {
-      warn(("Fall back to datetime localization of root: key '" + key + "' ."));
+    if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallbackWarn(key)) {
+      warn(("Fall back to datetime localization of root: key '" + key + "'."));
     }
     /* istanbul ignore if */
     if (!this._root) { throw Error('unexpected error') }
@@ -70998,8 +71307,8 @@ VueI18n.prototype._getNumberFormatter = function _getNumberFormatter (
 
   // fallback locale
   if (isNull(formats) || isNull(formats[key])) {
-    if ( true && !this._silentTranslationWarn) {
-      warn(("Fall back to '" + fallback + "' number formats from '" + locale + " number formats."));
+    if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallbackWarn(key)) {
+      warn(("Fall back to '" + fallback + "' number formats from '" + locale + "' number formats."));
     }
     _locale = fallback;
     formats = numberFormats[_locale];
@@ -71042,8 +71351,8 @@ VueI18n.prototype._n = function _n (value, locale, key, options) {
   var formatter = this._getNumberFormatter(value, locale, this.fallbackLocale, this._getNumberFormats(), key, options);
   var ret = formatter && formatter.format(value);
   if (this._isFallbackRoot(ret)) {
-    if ( true && !this._silentTranslationWarn) {
-      warn(("Fall back to number localization of root: key '" + key + "' ."));
+    if ( true && !this._isSilentTranslationWarn(key) && !this._isSilentFallbackWarn(key)) {
+      warn(("Fall back to number localization of root: key '" + key + "'."));
     }
     /* istanbul ignore if */
     if (!this._root) { throw Error('unexpected error') }
@@ -71111,7 +71420,7 @@ VueI18n.prototype._ntp = function _ntp (value, locale, key, options) {
   var formatter = this._getNumberFormatter(value, locale, this.fallbackLocale, this._getNumberFormats(), key, options);
   var ret = formatter && formatter.formatToParts(value);
   if (this._isFallbackRoot(ret)) {
-    if ( true && !this._silentTranslationWarn) {
+    if ( true && !this._isSilentTranslationWarn(key)) {
       warn(("Fall back to format number to parts of root: key '" + key + "' ."));
     }
     /* istanbul ignore if */
@@ -71141,7 +71450,7 @@ Object.defineProperty(VueI18n, 'availabilities', {
 });
 
 VueI18n.install = install;
-VueI18n.version = '8.12.0';
+VueI18n.version = '8.15.0';
 
 /* harmony default export */ __webpack_exports__["default"] = (VueI18n);
 
@@ -71169,7 +71478,7 @@ VueI18n.version = '8.12.0';
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /*!
- * Vue-Lazyload.js v1.3.1
+ * Vue-Lazyload.js v1.3.3
  * (c) 2019 Awe <hilongjw@gmail.com>
  * Released under the MIT License.
  */
@@ -71439,7 +71748,7 @@ function extend(target, obj) {
   assignSymbols(target, obj);
 
   for (var key in obj) {
-    if (isValidKey(key) && hasOwn(obj, key)) {
+    if (key !== '__proto__' && hasOwn(obj, key)) {
       var val = obj[key];
       if (isObject$1(val)) {
         if (kindOf(target[key]) === 'undefined' && kindOf(val) === 'function') {
@@ -71468,14 +71777,6 @@ function isObject$1(obj) {
 
 function hasOwn(obj, key) {
   return Object.prototype.hasOwnProperty.call(obj, key);
-}
-
-/**
- * Returns true if the given `key` is a valid key that can be used for assigning properties.
- */
-
-function isValidKey(key) {
-  return key !== '__proto__' && key !== 'constructor' && key !== 'prototype';
 }
 
 /**
@@ -71699,6 +72000,11 @@ var _ = {
 
 var loadImageAsync = function loadImageAsync(item, resolve, reject) {
   var image = new Image();
+  if (!item || !item.src) {
+    var err = new Error('image src is required');
+    return reject(err);
+  }
+
   image.src = item.src;
 
   image.onload = function () {
@@ -72075,13 +72381,13 @@ var ReactiveListener = function () {
     }
 
     /*
-     * destroy
+     * $destroy
      * @return
      */
 
   }, {
-    key: 'destroy',
-    value: function destroy() {
+    key: '$destroy',
+    value: function $destroy() {
       this.el = null;
       this.src = null;
       this.error = null;
@@ -72121,7 +72427,7 @@ var Lazy = function (Vue) {
           observerOptions = _ref.observerOptions;
       classCallCheck(this, Lazy);
 
-      this.version = '1.3.1';
+      this.version = '1.3.3';
       this.mode = modeType.event;
       this.ListenerQueue = [];
       this.TargetIndex = 0;
@@ -72329,7 +72635,7 @@ var Lazy = function (Vue) {
           this._removeListenerTarget(existItem.$parent);
           this._removeListenerTarget(window);
           remove(this.ListenerQueue, existItem);
-          existItem.destroy();
+          existItem.$destroy();
         }
       }
 
@@ -72516,7 +72822,7 @@ var Lazy = function (Vue) {
         });
         freeList.forEach(function (item) {
           remove(_this7.ListenerQueue, item);
-          item.destroy();
+          item.$destroy();
         });
       }
       /**
@@ -72685,6 +72991,9 @@ var LazyComponent = (function (lazy) {
         this.show = true;
         this.state.loaded = true;
         this.$emit('show', this);
+      },
+      destroy: function destroy() {
+        return this.$destroy;
       }
     }
   };
@@ -81711,6 +82020,8 @@ var base = {
   222: "'",
   229: "q"
 }
+exports.base = base
+
 var shift = {
   48: ")",
   49: "!",
@@ -81738,11 +82049,13 @@ var shift = {
   222: "\"",
   229: "Q"
 }
+exports.shift = shift
 
 var chrome = typeof navigator != "undefined" && /Chrome\/(\d+)/.exec(navigator.userAgent)
 var safari = typeof navigator != "undefined" && /Apple Computer/.test(navigator.vendor)
 var gecko = typeof navigator != "undefined" && /Gecko\/\d+/.test(navigator.userAgent)
 var mac = typeof navigator != "undefined" && /Mac/.test(navigator.platform)
+var ie = typeof navigator != "undefined" && /MSIE \d|Trident\/(?:[7-9]|\d{2,})\..*rv:(\d+)/.exec(navigator.userAgent)
 var brokenModifierNames = chrome && (mac || +chrome[1] < 57) || gecko && mac
 
 // Fill in the digit keys
@@ -81760,11 +82073,11 @@ for (var i = 65; i <= 90; i++) {
 // For each code that doesn't have a shift-equivalent, copy the base name
 for (var code in base) if (!shift.hasOwnProperty(code)) shift[code] = base[code]
 
-function keyName(event) {
+exports.keyName = function(event) {
   // Don't trust event.key in Chrome when there are modifiers until
   // they fix https://bugs.chromium.org/p/chromium/issues/detail?id=633838
   var ignoreKey = brokenModifierNames && (event.ctrlKey || event.altKey || event.metaKey) ||
-    safari && event.shiftKey && event.key && event.key.length == 1
+    (safari || ie) && event.shiftKey && event.key && event.key.length == 1
   var name = (!ignoreKey && event.key) ||
     (event.shiftKey ? shift : base)[event.keyCode] ||
     event.key || "Unidentified"
@@ -81778,10 +82091,6 @@ function keyName(event) {
   if (name == "Down") name = "ArrowDown"
   return name
 }
-
-module.exports = keyName
-keyName.base = base
-keyName.shift = shift
 
 
 /***/ }),
@@ -81946,12 +82255,18 @@ var app = new Vue({
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lozad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lozad */ "./node_modules/lozad/dist/lozad.min.js");
+/* harmony import */ var lozad__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lozad__WEBPACK_IMPORTED_MODULE_0__);
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
-window.moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js"); // var inViewport = require('in-viewport');
+window.moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+
+window.lozad = lozad__WEBPACK_IMPORTED_MODULE_0___default.a; // var inViewport = require('in-viewport');
 // var elem = document.getElementById('myFancyDiv');
 // var isInViewport = inViewport(elem); // returns `true` or `false`
 // alert('myFancyDiv is ' + isInViewport ? 'visible' : 'not visible' + ' in the window');
@@ -82247,10 +82562,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login.vue?vue&type=style&index=0&id=6bdc8b8e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_style_index_0_id_6bdc8b8e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

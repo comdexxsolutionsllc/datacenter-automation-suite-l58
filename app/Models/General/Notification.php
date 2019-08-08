@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -18,9 +19,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Notification newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Notification newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Notification query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereData($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Notification whereId($value)

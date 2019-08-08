@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -19,9 +20,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Cpu newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Cpu newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Cpu query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Cpu newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Cpu newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Cpu query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Cpu whereArchitecture($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Cpu whereCacheSize($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Cpu whereCreatedAt($value)

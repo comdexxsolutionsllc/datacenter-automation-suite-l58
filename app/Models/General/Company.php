@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -20,9 +21,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read \App\Models\General\Reseller $reseller
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Company newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Company newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Company query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereContactEmail($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Company whereContactName($value)

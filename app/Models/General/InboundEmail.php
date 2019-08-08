@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -28,9 +29,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\InboundEmail newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\InboundEmail newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\InboundEmail query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereBodyPlain($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InboundEmail whereDate($value)

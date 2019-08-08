@@ -2,6 +2,7 @@
 
 namespace App\Models\Nameserver;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,9 +17,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property array $created_at
  * @property array $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Tsigkey newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Tsigkey newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Tsigkey query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereAlgorithm($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Tsigkey whereId($value)

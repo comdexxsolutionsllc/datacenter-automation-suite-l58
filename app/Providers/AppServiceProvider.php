@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Laravel\Cashier\Cashier;
 use Laravel\Horizon\Horizon;
 
 /**
@@ -27,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+	Cashier::ignoreMigrations();
         Horizon::routeMailNotificationsTo(env('MAIL_FROM_ADDRESS'));
     }
 }

@@ -1,12 +1,23 @@
 @component('mail::message')
-  # Introduction
+  # Welcome
 
   The body of your message.
 
-  @component('mail::button', ['url' => ''])
-    Button Text
+  @component('mail::button', ['url' => '/login'])
+    Login
   @endcomponent
 
-  Thanks,<br>
-  {{ config('app.name') }}
+  @component('mail::panel')
+    This is the panel content.
+  @endcomponent
+
+  @component('mail::table')
+    | Laravel       | Table         | Example  |
+    | ------------- |:-------------:| --------:|
+    | Col 2 is      | Centered      | $10      |
+    | Col 3 is      | Right-Aligned | $20      |
+  @endcomponent
+
+  Regards,<br>
+  {{ env('COMPANY_NAME', 'Set COMPANY_NAME in your environment file.') }}
 @endcomponent

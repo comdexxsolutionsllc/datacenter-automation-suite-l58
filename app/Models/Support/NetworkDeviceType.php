@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -17,9 +18,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read \App\Models\Support\NetworkDevice $networkDevice
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkDeviceType newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkDeviceType newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkDeviceType query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDeviceType whereDescription($value)

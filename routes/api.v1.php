@@ -27,3 +27,5 @@ Route::resource('/product', 'ProductController');
 
 Route::resource('/ping-result', '\App\Http\Controllers\PingResultAPIController');
 Route::resource('/device', '\App\Http\Controllers\DeviceAPIController');
+
+Route::resource('aboutus', 'AboutUsController')->middleware('apilogger');

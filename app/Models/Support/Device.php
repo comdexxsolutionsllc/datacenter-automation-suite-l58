@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Transformers\DeviceTransformer;
 use Flugg\Responder\Contracts\Transformable;
@@ -18,9 +19,10 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\PingResult[] $pingResults
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device query()
+ * @property-read int|null $ping_results_count
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Device newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Device newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Device query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Device whereIp($value)

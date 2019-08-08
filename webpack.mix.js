@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 require('laravel-mix-tailwind');
 let LiveReloadPlugin = require('webpack-livereload-plugin');
+let tailwindcss = require('tailwindcss')
 
 /*
  |--------------------------------------------------------------------------
@@ -16,6 +17,10 @@ let LiveReloadPlugin = require('webpack-livereload-plugin');
 mix.js('resources/js/app.js', 'public/js')
   .extract(['vue', 'jquery'])
   .sass('resources/sass/app.scss', 'public/css')
+  .options({
+    processCssUrls: false,
+    postCss: [ tailwindcss('./tailwind.config.js') ],
+  })
   .version()
   .copy('node_modules/font-awesome/fonts/*', 'public/fonts/')
   .copy('node_modules/ionicons/dist/fonts/*', 'public/fonts/')

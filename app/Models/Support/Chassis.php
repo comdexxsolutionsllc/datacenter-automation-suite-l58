@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -25,9 +26,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Chassis newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Chassis newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Chassis query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereAccountableId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereAccountableType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Chassis whereAssetOwner($value)

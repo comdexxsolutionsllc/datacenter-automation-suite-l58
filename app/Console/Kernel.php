@@ -5,6 +5,9 @@ namespace App\Console;
 use App\Console\Commands\ClearProjectFiles;
 use App\Console\Commands\MakePHPDevelopmentReports;
 use App\Console\Commands\MakeTreeOutput;
+use App\Console\Commands\Stripe\CreatePlans;
+use App\Console\Commands\Stripe\CreateProducts;
+use App\Console\Commands\Stripe\CreateSubscriptions;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -20,6 +23,9 @@ class Kernel extends ConsoleKernel
         ClearProjectFiles::class,
         MakePHPDevelopmentReports::class,
         MakeTreeOutput::class,
+        CreatePlans::class,
+        CreateProducts::class,
+        CreateSubscriptions::class,
     ];
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -14,9 +15,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagType newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagType newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagType query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\TagType newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\TagType newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\TagType query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagType whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagType whereDescription($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\TagType whereId($value)

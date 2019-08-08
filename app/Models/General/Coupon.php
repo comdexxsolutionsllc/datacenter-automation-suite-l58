@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -19,9 +20,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Coupon newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Coupon newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Coupon query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Coupon newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Coupon newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Coupon query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Coupon whereCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Coupon whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Coupon whereId($value)

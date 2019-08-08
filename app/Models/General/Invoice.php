@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -26,9 +27,10 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property-read \App\Models\General\BillingInfo $billingInfo
  * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\InvoiceItem[] $invoiceItems
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice query()
+ * @property-read int|null $invoice_items_count
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Invoice newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Invoice newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Invoice query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice whereAccountId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice whereAccountType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Invoice whereBillingInfoId($value)

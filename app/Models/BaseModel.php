@@ -3,8 +3,11 @@
 namespace App\Models;
 
 use Altek\Eventually\Eventually;
+use App\Builder\MyBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
+use Mtvs\EloquentHashids\HasHashid;
+use Mtvs\EloquentHashids\HashidRouting;
 
 /**
  * Class BaseModel
@@ -12,7 +15,7 @@ use Laravel\Scout\Searchable;
 abstract class BaseModel extends Model
 {
 
-    use Eventually, Searchable;
+    use Eventually, HasHashid, HashidRouting, Searchable;
 
     /**
      * Displayable Fields for export.
@@ -21,17 +24,17 @@ abstract class BaseModel extends Model
      */
     public static $displayableFields = [];
 
+    public function getPathAttribute()
+    {
+        $this->path();
+    }
+
     /**
      * Return resource path.
      *
      * @return string
      */
     abstract public function path(): string;
-
-    public function getPathAttribute()
-    {
-        $this->path();
-    }
 
     /**
      * Get the index name for the model.
@@ -46,4 +49,16 @@ abstract class BaseModel extends Model
      * @return array
      */
     abstract public function toSearchableArray(): array;
+
+    /**
+     * Create a new Eloquent query builder for the model.
+     *
+     * @param \Illuminate\Database\Query\Builder $query
+     *
+     * @return \Illuminate\Database\Eloquent\Builder|static
+     */
+    public function newEloquentBuilder($query)
+    {
+        return new MyBuilder($query);
+    }
 }

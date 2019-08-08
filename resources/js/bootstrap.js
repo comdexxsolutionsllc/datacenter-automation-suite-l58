@@ -2,6 +2,10 @@ window._ = require('lodash');
 window.Popper = require('popper.js').default;
 window.moment = require('moment');
 
+import lozad from 'lozad'
+
+window.lozad = lozad;
+
 // var inViewport = require('in-viewport');
 // var elem = document.getElementById('myFancyDiv');
 // var isInViewport = inViewport(elem); // returns `true` or `false`

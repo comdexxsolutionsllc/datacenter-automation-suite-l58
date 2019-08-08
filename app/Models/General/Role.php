@@ -15,7 +15,9 @@ use Spatie\Permission\Models\Role as BaseRole;
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[] $permissions
+ * @property-read int|null $permissions_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Roles\Customer[] $users
+ * @property-read int|null $users_count
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Role newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\Spatie\Permission\Models\Role permission($permissions)

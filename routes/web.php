@@ -79,3 +79,14 @@ Route::group(['prefix' => '/dashboard', 'middleware' => ['auth']], function () {
 Route::get('/mail/notify/welcome', function () {
     return (new App\Notifications\Welcome)->toMail(null);
 });
+
+//Route::get('/test/cashier', function () {
+//    $user = \App\Models\Roles\Customer::find(2);
+//
+//    $user->invoiceFor('Stickers', 500, [], [
+//        'tax_percent' => 21,
+//    ]);
+//
+//    return ['status' => 'OK'];
+//});
+

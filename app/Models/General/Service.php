@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -20,9 +21,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\General\InvoiceItem[] $invoiceItems
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service query()
+ * @property-read int|null $invoice_items_count
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Service newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Service newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Service query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereAccountId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereAccountType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Service whereCreatedAt($value)

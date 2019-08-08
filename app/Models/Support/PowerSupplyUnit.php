@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -14,9 +15,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PowerSupplyUnit newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PowerSupplyUnit newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PowerSupplyUnit query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\PowerSupplyUnit newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\PowerSupplyUnit newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\PowerSupplyUnit query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PowerSupplyUnit whereActive($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PowerSupplyUnit whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PowerSupplyUnit whereId($value)

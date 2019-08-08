@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,9 +17,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Note newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Note newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Note query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereBody($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Note whereId($value)

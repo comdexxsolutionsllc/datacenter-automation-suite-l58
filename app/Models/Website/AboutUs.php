@@ -2,7 +2,9 @@
 
 namespace App\Models\Website;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
 use Laravel\Scout\Searchable;
 use Lorisleiva\LaravelSearchString\Concerns\SearchString;
 
@@ -18,9 +20,9 @@ use Lorisleiva\LaravelSearchString\Concerns\SearchString;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read string $portrait_link
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\AboutUs newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\AboutUs newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Website\AboutUs query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs usingSearchString($string)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Website\AboutUs whereId($value)

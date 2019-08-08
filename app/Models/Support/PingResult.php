@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Transformers\PingResultsTransformer;
 use Flugg\Responder\Contracts\Transformable;
@@ -23,9 +24,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Support\Device|null $device
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\PingResult newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\PingResult newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\PingResult query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereDeviceId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\PingResult whereId($value)

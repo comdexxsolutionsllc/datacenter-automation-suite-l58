@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -14,9 +15,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\ServiceNamespace newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\ServiceNamespace newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\ServiceNamespace query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\ServiceNamespace whereNamespace($value)

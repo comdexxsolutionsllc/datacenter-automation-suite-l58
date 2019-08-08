@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\Roles\Customer;
 use DateTime;
@@ -22,9 +23,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property bool|\DateTime $updated_at
  * @property-read mixed $path
  * @property-read \App\Models\Roles\Customer $user
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Subscription newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Subscription newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\Subscription query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereEndsAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\Subscription whereId($value)

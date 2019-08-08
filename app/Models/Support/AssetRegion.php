@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -16,9 +17,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AssetRegion newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AssetRegion newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AssetRegion query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\AssetRegion newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\AssetRegion newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\AssetRegion query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AssetRegion whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AssetRegion whereEndpoint($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\AssetRegion whereId($value)

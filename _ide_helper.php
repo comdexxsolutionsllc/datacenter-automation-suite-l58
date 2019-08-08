@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.31 on 2019-08-08 02:26:09.
+ * Generated for Laravel 5.8.35 on 2019-11-17 07:30:02.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -3971,7 +3971,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Set the globally available instance of the container.
+         * Get the globally available instance of the container.
          *
          * @return static 
          * @static 
@@ -11870,10 +11870,14 @@ namespace Illuminate\Support\Facades {
          * header value is a comma+space separated list of IP addresses, the left-most
          * being the original client, and each successive proxy that passed the request
          * adding the IP address where it received the request from.
+         * 
+         * If your reverse proxy uses a different header name than "X-Forwarded-For",
+         * ("Client-Ip" for instance), configure it via the $trustedHeaderSet
+         * argument of the Request::setTrustedProxies() method instead.
          *
          * @return string|null The client IP address
          * @see getClientIps()
-         * @see http://en.wikipedia.org/wiki/X-Forwarded-For
+         * @see https://wikipedia.org/wiki/X-Forwarded-For
          * @static 
          */ 
         public static function getClientIp()
@@ -12397,7 +12401,6 @@ namespace Illuminate\Support\Facades {
          * Checks whether or not the method is safe.
          *
          * @see https://tools.ietf.org/html/rfc7231#section-4.2.1
-         * @param bool $andCacheable Adds the additional condition that the method should be cacheable. True by default.
          * @return bool 
          * @static 
          */ 
@@ -12567,7 +12570,7 @@ namespace Illuminate\Support\Facades {
          * It works if your JavaScript library sets an X-Requested-With HTTP header.
          * It is known to work with common JavaScript frameworks:
          *
-         * @see http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
+         * @see https://wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
          * @return bool true if the request is an XMLHttpRequest, false otherwise
          * @static 
          */ 
@@ -18892,6 +18895,104 @@ namespace Darryldecode\Cart\Facades {
  
 }
 
+namespace FrancescoMalatesta\LaravelCircuitBreaker\Facade { 
+
+    /**
+     * 
+     *
+     */ 
+    class CircuitBreaker {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function isAvailable($identifier)
+        {
+                        /** @var \FrancescoMalatesta\LaravelCircuitBreaker\Manager\CircuitBreakerManager $instance */
+                        return $instance->isAvailable($identifier);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function reportFailure($identifier)
+        {
+                        /** @var \FrancescoMalatesta\LaravelCircuitBreaker\Manager\CircuitBreakerManager $instance */
+                        return $instance->reportFailure($identifier);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function reportSuccess($identifier)
+        {
+                        /** @var \FrancescoMalatesta\LaravelCircuitBreaker\Manager\CircuitBreakerManager $instance */
+                        return $instance->reportSuccess($identifier);
+        }
+         
+    }
+ 
+}
+
+namespace GDebrauwer\Hateoas { 
+
+    /**
+     * 
+     *
+     * @see \GDebrauwer\Hateoas\HateoasManager
+     */ 
+    class Hateoas {
+        
+        /**
+         * Generate HATEOAS links from the provided class and transform the data to JSON.
+         *
+         * @param string $class
+         * @param array $arguments
+         * @return array 
+         * @static 
+         */ 
+        public static function generate($class, $arguments = array())
+        {
+                        /** @var \GDebrauwer\Hateoas\HateoasManager $instance */
+                        return $instance->generate($class, $arguments);
+        }
+        
+        /**
+         * Specify a callback to be used to guess the HATEOAS class name.
+         *
+         * @param callable $callback
+         * @return self 
+         * @static 
+         */ 
+        public static function guessHateoasClassNameUsing($callback)
+        {
+                        /** @var \GDebrauwer\Hateoas\HateoasManager $instance */
+                        return $instance->guessHateoasClassNameUsing($callback);
+        }
+        
+        /**
+         * Set formatter that needs to be used to format a link collection to JSON format.
+         *
+         * @param string|callable $formatter
+         * @return self 
+         * @static 
+         */ 
+        public static function formatLinksUsing($formatter)
+        {
+                        /** @var \GDebrauwer\Hateoas\HateoasManager $instance */
+                        return $instance->formatLinksUsing($formatter);
+        }
+         
+    }
+ 
+}
+
 namespace Intervention\Image\Facades { 
 
     /**
@@ -19218,6 +19319,45 @@ namespace Laracasts\Flash {
         {
                         /** @var \Laracasts\Flash\FlashNotifier $instance */
                         return $instance->clear();
+        }
+        
+        /**
+         * Register a custom macro.
+         *
+         * @param string $name
+         * @param object|callable $macro
+         * @return void 
+         * @static 
+         */ 
+        public static function macro($name, $macro)
+        {
+                        \Laracasts\Flash\FlashNotifier::macro($name, $macro);
+        }
+        
+        /**
+         * Mix another object into the class.
+         *
+         * @param object $mixin
+         * @param bool $replace
+         * @return void 
+         * @throws \ReflectionException
+         * @static 
+         */ 
+        public static function mixin($mixin, $replace = true)
+        {
+                        \Laracasts\Flash\FlashNotifier::mixin($mixin, $replace);
+        }
+        
+        /**
+         * Checks if macro is registered.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasMacro($name)
+        {
+                        return \Laracasts\Flash\FlashNotifier::hasMacro($name);
         }
          
     }
@@ -20481,7 +20621,6 @@ namespace Sentry\Laravel {
         /**
          * Gets the client bound to the top of the stack.
          *
-         * @return \Sentry\State\ClientInterface|null 
          * @static 
          */ 
         public static function getClient()
@@ -20493,7 +20632,6 @@ namespace Sentry\Laravel {
         /**
          * Gets the ID of the last captured event.
          *
-         * @return string|null 
          * @static 
          */ 
         public static function getLastEventId()
@@ -20509,7 +20647,6 @@ namespace Sentry\Laravel {
          * sure to always remove this scope with {@see Hub::popScope} when the
          * operation finishes or throws.
          *
-         * @return \Sentry\State\Scope 
          * @static 
          */ 
         public static function pushScope()
@@ -20523,7 +20660,6 @@ namespace Sentry\Laravel {
          * before the scope was pushed. All breadcrumbs and context information added
          * since the last call to {@see Hub::pushScope} are discarded.
          *
-         * @return bool 
          * @static 
          */ 
         public static function popScope()
@@ -20575,7 +20711,6 @@ namespace Sentry\Laravel {
          *
          * @param string $message The message
          * @param \Sentry\State\Severity $level The severity level of the message
-         * @return string|null 
          * @static 
          */ 
         public static function captureMessage($message, $level = null)
@@ -20588,7 +20723,6 @@ namespace Sentry\Laravel {
          * Captures an exception event and sends it to Sentry.
          *
          * @param \Throwable $exception The exception
-         * @return string|null 
          * @static 
          */ 
         public static function captureException($exception)
@@ -20601,7 +20735,6 @@ namespace Sentry\Laravel {
          * Captures a new event using the provided data.
          *
          * @param array $payload The data of the event being captured
-         * @return string|null 
          * @static 
          */ 
         public static function captureEvent($payload)
@@ -20613,7 +20746,6 @@ namespace Sentry\Laravel {
         /**
          * Captures an event that logs the last occurred error.
          *
-         * @return string|null 
          * @static 
          */ 
         public static function captureLastError()
@@ -20640,7 +20772,9 @@ namespace Sentry\Laravel {
         /**
          * Returns the current global Hub.
          *
-         * @return self 
+         * @return \Sentry\State\HubInterface 
+         * @deprecated since version 2.2, to be removed in 3.0
+         * @see SentrySdk::getCurrentHub()
          * @static 
          */ 
         public static function getCurrent()
@@ -20651,8 +20785,10 @@ namespace Sentry\Laravel {
         /**
          * Sets the Hub as the current.
          *
-         * @param self $hub The Hub that will become the current one
-         * @return self 
+         * @param \Sentry\State\HubInterface $hub The Hub that will become the current one
+         * @return \Sentry\State\HubInterface 
+         * @deprecated since version 2.2, to be removed in 3.0
+         * @see SentrySdk::setCurrentHub()
          * @static 
          */ 
         public static function setCurrent($hub)
@@ -20664,7 +20800,6 @@ namespace Sentry\Laravel {
          * Gets the integration whose FQCN matches the given one if it's available on the current client.
          *
          * @param string $className The FQCN of the integration
-         * @return \Sentry\State\IntegrationInterface|null 
          * @static 
          */ 
         public static function getIntegration($className)
@@ -20760,6 +20895,160 @@ namespace Torann\GeoIP\Facades {
         {
                         /** @var \Torann\GeoIP\GeoIP $instance */
                         return $instance->config($key, $default);
+        }
+         
+    }
+ 
+}
+
+namespace Vinkla\Hashids\Facades { 
+
+    /**
+     * This is the Hashids facade class.
+     *
+     * @author Vincent Klaiber <hello@doubledip.se>
+     * @method static string encode(mixed ...$numbers) Encode parameters to generate a hash.
+     * @method static array decode(string $hash) Decode a hash to the original parameter values.
+     * @method static string encodeHex(string $str) Encode hexadecimal values and generate a hash string.
+     * @method static string decodeHex(string $hash) Decode a hexadecimal hash.
+     */ 
+    class Hashids {
+        
+        /**
+         * Get the factory instance.
+         *
+         * @return \Vinkla\Hashids\HashidsFactory 
+         * @static 
+         */ 
+        public static function getFactory()
+        {
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getFactory();
+        }
+        
+        /**
+         * Get a connection instance.
+         *
+         * @param string|null $name
+         * @return object 
+         * @static 
+         */ 
+        public static function connection($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->connection($name);
+        }
+        
+        /**
+         * Reconnect to the given connection.
+         *
+         * @param string|null $name
+         * @return object 
+         * @static 
+         */ 
+        public static function reconnect($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->reconnect($name);
+        }
+        
+        /**
+         * Disconnect from the given connection.
+         *
+         * @param string|null $name
+         * @return void 
+         * @static 
+         */ 
+        public static function disconnect($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        $instance->disconnect($name);
+        }
+        
+        /**
+         * Get the configuration for a connection.
+         *
+         * @param string|null $name
+         * @throws \InvalidArgumentException
+         * @return array 
+         * @static 
+         */ 
+        public static function getConnectionConfig($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getConnectionConfig($name);
+        }
+        
+        /**
+         * Get the default connection name.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getDefaultConnection()
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getDefaultConnection();
+        }
+        
+        /**
+         * Set the default connection name.
+         *
+         * @param string $name
+         * @return void 
+         * @static 
+         */ 
+        public static function setDefaultConnection($name)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        $instance->setDefaultConnection($name);
+        }
+        
+        /**
+         * Register an extension connection resolver.
+         *
+         * @param string $name
+         * @param callable $resolver
+         * @return void 
+         * @static 
+         */ 
+        public static function extend($name, $resolver)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        $instance->extend($name, $resolver);
+        }
+        
+        /**
+         * Return all of the created connections.
+         *
+         * @return object[] 
+         * @static 
+         */ 
+        public static function getConnections()
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getConnections();
+        }
+        
+        /**
+         * Get the config instance.
+         *
+         * @return \Illuminate\Contracts\Config\Repository 
+         * @static 
+         */ 
+        public static function getConfig()
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getConfig();
         }
          
     }
@@ -23252,6 +23541,19 @@ namespace  {
             }
          
             /**
+             * Insert a new record into the database while ignoring errors.
+             *
+             * @param array $values
+             * @return int 
+             * @static 
+             */ 
+            public static function insertOrIgnore($values)
+            {
+                                /** @var \Illuminate\Database\Query\Builder $instance */
+                                return $instance->insertOrIgnore($values);
+            }
+         
+            /**
              * Insert a new record and get the value of the primary key.
              *
              * @param array $values
@@ -23586,6 +23888,10 @@ namespace  {
 
     class Cart extends \Darryldecode\Cart\Facades\CartFacade {}
 
+    class CircuitBreaker extends \FrancescoMalatesta\LaravelCircuitBreaker\Facade\CircuitBreaker {}
+
+    class Hateoas extends \GDebrauwer\Hateoas\Hateoas {}
+
     class Image extends \Intervention\Image\Facades\Image {}
 
     class Curl extends \Ixudra\Curl\Facades\Curl {}
@@ -23605,6 +23911,8 @@ namespace  {
     class Sentry extends \Sentry\Laravel\Facade {}
 
     class GeoIP extends \Torann\GeoIP\Facades\GeoIP {}
+
+    class Hashids extends \Vinkla\Hashids\Facades\Hashids {}
 
     class Uuid extends \Webpatser\Uuid\Uuid {}
  

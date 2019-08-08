@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -20,9 +21,9 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property-read mixed $path
  * @property-read \App\Models\General\Invoice $invoice
  * @property-read \App\Models\General\Service $service
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\InvoiceItem newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\InvoiceItem newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\InvoiceItem query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereDescription($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\InvoiceItem whereId($value)

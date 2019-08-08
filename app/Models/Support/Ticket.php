@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\Roles\Employee;
 use DateTime;
@@ -28,10 +29,10 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property-read mixed $path
  * @property-read \App\Models\Support\Status $status
  * @property-read \App\Models\Support\Technician $technicianAssigned
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\Ticket[] $user
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket query()
+ * @property-read \App\Models\Support\Ticket $user
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Ticket newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Ticket newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Ticket query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereBody($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Ticket whereDeletedAt($value)

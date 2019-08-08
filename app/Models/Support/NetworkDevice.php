@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use App\Models\General\Asset;
 use Illuminate\Database\Eloquent\Builder;
@@ -28,9 +29,10 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property-read mixed $path
  * @property-read \App\Models\Support\NetworkDeviceType $networkDeviceType
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Support\SwitchportInformation[] $switchPortInformation
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice query()
+ * @property-read int|null $switch_port_information_count
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkDevice newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkDevice newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\NetworkDevice query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereAssetNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\NetworkDevice whereDeviceOsVersion($value)

@@ -2,6 +2,7 @@
 
 namespace App\Models\General;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -25,9 +26,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read mixed $path
  * @property-read \App\Models\General\Invoice $invoice
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo query()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\BillingInfo newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\BillingInfo newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\General\BillingInfo query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo whereAddress1($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo whereAddress2($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\General\BillingInfo whereCity($value)

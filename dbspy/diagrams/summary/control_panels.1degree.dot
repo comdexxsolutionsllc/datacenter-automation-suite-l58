@@ -1,0 +1,43 @@
+// dot 2.40.1 on Linux 5.0.0-23-generic
+// SchemaSpy rev 590
+digraph "control_panels" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "control_panels" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">control_panels</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="control_panel" COLSPAN="3" ALIGN="LEFT">control_panel</TD></TR>
+      <TR><TD PORT="free" COLSPAN="3" ALIGN="LEFT">free</TD></TR>
+      <TR><TD PORT="frontend" COLSPAN="3" ALIGN="LEFT">frontend</TD></TR>
+      <TR><TD PORT="backend" COLSPAN="3" ALIGN="LEFT">backend</TD></TR>
+      <TR><TD PORT="databases" COLSPAN="3" ALIGN="LEFT">databases</TD></TR>
+      <TR><TD PORT="dns" COLSPAN="3" ALIGN="LEFT">dns</TD></TR>
+      <TR><TD PORT="ftp" COLSPAN="3" ALIGN="LEFT">ftp</TD></TR>
+      <TR><TD PORT="email" COLSPAN="3" ALIGN="LEFT">email</TD></TR>
+      <TR><TD PORT="multi_server" COLSPAN="3" ALIGN="LEFT">multi_server</TD></TR>
+      <TR><TD PORT="operating_system" COLSPAN="3" ALIGN="LEFT">operating_system</TD></TR>
+      <TR><TD PORT="ipv6_enabled" COLSPAN="3" ALIGN="LEFT">ipv6_enabled</TD></TR>
+      <TR><TD PORT="created_at" COLSPAN="3" ALIGN="LEFT">created_at</TD></TR>
+      <TR><TD PORT="updated_at" COLSPAN="3" ALIGN="LEFT">updated_at</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/control_panels.html"
+    tooltip="control_panels"
+  ];
+}

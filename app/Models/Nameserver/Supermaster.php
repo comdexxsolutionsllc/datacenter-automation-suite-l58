@@ -2,6 +2,7 @@
 
 namespace App\Models\Nameserver;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,9 +17,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property array $created_at
  * @property array $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Supermaster newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Supermaster newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Supermaster query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereAccount($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Supermaster whereId($value)

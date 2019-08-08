@@ -2,6 +2,7 @@
 
 namespace App\Models\Nameserver;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -17,9 +18,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property array $updated_at
  * @property-read \App\Models\Nameserver\Domain $domain
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Domainmetadata newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Domainmetadata newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Nameserver\Domainmetadata query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereContent($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Nameserver\Domainmetadata whereDomainId($value)

@@ -78,5 +78,11 @@
     @yield('content')
   </main>
 </div>
+<script type="application/javascript">
+    let el = document.querySelectorAll('img');
+    let observer = window.lozad(el);
+
+    observer.observe();
+</script>
 </body>
 </html>

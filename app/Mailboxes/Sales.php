@@ -6,11 +6,11 @@ use BeyondCode\Mailbox\InboundEmail;
 use Log;
 
 /**
- * Class MyMailbox
+ * Class Sales
  *
  * @package App\Mailboxes
  */
-class MyMailbox
+class Sales
 {
 
     /**
@@ -18,6 +18,7 @@ class MyMailbox
      */
     public function __invoke(InboundEmail $email)
     {
-        Log::warn($email);
+        /** @var InboundEmail $email */
+        Log::debug($email);
     }
 }

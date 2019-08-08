@@ -2,6 +2,7 @@
 
 namespace App\Models\Support;
 
+use App\Builder\MyBuilder;
 use App\Models\BaseModel;
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,9 +17,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property bool|\DateTime $created_at
  * @property bool|\DateTime $updated_at
  * @property-read mixed $path
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment query()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Comment newModelQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Comment newQuery()
+ * @method static \App\Builder\MyBuilder|\App\Models\Support\Comment query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereBody($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereCommentableId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Support\Comment whereCommentableType($value)

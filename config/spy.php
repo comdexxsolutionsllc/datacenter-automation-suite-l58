@@ -24,7 +24,7 @@ return [
      | Default: java -jar schemaSpy.jar
      |
      */
-    'command'    => 'java -jar /path/to/schemaSpy_5.0.0.jar',
+    'command'    => 'java -jar schemaSpy_5.0.0.jar',
 
     /*
     |--------------------------------------------------------------------------
@@ -39,8 +39,10 @@ return [
     */
     'parameters' => [
         '-t'  => 'mysql',
-        '-dp' => '/path/to/mysql-connector-java-5.1.44-bin.jar',
-        // download from http://dev.mysql.com/downloads/connector/j/
+        '-dp' => '/home/alexrenner/Code/dcas-l58',
+        '-u'  => config('database.connections.mysql.username'),
+        '-p'  => config('database.connections.mysql.password'),
+        '-db' => config('database.connections.mysql.database'),
         '-hq' => null,
     ],
 ];
