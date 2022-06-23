@@ -45,7 +45,7 @@
     "graphiql": "^0.13.2",
     "jquery": "^3.4.1",
     "jscs": "^3.0.7",
-    "jsdom": "^13.2.0",
+    "jsdom": "^16.5.0",
     "jsdom-global": "^3.0.2",
     "jshint": "^2.10.3",
     "laravel-mix": "^4.1.4",
